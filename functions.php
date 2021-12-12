@@ -38,6 +38,10 @@ if ( class_exists( 'WooCommerce' ) ) {
 if ( class_exists( 'Jetpack' ) ) {
 	$sweetweb_includes[] = '/jetpack.php';
 }
+// Load Beaver Builder compatibility file if Beaver Builder is activiated.
+if ( class_exists( 'FLBuilder' ) ) {
+	$sweetweb_includes[] = '/beaver-builder.php';
+}
 
 // Include files.
 foreach ( $sweetweb_includes as $file ) {
