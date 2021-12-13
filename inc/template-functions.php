@@ -17,7 +17,7 @@
         $bootstrap_version = get_theme_mod( 'sweetweb_bootstrap_version', 'bootstrap4' );
         $navbar_type       = get_theme_mod( 'sweetweb_navbar_type', 'collapse' );
 
-        get_template_part( 'global-templates/navbar', $navbar_type . '-' . $bootstrap_version )
+        get_template_part( 'global-templates/navbar', $navbar_type . '-' . $bootstrap_version );
     }
 }
 
@@ -53,4 +53,4 @@ if( !function_exists('sweetweb_footer_content') ){
         <?php
 
     }
-}'))
+}
