@@ -15,6 +15,8 @@ $sweetweb_inc_dir = 'inc';
 $sweetweb_includes = array(
 	'/theme-settings.php',                  // Initialize theme default settings.
 	'/setup.php',                           // Theme setup and custom theme supports.
+	'/template-functions.php',              // Template functions.
+	'/template-hooks.php',                  // Template hooks.
 	'/widgets.php',                         // Register widget area.
 	'/enqueue.php',                         // Enqueue scripts and styles.
 	'/template-tags.php',                   // Custom template tags for this theme.
