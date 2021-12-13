@@ -24,7 +24,7 @@ function sweetweb_header_footer_render() {
 
   // If we have a header, remove the theme header and hook in Beaver Themer'
   if ( ! empty( $header_ids ) ) {
-    remove_action( 'sweetweb_header', 'sweetweb_do_header' );
+    remove_all_actions( 'sweetweb_header' );
     add_action( 'sweetweb_header', 'FLThemeBuilderLayoutRenderer::render_header' );
   }
 
@@ -33,7 +33,7 @@ function sweetweb_header_footer_render() {
 
   // If we have a footer, remove the theme footer and hook in Beaver Themer.
   if ( ! empty( $footer_ids ) ) {
-    remove_action( 'sweetweb_footer', 'sweetweb_do_footer' );
+    remove_all_actions( 'sweetweb_footer' );
     add_action( 'sweetweb_footer', 'FLThemeBuilderLayoutRenderer::render_footer' );
   }
 }
