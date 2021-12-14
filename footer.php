@@ -16,7 +16,7 @@ $container = get_theme_mod( 'sweetweb_container_type' );
 <?php get_template_part( 'sidebar-templates/sidebar', 'footerfull' ); ?>
 
 
-<div class="wrapper" id="wrapper-footer">
+<div class="wrapper p-0" id="wrapper-footer">
 	<?php
 	/**
 	 * Functions hooked into sweetweb_footer action
