@@ -211,6 +211,7 @@ if ( ! function_exists( 'sweetweb_theme_customize_register' ) ) {
 					'description' => __( 'Override SweetWeb\'s site info located at the footer of the page.', 'sweetweb' ),
 					'section'     => 'sweetweb_theme_layout_options',
 					'settings'    => 'sweetweb_site_info_override',
+					'default'     => '<center>Website by <span style="color:#be1931">&#10084;</span> <a href="https://websweet.xyz">websweet.xyz</a></center>',
 					'type'        => 'textarea',
 					'priority'    => 20,
 				)
