@@ -28,7 +28,9 @@ if( !function_exists('sweetweb_footer_content') ){
      * @since 1.0.0
      */
     function sweetweb_footer_content(){
+        $container = get_theme_mod( 'sweetweb_container_type' );
         ?>
+        <div class="frame-footer">
         	<div class="<?php echo esc_attr( $container ); ?>">
 
                 <div class="row">
@@ -39,7 +41,8 @@ if( !function_exists('sweetweb_footer_content') ){
 
                             <div class="site-info">
 
-                                <?php sweetweb_site_info(); ?>
+                                <div class="text-center">Copyright &copy; <?php echo date('Y'); ?> <a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php echo get_bloginfo( 'name' ); ?></a> | Allright reserved</div>
+                                <small><?php sweetweb_site_info(); ?></small>
 
                             </div><!-- .site-info -->
 
@@ -50,6 +53,7 @@ if( !function_exists('sweetweb_footer_content') ){
                 </div><!-- row end -->
 
             </div><!-- container end -->
+        </div>
         <?php
 
     }
