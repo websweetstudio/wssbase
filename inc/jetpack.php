@@ -4,7 +4,7 @@
  *
  * @link https://jetpack.me/
  *
- * @package SweetWeb
+ * @package sweetweb
  */
 
 // Exit if accessed directly.

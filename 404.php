@@ -2,7 +2,7 @@
 /**
  * The template for displaying 404 pages (not found)
  *
- * @package SweetWeb
+ * @package sweetweb
  */
 
 // Exit if accessed directly.

@@ -1,8 +1,8 @@
 <?php
 /**
- * SweetWeb enqueue scripts
+ * Sweetweb enqueue scripts
  *
- * @package SweetWeb
+ * @package sweetweb
  */
 
 // Exit if accessed directly.
@@ -29,7 +29,6 @@ if ( ! function_exists( 'sweetweb_scripts' ) ) {
 
 		$css_version = $theme_version . '.' . filemtime( get_template_directory() . $theme_styles );
 		wp_enqueue_style( 'sweetweb-styles', get_template_directory_uri() . $theme_styles, array(), $css_version );
-		wp_enqueue_style( 'sweetweb-theme-styles', get_template_directory_uri() . '/css/websweet.css', array(), $css_version );
 
 		wp_enqueue_script( 'jquery' );
 

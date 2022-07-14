@@ -2,7 +2,7 @@
 /**
  * Header Navbar (bootstrap4)
  *
- * @package SweetWeb
+ * @package sweetweb
  */
 
 // Exit if accessed directly.
@@ -57,7 +57,7 @@ $container = get_theme_mod( 'sweetweb_container_type' );
 				'fallback_cb'     => '',
 				'menu_id'         => 'main-menu',
 				'depth'           => 2,
-				'walker'          => new SweetWeb_WP_Bootstrap_Navwalker(),
+				'walker'          => new sweetweb_WP_Bootstrap_Navwalker(),
 			)
 		);
 		?>

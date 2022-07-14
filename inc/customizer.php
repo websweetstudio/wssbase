@@ -1,8 +1,8 @@
 <?php
 /**
- * SweetWeb Theme Customizer
+ * Sweetweb Theme Customizer
  *
- * @package SweetWeb
+ * @package sweetweb
  */
 
 // Exit if accessed directly.
@@ -208,10 +208,9 @@ if ( ! function_exists( 'sweetweb_theme_customize_register' ) ) {
 				'sweetweb_site_info_override',
 				array(
 					'label'       => __( 'Footer Site Info', 'sweetweb' ),
-					'description' => __( 'Override SweetWeb\'s site info located at the footer of the page.', 'sweetweb' ),
+					'description' => __( 'Override Sweetweb\'s site info located at the footer of the page.', 'sweetweb' ),
 					'section'     => 'sweetweb_theme_layout_options',
 					'settings'    => 'sweetweb_site_info_override',
-					'default'     => '<center>Website by <span style="color:#be1931">&#10084;</span> <a href="https://websweet.xyz">websweet.xyz</a></center>',
 					'type'        => 'textarea',
 					'priority'    => 20,
 				)

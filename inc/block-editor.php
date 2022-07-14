@@ -2,7 +2,7 @@
 /**
  * Block editor (gutenberg) specific functionality
  *
- * @package SweetWeb
+ * @package sweetweb
  */
 
 

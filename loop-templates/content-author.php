@@ -2,7 +2,7 @@
 /**
  * Template for displaying posts on the author archive
  *
- * @package SweetWeb
+ * @package sweetweb
  */
 
 // Exit if accessed directly.

@@ -2,7 +2,7 @@
 /**
  * Post rendering content according to caller of get_template_part
  *
- * @package SweetWeb
+ * @package sweetweb
  */
 
 // Exit if accessed directly.

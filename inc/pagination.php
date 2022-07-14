@@ -2,7 +2,7 @@
 /**
  * Pagination layout
  *
- * @package SweetWeb
+ * @package sweetweb
  */
 
 // Exit if accessed directly.

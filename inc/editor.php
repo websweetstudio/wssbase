@@ -1,8 +1,8 @@
 <?php
 /**
- * SweetWeb modify editor
+ * Sweetweb modify editor
  *
- * @package SweetWeb
+ * @package sweetweb
  */
 
 // Exit if accessed directly.

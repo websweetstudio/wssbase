@@ -4,12 +4,14 @@
  *
  * Displays all of the <head> section and everything up till <div id="content">
  *
- * @package SweetWeb
+ * @package sweetweb
  */
 
 // Exit if accessed directly.
 defined( 'ABSPATH' ) || exit;
 
+$bootstrap_version = get_theme_mod( 'sweetweb_bootstrap_version', 'bootstrap4' );
+$navbar_type       = get_theme_mod( 'sweetweb_navbar_type', 'collapse' );
 ?>
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
@@ -26,14 +28,9 @@ defined( 'ABSPATH' ) || exit;
 
 	<!-- ******************* The Navbar Area ******************* -->
 	<header id="wrapper-navbar">
-	<?php
-		/**
-		 * Functions hooked into sweetweb_header action
-		 *
-		 * @hooked sweetweb_header_container                 - 0
-		 * @hooked sweetweb_secondary_navigation             - 10
-		 * @hooked sweetweb_header_container_close           - 20
-		 */
-		do_action( 'sweetweb_header' );
-		?>
+
+		<a class="skip-link sr-only sr-only-focusable" href="#content"><?php esc_html_e( 'Skip to content', 'sweetweb' ); ?></a>
+
+		<?php get_template_part( 'global-templates/navbar', $navbar_type . '-' . $bootstrap_version ); ?>
+
 	</header><!-- #wrapper-navbar end -->

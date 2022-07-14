@@ -2,7 +2,7 @@
 /**
  * Custom hooks
  *
- * @package SweetWeb
+ * @package sweetweb
  */
 
 // Exit if accessed directly.
@@ -25,7 +25,26 @@ if ( ! function_exists( 'sweetweb_add_site_info' ) ) {
 	function sweetweb_add_site_info() {
 		$the_theme = wp_get_theme();
 
-		$site_info = '<center>Website by <span style="color:#be1931">&#10084;</span> <a href="https://websweet.xyz">websweet.xyz</a></center>';
+		$site_info = sprintf(
+			'<a href="%1$s">%2$s</a><span class="sep"> | </span>%3$s(%4$s)',
+			esc_url( __( 'https://wordpress.org/', 'sweetweb' ) ),
+			sprintf(
+				/* translators: WordPress */
+				esc_html__( 'Proudly powered by %s', 'sweetweb' ),
+				'WordPress'
+			),
+			sprintf( // WPCS: XSS ok.
+				/* translators: 1: Theme name, 2: Theme author */
+				esc_html__( 'Theme: %1$s by %2$s.', 'sweetweb' ),
+				$the_theme->get( 'Name' ),
+				'<a href="' . esc_url( __( 'https://websweet.xyz', 'sweetweb' ) ) . '">websweet.xyz</a>'
+			),
+			sprintf( // WPCS: XSS ok.
+				/* translators: Theme version */
+				esc_html__( 'Version: %1$s', 'sweetweb' ),
+				$the_theme->get( 'Version' )
+			)
+		);
 
 		// Check if customizer site info has value.
 		if ( get_theme_mod( 'sweetweb_site_info_override' ) ) {

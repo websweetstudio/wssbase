@@ -1,6 +1,5 @@
 /*!
-  * SweetWeb v1.1.0 (https://sweet.web.id)
-  * Copyright 2013-2021 The UnderStrap Authors (https://github.com/sweetweb/sweetweb/graphs/contributors)
+  * Sweetweb v1.1.0 (https://websweet.xyz)
   * Licensed under GPL (http://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html)
   */
 (function (global, factory) {
@@ -9312,4 +9311,16 @@
 	Object.defineProperty(exports, '__esModule', { value: true });
 
 }));
+
+/**
+ * Add sub menu hover support to a parent element
+ */
+(function () {
+	$('ul.nav li.dropdown').hover(function() {
+		$(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn(500);
+	}, function() {
+		$(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(500);
+	});
+});
+
 //# sourceMappingURL=theme.js.map

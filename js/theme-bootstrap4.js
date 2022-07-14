@@ -1,6 +1,6 @@
 /*!
-  * SweetWeb v1.1.0 (https://sweet.web.id)
-  * Copyright 2013-2021 The UnderStrap Authors (https://github.com/sweetweb/sweetweb/graphs/contributors)
+  * Sweetweb v1.1.0 (https://websweet.xyz)
+  * Copyright 2013-2021 The Sweetweb Authors (https://github.com/websweetxyz/sweetweb/graphs/contributors)
   * Licensed under GPL (http://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html)
   */
 (function (global, factory) {

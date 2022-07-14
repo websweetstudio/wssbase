@@ -2,7 +2,7 @@
 /**
  * Partial template for content in page.php
  *
- * @package SweetWeb
+ * @package sweetweb
  */
 
 // Exit if accessed directly.

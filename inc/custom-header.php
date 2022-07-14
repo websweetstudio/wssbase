@@ -2,7 +2,7 @@
 /**
  * Custom header setup
  *
- * @package SweetWeb
+ * @package sweetweb
  */
 
 // Exit if accessed directly.
@@ -17,9 +17,9 @@ if ( ! function_exists( 'sweetweb_custom_header_setup' ) ) {
 	function sweetweb_custom_header_setup() {
 
 		/**
-		 * Filter SweetWeb custom-header support arguments.
+		 * Filter Sweetweb custom-header support arguments.
 		 *
-		 * @since SweetWeb 0.5.2
+		 * @since Sweetweb 0.5.2
 		 *
 		 * @param array $args {
 		 *     An array of custom-header support arguments.

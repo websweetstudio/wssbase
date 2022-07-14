@@ -4,7 +4,7 @@
  *
  * This file is centrally included from `wp-content/mu-plugins/wpcom-theme-compat.php`.
  *
- * @package SweetWeb
+ * @package sweetweb
  */
 
 // Exit if accessed directly.
