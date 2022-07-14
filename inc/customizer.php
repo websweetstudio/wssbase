@@ -67,35 +67,6 @@ if ( ! function_exists( 'sweetweb_theme_customize_register' ) ) {
 		}
 
 		$wp_customize->add_setting(
-			'sweetweb_bootstrap_version',
-			array(
-				'default'           => 'bootstrap4',
-				'type'              => 'theme_mod',
-				'sanitize_callback' => 'sanitize_text_field',
-				'capability'        => 'edit_theme_options',
-			)
-		);
-
-		$wp_customize->add_control(
-			new WP_Customize_Control(
-				$wp_customize,
-				'sweetweb_bootstrap_version',
-				array(
-					'label'       => __( 'Bootstrap Version', 'sweetweb' ),
-					'description' => __( 'Choose between Bootstrap 4 or Bootstrap 5', 'sweetweb' ),
-					'section'     => 'sweetweb_theme_layout_options',
-					'settings'    => 'sweetweb_bootstrap_version',
-					'type'        => 'select',
-					'choices'     => array(
-						'bootstrap4' => __( 'Bootstrap 4', 'sweetweb' ),
-						'bootstrap5' => __( 'Bootstrap 5', 'sweetweb' ),
-					),
-					'priority'    => apply_filters( 'sweetweb_bootstrap_version_priority', 10 ),
-				)
-			)
-		);
-
-		$wp_customize->add_setting(
 			'sweetweb_container_type',
 			array(
 				'default'           => 'container',

@@ -22,10 +22,6 @@ if ( ! function_exists( 'sweetweb_scripts' ) ) {
 		// Grab asset urls.
 		$theme_styles  = "/css/theme{$suffix}.css";
 		$theme_scripts = "/js/theme{$suffix}.js";
-		if ( 'bootstrap4' === $bootstrap_version ) {
-			$theme_styles  = "/css/theme-bootstrap4{$suffix}.css";
-			$theme_scripts = "/js/theme-bootstrap4{$suffix}.js";
-		}
 
 		$css_version = $theme_version . '.' . filemtime( get_template_directory() . $theme_styles );
 		wp_enqueue_style( 'sweetweb-styles', get_template_directory_uri() . $theme_styles, array(), $css_version );
