@@ -269,24 +269,3 @@ if ( ! function_exists( 'sweetweb_custom_excerpt_more' ) ) {
 		return $more;
 	}
 }
-
-add_filter( 'wp_trim_excerpt', 'sweetweb_all_excerpts_get_more_link' );
-
-if ( ! function_exists( 'sweetweb_all_excerpts_get_more_link' ) ) {
-	/**
-	 * Adds a custom read more link to all excerpts, manually or automatically generated
-	 *
-	 * @param string $post_excerpt Posts's excerpt.
-	 *
-	 * @return string
-	 */
-	function sweetweb_all_excerpts_get_more_link( $post_excerpt ) {
-		if ( ! is_admin() ) {
-			$post_excerpt = $post_excerpt . ' [...]<p><a class="btn btn-secondary sweetweb-read-more-link" href="' . esc_url( get_permalink( get_the_ID() ) ) . '">' . __(
-				'Read More...',
-				'sweetweb'
-			) . '<span class="screen-reader-text"> from ' . get_the_title( get_the_ID() ) . '</span></a></p>';
-		}
-		return $post_excerpt;
-	}
-}
