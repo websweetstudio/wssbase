@@ -17087,4 +17087,9 @@ figure.woocommerce-product-gallery__wrapper {
   clip: auto;
 }
 
+.menu-item .dropdown:hover .dropdown-menu {
+  display: block;
+  margin-top: 0;
+}
+
 /*# sourceMappingURL=theme.css.map */

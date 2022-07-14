@@ -9296,6 +9296,13 @@
 	  }
 	})();
 
+	/**
+	 * Add your custom JavaScript here.
+	 * 
+	 */
+	jQuery(function ($) {// Your code here
+	});
+
 	exports.Alert = alert;
 	exports.Button = button;
 	exports.Carousel = carousel;

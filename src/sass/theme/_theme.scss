@@ -1,1 +1,7 @@
 // This is an empty scss file for your custom styles - Please add your super duper awesome mega design styles here
+
+// Add hover support for dropdown
+.menu-item .dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0; // remove the gap so it doesn't close
+}
