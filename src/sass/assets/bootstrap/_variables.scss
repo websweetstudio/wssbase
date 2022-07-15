@@ -321,6 +321,10 @@ $theme-colors: (
 ) !default;
 // scss-docs-end theme-colors-map
 
+// scss-docs-start theme-colors-rgb
+$theme-colors-rgb: map-loop($theme-colors, to-rgb, "$value") !default;
+// scss-docs-end theme-colors-rgb
+
 // Characters which are escaped by the escape-svg function
 $escaped-characters: (
   ("<", "%3c"),
