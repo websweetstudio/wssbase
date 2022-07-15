@@ -8,7 +8,7 @@
 // Exit if accessed directly.
 defined( 'ABSPATH' ) || exit;
 
-$bootstrap_version = get_theme_mod( 'sweetweb_bootstrap_version', 'bootstrap4' );
+$bootstrap_version = 'bootstrap5';
 $uid               = wp_unique_id( 's-' ); // The search form specific unique ID for the input.
 
 $aria_label = '';
