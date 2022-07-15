@@ -52,7 +52,7 @@ if ( ! class_exists( 'sweetweb_WP_Bootstrap_Navwalker' ) ) {
 			}
 			$indent = str_repeat( $t, $depth );
 			// Default class to add to the file.
-			$classes = array( 'dropdown-menu' );
+			$classes = array( 'dropdown-menu border-0 rounded-0 shadow-sm' );
 			/**
 			 * Filters the CSS class(es) applied to a menu list element.
 			 *
