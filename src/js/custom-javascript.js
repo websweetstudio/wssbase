@@ -4,8 +4,8 @@
  */
 
 jQuery(function($){
-    $('.dropdown-toggle').hover(function(){ 
-        console.log('sukses');
-      $(this).closest('li').find('.dropdown-menu').show(); 
+    $('.dropdown-toggle').hover(function(){
+      $('.dropdown-menu').hide();
+      $(this).closest('li').find('.dropdown-menu').fadeIn();
     });
 });
