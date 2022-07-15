@@ -96,6 +96,40 @@ if ( ! function_exists( 'sweetweb_theme_customize_register' ) ) {
 		);
 
 		$wp_customize->add_setting(
+			'sweetweb_header_position',
+			array(
+				'default'           => 'position-relative',
+				'type'              => 'theme_mod',
+				'sanitize_callback' => 'sweetweb_theme_slug_sanitize_select',
+				'capability'        => 'edit_theme_options',
+			)
+		);
+
+		$wp_customize->add_control(
+			new WP_Customize_Control(
+				$wp_customize,
+				'sweetweb_header_position',
+				array(
+					'label'             => __( 'Header Position', 'sweetweb' ),
+					'description'       => __(
+						'Set header\'s default position. Can either be: fixed, relative, or static.',
+						'sweetweb'
+					),
+					'section'           => 'sweetweb_theme_layout_options',
+					'settings'          => 'sweetweb_header_position',
+					'type'              => 'select',
+					'sanitize_callback' => 'sweetweb_theme_slug_sanitize_select',
+					'choices'           => array(
+						'position-relative' => __( 'Relative', 'sweetweb' ),
+						'fixed-top'  => __( 'Fixed', 'sweetweb' ),
+						'sticky-top'  => __( 'Static', 'sweetweb' ),
+					),
+					'priority'          => apply_filters( 'sweetweb_sidebar_position_priority', 20 ),
+				)
+			)
+		);
+
+		$wp_customize->add_setting(
 			'sweetweb_navbar_type',
 			array(
 				'default'           => 'collapse',

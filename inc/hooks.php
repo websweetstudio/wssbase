@@ -24,32 +24,16 @@ if ( ! function_exists( 'sweetweb_add_site_info' ) ) {
 	 */
 	function sweetweb_add_site_info() {
 		$the_theme = wp_get_theme();
-
-		$site_info = sprintf(
-			'<a href="%1$s">%2$s</a><span class="sep"> | </span>%3$s(%4$s)',
-			esc_url( __( 'https://wordpress.org/', 'sweetweb' ) ),
-			sprintf(
-				/* translators: WordPress */
-				esc_html__( 'Proudly powered by %s', 'sweetweb' ),
-				'WordPress'
-			),
-			sprintf( // WPCS: XSS ok.
-				/* translators: 1: Theme name, 2: Theme author */
-				esc_html__( 'Theme: %1$s by %2$s.', 'sweetweb' ),
-				$the_theme->get( 'Name' ),
-				'<a href="' . esc_url( __( 'https://websweet.xyz', 'sweetweb' ) ) . '">websweet.xyz</a>'
-			),
-			sprintf( // WPCS: XSS ok.
-				/* translators: Theme version */
-				esc_html__( 'Version: %1$s', 'sweetweb' ),
-				$the_theme->get( 'Version' )
-			)
-		);
+		$year 	= date( 'Y' );
+		$site_title = get_bloginfo( 'name' );
+		$site_info =  "Copyright $year &copy; $site_title. All rights reserved | Powered by <a href='https://websweet.xyz/'>websweet.xyz</a>.";
 
 		// Check if customizer site info has value.
 		if ( get_theme_mod( 'sweetweb_site_info_override' ) ) {
 			$site_info = get_theme_mod( 'sweetweb_site_info_override' );
 		}
+
+		$site_info = '<div class="text-center">'.$site_info.'</div>';
 
 		echo apply_filters( 'sweetweb_site_info_content', $site_info ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 
@@ -63,9 +47,10 @@ if( ! function_exists( 'sweetweb_add_navbar' ) ) {
 	 */
 	function sweetweb_add_navbar() {
 		$navbar_type       = get_theme_mod( 'sweetweb_navbar_type', 'collapse' );
+		$header_position   = get_theme_mod( 'sweetweb_header_position', 'position-relative' );
 		?>
 
-		<header id="wrapper-navbar">
+		<header id="wrapper-navbar" class="<?php echo $header_position; ?> bg-white shadow-sm py-1">
 
 			<a class="skip-link sr-only sr-only-focusable" href="#content"><?php esc_html_e( 'Skip to content', 'sweetweb' ); ?></a>
 
