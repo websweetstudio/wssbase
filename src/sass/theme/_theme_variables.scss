@@ -9,8 +9,9 @@ $link-decoration: none; // remove text decoration link
 $purple: #5533ff; // Thats a sample how you could change a BootStrap variable.
 $blue: #2b5497; // Thats a sample how you could change a BootStrap variable.
 $primary: $blue;  // Once we've changed the value, we'll also make it the primary brand color.
+$nav-link-font-weight: medium; // Replace bootstrap's default font weight.
 $navbar-nav-link-padding-x: 1.5rem !default; // padding-left and padding-right
 $dropdown-item-padding-y: $spacer * .5 !default; // padding-top and padding-bottom
-$dropdown-link-color:               $gray-800 !default;
-$dropdown-link-hover-color:         shade-color($dropdown-link-color, 10%) !default;
-$dropdown-link-hover-bg:            $gray-200 !default;
+$dropdown-link-color: $gray-800 !default; // color
+$dropdown-link-hover-color: shade-color($dropdown-link-color, 10%) !default; // color:hover
+$dropdown-link-hover-bg: $gray-200 !default;    // background-color:hover

@@ -1,9 +1,46 @@
 // This is an empty scss file for your custom styles - Please add your super duper awesome mega design styles here
 
-
+:focus {
+    outline: none;
+}
 // dropdown menu hover in desktop screen
 @media (min-width: 992px) {
     .dropdown:hover .dropdown-menu {
         display: block;
+    }
+}
+
+// widget style
+.widget {
+    margin-bottom: 20px;
+
+    h1,
+    h2,
+    h3 {
+        font-weight: 600;
+        font-size: 18px;
+    }
+}
+
+// content style
+.site-main {
+    .entry-header {
+        .entry-title {
+            font-size: 24px;
+            font-weight: 600;
+        }
+    }
+    .page-header {
+        .page-title {
+            font-size: 24px;
+            font-weight: 600;
+        }
+    }
+    .comments-area {
+        .comment-reply-title,
+        .comments-title {
+            font-size: 24px;
+            font-weight: 600;
+        }
     }
 }

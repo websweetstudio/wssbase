@@ -4789,7 +4789,7 @@ textarea.form-control-lg {
 .nav {
   --bs-nav-link-padding-x: 1rem;
   --bs-nav-link-padding-y: 0.5rem;
-  --bs-nav-link-font-weight: ;
+  --bs-nav-link-font-weight: medium;
   --bs-nav-link-color: var(--bs-link-color);
   --bs-nav-link-hover-color: var(--bs-link-hover-color);
   --bs-nav-link-disabled-color: #6c757d;
@@ -16471,10 +16471,39 @@ figure.woocommerce-product-gallery__wrapper {
   clip: auto;
 }
 
+:focus {
+  outline: none;
+}
+
 @media (min-width: 992px) {
   .dropdown:hover .dropdown-menu {
     display: block;
   }
+}
+.widget {
+  margin-bottom: 20px;
+}
+.widget h1, .widget .h1,
+.widget h2,
+.widget .h2,
+.widget h3,
+.widget .h3 {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.site-main .entry-header .entry-title {
+  font-size: 24px;
+  font-weight: 600;
+}
+.site-main .page-header .page-title {
+  font-size: 24px;
+  font-weight: 600;
+}
+.site-main .comments-area .comment-reply-title,
+.site-main .comments-area .comments-title {
+  font-size: 24px;
+  font-weight: 600;
 }
 
 /*# sourceMappingURL=theme.css.map */

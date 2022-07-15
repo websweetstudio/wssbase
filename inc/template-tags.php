@@ -212,15 +212,15 @@ if ( ! function_exists( 'sweetweb_post_nav' ) ) {
 			return;
 		}
 		?>
-		<nav class="container navigation post-navigation">
+		<nav class="container navigation post-navigation py-3 px-0">
 			<h2 class="screen-reader-text"><?php esc_html_e( 'Post navigation', 'sweetweb' ); ?></h2>
 			<div class="d-flex nav-links justify-content-between">
 				<?php
 				if ( get_previous_post_link() ) {
-					previous_post_link( '<span class="nav-previous">%link</span>', _x( '<i class="fa fa-angle-left"></i>&nbsp;%title', 'Previous post link', 'sweetweb' ) );
+					previous_post_link( '<span class="nav-previous btn btn-outline-secondary rounded-0 text-secondary">%link</span>', _x( '<i class="fa fa-angle-left"></i>&nbsp;%title', 'Previous post link', 'sweetweb' ) );
 				}
 				if ( get_next_post_link() ) {
-					next_post_link( '<span class="nav-next">%link</span>', _x( '%title&nbsp;<i class="fa fa-angle-right"></i>', 'Next post link', 'sweetweb' ) );
+					next_post_link( '<span class="nav-next btn btn-outline-secondary rounded-0 text-secondary">%link</span>', _x( '%title&nbsp;<i class="fa fa-angle-right"></i>', 'Next post link', 'sweetweb' ) );
 				}
 				?>
 			</div><!-- .nav-links -->
