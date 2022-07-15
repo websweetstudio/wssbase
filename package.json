@@ -67,5 +67,6 @@
     "rollup": "^2.60.2",
     "sass": "^1.44.0",
     "terser": "^5.10.0"
-  }
+  },
+  "dependencies": {}
 }
