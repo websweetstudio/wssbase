@@ -240,12 +240,7 @@ if ( ! function_exists( 'sweetweb_default_navbar_type' ) ) {
 	 * @return string
 	 */
 	function sweetweb_default_navbar_type( $current_mod ) {
-
-		if ( 'bootstrap5' !== get_theme_mod( 'sweetweb_bootstrap_version' ) ) {
-			$current_mod = 'collapse';
-		}
-
-		return $current_mod;
+		return 'offcanvas';
 	}
 }
 add_filter( 'theme_mod_sweetweb_navbar_type', 'sweetweb_default_navbar_type', 20 );

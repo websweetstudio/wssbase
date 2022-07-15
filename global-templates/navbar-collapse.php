@@ -1,6 +1,6 @@
 <?php
 /**
- * Header Navbar (bootstrap5)
+ * Header Navbar
  *
  * @package sweetweb
  */
