@@ -9,8 +9,6 @@
 
 // Exit if accessed directly.
 defined( 'ABSPATH' ) || exit;
-
-$navbar_type       = get_theme_mod( 'sweetweb_navbar_type', 'collapse' );
 ?>
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
@@ -26,10 +24,5 @@ $navbar_type       = get_theme_mod( 'sweetweb_navbar_type', 'collapse' );
 <div class="site" id="page">
 
 	<!-- ******************* The Navbar Area ******************* -->
-	<header id="wrapper-navbar">
+	<?php do_action('sweetweb_header');	?>
 
-		<a class="skip-link sr-only sr-only-focusable" href="#content"><?php esc_html_e( 'Skip to content', 'sweetweb' ); ?></a>
-
-		<?php get_template_part( 'global-templates/navbar-'. $navbar_type); ?>
-
-	</header><!-- #wrapper-navbar end -->

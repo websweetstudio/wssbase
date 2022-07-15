@@ -2,16 +2,10 @@
 // To overwrite a Bootstrap variable you don´t have to touch the Bootstrap folder.
 // Just copy a variable from src/sass/bootstrap4/_variables.scss, paste it here and edit the value.
 
-$spacer: 1rem !default;
-$gray-200: #e9ecef !default;
-$gray-800: #343a40 !default;
 $link-decoration: none; // remove text decoration link
 $purple: #5533ff; // Thats a sample how you could change a BootStrap variable.
 $blue: #2b5497; // Thats a sample how you could change a BootStrap variable.
 $primary: $blue;  // Once we've changed the value, we'll also make it the primary brand color.
 $nav-link-font-weight: medium; // Replace bootstrap's default font weight.
 $navbar-nav-link-padding-x: 1.5rem !default; // padding-left and padding-right
-$dropdown-item-padding-y: $spacer * .5 !default; // padding-top and padding-bottom
-$dropdown-link-color: $gray-800 !default; // color
-$dropdown-link-hover-color: shade-color($dropdown-link-color, 10%) !default; // color:hover
-$dropdown-link-hover-bg: $gray-200 !default;    // background-color:hover
+$dropdown-item-padding-y: 1rem !default; // padding-top and padding-bottom

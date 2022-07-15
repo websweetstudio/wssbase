@@ -109,6 +109,11 @@ if ( ! function_exists( 'sweetweb_setup' ) ) {
 		// Add support for responsive embedded content.
 		add_theme_support( 'responsive-embeds' );
 
+		// Add theme support to beaver builder
+		add_theme_support( 'fl-theme-builder-headers' );
+		add_theme_support( 'fl-theme-builder-footers' );
+		add_theme_support( 'fl-theme-builder-parts' );
+
 		// Check and setup theme default settings.
 		sweetweb_setup_theme_default_settings();
 

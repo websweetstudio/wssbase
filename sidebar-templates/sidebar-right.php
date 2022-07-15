@@ -21,6 +21,9 @@ $sidebar_pos = get_theme_mod( 'sweetweb_sidebar_position' );
 <?php else : ?>
 	<div class="col-md-4 widget-area" id="right-sidebar">
 <?php endif; ?>
-<?php dynamic_sidebar( 'right-sidebar' ); ?>
+<?php 
+do_action( 'sweetweb_right_sidebar' );
+dynamic_sidebar( 'right-sidebar' );
+?>
 
 </div><!-- #right-sidebar -->

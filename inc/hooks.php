@@ -55,3 +55,63 @@ if ( ! function_exists( 'sweetweb_add_site_info' ) ) {
 
 	}
 }
+
+add_action( 'sweetweb_header', 'sweetweb_add_navbar' );	// Add navbar.
+if( ! function_exists( 'sweetweb_add_navbar' ) ) {
+	/**
+	 * Add navbar.
+	 */
+	function sweetweb_add_navbar() {
+		$navbar_type       = get_theme_mod( 'sweetweb_navbar_type', 'collapse' );
+		?>
+
+		<header id="wrapper-navbar">
+
+			<a class="skip-link sr-only sr-only-focusable" href="#content"><?php esc_html_e( 'Skip to content', 'sweetweb' ); ?></a>
+
+			<?php get_template_part( 'global-templates/navbar-'. $navbar_type); ?>
+
+		</header><!-- #wrapper-navbar end -->
+
+		<?php
+	}
+}
+
+add_action( 'sweetweb_footer', 'sweetweb_add_footer' );	// Add footer.
+if( ! function_exists( 'sweetweb_add_footer' ) ) {
+	/**
+	 * Add footer.
+	 */
+	function sweetweb_add_footer() {
+		$container = get_theme_mod( 'sweetweb_container_type' );
+
+		?>
+		
+		<div class="wrapper bg-light" id="wrapper-footer">
+
+		<div class="<?php echo esc_attr( $container ); ?>">
+
+			<div class="row">
+
+				<div class="col-md-12">
+
+					<footer class="site-footer" id="colophon">
+
+						<div class="site-info">
+
+							<?php sweetweb_site_info(); ?>
+
+						</div><!-- .site-info -->
+
+					</footer><!-- #colophon -->
+
+				</div><!--col end -->
+
+			</div><!-- row end -->
+
+		</div><!-- container end -->
+
+		</div><!-- wrapper end -->
+		<?php
+	}
+}
