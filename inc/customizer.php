@@ -131,7 +131,7 @@ if ( ! function_exists( 'sweetweb_theme_customize_register' ) ) {
 		$wp_customize->add_setting(
 			'sweetweb_navbar_type',
 			array(
-				'default'           => 'collapse',
+				'default'           => 'offcanvas',
 				'type'              => 'theme_mod',
 				'sanitize_callback' => 'sanitize_text_field',
 				'capability'        => 'edit_theme_options',
@@ -456,7 +456,7 @@ if ( ! function_exists( 'sweetweb_default_navbar_type' ) ) {
 	 * @return string
 	 */
 	function sweetweb_default_navbar_type( $current_mod ) {
-		return 'offcanvas';
+		return $current_mod;
 	}
 }
 add_filter( 'theme_mod_sweetweb_navbar_type', 'sweetweb_default_navbar_type', 20 );

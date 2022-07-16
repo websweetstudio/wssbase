@@ -46,7 +46,7 @@ if( ! function_exists( 'sweetweb_add_navbar' ) ) {
 	 * Add navbar.
 	 */
 	function sweetweb_add_navbar() {
-		$navbar_type       = get_theme_mod( 'sweetweb_navbar_type', 'collapse' );
+		$navbar_type       = get_theme_mod( 'sweetweb_navbar_type', 'offcanvas' );
 		$header_position   = get_theme_mod( 'sweetweb_header_position', 'position-relative' );
 		?>
 

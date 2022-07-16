@@ -3,10 +3,27 @@
 :focus {
     outline: none;
 }
-// dropdown menu hover in desktop screen
-@media (min-width: 992px) {
-    .dropdown:hover .dropdown-menu {
-        display: block;
+
+// Navbar
+.navbar {
+    .navbar-toggler {
+        @extend .border-0;
+        &:focus {
+            @extend .shadow-none;
+        }
+    }
+    .dropdown {
+        &:hover .dropdown-menu {
+            @extend .d-md-block;
+        }
+        .dropdown-menu {
+            @extend .border-0;
+            @extend .rounded-0;
+
+            @include media-breakpoint-up(md) {
+                box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+            }
+        }
     }
 }
 
@@ -17,41 +34,53 @@
     h1,
     h2,
     h3 {
-        font-size: 18px;
+        @extend .fs-4;
         @extend .fw-semibold;
     }
 } 
 
 // content style
-.site-main {
-    .entry-header {
-        .entry-title {
-            font-size: 24px;
-            font-weight: 600;
-        }
-    }
-    .page-header {
-        .page-title {
-            font-size: 24px;
-            font-weight: 600;
-        }
-    }
-    .comments-area {
-        .comment-reply-title,
-        .comments-title {
-            font-size: 24px;
-            font-weight: 600;
-        }
-    }
+@mixin all-title-font {
+    @extend .fs-4;
+    @extend .fw-semibold;
 }
 
-input,
-textarea {
-    @extend .form-control;
-    @extend .rounded-0;
-}
+
+.button,
 .wp-block-search__button {
     @extend .btn;
     @extend .btn-primary;
     @extend .rounded-0;
+}
+.wp-block-search__input {
+    @extend .form-control;
+    @extend .rounded-0;
+}
+.entry-header {
+    .entry-title {
+        @include all-title-font;
+    }
+}
+.page-header {
+    .page-title {
+        @include all-title-font;
+    }
+}
+.comments-area {
+    .comment-reply-title,
+    .comments-title {
+        @include all-title-font;
+    }
+    input[type="text"],
+    input[type="email"],
+    input[type="url"],
+    textarea {
+        @extend .form-control;
+        @extend .rounded-0;
+    }
+    input[type="submit"] {
+        @extend .btn;
+        @extend .btn-primary;
+        @extend .rounded-0;
+    }
 }

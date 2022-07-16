@@ -29,7 +29,7 @@ if ( ! function_exists( 'sweetweb_bootstrap_comment_form_fields' ) ) {
 	function sweetweb_bootstrap_comment_form_fields( $fields ) {
 
 		$replace = array(
-			'<p class="' => '<div class="form-group mb-3',
+			'<p class="' => '<div class="form-group mb-3 ',
 			'<input'     => '<input class="form-control" ',
 			'</p>'       => '</div>',
 		);

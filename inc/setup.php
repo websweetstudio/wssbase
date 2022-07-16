@@ -121,10 +121,10 @@ if ( ! function_exists( 'sweetweb_setup' ) ) {
 		add_theme_support( "html5", array( "search-form", "comment-form", "comment-list", "gallery", "caption" ) );
 
 		// Add theme support to custom header
-		add_theme_support( "custom-header", array() );
+		add_theme_support( "custom-header", array( 'header-text' => false ) );
 
 		// Add theme support to custom background
-		add_theme_support( "custom-background", array() );
+		add_theme_support( "custom-background", array( 'default-color' => 'ffffff', 'default-image' => '' ) );
 
 		// Check and setup theme default settings.
 		sweetweb_setup_theme_default_settings();
