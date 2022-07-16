@@ -2,7 +2,7 @@
 /**
  * Rest in peace
  *
- * @package sweetweb
+ * @package Sweetweb
  */
 
 // Exit if accessed directly.

@@ -2,7 +2,7 @@
 /**
  * Sidebar setup for footer full
  *
- * @package sweetweb
+ * @package Sweetweb
  */
 
 // Exit if accessed directly.

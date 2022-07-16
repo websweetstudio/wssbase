@@ -2,7 +2,7 @@
 /**
  * Static hero sidebar setup
  *
- * @package sweetweb
+ * @package Sweetweb
  */
 
 // Exit if accessed directly.

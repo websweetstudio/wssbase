@@ -2,7 +2,7 @@
 /**
  * The sidebar containing the main widget area
  *
- * @package sweetweb
+ * @package Sweetweb
  */
 
 // Exit if accessed directly.

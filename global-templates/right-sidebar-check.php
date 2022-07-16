@@ -2,7 +2,7 @@
 /**
  * Right sidebar check
  *
- * @package sweetweb
+ * @package Sweetweb
  */
 
 // Exit if accessed directly.

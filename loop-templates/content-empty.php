@@ -2,7 +2,7 @@
 /**
  * Content empty partial template
  *
- * @package sweetweb
+ * @package Sweetweb
  */
 
 // Exit if accessed directly.

@@ -2,7 +2,7 @@
 /**
  * Declaring widgets
  *
- * @package sweetweb
+ * @package Sweetweb
  */
 
 // Exit if accessed directly.

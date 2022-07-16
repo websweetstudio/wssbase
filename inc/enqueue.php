@@ -2,7 +2,7 @@
 /**
  * Sweetweb enqueue scripts
  *
- * @package sweetweb
+ * @package Sweetweb
  */
 
 // Exit if accessed directly.

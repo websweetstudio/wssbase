@@ -2,7 +2,7 @@
 /**
  * Check and setup theme's default settings
  *
- * @package sweetweb
+ * @package Sweetweb
  */
 
 // Exit if accessed directly.

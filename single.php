@@ -2,7 +2,7 @@
 /**
  * The template for displaying all single posts
  *
- * @package sweetweb
+ * @package Sweetweb
  */
 
 // Exit if accessed directly.

@@ -2,7 +2,7 @@
 /**
  * The template for displaying search forms
  *
- * @package sweetweb
+ * @package Sweetweb
  */
 
 // Exit if accessed directly.

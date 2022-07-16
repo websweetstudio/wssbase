@@ -2,7 +2,7 @@
 /**
  * Add WooCommerce support
  *
- * @package sweetweb
+ * @package Sweetweb
  */
 
 // Exit if accessed directly.

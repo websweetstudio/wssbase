@@ -2,7 +2,7 @@
 /**
  * Sweetweb functions and definitions
  *
- * @package sweetweb
+ * @package Sweetweb
  */
 
 // Exit if accessed directly.

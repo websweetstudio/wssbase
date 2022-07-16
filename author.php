@@ -4,7 +4,7 @@
  *
  * Learn more: https://codex.wordpress.org/Author_Templates
  *
- * @package sweetweb
+ * @package Sweetweb
  */
 
 // Exit if accessed directly.

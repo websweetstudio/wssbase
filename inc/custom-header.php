@@ -2,7 +2,7 @@
 /**
  * Custom header setup
  *
- * @package sweetweb
+ * @package Sweetweb
  */
 
 // Exit if accessed directly.

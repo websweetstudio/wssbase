@@ -2,7 +2,7 @@
 /**
  * Sweetweb modify editor
  *
- * @package sweetweb
+ * @package Sweetweb
  */
 
 // Exit if accessed directly.

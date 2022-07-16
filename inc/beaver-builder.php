@@ -2,7 +2,7 @@
 /**
  * Sweetweb Beaver Builder functions.
  * 
- * @package sweetweb
+ * @package Sweetweb
  */
 
  // Exit if accessed directly.
