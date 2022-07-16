@@ -113,6 +113,18 @@ if ( ! function_exists( 'sweetweb_setup' ) ) {
 		add_theme_support( 'fl-theme-builder-headers' );
 		add_theme_support( 'fl-theme-builder-footers' );
 		add_theme_support( 'fl-theme-builder-parts' );
+		
+		// Add theme support to block styles
+		add_theme_support( "wp-block-styles" );
+
+		// Add theme support to html5
+		add_theme_support( "html5", array( "search-form", "comment-form", "comment-list", "gallery", "caption" ) );
+
+		// Add theme support to custom header
+		add_theme_support( "custom-header", array() );
+
+		// Add theme support to custom background
+		add_theme_support( "custom-background", array() );
 
 		// Check and setup theme default settings.
 		sweetweb_setup_theme_default_settings();
