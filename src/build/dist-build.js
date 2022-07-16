@@ -36,4 +36,4 @@ async function copyDir(src, dest) {
     }
 }
 
-copyDir('./', './dist');
+copyDir('./', './dist/sweetweb');
