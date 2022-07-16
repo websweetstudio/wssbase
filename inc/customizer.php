@@ -22,7 +22,6 @@ if ( ! function_exists( 'sweetweb_customize_register' ) ) {
 	function sweetweb_customize_register( $wp_customize ) {
 		$wp_customize->get_setting( 'blogname' )->transport         = 'postMessage';
 		$wp_customize->get_setting( 'blogdescription' )->transport  = 'postMessage';
-		$wp_customize->get_setting( 'header_textcolor' )->transport = 'postMessage';
 	}
 }
 add_action( 'customize_register', 'sweetweb_customize_register' );
@@ -227,7 +226,7 @@ if ( ! function_exists( 'sweetweb_theme_customize_register' ) ) {
 		$wp_customize->add_section(
 			'sweetweb_google_fonts_section',
 			array(
-				'title'       => __( 'Setting Typography', 'sweetweb' ),
+				'title'       => __( 'Typography Setting', 'sweetweb' ),
 				'capability'  => 'edit_theme_options',
 				'description' => __( 'Container width and sidebar defaults', 'sweetweb' ),
 				'priority'    => apply_filters( 'sweetweb_google_fonts_section_priority', 160 ),
