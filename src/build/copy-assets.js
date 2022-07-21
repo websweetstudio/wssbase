@@ -19,3 +19,8 @@ async function copyDir(src, dest) {
 copyDir('./node_modules/bootstrap/scss', './src/sass/assets/bootstrap');
 // Copy all Font Awesome SCSS files.
 copyDir('./node_modules/font-awesome/scss', './src/sass/assets/fontawesome');
+// Copy glightbox postcss directory
+copyDir('./node_modules/glightbox/src/postcss', './src/sass/assets/glightbox').then(() => {
+    // rename glightbox.css to glightbox.scss
+    fs.rename('./src/sass/assets/glightbox/glightbox.css', './src/sass/assets/glightbox/glightbox.scss');
+});
