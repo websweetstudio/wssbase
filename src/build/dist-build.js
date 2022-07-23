@@ -1,5 +1,7 @@
 const { promises: fs } = require("fs")
+const zipdir = require('zip-dir')
 const path = require("path")
+
 
 async function copyDir(src, dest) {
     await fs.mkdir(dest, { recursive: true });
@@ -8,6 +10,7 @@ async function copyDir(src, dest) {
 		'node_modules',
 		'dist',
 		'src',
+		'.git',
 		'.github',
 		'.browserslistrc',
 		'.editorconfig',
@@ -36,4 +39,7 @@ async function copyDir(src, dest) {
     }
 }
 
-copyDir('./', './dist/sweetweb');
+copyDir('./', './dist/sweetweb').then (() => {
+	zipdir('./dist/sweetweb', { saveTo: './dist/sweetweb.zip' });
+	console.log('Zip file created');
+});
