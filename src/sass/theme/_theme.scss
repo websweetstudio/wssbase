@@ -52,15 +52,17 @@
     @extend .fs-4;
     @extend .fw-semibold;
 }
-
-table:not(.table) {
+table:not(.table, .shop_table) {
     @extend .table;
     @extend .table-striped;
     @extend .table-bordered;
     @extend .table-hover;
     @extend .table-sm;
 }
-
+.entry-footer {
+    @extend .text-muted;
+    @extend .fs-6;
+}
 .button,
 .wp-block-search__button {
     @extend .btn;

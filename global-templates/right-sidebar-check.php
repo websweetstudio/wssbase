@@ -13,7 +13,7 @@ defined( 'ABSPATH' ) || exit;
 
 <?php
 $sidebar_pos = get_theme_mod( 'sweetweb_sidebar_position' );
-
-if ( 'right' === $sidebar_pos || 'both' === $sidebar_pos ) {
+// disable sidebar in woocommerce pages
+if ( ('right' === $sidebar_pos || 'both' === $sidebar_pos) && !(class_exists( 'WooCommerce' ) && is_woocommerce()) ) {
 	get_template_part( 'sidebar-templates/sidebar', 'right' );
 }

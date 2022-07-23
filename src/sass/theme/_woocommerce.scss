@@ -79,41 +79,62 @@ figure.woocommerce-product-gallery__wrapper {
 
 // Woocommerce additional css
 .woocommerce {
+	h2,
+	h3 {
+		@extend .fs-4;
+		@extend .fw-semibold;
+	}
 	input,
-	.select2-selection__rendered {
+	textarea {
 		@extend .form-control;
 		@extend .rounded-0;
 	}
-}
-.woocommerce-ordering {
-	.orderby {
-		@extend .form-control;
-		@extend .rounded-0;
+	.selection .select2-selection--single {
+		@extend .border-0;
+		.select2-selection__rendered {
+			.select2-selection__arrow {
+				@extend .my-1;
+				@extend .py-2;
+			}
+			.select2-selection__clear {
+				@extend .pe-2;
+			}
+			@extend .form-control;
+			@extend .rounded-0;
+		}
 	}
-
-}
-.cart {
-	.input-text {
-		@extend .form-control;
-		@extend .rounded-0;
-	}
-	input[name="add-to-cart"] {
+	button,
+	.wc-proceed-to-checkout .btn {
 		@extend .btn;
 		@extend .btn-primary;
 		@extend .rounded-0;
 	}
-}
-
-.single_add_to_cart_button {
-	@extend .btn;
-	@extend .btn-primary;
-	@extend .rounded-0;
-	@extend .text-light;
-}
-.woocommerce-tabs li {
-	@extend .rounded-0;
-}
-.cart_totals h2 {
-	@extend .fs-4;
-	@extend .fw-semibold;
+	.single_add_to_cart_button {
+		@extend .btn;
+		@extend .btn-sm;
+		@extend .btn-primary;
+		@extend .rounded-0;
+		@extend .text-light;
+	}
+	span.onsale {
+		@extend .p-0;
+	}
+	.woocommerce-ordering {
+		.orderby {
+			@extend .form-control;
+			@extend .rounded-0;
+		}
+	
+	}
+	.cart {
+		.input-text {
+			@extend .form-control;
+			@extend .rounded-0;
+		}
+	}
+	.product {
+		.woocommerce-tabs li {
+			@extend .rounded-0;
+		}
+	}
 }
