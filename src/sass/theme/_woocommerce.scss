@@ -75,3 +75,46 @@ figure.woocommerce-product-gallery__wrapper {
 .woocommerce-checkout .cart-collaterals .cart_totals .discount td {
 	color: $green;
 }
+
+
+// Woocommerce additional css
+.woocommerce {
+	input,
+	select,
+	.select2-selection__rendered {
+		@extend .form-control;
+		@extend .rounded-0;
+	}
+}
+.woocommerce-ordering {
+	.orderby {
+		@extend .form-control;
+		@extend .rounded-0;
+	}
+
+}
+.cart {
+	.input-text {
+		@extend .form-control;
+		@extend .rounded-0;
+	}
+	input[name="add-to-cart"] {
+		@extend .btn;
+		@extend .btn-primary;
+		@extend .rounded-0;
+	}
+}
+
+.single_add_to_cart_button {
+	@extend .btn;
+	@extend .btn-primary;
+	@extend .rounded-0;
+	@extend .text-light;
+}
+.woocommerce-tabs li {
+	@extend .rounded-0;
+}
+.cart_totals h2 {
+	@extend .fs-4;
+	@extend .fw-semibold;
+}

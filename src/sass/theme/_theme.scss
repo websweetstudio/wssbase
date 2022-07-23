@@ -2,6 +2,7 @@
 
 :focus {
     outline: none;
+    @extend .shadow-none;
 }
 
 // Navbar
@@ -16,9 +17,16 @@
         &:hover .dropdown-menu {
             @extend .d-md-block;
         }
+        .dropdown-menu.show {
+            @extend .mt-0;
+            @include media-breakpoint-up(md) {
+                display: none;
+            }
+        }
         .dropdown-menu {
             @extend .border-0;
             @extend .rounded-0;
+            @extend .mt-0;
 
             @include media-breakpoint-up(md) {
                 box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
@@ -45,6 +53,13 @@
     @extend .fw-semibold;
 }
 
+table:not(.table) {
+    @extend .table;
+    @extend .table-striped;
+    @extend .table-bordered;
+    @extend .table-hover;
+    @extend .table-sm;
+}
 
 .button,
 .wp-block-search__button {
