@@ -84,10 +84,24 @@ figure.woocommerce-product-gallery__wrapper {
 		@extend .fs-4;
 		@extend .fw-semibold;
 	}
-	input,
+	input[type="text"],
+	input[type="email"],
+	input[type="password"],
+	input[type="search"],
 	textarea {
 		@extend .form-control;
 		@extend .rounded-0;
+	}
+	.add-to-cart-container {
+		@extend .position-relative;
+	}
+	.added_to_cart {
+		@extend .position-absolute;
+		@extend .top-0;
+		@extend .end-0;
+		@extend .translate-middle;
+		@extend .badge;
+		@extend .bg-success;
 	}
 	.selection .select2-selection--single {
 		@extend .border-0;
