@@ -24,7 +24,8 @@ async function copyDir(src, dest) {
 		'composer.lock',
 		'package.json',
 		'package-lock.json',
-		'phpcs.xml.dist'
+		'phpcs.xml.dist',
+		'.vscode'
 	];
 
     for (let entry of entries) {
