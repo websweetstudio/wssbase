@@ -35,20 +35,3 @@ echo apply_filters(
 	$product,
 	$args
 );
-
-// Filter call.
-$value = apply_filters( 'hook', $value, $arg2, $arg3 );
-
-// Accepting zero/one arguments.
-function example_callback() {
-    ...
-    return 'some value';
-}
-add_filter( 'hook', 'example_callback' ); // Where $priority is default 10, $accepted_args is default 1.
-
-// Accepting two arguments (three possible).
-function example_callback( $value, $arg2 ) {
-    ...
-    return $maybe_modified_value;
-}
-add_filter( 'hook', 'example_callback', 10, 2 ); // Where $priority is 10, $accepted_args is 2.
