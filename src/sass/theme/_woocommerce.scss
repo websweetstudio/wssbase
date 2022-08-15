@@ -88,7 +88,8 @@ figure.woocommerce-product-gallery__wrapper {
 	input[type="email"],
 	input[type="password"],
 	input[type="search"],
-	textarea {
+	textarea,
+	.variations select {
 		@extend .form-control;
 		@extend .rounded-0;
 	}
@@ -118,6 +119,7 @@ figure.woocommerce-product-gallery__wrapper {
 		}
 	}
 	button,
+	.single_add_to_cart_button,
 	.wc-proceed-to-checkout .btn {
 		@extend .btn;
 		@extend .btn-primary;
