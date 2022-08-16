@@ -84,11 +84,18 @@ figure.woocommerce-product-gallery__wrapper {
 		@extend .fs-4;
 		@extend .fw-semibold;
 	}
+	.woocommerce-loop-product__title {
+		@extend .fs-5;
+		@extend .text-truncate;
+	}
+
 	input[type="text"],
 	input[type="email"],
 	input[type="password"],
 	input[type="search"],
 	textarea,
+	.wpfMainWrapper select,
+	.wpfMainWrapper input,
 	.variations select {
 		@extend .form-control;
 		@extend .rounded-0;

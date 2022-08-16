@@ -20,17 +20,17 @@ defined( 'ABSPATH' ) || exit;
 		);
 		?>
 
-		<?php if ( 'post' === get_post_type() ) : ?>
-
-			<div class="entry-meta">
-				<?php sweetweb_posted_on(); ?>
-			</div><!-- .entry-meta -->
-
-		<?php endif; ?>
-
 	</header><!-- .entry-header -->
 
-	<?php echo get_the_post_thumbnail( $post->ID, 'large' ); ?>
+	<a href="<?php the_permalink(); ?>">
+		<?php the_post_thumbnail('large', ['class' => 'img-fluid mb-3 w-100', 'alt' => the_title_attribute(['echo' => false])]); ?>
+	</a>
+	
+	<?php if ( 'post' === get_post_type() ) : ?>
+	<div class="entry-meta text-muted">
+		<?php sweetweb_posted_on(); ?>
+	</div><!-- .entry-meta -->
+	<?php endif; ?>
 
 	<div class="entry-content">
 

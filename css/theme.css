@@ -2215,6 +2215,8 @@ progress {
 .woocommerce input[type=password],
 .woocommerce input[type=search],
 .woocommerce textarea,
+.woocommerce .wpfMainWrapper select,
+.woocommerce .wpfMainWrapper input,
 .woocommerce .variations select, .wpcf7 .wpcf7-validation-errors, .wpcf7 input[type=text],
 .wpcf7 input[type=search],
 .wpcf7 input[type=url],
@@ -2259,6 +2261,8 @@ progress {
 .woocommerce input[type=password],
 .woocommerce input[type=search],
 .woocommerce textarea,
+.woocommerce .wpfMainWrapper select,
+.woocommerce .wpfMainWrapper input,
 .woocommerce .variations select, .wpcf7 .wpcf7-validation-errors, .wpcf7 input[type=text],
 .wpcf7 input[type=search],
 .wpcf7 input[type=url],
@@ -2289,6 +2293,8 @@ progress {
 .woocommerce input[type=file][type=password],
 .woocommerce input[type=file][type=search],
 .woocommerce textarea[type=file],
+.woocommerce .wpfMainWrapper select[type=file],
+.woocommerce .wpfMainWrapper input[type=file],
 .woocommerce .variations select[type=file], .wpcf7 [type=file].wpcf7-validation-errors,
 .wpcf7 input[type=file],
 .wpcf7 select[type=file],
@@ -2304,6 +2310,8 @@ progress {
 .woocommerce input[type=file][type=password]:not(:disabled):not([readonly]),
 .woocommerce input[type=file][type=search]:not(:disabled):not([readonly]),
 .woocommerce textarea[type=file]:not(:disabled):not([readonly]),
+.woocommerce .wpfMainWrapper select[type=file]:not(:disabled):not([readonly]),
+.woocommerce .wpfMainWrapper input[type=file]:not(:disabled):not([readonly]),
 .woocommerce .variations select[type=file]:not(:disabled):not([readonly]), .wpcf7 [type=file].wpcf7-validation-errors:not(:disabled):not([readonly]),
 .wpcf7 input[type=file]:not(:disabled):not([readonly]),
 .wpcf7 select[type=file]:not(:disabled):not([readonly]),
@@ -2319,6 +2327,8 @@ progress {
 .woocommerce input[type=password]:focus,
 .woocommerce input[type=search]:focus,
 .woocommerce textarea:focus,
+.woocommerce .wpfMainWrapper select:focus,
+.woocommerce .wpfMainWrapper input:focus,
 .woocommerce .variations select:focus, .wpcf7 .wpcf7-validation-errors:focus, .wpcf7 input[type=text]:focus,
 .wpcf7 input[type=search]:focus,
 .wpcf7 input[type=url]:focus,
@@ -2352,6 +2362,8 @@ progress {
 .woocommerce input[type=password]::-webkit-date-and-time-value,
 .woocommerce input[type=search]::-webkit-date-and-time-value,
 .woocommerce textarea::-webkit-date-and-time-value,
+.woocommerce .wpfMainWrapper select::-webkit-date-and-time-value,
+.woocommerce .wpfMainWrapper input::-webkit-date-and-time-value,
 .woocommerce .variations select::-webkit-date-and-time-value, .wpcf7 .wpcf7-validation-errors::-webkit-date-and-time-value, .wpcf7 input[type=text]::-webkit-date-and-time-value,
 .wpcf7 input[type=search]::-webkit-date-and-time-value,
 .wpcf7 input[type=url]::-webkit-date-and-time-value,
@@ -2373,11 +2385,11 @@ progress {
 .widget_archive select::-webkit-date-and-time-value {
   height: 1.5em;
 }
-.form-control::-moz-placeholder, .comments-area input[type=text]::-moz-placeholder, .comments-area input[type=email]::-moz-placeholder, .comments-area input[type=url]::-moz-placeholder, .comments-area textarea::-moz-placeholder, .wp-block-search__input::-moz-placeholder, .woocommerce .cart .input-text::-moz-placeholder, .woocommerce .woocommerce-ordering .orderby::-moz-placeholder, .woocommerce .selection .select2-selection--single .select2-selection__rendered::-moz-placeholder, .woocommerce input[type=text]::-moz-placeholder, .woocommerce input[type=email]::-moz-placeholder, .woocommerce input[type=password]::-moz-placeholder, .woocommerce input[type=search]::-moz-placeholder, .woocommerce textarea::-moz-placeholder, .woocommerce .variations select::-moz-placeholder, .wpcf7 .wpcf7-validation-errors::-moz-placeholder, .wpcf7 input[type=text]::-moz-placeholder, .wpcf7 input[type=search]::-moz-placeholder, .wpcf7 input[type=url]::-moz-placeholder, .wpcf7 input[type=tel]::-moz-placeholder, .wpcf7 input[type=number]::-moz-placeholder, .wpcf7 input[type=range]::-moz-placeholder, .wpcf7 input[type=date]::-moz-placeholder, .wpcf7 input[type=month]::-moz-placeholder, .wpcf7 input[type=week]::-moz-placeholder, .wpcf7 input[type=time]::-moz-placeholder, .wpcf7 input[type=datetime]::-moz-placeholder, .wpcf7 input[type=datetime-local]::-moz-placeholder, .wpcf7 input[type=color]::-moz-placeholder, .wpcf7 input[type=email]::-moz-placeholder, .wpcf7 input[type=file]::-moz-placeholder, .wpcf7 input[type=submit]::-moz-placeholder, .wpcf7 select::-moz-placeholder, .wpcf7 textarea::-moz-placeholder, .widget_categories select::-moz-placeholder, .widget_archive select::-moz-placeholder {
+.form-control::-moz-placeholder, .comments-area input[type=text]::-moz-placeholder, .comments-area input[type=email]::-moz-placeholder, .comments-area input[type=url]::-moz-placeholder, .comments-area textarea::-moz-placeholder, .wp-block-search__input::-moz-placeholder, .woocommerce .cart .input-text::-moz-placeholder, .woocommerce .woocommerce-ordering .orderby::-moz-placeholder, .woocommerce .selection .select2-selection--single .select2-selection__rendered::-moz-placeholder, .woocommerce input[type=text]::-moz-placeholder, .woocommerce input[type=email]::-moz-placeholder, .woocommerce input[type=password]::-moz-placeholder, .woocommerce input[type=search]::-moz-placeholder, .woocommerce textarea::-moz-placeholder, .woocommerce .wpfMainWrapper select::-moz-placeholder, .woocommerce .wpfMainWrapper input::-moz-placeholder, .woocommerce .variations select::-moz-placeholder, .wpcf7 .wpcf7-validation-errors::-moz-placeholder, .wpcf7 input[type=text]::-moz-placeholder, .wpcf7 input[type=search]::-moz-placeholder, .wpcf7 input[type=url]::-moz-placeholder, .wpcf7 input[type=tel]::-moz-placeholder, .wpcf7 input[type=number]::-moz-placeholder, .wpcf7 input[type=range]::-moz-placeholder, .wpcf7 input[type=date]::-moz-placeholder, .wpcf7 input[type=month]::-moz-placeholder, .wpcf7 input[type=week]::-moz-placeholder, .wpcf7 input[type=time]::-moz-placeholder, .wpcf7 input[type=datetime]::-moz-placeholder, .wpcf7 input[type=datetime-local]::-moz-placeholder, .wpcf7 input[type=color]::-moz-placeholder, .wpcf7 input[type=email]::-moz-placeholder, .wpcf7 input[type=file]::-moz-placeholder, .wpcf7 input[type=submit]::-moz-placeholder, .wpcf7 select::-moz-placeholder, .wpcf7 textarea::-moz-placeholder, .widget_categories select::-moz-placeholder, .widget_archive select::-moz-placeholder {
   color: #6c757d;
   opacity: 1;
 }
-.form-control:-ms-input-placeholder, .comments-area input[type=text]:-ms-input-placeholder, .comments-area input[type=email]:-ms-input-placeholder, .comments-area input[type=url]:-ms-input-placeholder, .comments-area textarea:-ms-input-placeholder, .wp-block-search__input:-ms-input-placeholder, .woocommerce .cart .input-text:-ms-input-placeholder, .woocommerce .woocommerce-ordering .orderby:-ms-input-placeholder, .woocommerce .selection .select2-selection--single .select2-selection__rendered:-ms-input-placeholder, .woocommerce input[type=text]:-ms-input-placeholder, .woocommerce input[type=email]:-ms-input-placeholder, .woocommerce input[type=password]:-ms-input-placeholder, .woocommerce input[type=search]:-ms-input-placeholder, .woocommerce textarea:-ms-input-placeholder, .woocommerce .variations select:-ms-input-placeholder, .wpcf7 .wpcf7-validation-errors:-ms-input-placeholder, .wpcf7 input[type=text]:-ms-input-placeholder, .wpcf7 input[type=search]:-ms-input-placeholder, .wpcf7 input[type=url]:-ms-input-placeholder, .wpcf7 input[type=tel]:-ms-input-placeholder, .wpcf7 input[type=number]:-ms-input-placeholder, .wpcf7 input[type=range]:-ms-input-placeholder, .wpcf7 input[type=date]:-ms-input-placeholder, .wpcf7 input[type=month]:-ms-input-placeholder, .wpcf7 input[type=week]:-ms-input-placeholder, .wpcf7 input[type=time]:-ms-input-placeholder, .wpcf7 input[type=datetime]:-ms-input-placeholder, .wpcf7 input[type=datetime-local]:-ms-input-placeholder, .wpcf7 input[type=color]:-ms-input-placeholder, .wpcf7 input[type=email]:-ms-input-placeholder, .wpcf7 input[type=file]:-ms-input-placeholder, .wpcf7 input[type=submit]:-ms-input-placeholder, .wpcf7 select:-ms-input-placeholder, .wpcf7 textarea:-ms-input-placeholder, .widget_categories select:-ms-input-placeholder, .widget_archive select:-ms-input-placeholder {
+.form-control:-ms-input-placeholder, .comments-area input[type=text]:-ms-input-placeholder, .comments-area input[type=email]:-ms-input-placeholder, .comments-area input[type=url]:-ms-input-placeholder, .comments-area textarea:-ms-input-placeholder, .wp-block-search__input:-ms-input-placeholder, .woocommerce .cart .input-text:-ms-input-placeholder, .woocommerce .woocommerce-ordering .orderby:-ms-input-placeholder, .woocommerce .selection .select2-selection--single .select2-selection__rendered:-ms-input-placeholder, .woocommerce input[type=text]:-ms-input-placeholder, .woocommerce input[type=email]:-ms-input-placeholder, .woocommerce input[type=password]:-ms-input-placeholder, .woocommerce input[type=search]:-ms-input-placeholder, .woocommerce textarea:-ms-input-placeholder, .woocommerce .wpfMainWrapper select:-ms-input-placeholder, .woocommerce .wpfMainWrapper input:-ms-input-placeholder, .woocommerce .variations select:-ms-input-placeholder, .wpcf7 .wpcf7-validation-errors:-ms-input-placeholder, .wpcf7 input[type=text]:-ms-input-placeholder, .wpcf7 input[type=search]:-ms-input-placeholder, .wpcf7 input[type=url]:-ms-input-placeholder, .wpcf7 input[type=tel]:-ms-input-placeholder, .wpcf7 input[type=number]:-ms-input-placeholder, .wpcf7 input[type=range]:-ms-input-placeholder, .wpcf7 input[type=date]:-ms-input-placeholder, .wpcf7 input[type=month]:-ms-input-placeholder, .wpcf7 input[type=week]:-ms-input-placeholder, .wpcf7 input[type=time]:-ms-input-placeholder, .wpcf7 input[type=datetime]:-ms-input-placeholder, .wpcf7 input[type=datetime-local]:-ms-input-placeholder, .wpcf7 input[type=color]:-ms-input-placeholder, .wpcf7 input[type=email]:-ms-input-placeholder, .wpcf7 input[type=file]:-ms-input-placeholder, .wpcf7 input[type=submit]:-ms-input-placeholder, .wpcf7 select:-ms-input-placeholder, .wpcf7 textarea:-ms-input-placeholder, .widget_categories select:-ms-input-placeholder, .widget_archive select:-ms-input-placeholder {
   color: #6c757d;
   opacity: 1;
 }
@@ -2389,6 +2401,8 @@ progress {
 .woocommerce input[type=password]::placeholder,
 .woocommerce input[type=search]::placeholder,
 .woocommerce textarea::placeholder,
+.woocommerce .wpfMainWrapper select::placeholder,
+.woocommerce .wpfMainWrapper input::placeholder,
 .woocommerce .variations select::placeholder, .wpcf7 .wpcf7-validation-errors::placeholder, .wpcf7 input[type=text]::placeholder,
 .wpcf7 input[type=search]::placeholder,
 .wpcf7 input[type=url]::placeholder,
@@ -2419,6 +2433,8 @@ progress {
 .woocommerce input[type=password]:disabled,
 .woocommerce input[type=search]:disabled,
 .woocommerce textarea:disabled,
+.woocommerce .wpfMainWrapper select:disabled,
+.woocommerce .wpfMainWrapper input:disabled,
 .woocommerce .variations select:disabled, .wpcf7 .wpcf7-validation-errors:disabled, .wpcf7 input[type=text]:disabled,
 .wpcf7 input[type=search]:disabled,
 .wpcf7 input[type=url]:disabled,
@@ -2445,6 +2461,8 @@ progress {
 .woocommerce input[readonly][type=password],
 .woocommerce input[readonly][type=search],
 .woocommerce textarea[readonly],
+.woocommerce .wpfMainWrapper select[readonly],
+.woocommerce .wpfMainWrapper input[readonly],
 .woocommerce .variations select[readonly], .wpcf7 [readonly].wpcf7-validation-errors, .wpcf7 input[readonly][type=text],
 .wpcf7 input[readonly][type=search],
 .wpcf7 input[readonly][type=url],
@@ -2475,6 +2493,8 @@ progress {
 .woocommerce input[type=password]::file-selector-button,
 .woocommerce input[type=search]::file-selector-button,
 .woocommerce textarea::file-selector-button,
+.woocommerce .wpfMainWrapper select::file-selector-button,
+.woocommerce .wpfMainWrapper input::file-selector-button,
 .woocommerce .variations select::file-selector-button, .wpcf7 .wpcf7-validation-errors::file-selector-button, .wpcf7 input[type=text]::file-selector-button,
 .wpcf7 input[type=search]::file-selector-button,
 .wpcf7 input[type=url]::file-selector-button,
@@ -2517,6 +2537,8 @@ progress {
 .woocommerce input[type=password]::file-selector-button,
 .woocommerce input[type=search]::file-selector-button,
 .woocommerce textarea::file-selector-button,
+.woocommerce .wpfMainWrapper select::file-selector-button,
+.woocommerce .wpfMainWrapper input::file-selector-button,
 .woocommerce .variations select::file-selector-button, .wpcf7 .wpcf7-validation-errors::file-selector-button, .wpcf7 input[type=text]::file-selector-button,
 .wpcf7 input[type=search]::file-selector-button,
 .wpcf7 input[type=url]::file-selector-button,
@@ -2547,6 +2569,8 @@ progress {
 .woocommerce input[type=password]:hover:not(:disabled):not([readonly])::file-selector-button,
 .woocommerce input[type=search]:hover:not(:disabled):not([readonly])::file-selector-button,
 .woocommerce textarea:hover:not(:disabled):not([readonly])::file-selector-button,
+.woocommerce .wpfMainWrapper select:hover:not(:disabled):not([readonly])::file-selector-button,
+.woocommerce .wpfMainWrapper input:hover:not(:disabled):not([readonly])::file-selector-button,
 .woocommerce .variations select:hover:not(:disabled):not([readonly])::file-selector-button, .wpcf7 .wpcf7-validation-errors:hover:not(:disabled):not([readonly])::file-selector-button, .wpcf7 input[type=text]:hover:not(:disabled):not([readonly])::file-selector-button,
 .wpcf7 input[type=search]:hover:not(:disabled):not([readonly])::file-selector-button,
 .wpcf7 input[type=url]:hover:not(:disabled):not([readonly])::file-selector-button,
@@ -2943,6 +2967,8 @@ textarea.form-control-lg {
 .woocommerce .form-floating > input[type=password],
 .woocommerce .form-floating > input[type=search],
 .woocommerce .form-floating > textarea,
+.woocommerce .wpfMainWrapper .form-floating > select,
+.woocommerce .wpfMainWrapper .form-floating > input,
 .woocommerce .variations .form-floating > select, .wpcf7 .form-floating > .wpcf7-validation-errors, .wpcf7 .form-floating > input[type=text],
 .wpcf7 .form-floating > input[type=search],
 .wpcf7 .form-floating > input[type=url],
@@ -2991,6 +3017,8 @@ textarea.form-control-lg {
 .woocommerce .form-floating > input[type=password],
 .woocommerce .form-floating > input[type=search],
 .woocommerce .form-floating > textarea,
+.woocommerce .wpfMainWrapper .form-floating > select,
+.woocommerce .wpfMainWrapper .form-floating > input,
 .woocommerce .variations .form-floating > select, .wpcf7 .form-floating > .wpcf7-validation-errors, .wpcf7 .form-floating > input[type=text],
 .wpcf7 .form-floating > input[type=search],
 .wpcf7 .form-floating > input[type=url],
@@ -3013,10 +3041,10 @@ textarea.form-control-lg {
 .form-floating > .form-control-plaintext {
   padding: 1rem 0.75rem;
 }
-.form-floating > .form-control::-moz-placeholder, .comments-area .form-floating > input[type=text]::-moz-placeholder, .comments-area .form-floating > input[type=email]::-moz-placeholder, .comments-area .form-floating > input[type=url]::-moz-placeholder, .comments-area .form-floating > textarea::-moz-placeholder, .form-floating > .wp-block-search__input::-moz-placeholder, .woocommerce .cart .form-floating > .input-text::-moz-placeholder, .woocommerce .woocommerce-ordering .form-floating > .orderby::-moz-placeholder, .woocommerce .selection .select2-selection--single .form-floating > .select2-selection__rendered::-moz-placeholder, .woocommerce .form-floating > input[type=text]::-moz-placeholder, .woocommerce .form-floating > input[type=email]::-moz-placeholder, .woocommerce .form-floating > input[type=password]::-moz-placeholder, .woocommerce .form-floating > input[type=search]::-moz-placeholder, .woocommerce .form-floating > textarea::-moz-placeholder, .woocommerce .variations .form-floating > select::-moz-placeholder, .wpcf7 .form-floating > .wpcf7-validation-errors::-moz-placeholder, .wpcf7 .form-floating > input[type=text]::-moz-placeholder, .wpcf7 .form-floating > input[type=search]::-moz-placeholder, .wpcf7 .form-floating > input[type=url]::-moz-placeholder, .wpcf7 .form-floating > input[type=tel]::-moz-placeholder, .wpcf7 .form-floating > input[type=number]::-moz-placeholder, .wpcf7 .form-floating > input[type=range]::-moz-placeholder, .wpcf7 .form-floating > input[type=date]::-moz-placeholder, .wpcf7 .form-floating > input[type=month]::-moz-placeholder, .wpcf7 .form-floating > input[type=week]::-moz-placeholder, .wpcf7 .form-floating > input[type=time]::-moz-placeholder, .wpcf7 .form-floating > input[type=datetime]::-moz-placeholder, .wpcf7 .form-floating > input[type=datetime-local]::-moz-placeholder, .wpcf7 .form-floating > input[type=color]::-moz-placeholder, .wpcf7 .form-floating > input[type=email]::-moz-placeholder, .wpcf7 .form-floating > input[type=file]::-moz-placeholder, .wpcf7 .form-floating > input[type=submit]::-moz-placeholder, .wpcf7 .form-floating > select::-moz-placeholder, .wpcf7 .form-floating > textarea::-moz-placeholder, .widget_categories .form-floating > select::-moz-placeholder, .widget_archive .form-floating > select::-moz-placeholder, .form-floating > .form-control-plaintext::-moz-placeholder {
+.form-floating > .form-control::-moz-placeholder, .comments-area .form-floating > input[type=text]::-moz-placeholder, .comments-area .form-floating > input[type=email]::-moz-placeholder, .comments-area .form-floating > input[type=url]::-moz-placeholder, .comments-area .form-floating > textarea::-moz-placeholder, .form-floating > .wp-block-search__input::-moz-placeholder, .woocommerce .cart .form-floating > .input-text::-moz-placeholder, .woocommerce .woocommerce-ordering .form-floating > .orderby::-moz-placeholder, .woocommerce .selection .select2-selection--single .form-floating > .select2-selection__rendered::-moz-placeholder, .woocommerce .form-floating > input[type=text]::-moz-placeholder, .woocommerce .form-floating > input[type=email]::-moz-placeholder, .woocommerce .form-floating > input[type=password]::-moz-placeholder, .woocommerce .form-floating > input[type=search]::-moz-placeholder, .woocommerce .form-floating > textarea::-moz-placeholder, .woocommerce .wpfMainWrapper .form-floating > select::-moz-placeholder, .woocommerce .wpfMainWrapper .form-floating > input::-moz-placeholder, .woocommerce .variations .form-floating > select::-moz-placeholder, .wpcf7 .form-floating > .wpcf7-validation-errors::-moz-placeholder, .wpcf7 .form-floating > input[type=text]::-moz-placeholder, .wpcf7 .form-floating > input[type=search]::-moz-placeholder, .wpcf7 .form-floating > input[type=url]::-moz-placeholder, .wpcf7 .form-floating > input[type=tel]::-moz-placeholder, .wpcf7 .form-floating > input[type=number]::-moz-placeholder, .wpcf7 .form-floating > input[type=range]::-moz-placeholder, .wpcf7 .form-floating > input[type=date]::-moz-placeholder, .wpcf7 .form-floating > input[type=month]::-moz-placeholder, .wpcf7 .form-floating > input[type=week]::-moz-placeholder, .wpcf7 .form-floating > input[type=time]::-moz-placeholder, .wpcf7 .form-floating > input[type=datetime]::-moz-placeholder, .wpcf7 .form-floating > input[type=datetime-local]::-moz-placeholder, .wpcf7 .form-floating > input[type=color]::-moz-placeholder, .wpcf7 .form-floating > input[type=email]::-moz-placeholder, .wpcf7 .form-floating > input[type=file]::-moz-placeholder, .wpcf7 .form-floating > input[type=submit]::-moz-placeholder, .wpcf7 .form-floating > select::-moz-placeholder, .wpcf7 .form-floating > textarea::-moz-placeholder, .widget_categories .form-floating > select::-moz-placeholder, .widget_archive .form-floating > select::-moz-placeholder, .form-floating > .form-control-plaintext::-moz-placeholder {
   color: transparent;
 }
-.form-floating > .form-control:-ms-input-placeholder, .comments-area .form-floating > input[type=text]:-ms-input-placeholder, .comments-area .form-floating > input[type=email]:-ms-input-placeholder, .comments-area .form-floating > input[type=url]:-ms-input-placeholder, .comments-area .form-floating > textarea:-ms-input-placeholder, .form-floating > .wp-block-search__input:-ms-input-placeholder, .woocommerce .cart .form-floating > .input-text:-ms-input-placeholder, .woocommerce .woocommerce-ordering .form-floating > .orderby:-ms-input-placeholder, .woocommerce .selection .select2-selection--single .form-floating > .select2-selection__rendered:-ms-input-placeholder, .woocommerce .form-floating > input[type=text]:-ms-input-placeholder, .woocommerce .form-floating > input[type=email]:-ms-input-placeholder, .woocommerce .form-floating > input[type=password]:-ms-input-placeholder, .woocommerce .form-floating > input[type=search]:-ms-input-placeholder, .woocommerce .form-floating > textarea:-ms-input-placeholder, .woocommerce .variations .form-floating > select:-ms-input-placeholder, .wpcf7 .form-floating > .wpcf7-validation-errors:-ms-input-placeholder, .wpcf7 .form-floating > input[type=text]:-ms-input-placeholder, .wpcf7 .form-floating > input[type=search]:-ms-input-placeholder, .wpcf7 .form-floating > input[type=url]:-ms-input-placeholder, .wpcf7 .form-floating > input[type=tel]:-ms-input-placeholder, .wpcf7 .form-floating > input[type=number]:-ms-input-placeholder, .wpcf7 .form-floating > input[type=range]:-ms-input-placeholder, .wpcf7 .form-floating > input[type=date]:-ms-input-placeholder, .wpcf7 .form-floating > input[type=month]:-ms-input-placeholder, .wpcf7 .form-floating > input[type=week]:-ms-input-placeholder, .wpcf7 .form-floating > input[type=time]:-ms-input-placeholder, .wpcf7 .form-floating > input[type=datetime]:-ms-input-placeholder, .wpcf7 .form-floating > input[type=datetime-local]:-ms-input-placeholder, .wpcf7 .form-floating > input[type=color]:-ms-input-placeholder, .wpcf7 .form-floating > input[type=email]:-ms-input-placeholder, .wpcf7 .form-floating > input[type=file]:-ms-input-placeholder, .wpcf7 .form-floating > input[type=submit]:-ms-input-placeholder, .wpcf7 .form-floating > select:-ms-input-placeholder, .wpcf7 .form-floating > textarea:-ms-input-placeholder, .widget_categories .form-floating > select:-ms-input-placeholder, .widget_archive .form-floating > select:-ms-input-placeholder, .form-floating > .form-control-plaintext:-ms-input-placeholder {
+.form-floating > .form-control:-ms-input-placeholder, .comments-area .form-floating > input[type=text]:-ms-input-placeholder, .comments-area .form-floating > input[type=email]:-ms-input-placeholder, .comments-area .form-floating > input[type=url]:-ms-input-placeholder, .comments-area .form-floating > textarea:-ms-input-placeholder, .form-floating > .wp-block-search__input:-ms-input-placeholder, .woocommerce .cart .form-floating > .input-text:-ms-input-placeholder, .woocommerce .woocommerce-ordering .form-floating > .orderby:-ms-input-placeholder, .woocommerce .selection .select2-selection--single .form-floating > .select2-selection__rendered:-ms-input-placeholder, .woocommerce .form-floating > input[type=text]:-ms-input-placeholder, .woocommerce .form-floating > input[type=email]:-ms-input-placeholder, .woocommerce .form-floating > input[type=password]:-ms-input-placeholder, .woocommerce .form-floating > input[type=search]:-ms-input-placeholder, .woocommerce .form-floating > textarea:-ms-input-placeholder, .woocommerce .wpfMainWrapper .form-floating > select:-ms-input-placeholder, .woocommerce .wpfMainWrapper .form-floating > input:-ms-input-placeholder, .woocommerce .variations .form-floating > select:-ms-input-placeholder, .wpcf7 .form-floating > .wpcf7-validation-errors:-ms-input-placeholder, .wpcf7 .form-floating > input[type=text]:-ms-input-placeholder, .wpcf7 .form-floating > input[type=search]:-ms-input-placeholder, .wpcf7 .form-floating > input[type=url]:-ms-input-placeholder, .wpcf7 .form-floating > input[type=tel]:-ms-input-placeholder, .wpcf7 .form-floating > input[type=number]:-ms-input-placeholder, .wpcf7 .form-floating > input[type=range]:-ms-input-placeholder, .wpcf7 .form-floating > input[type=date]:-ms-input-placeholder, .wpcf7 .form-floating > input[type=month]:-ms-input-placeholder, .wpcf7 .form-floating > input[type=week]:-ms-input-placeholder, .wpcf7 .form-floating > input[type=time]:-ms-input-placeholder, .wpcf7 .form-floating > input[type=datetime]:-ms-input-placeholder, .wpcf7 .form-floating > input[type=datetime-local]:-ms-input-placeholder, .wpcf7 .form-floating > input[type=color]:-ms-input-placeholder, .wpcf7 .form-floating > input[type=email]:-ms-input-placeholder, .wpcf7 .form-floating > input[type=file]:-ms-input-placeholder, .wpcf7 .form-floating > input[type=submit]:-ms-input-placeholder, .wpcf7 .form-floating > select:-ms-input-placeholder, .wpcf7 .form-floating > textarea:-ms-input-placeholder, .widget_categories .form-floating > select:-ms-input-placeholder, .widget_archive .form-floating > select:-ms-input-placeholder, .form-floating > .form-control-plaintext:-ms-input-placeholder {
   color: transparent;
 }
 .form-floating > .form-control::placeholder, .comments-area .form-floating > input[type=text]::placeholder,
@@ -3027,6 +3055,8 @@ textarea.form-control-lg {
 .woocommerce .form-floating > input[type=password]::placeholder,
 .woocommerce .form-floating > input[type=search]::placeholder,
 .woocommerce .form-floating > textarea::placeholder,
+.woocommerce .wpfMainWrapper .form-floating > select::placeholder,
+.woocommerce .wpfMainWrapper .form-floating > input::placeholder,
 .woocommerce .variations .form-floating > select::placeholder, .wpcf7 .form-floating > .wpcf7-validation-errors::placeholder, .wpcf7 .form-floating > input[type=text]::placeholder,
 .wpcf7 .form-floating > input[type=search]::placeholder,
 .wpcf7 .form-floating > input[type=url]::placeholder,
@@ -3049,11 +3079,11 @@ textarea.form-control-lg {
 .form-floating > .form-control-plaintext::placeholder {
   color: transparent;
 }
-.form-floating > .form-control:not(:-moz-placeholder-shown), .comments-area .form-floating > input[type=text]:not(:-moz-placeholder-shown), .comments-area .form-floating > input[type=email]:not(:-moz-placeholder-shown), .comments-area .form-floating > input[type=url]:not(:-moz-placeholder-shown), .comments-area .form-floating > textarea:not(:-moz-placeholder-shown), .form-floating > .wp-block-search__input:not(:-moz-placeholder-shown), .woocommerce .cart .form-floating > .input-text:not(:-moz-placeholder-shown), .woocommerce .woocommerce-ordering .form-floating > .orderby:not(:-moz-placeholder-shown), .woocommerce .selection .select2-selection--single .form-floating > .select2-selection__rendered:not(:-moz-placeholder-shown), .woocommerce .form-floating > input[type=text]:not(:-moz-placeholder-shown), .woocommerce .form-floating > input[type=email]:not(:-moz-placeholder-shown), .woocommerce .form-floating > input[type=password]:not(:-moz-placeholder-shown), .woocommerce .form-floating > input[type=search]:not(:-moz-placeholder-shown), .woocommerce .form-floating > textarea:not(:-moz-placeholder-shown), .woocommerce .variations .form-floating > select:not(:-moz-placeholder-shown), .wpcf7 .form-floating > .wpcf7-validation-errors:not(:-moz-placeholder-shown), .wpcf7 .form-floating > input[type=text]:not(:-moz-placeholder-shown), .wpcf7 .form-floating > input[type=search]:not(:-moz-placeholder-shown), .wpcf7 .form-floating > input[type=url]:not(:-moz-placeholder-shown), .wpcf7 .form-floating > input[type=tel]:not(:-moz-placeholder-shown), .wpcf7 .form-floating > input[type=number]:not(:-moz-placeholder-shown), .wpcf7 .form-floating > input[type=range]:not(:-moz-placeholder-shown), .wpcf7 .form-floating > input[type=date]:not(:-moz-placeholder-shown), .wpcf7 .form-floating > input[type=month]:not(:-moz-placeholder-shown), .wpcf7 .form-floating > input[type=week]:not(:-moz-placeholder-shown), .wpcf7 .form-floating > input[type=time]:not(:-moz-placeholder-shown), .wpcf7 .form-floating > input[type=datetime]:not(:-moz-placeholder-shown), .wpcf7 .form-floating > input[type=datetime-local]:not(:-moz-placeholder-shown), .wpcf7 .form-floating > input[type=color]:not(:-moz-placeholder-shown), .wpcf7 .form-floating > input[type=email]:not(:-moz-placeholder-shown), .wpcf7 .form-floating > input[type=file]:not(:-moz-placeholder-shown), .wpcf7 .form-floating > input[type=submit]:not(:-moz-placeholder-shown), .wpcf7 .form-floating > select:not(:-moz-placeholder-shown), .wpcf7 .form-floating > textarea:not(:-moz-placeholder-shown), .widget_categories .form-floating > select:not(:-moz-placeholder-shown), .widget_archive .form-floating > select:not(:-moz-placeholder-shown), .form-floating > .form-control-plaintext:not(:-moz-placeholder-shown) {
+.form-floating > .form-control:not(:-moz-placeholder-shown), .comments-area .form-floating > input[type=text]:not(:-moz-placeholder-shown), .comments-area .form-floating > input[type=email]:not(:-moz-placeholder-shown), .comments-area .form-floating > input[type=url]:not(:-moz-placeholder-shown), .comments-area .form-floating > textarea:not(:-moz-placeholder-shown), .form-floating > .wp-block-search__input:not(:-moz-placeholder-shown), .woocommerce .cart .form-floating > .input-text:not(:-moz-placeholder-shown), .woocommerce .woocommerce-ordering .form-floating > .orderby:not(:-moz-placeholder-shown), .woocommerce .selection .select2-selection--single .form-floating > .select2-selection__rendered:not(:-moz-placeholder-shown), .woocommerce .form-floating > input[type=text]:not(:-moz-placeholder-shown), .woocommerce .form-floating > input[type=email]:not(:-moz-placeholder-shown), .woocommerce .form-floating > input[type=password]:not(:-moz-placeholder-shown), .woocommerce .form-floating > input[type=search]:not(:-moz-placeholder-shown), .woocommerce .form-floating > textarea:not(:-moz-placeholder-shown), .woocommerce .wpfMainWrapper .form-floating > select:not(:-moz-placeholder-shown), .woocommerce .wpfMainWrapper .form-floating > input:not(:-moz-placeholder-shown), .woocommerce .variations .form-floating > select:not(:-moz-placeholder-shown), .wpcf7 .form-floating > .wpcf7-validation-errors:not(:-moz-placeholder-shown), .wpcf7 .form-floating > input[type=text]:not(:-moz-placeholder-shown), .wpcf7 .form-floating > input[type=search]:not(:-moz-placeholder-shown), .wpcf7 .form-floating > input[type=url]:not(:-moz-placeholder-shown), .wpcf7 .form-floating > input[type=tel]:not(:-moz-placeholder-shown), .wpcf7 .form-floating > input[type=number]:not(:-moz-placeholder-shown), .wpcf7 .form-floating > input[type=range]:not(:-moz-placeholder-shown), .wpcf7 .form-floating > input[type=date]:not(:-moz-placeholder-shown), .wpcf7 .form-floating > input[type=month]:not(:-moz-placeholder-shown), .wpcf7 .form-floating > input[type=week]:not(:-moz-placeholder-shown), .wpcf7 .form-floating > input[type=time]:not(:-moz-placeholder-shown), .wpcf7 .form-floating > input[type=datetime]:not(:-moz-placeholder-shown), .wpcf7 .form-floating > input[type=datetime-local]:not(:-moz-placeholder-shown), .wpcf7 .form-floating > input[type=color]:not(:-moz-placeholder-shown), .wpcf7 .form-floating > input[type=email]:not(:-moz-placeholder-shown), .wpcf7 .form-floating > input[type=file]:not(:-moz-placeholder-shown), .wpcf7 .form-floating > input[type=submit]:not(:-moz-placeholder-shown), .wpcf7 .form-floating > select:not(:-moz-placeholder-shown), .wpcf7 .form-floating > textarea:not(:-moz-placeholder-shown), .widget_categories .form-floating > select:not(:-moz-placeholder-shown), .widget_archive .form-floating > select:not(:-moz-placeholder-shown), .form-floating > .form-control-plaintext:not(:-moz-placeholder-shown) {
   padding-top: 1.625rem;
   padding-bottom: 0.625rem;
 }
-.form-floating > .form-control:not(:-ms-input-placeholder), .comments-area .form-floating > input[type=text]:not(:-ms-input-placeholder), .comments-area .form-floating > input[type=email]:not(:-ms-input-placeholder), .comments-area .form-floating > input[type=url]:not(:-ms-input-placeholder), .comments-area .form-floating > textarea:not(:-ms-input-placeholder), .form-floating > .wp-block-search__input:not(:-ms-input-placeholder), .woocommerce .cart .form-floating > .input-text:not(:-ms-input-placeholder), .woocommerce .woocommerce-ordering .form-floating > .orderby:not(:-ms-input-placeholder), .woocommerce .selection .select2-selection--single .form-floating > .select2-selection__rendered:not(:-ms-input-placeholder), .woocommerce .form-floating > input[type=text]:not(:-ms-input-placeholder), .woocommerce .form-floating > input[type=email]:not(:-ms-input-placeholder), .woocommerce .form-floating > input[type=password]:not(:-ms-input-placeholder), .woocommerce .form-floating > input[type=search]:not(:-ms-input-placeholder), .woocommerce .form-floating > textarea:not(:-ms-input-placeholder), .woocommerce .variations .form-floating > select:not(:-ms-input-placeholder), .wpcf7 .form-floating > .wpcf7-validation-errors:not(:-ms-input-placeholder), .wpcf7 .form-floating > input[type=text]:not(:-ms-input-placeholder), .wpcf7 .form-floating > input[type=search]:not(:-ms-input-placeholder), .wpcf7 .form-floating > input[type=url]:not(:-ms-input-placeholder), .wpcf7 .form-floating > input[type=tel]:not(:-ms-input-placeholder), .wpcf7 .form-floating > input[type=number]:not(:-ms-input-placeholder), .wpcf7 .form-floating > input[type=range]:not(:-ms-input-placeholder), .wpcf7 .form-floating > input[type=date]:not(:-ms-input-placeholder), .wpcf7 .form-floating > input[type=month]:not(:-ms-input-placeholder), .wpcf7 .form-floating > input[type=week]:not(:-ms-input-placeholder), .wpcf7 .form-floating > input[type=time]:not(:-ms-input-placeholder), .wpcf7 .form-floating > input[type=datetime]:not(:-ms-input-placeholder), .wpcf7 .form-floating > input[type=datetime-local]:not(:-ms-input-placeholder), .wpcf7 .form-floating > input[type=color]:not(:-ms-input-placeholder), .wpcf7 .form-floating > input[type=email]:not(:-ms-input-placeholder), .wpcf7 .form-floating > input[type=file]:not(:-ms-input-placeholder), .wpcf7 .form-floating > input[type=submit]:not(:-ms-input-placeholder), .wpcf7 .form-floating > select:not(:-ms-input-placeholder), .wpcf7 .form-floating > textarea:not(:-ms-input-placeholder), .widget_categories .form-floating > select:not(:-ms-input-placeholder), .widget_archive .form-floating > select:not(:-ms-input-placeholder), .form-floating > .form-control-plaintext:not(:-ms-input-placeholder) {
+.form-floating > .form-control:not(:-ms-input-placeholder), .comments-area .form-floating > input[type=text]:not(:-ms-input-placeholder), .comments-area .form-floating > input[type=email]:not(:-ms-input-placeholder), .comments-area .form-floating > input[type=url]:not(:-ms-input-placeholder), .comments-area .form-floating > textarea:not(:-ms-input-placeholder), .form-floating > .wp-block-search__input:not(:-ms-input-placeholder), .woocommerce .cart .form-floating > .input-text:not(:-ms-input-placeholder), .woocommerce .woocommerce-ordering .form-floating > .orderby:not(:-ms-input-placeholder), .woocommerce .selection .select2-selection--single .form-floating > .select2-selection__rendered:not(:-ms-input-placeholder), .woocommerce .form-floating > input[type=text]:not(:-ms-input-placeholder), .woocommerce .form-floating > input[type=email]:not(:-ms-input-placeholder), .woocommerce .form-floating > input[type=password]:not(:-ms-input-placeholder), .woocommerce .form-floating > input[type=search]:not(:-ms-input-placeholder), .woocommerce .form-floating > textarea:not(:-ms-input-placeholder), .woocommerce .wpfMainWrapper .form-floating > select:not(:-ms-input-placeholder), .woocommerce .wpfMainWrapper .form-floating > input:not(:-ms-input-placeholder), .woocommerce .variations .form-floating > select:not(:-ms-input-placeholder), .wpcf7 .form-floating > .wpcf7-validation-errors:not(:-ms-input-placeholder), .wpcf7 .form-floating > input[type=text]:not(:-ms-input-placeholder), .wpcf7 .form-floating > input[type=search]:not(:-ms-input-placeholder), .wpcf7 .form-floating > input[type=url]:not(:-ms-input-placeholder), .wpcf7 .form-floating > input[type=tel]:not(:-ms-input-placeholder), .wpcf7 .form-floating > input[type=number]:not(:-ms-input-placeholder), .wpcf7 .form-floating > input[type=range]:not(:-ms-input-placeholder), .wpcf7 .form-floating > input[type=date]:not(:-ms-input-placeholder), .wpcf7 .form-floating > input[type=month]:not(:-ms-input-placeholder), .wpcf7 .form-floating > input[type=week]:not(:-ms-input-placeholder), .wpcf7 .form-floating > input[type=time]:not(:-ms-input-placeholder), .wpcf7 .form-floating > input[type=datetime]:not(:-ms-input-placeholder), .wpcf7 .form-floating > input[type=datetime-local]:not(:-ms-input-placeholder), .wpcf7 .form-floating > input[type=color]:not(:-ms-input-placeholder), .wpcf7 .form-floating > input[type=email]:not(:-ms-input-placeholder), .wpcf7 .form-floating > input[type=file]:not(:-ms-input-placeholder), .wpcf7 .form-floating > input[type=submit]:not(:-ms-input-placeholder), .wpcf7 .form-floating > select:not(:-ms-input-placeholder), .wpcf7 .form-floating > textarea:not(:-ms-input-placeholder), .widget_categories .form-floating > select:not(:-ms-input-placeholder), .widget_archive .form-floating > select:not(:-ms-input-placeholder), .form-floating > .form-control-plaintext:not(:-ms-input-placeholder) {
   padding-top: 1.625rem;
   padding-bottom: 0.625rem;
 }
@@ -3065,6 +3095,8 @@ textarea.form-control-lg {
 .woocommerce .form-floating > input[type=password]:focus,
 .woocommerce .form-floating > input[type=search]:focus,
 .woocommerce .form-floating > textarea:focus,
+.woocommerce .wpfMainWrapper .form-floating > select:focus,
+.woocommerce .wpfMainWrapper .form-floating > input:focus,
 .woocommerce .variations .form-floating > select:focus, .wpcf7 .form-floating > .wpcf7-validation-errors:focus, .wpcf7 .form-floating > input[type=text]:focus,
 .wpcf7 .form-floating > input[type=search]:focus,
 .wpcf7 .form-floating > input[type=url]:focus,
@@ -3091,6 +3123,8 @@ textarea.form-control-lg {
 .woocommerce .form-floating > input[type=password]:not(:placeholder-shown),
 .woocommerce .form-floating > input[type=search]:not(:placeholder-shown),
 .woocommerce .form-floating > textarea:not(:placeholder-shown),
+.woocommerce .wpfMainWrapper .form-floating > select:not(:placeholder-shown),
+.woocommerce .wpfMainWrapper .form-floating > input:not(:placeholder-shown),
 .woocommerce .variations .form-floating > select:not(:placeholder-shown), .wpcf7 .form-floating > .wpcf7-validation-errors:not(:placeholder-shown), .wpcf7 .form-floating > input[type=text]:not(:placeholder-shown),
 .wpcf7 .form-floating > input[type=search]:not(:placeholder-shown),
 .wpcf7 .form-floating > input[type=url]:not(:placeholder-shown),
@@ -3123,6 +3157,8 @@ textarea.form-control-lg {
 .woocommerce .form-floating > input[type=password]:-webkit-autofill,
 .woocommerce .form-floating > input[type=search]:-webkit-autofill,
 .woocommerce .form-floating > textarea:-webkit-autofill,
+.woocommerce .wpfMainWrapper .form-floating > select:-webkit-autofill,
+.woocommerce .wpfMainWrapper .form-floating > input:-webkit-autofill,
 .woocommerce .variations .form-floating > select:-webkit-autofill, .wpcf7 .form-floating > .wpcf7-validation-errors:-webkit-autofill, .wpcf7 .form-floating > input[type=text]:-webkit-autofill,
 .wpcf7 .form-floating > input[type=search]:-webkit-autofill,
 .wpcf7 .form-floating > input[type=url]:-webkit-autofill,
@@ -3150,11 +3186,11 @@ textarea.form-control-lg {
   padding-top: 1.625rem;
   padding-bottom: 0.625rem;
 }
-.form-floating > .form-control:not(:-moz-placeholder-shown) ~ label, .comments-area .form-floating > input[type=text]:not(:-moz-placeholder-shown) ~ label, .comments-area .form-floating > input[type=email]:not(:-moz-placeholder-shown) ~ label, .comments-area .form-floating > input[type=url]:not(:-moz-placeholder-shown) ~ label, .comments-area .form-floating > textarea:not(:-moz-placeholder-shown) ~ label, .form-floating > .wp-block-search__input:not(:-moz-placeholder-shown) ~ label, .woocommerce .cart .form-floating > .input-text:not(:-moz-placeholder-shown) ~ label, .woocommerce .woocommerce-ordering .form-floating > .orderby:not(:-moz-placeholder-shown) ~ label, .woocommerce .selection .select2-selection--single .form-floating > .select2-selection__rendered:not(:-moz-placeholder-shown) ~ label, .woocommerce .form-floating > input[type=text]:not(:-moz-placeholder-shown) ~ label, .woocommerce .form-floating > input[type=email]:not(:-moz-placeholder-shown) ~ label, .woocommerce .form-floating > input[type=password]:not(:-moz-placeholder-shown) ~ label, .woocommerce .form-floating > input[type=search]:not(:-moz-placeholder-shown) ~ label, .woocommerce .form-floating > textarea:not(:-moz-placeholder-shown) ~ label, .woocommerce .variations .form-floating > select:not(:-moz-placeholder-shown) ~ label, .wpcf7 .form-floating > .wpcf7-validation-errors:not(:-moz-placeholder-shown) ~ label, .wpcf7 .form-floating > input[type=text]:not(:-moz-placeholder-shown) ~ label, .wpcf7 .form-floating > input[type=search]:not(:-moz-placeholder-shown) ~ label, .wpcf7 .form-floating > input[type=url]:not(:-moz-placeholder-shown) ~ label, .wpcf7 .form-floating > input[type=tel]:not(:-moz-placeholder-shown) ~ label, .wpcf7 .form-floating > input[type=number]:not(:-moz-placeholder-shown) ~ label, .wpcf7 .form-floating > input[type=range]:not(:-moz-placeholder-shown) ~ label, .wpcf7 .form-floating > input[type=date]:not(:-moz-placeholder-shown) ~ label, .wpcf7 .form-floating > input[type=month]:not(:-moz-placeholder-shown) ~ label, .wpcf7 .form-floating > input[type=week]:not(:-moz-placeholder-shown) ~ label, .wpcf7 .form-floating > input[type=time]:not(:-moz-placeholder-shown) ~ label, .wpcf7 .form-floating > input[type=datetime]:not(:-moz-placeholder-shown) ~ label, .wpcf7 .form-floating > input[type=datetime-local]:not(:-moz-placeholder-shown) ~ label, .wpcf7 .form-floating > input[type=color]:not(:-moz-placeholder-shown) ~ label, .wpcf7 .form-floating > input[type=email]:not(:-moz-placeholder-shown) ~ label, .wpcf7 .form-floating > input[type=file]:not(:-moz-placeholder-shown) ~ label, .wpcf7 .form-floating > input[type=submit]:not(:-moz-placeholder-shown) ~ label, .wpcf7 .form-floating > select:not(:-moz-placeholder-shown) ~ label, .wpcf7 .form-floating > textarea:not(:-moz-placeholder-shown) ~ label, .widget_categories .form-floating > select:not(:-moz-placeholder-shown) ~ label, .widget_archive .form-floating > select:not(:-moz-placeholder-shown) ~ label {
+.form-floating > .form-control:not(:-moz-placeholder-shown) ~ label, .comments-area .form-floating > input[type=text]:not(:-moz-placeholder-shown) ~ label, .comments-area .form-floating > input[type=email]:not(:-moz-placeholder-shown) ~ label, .comments-area .form-floating > input[type=url]:not(:-moz-placeholder-shown) ~ label, .comments-area .form-floating > textarea:not(:-moz-placeholder-shown) ~ label, .form-floating > .wp-block-search__input:not(:-moz-placeholder-shown) ~ label, .woocommerce .cart .form-floating > .input-text:not(:-moz-placeholder-shown) ~ label, .woocommerce .woocommerce-ordering .form-floating > .orderby:not(:-moz-placeholder-shown) ~ label, .woocommerce .selection .select2-selection--single .form-floating > .select2-selection__rendered:not(:-moz-placeholder-shown) ~ label, .woocommerce .form-floating > input[type=text]:not(:-moz-placeholder-shown) ~ label, .woocommerce .form-floating > input[type=email]:not(:-moz-placeholder-shown) ~ label, .woocommerce .form-floating > input[type=password]:not(:-moz-placeholder-shown) ~ label, .woocommerce .form-floating > input[type=search]:not(:-moz-placeholder-shown) ~ label, .woocommerce .form-floating > textarea:not(:-moz-placeholder-shown) ~ label, .woocommerce .wpfMainWrapper .form-floating > select:not(:-moz-placeholder-shown) ~ label, .woocommerce .wpfMainWrapper .form-floating > input:not(:-moz-placeholder-shown) ~ label, .woocommerce .variations .form-floating > select:not(:-moz-placeholder-shown) ~ label, .wpcf7 .form-floating > .wpcf7-validation-errors:not(:-moz-placeholder-shown) ~ label, .wpcf7 .form-floating > input[type=text]:not(:-moz-placeholder-shown) ~ label, .wpcf7 .form-floating > input[type=search]:not(:-moz-placeholder-shown) ~ label, .wpcf7 .form-floating > input[type=url]:not(:-moz-placeholder-shown) ~ label, .wpcf7 .form-floating > input[type=tel]:not(:-moz-placeholder-shown) ~ label, .wpcf7 .form-floating > input[type=number]:not(:-moz-placeholder-shown) ~ label, .wpcf7 .form-floating > input[type=range]:not(:-moz-placeholder-shown) ~ label, .wpcf7 .form-floating > input[type=date]:not(:-moz-placeholder-shown) ~ label, .wpcf7 .form-floating > input[type=month]:not(:-moz-placeholder-shown) ~ label, .wpcf7 .form-floating > input[type=week]:not(:-moz-placeholder-shown) ~ label, .wpcf7 .form-floating > input[type=time]:not(:-moz-placeholder-shown) ~ label, .wpcf7 .form-floating > input[type=datetime]:not(:-moz-placeholder-shown) ~ label, .wpcf7 .form-floating > input[type=datetime-local]:not(:-moz-placeholder-shown) ~ label, .wpcf7 .form-floating > input[type=color]:not(:-moz-placeholder-shown) ~ label, .wpcf7 .form-floating > input[type=email]:not(:-moz-placeholder-shown) ~ label, .wpcf7 .form-floating > input[type=file]:not(:-moz-placeholder-shown) ~ label, .wpcf7 .form-floating > input[type=submit]:not(:-moz-placeholder-shown) ~ label, .wpcf7 .form-floating > select:not(:-moz-placeholder-shown) ~ label, .wpcf7 .form-floating > textarea:not(:-moz-placeholder-shown) ~ label, .widget_categories .form-floating > select:not(:-moz-placeholder-shown) ~ label, .widget_archive .form-floating > select:not(:-moz-placeholder-shown) ~ label {
   opacity: 0.65;
   transform: scale(0.85) translateY(-0.5rem) translateX(0.15rem);
 }
-.form-floating > .form-control:not(:-ms-input-placeholder) ~ label, .comments-area .form-floating > input[type=text]:not(:-ms-input-placeholder) ~ label, .comments-area .form-floating > input[type=email]:not(:-ms-input-placeholder) ~ label, .comments-area .form-floating > input[type=url]:not(:-ms-input-placeholder) ~ label, .comments-area .form-floating > textarea:not(:-ms-input-placeholder) ~ label, .form-floating > .wp-block-search__input:not(:-ms-input-placeholder) ~ label, .woocommerce .cart .form-floating > .input-text:not(:-ms-input-placeholder) ~ label, .woocommerce .woocommerce-ordering .form-floating > .orderby:not(:-ms-input-placeholder) ~ label, .woocommerce .selection .select2-selection--single .form-floating > .select2-selection__rendered:not(:-ms-input-placeholder) ~ label, .woocommerce .form-floating > input[type=text]:not(:-ms-input-placeholder) ~ label, .woocommerce .form-floating > input[type=email]:not(:-ms-input-placeholder) ~ label, .woocommerce .form-floating > input[type=password]:not(:-ms-input-placeholder) ~ label, .woocommerce .form-floating > input[type=search]:not(:-ms-input-placeholder) ~ label, .woocommerce .form-floating > textarea:not(:-ms-input-placeholder) ~ label, .woocommerce .variations .form-floating > select:not(:-ms-input-placeholder) ~ label, .wpcf7 .form-floating > .wpcf7-validation-errors:not(:-ms-input-placeholder) ~ label, .wpcf7 .form-floating > input[type=text]:not(:-ms-input-placeholder) ~ label, .wpcf7 .form-floating > input[type=search]:not(:-ms-input-placeholder) ~ label, .wpcf7 .form-floating > input[type=url]:not(:-ms-input-placeholder) ~ label, .wpcf7 .form-floating > input[type=tel]:not(:-ms-input-placeholder) ~ label, .wpcf7 .form-floating > input[type=number]:not(:-ms-input-placeholder) ~ label, .wpcf7 .form-floating > input[type=range]:not(:-ms-input-placeholder) ~ label, .wpcf7 .form-floating > input[type=date]:not(:-ms-input-placeholder) ~ label, .wpcf7 .form-floating > input[type=month]:not(:-ms-input-placeholder) ~ label, .wpcf7 .form-floating > input[type=week]:not(:-ms-input-placeholder) ~ label, .wpcf7 .form-floating > input[type=time]:not(:-ms-input-placeholder) ~ label, .wpcf7 .form-floating > input[type=datetime]:not(:-ms-input-placeholder) ~ label, .wpcf7 .form-floating > input[type=datetime-local]:not(:-ms-input-placeholder) ~ label, .wpcf7 .form-floating > input[type=color]:not(:-ms-input-placeholder) ~ label, .wpcf7 .form-floating > input[type=email]:not(:-ms-input-placeholder) ~ label, .wpcf7 .form-floating > input[type=file]:not(:-ms-input-placeholder) ~ label, .wpcf7 .form-floating > input[type=submit]:not(:-ms-input-placeholder) ~ label, .wpcf7 .form-floating > select:not(:-ms-input-placeholder) ~ label, .wpcf7 .form-floating > textarea:not(:-ms-input-placeholder) ~ label, .widget_categories .form-floating > select:not(:-ms-input-placeholder) ~ label, .widget_archive .form-floating > select:not(:-ms-input-placeholder) ~ label {
+.form-floating > .form-control:not(:-ms-input-placeholder) ~ label, .comments-area .form-floating > input[type=text]:not(:-ms-input-placeholder) ~ label, .comments-area .form-floating > input[type=email]:not(:-ms-input-placeholder) ~ label, .comments-area .form-floating > input[type=url]:not(:-ms-input-placeholder) ~ label, .comments-area .form-floating > textarea:not(:-ms-input-placeholder) ~ label, .form-floating > .wp-block-search__input:not(:-ms-input-placeholder) ~ label, .woocommerce .cart .form-floating > .input-text:not(:-ms-input-placeholder) ~ label, .woocommerce .woocommerce-ordering .form-floating > .orderby:not(:-ms-input-placeholder) ~ label, .woocommerce .selection .select2-selection--single .form-floating > .select2-selection__rendered:not(:-ms-input-placeholder) ~ label, .woocommerce .form-floating > input[type=text]:not(:-ms-input-placeholder) ~ label, .woocommerce .form-floating > input[type=email]:not(:-ms-input-placeholder) ~ label, .woocommerce .form-floating > input[type=password]:not(:-ms-input-placeholder) ~ label, .woocommerce .form-floating > input[type=search]:not(:-ms-input-placeholder) ~ label, .woocommerce .form-floating > textarea:not(:-ms-input-placeholder) ~ label, .woocommerce .wpfMainWrapper .form-floating > select:not(:-ms-input-placeholder) ~ label, .woocommerce .wpfMainWrapper .form-floating > input:not(:-ms-input-placeholder) ~ label, .woocommerce .variations .form-floating > select:not(:-ms-input-placeholder) ~ label, .wpcf7 .form-floating > .wpcf7-validation-errors:not(:-ms-input-placeholder) ~ label, .wpcf7 .form-floating > input[type=text]:not(:-ms-input-placeholder) ~ label, .wpcf7 .form-floating > input[type=search]:not(:-ms-input-placeholder) ~ label, .wpcf7 .form-floating > input[type=url]:not(:-ms-input-placeholder) ~ label, .wpcf7 .form-floating > input[type=tel]:not(:-ms-input-placeholder) ~ label, .wpcf7 .form-floating > input[type=number]:not(:-ms-input-placeholder) ~ label, .wpcf7 .form-floating > input[type=range]:not(:-ms-input-placeholder) ~ label, .wpcf7 .form-floating > input[type=date]:not(:-ms-input-placeholder) ~ label, .wpcf7 .form-floating > input[type=month]:not(:-ms-input-placeholder) ~ label, .wpcf7 .form-floating > input[type=week]:not(:-ms-input-placeholder) ~ label, .wpcf7 .form-floating > input[type=time]:not(:-ms-input-placeholder) ~ label, .wpcf7 .form-floating > input[type=datetime]:not(:-ms-input-placeholder) ~ label, .wpcf7 .form-floating > input[type=datetime-local]:not(:-ms-input-placeholder) ~ label, .wpcf7 .form-floating > input[type=color]:not(:-ms-input-placeholder) ~ label, .wpcf7 .form-floating > input[type=email]:not(:-ms-input-placeholder) ~ label, .wpcf7 .form-floating > input[type=file]:not(:-ms-input-placeholder) ~ label, .wpcf7 .form-floating > input[type=submit]:not(:-ms-input-placeholder) ~ label, .wpcf7 .form-floating > select:not(:-ms-input-placeholder) ~ label, .wpcf7 .form-floating > textarea:not(:-ms-input-placeholder) ~ label, .widget_categories .form-floating > select:not(:-ms-input-placeholder) ~ label, .widget_archive .form-floating > select:not(:-ms-input-placeholder) ~ label {
   opacity: 0.65;
   transform: scale(0.85) translateY(-0.5rem) translateX(0.15rem);
 }
@@ -3166,6 +3202,8 @@ textarea.form-control-lg {
 .woocommerce .form-floating > input[type=password]:focus ~ label,
 .woocommerce .form-floating > input[type=search]:focus ~ label,
 .woocommerce .form-floating > textarea:focus ~ label,
+.woocommerce .wpfMainWrapper .form-floating > select:focus ~ label,
+.woocommerce .wpfMainWrapper .form-floating > input:focus ~ label,
 .woocommerce .variations .form-floating > select:focus ~ label, .wpcf7 .form-floating > .wpcf7-validation-errors:focus ~ label, .wpcf7 .form-floating > input[type=text]:focus ~ label,
 .wpcf7 .form-floating > input[type=search]:focus ~ label,
 .wpcf7 .form-floating > input[type=url]:focus ~ label,
@@ -3199,6 +3237,8 @@ textarea.form-control-lg {
 .woocommerce .form-floating > input[type=password]:not(:placeholder-shown) ~ label,
 .woocommerce .form-floating > input[type=search]:not(:placeholder-shown) ~ label,
 .woocommerce .form-floating > textarea:not(:placeholder-shown) ~ label,
+.woocommerce .wpfMainWrapper .form-floating > select:not(:placeholder-shown) ~ label,
+.woocommerce .wpfMainWrapper .form-floating > input:not(:placeholder-shown) ~ label,
 .woocommerce .variations .form-floating > select:not(:placeholder-shown) ~ label,
 .wpcf7 .form-floating > .wpcf7-validation-errors:not(:placeholder-shown) ~ label,
 .wpcf7 .form-floating > input[type=text]:not(:placeholder-shown) ~ label,
@@ -3234,6 +3274,8 @@ textarea.form-control-lg {
 .woocommerce .form-floating > input[type=password]:-webkit-autofill ~ label,
 .woocommerce .form-floating > input[type=search]:-webkit-autofill ~ label,
 .woocommerce .form-floating > textarea:-webkit-autofill ~ label,
+.woocommerce .wpfMainWrapper .form-floating > select:-webkit-autofill ~ label,
+.woocommerce .wpfMainWrapper .form-floating > input:-webkit-autofill ~ label,
 .woocommerce .variations .form-floating > select:-webkit-autofill ~ label, .wpcf7 .form-floating > .wpcf7-validation-errors:-webkit-autofill ~ label, .wpcf7 .form-floating > input[type=text]:-webkit-autofill ~ label,
 .wpcf7 .form-floating > input[type=search]:-webkit-autofill ~ label,
 .wpcf7 .form-floating > input[type=url]:-webkit-autofill ~ label,
@@ -3275,6 +3317,8 @@ textarea.form-control-lg {
 .woocommerce .input-group > input[type=password],
 .woocommerce .input-group > input[type=search],
 .woocommerce .input-group > textarea,
+.woocommerce .wpfMainWrapper .input-group > select,
+.woocommerce .wpfMainWrapper .input-group > input,
 .woocommerce .variations .input-group > select, .wpcf7 .input-group > .wpcf7-validation-errors, .wpcf7 .input-group > input[type=text],
 .wpcf7 .input-group > input[type=search],
 .wpcf7 .input-group > input[type=url],
@@ -3308,6 +3352,8 @@ textarea.form-control-lg {
 .woocommerce .input-group > input[type=password]:focus,
 .woocommerce .input-group > input[type=search]:focus,
 .woocommerce .input-group > textarea:focus,
+.woocommerce .wpfMainWrapper .input-group > select:focus,
+.woocommerce .wpfMainWrapper .input-group > input:focus,
 .woocommerce .variations .input-group > select:focus, .wpcf7 .input-group > .wpcf7-validation-errors:focus, .wpcf7 .input-group > input[type=text]:focus,
 .wpcf7 .input-group > input[type=search]:focus,
 .wpcf7 .input-group > input[type=url]:focus,
@@ -3375,6 +3421,8 @@ textarea.form-control-lg {
 .woocommerce .input-group-lg > input[type=password],
 .woocommerce .input-group-lg > input[type=search],
 .woocommerce .input-group-lg > textarea,
+.woocommerce .wpfMainWrapper .input-group-lg > select,
+.woocommerce .wpfMainWrapper .input-group-lg > input,
 .woocommerce .variations .input-group-lg > select, .wpcf7 .input-group-lg > .wpcf7-validation-errors, .wpcf7 .input-group-lg > input[type=text],
 .wpcf7 .input-group-lg > input[type=search],
 .wpcf7 .input-group-lg > input[type=url],
@@ -3424,6 +3472,8 @@ textarea.form-control-lg {
 .woocommerce .input-group-sm > input[type=password],
 .woocommerce .input-group-sm > input[type=search],
 .woocommerce .input-group-sm > textarea,
+.woocommerce .wpfMainWrapper .input-group-sm > select,
+.woocommerce .wpfMainWrapper .input-group-sm > input,
 .woocommerce .variations .input-group-sm > select, .wpcf7 .input-group-sm > .wpcf7-validation-errors, .wpcf7 .input-group-sm > input[type=text],
 .wpcf7 .input-group-sm > input[type=search],
 .wpcf7 .input-group-sm > input[type=url],
@@ -3530,6 +3580,10 @@ textarea.form-control-lg {
 .woocommerce .was-validated input[type=search]:valid,
 .was-validated .woocommerce textarea:valid,
 .woocommerce .was-validated textarea:valid,
+.was-validated .woocommerce .wpfMainWrapper select:valid,
+.woocommerce .wpfMainWrapper .was-validated select:valid,
+.was-validated .woocommerce .wpfMainWrapper input:valid,
+.woocommerce .wpfMainWrapper .was-validated input:valid,
 .was-validated .woocommerce .variations select:valid,
 .woocommerce .variations .was-validated select:valid, .was-validated .wpcf7 .wpcf7-validation-errors:valid, .wpcf7 .was-validated .wpcf7-validation-errors:valid, .was-validated .wpcf7 input[type=text]:valid, .wpcf7 .was-validated input[type=text]:valid,
 .was-validated .wpcf7 input[type=search]:valid,
@@ -3575,6 +3629,8 @@ textarea.form-control-lg {
 .woocommerce input.is-valid[type=password],
 .woocommerce input.is-valid[type=search],
 .woocommerce textarea.is-valid,
+.woocommerce .wpfMainWrapper select.is-valid,
+.woocommerce .wpfMainWrapper input.is-valid,
 .woocommerce .variations select.is-valid, .wpcf7 .is-valid.wpcf7-validation-errors, .wpcf7 input.is-valid[type=text],
 .wpcf7 input.is-valid[type=search],
 .wpcf7 input.is-valid[type=url],
@@ -3616,6 +3672,10 @@ textarea.form-control-lg {
 .woocommerce .was-validated input[type=search]:valid:focus,
 .was-validated .woocommerce textarea:valid:focus,
 .woocommerce .was-validated textarea:valid:focus,
+.was-validated .woocommerce .wpfMainWrapper select:valid:focus,
+.woocommerce .wpfMainWrapper .was-validated select:valid:focus,
+.was-validated .woocommerce .wpfMainWrapper input:valid:focus,
+.woocommerce .wpfMainWrapper .was-validated input:valid:focus,
 .was-validated .woocommerce .variations select:valid:focus,
 .woocommerce .variations .was-validated select:valid:focus, .was-validated .wpcf7 .wpcf7-validation-errors:valid:focus, .wpcf7 .was-validated .wpcf7-validation-errors:valid:focus, .was-validated .wpcf7 input[type=text]:valid:focus, .wpcf7 .was-validated input[type=text]:valid:focus,
 .was-validated .wpcf7 input[type=search]:valid:focus,
@@ -3661,6 +3721,8 @@ textarea.form-control-lg {
 .woocommerce input.is-valid[type=password]:focus,
 .woocommerce input.is-valid[type=search]:focus,
 .woocommerce textarea.is-valid:focus,
+.woocommerce .wpfMainWrapper select.is-valid:focus,
+.woocommerce .wpfMainWrapper input.is-valid:focus,
 .woocommerce .variations select.is-valid:focus, .wpcf7 .is-valid.wpcf7-validation-errors:focus, .wpcf7 input.is-valid[type=text]:focus,
 .wpcf7 input.is-valid[type=search]:focus,
 .wpcf7 input.is-valid[type=url]:focus,
@@ -3748,6 +3810,10 @@ textarea.form-control-lg {
 .woocommerce .was-validated .input-group input[type=search]:valid,
 .was-validated .input-group .woocommerce textarea:valid,
 .woocommerce .was-validated .input-group textarea:valid,
+.was-validated .input-group .woocommerce .wpfMainWrapper select:valid,
+.woocommerce .wpfMainWrapper .was-validated .input-group select:valid,
+.was-validated .input-group .woocommerce .wpfMainWrapper input:valid,
+.woocommerce .wpfMainWrapper .was-validated .input-group input:valid,
 .was-validated .input-group .woocommerce .variations select:valid,
 .woocommerce .variations .was-validated .input-group select:valid, .was-validated .input-group .wpcf7 .wpcf7-validation-errors:valid, .wpcf7 .was-validated .input-group .wpcf7-validation-errors:valid, .was-validated .input-group .wpcf7 input[type=text]:valid, .wpcf7 .was-validated .input-group input[type=text]:valid,
 .was-validated .input-group .wpcf7 input[type=search]:valid,
@@ -3800,6 +3866,10 @@ textarea.form-control-lg {
 .woocommerce .input-group input.is-valid[type=search],
 .input-group .woocommerce textarea.is-valid,
 .woocommerce .input-group textarea.is-valid,
+.input-group .woocommerce .wpfMainWrapper select.is-valid,
+.woocommerce .wpfMainWrapper .input-group select.is-valid,
+.input-group .woocommerce .wpfMainWrapper input.is-valid,
+.woocommerce .wpfMainWrapper .input-group input.is-valid,
 .input-group .woocommerce .variations select.is-valid,
 .woocommerce .variations .input-group select.is-valid, .input-group .wpcf7 .is-valid.wpcf7-validation-errors, .wpcf7 .input-group .is-valid.wpcf7-validation-errors, .input-group .wpcf7 input.is-valid[type=text], .wpcf7 .input-group input.is-valid[type=text],
 .input-group .wpcf7 input.is-valid[type=search],
@@ -3857,6 +3927,10 @@ textarea.form-control-lg {
 .woocommerce .was-validated .input-group input[type=search]:valid:focus,
 .was-validated .input-group .woocommerce textarea:valid:focus,
 .woocommerce .was-validated .input-group textarea:valid:focus,
+.was-validated .input-group .woocommerce .wpfMainWrapper select:valid:focus,
+.woocommerce .wpfMainWrapper .was-validated .input-group select:valid:focus,
+.was-validated .input-group .woocommerce .wpfMainWrapper input:valid:focus,
+.woocommerce .wpfMainWrapper .was-validated .input-group input:valid:focus,
 .was-validated .input-group .woocommerce .variations select:valid:focus,
 .woocommerce .variations .was-validated .input-group select:valid:focus, .was-validated .input-group .wpcf7 .wpcf7-validation-errors:valid:focus, .wpcf7 .was-validated .input-group .wpcf7-validation-errors:valid:focus, .was-validated .input-group .wpcf7 input[type=text]:valid:focus, .wpcf7 .was-validated .input-group input[type=text]:valid:focus,
 .was-validated .input-group .wpcf7 input[type=search]:valid:focus,
@@ -3909,6 +3983,10 @@ textarea.form-control-lg {
 .woocommerce .input-group input.is-valid[type=search]:focus,
 .input-group .woocommerce textarea.is-valid:focus,
 .woocommerce .input-group textarea.is-valid:focus,
+.input-group .woocommerce .wpfMainWrapper select.is-valid:focus,
+.woocommerce .wpfMainWrapper .input-group select.is-valid:focus,
+.input-group .woocommerce .wpfMainWrapper input.is-valid:focus,
+.woocommerce .wpfMainWrapper .input-group input.is-valid:focus,
 .input-group .woocommerce .variations select.is-valid:focus,
 .woocommerce .variations .input-group select.is-valid:focus, .input-group .wpcf7 .is-valid.wpcf7-validation-errors:focus, .wpcf7 .input-group .is-valid.wpcf7-validation-errors:focus, .input-group .wpcf7 input.is-valid[type=text]:focus, .wpcf7 .input-group input.is-valid[type=text]:focus,
 .input-group .wpcf7 input.is-valid[type=search]:focus,
@@ -3996,6 +4074,10 @@ textarea.form-control-lg {
 .woocommerce .was-validated input[type=search]:invalid,
 .was-validated .woocommerce textarea:invalid,
 .woocommerce .was-validated textarea:invalid,
+.was-validated .woocommerce .wpfMainWrapper select:invalid,
+.woocommerce .wpfMainWrapper .was-validated select:invalid,
+.was-validated .woocommerce .wpfMainWrapper input:invalid,
+.woocommerce .wpfMainWrapper .was-validated input:invalid,
 .was-validated .woocommerce .variations select:invalid,
 .woocommerce .variations .was-validated select:invalid, .was-validated .wpcf7 .wpcf7-validation-errors:invalid, .wpcf7 .was-validated .wpcf7-validation-errors:invalid, .was-validated .wpcf7 input[type=text]:invalid, .wpcf7 .was-validated input[type=text]:invalid,
 .was-validated .wpcf7 input[type=search]:invalid,
@@ -4041,6 +4123,8 @@ textarea.form-control-lg {
 .woocommerce input.is-invalid[type=password],
 .woocommerce input.is-invalid[type=search],
 .woocommerce textarea.is-invalid,
+.woocommerce .wpfMainWrapper select.is-invalid,
+.woocommerce .wpfMainWrapper input.is-invalid,
 .woocommerce .variations select.is-invalid, .wpcf7 .is-invalid.wpcf7-validation-errors, .wpcf7 input.is-invalid[type=text],
 .wpcf7 input.is-invalid[type=search],
 .wpcf7 input.is-invalid[type=url],
@@ -4082,6 +4166,10 @@ textarea.form-control-lg {
 .woocommerce .was-validated input[type=search]:invalid:focus,
 .was-validated .woocommerce textarea:invalid:focus,
 .woocommerce .was-validated textarea:invalid:focus,
+.was-validated .woocommerce .wpfMainWrapper select:invalid:focus,
+.woocommerce .wpfMainWrapper .was-validated select:invalid:focus,
+.was-validated .woocommerce .wpfMainWrapper input:invalid:focus,
+.woocommerce .wpfMainWrapper .was-validated input:invalid:focus,
 .was-validated .woocommerce .variations select:invalid:focus,
 .woocommerce .variations .was-validated select:invalid:focus, .was-validated .wpcf7 .wpcf7-validation-errors:invalid:focus, .wpcf7 .was-validated .wpcf7-validation-errors:invalid:focus, .was-validated .wpcf7 input[type=text]:invalid:focus, .wpcf7 .was-validated input[type=text]:invalid:focus,
 .was-validated .wpcf7 input[type=search]:invalid:focus,
@@ -4127,6 +4215,8 @@ textarea.form-control-lg {
 .woocommerce input.is-invalid[type=password]:focus,
 .woocommerce input.is-invalid[type=search]:focus,
 .woocommerce textarea.is-invalid:focus,
+.woocommerce .wpfMainWrapper select.is-invalid:focus,
+.woocommerce .wpfMainWrapper input.is-invalid:focus,
 .woocommerce .variations select.is-invalid:focus, .wpcf7 .is-invalid.wpcf7-validation-errors:focus, .wpcf7 input.is-invalid[type=text]:focus,
 .wpcf7 input.is-invalid[type=search]:focus,
 .wpcf7 input.is-invalid[type=url]:focus,
@@ -4214,6 +4304,10 @@ textarea.form-control-lg {
 .woocommerce .was-validated .input-group input[type=search]:invalid,
 .was-validated .input-group .woocommerce textarea:invalid,
 .woocommerce .was-validated .input-group textarea:invalid,
+.was-validated .input-group .woocommerce .wpfMainWrapper select:invalid,
+.woocommerce .wpfMainWrapper .was-validated .input-group select:invalid,
+.was-validated .input-group .woocommerce .wpfMainWrapper input:invalid,
+.woocommerce .wpfMainWrapper .was-validated .input-group input:invalid,
 .was-validated .input-group .woocommerce .variations select:invalid,
 .woocommerce .variations .was-validated .input-group select:invalid, .was-validated .input-group .wpcf7 .wpcf7-validation-errors:invalid, .wpcf7 .was-validated .input-group .wpcf7-validation-errors:invalid, .was-validated .input-group .wpcf7 input[type=text]:invalid, .wpcf7 .was-validated .input-group input[type=text]:invalid,
 .was-validated .input-group .wpcf7 input[type=search]:invalid,
@@ -4266,6 +4360,10 @@ textarea.form-control-lg {
 .woocommerce .input-group input.is-invalid[type=search],
 .input-group .woocommerce textarea.is-invalid,
 .woocommerce .input-group textarea.is-invalid,
+.input-group .woocommerce .wpfMainWrapper select.is-invalid,
+.woocommerce .wpfMainWrapper .input-group select.is-invalid,
+.input-group .woocommerce .wpfMainWrapper input.is-invalid,
+.woocommerce .wpfMainWrapper .input-group input.is-invalid,
 .input-group .woocommerce .variations select.is-invalid,
 .woocommerce .variations .input-group select.is-invalid, .input-group .wpcf7 .is-invalid.wpcf7-validation-errors, .wpcf7 .input-group .is-invalid.wpcf7-validation-errors, .input-group .wpcf7 input.is-invalid[type=text], .wpcf7 .input-group input.is-invalid[type=text],
 .input-group .wpcf7 input.is-invalid[type=search],
@@ -4323,6 +4421,10 @@ textarea.form-control-lg {
 .woocommerce .was-validated .input-group input[type=search]:invalid:focus,
 .was-validated .input-group .woocommerce textarea:invalid:focus,
 .woocommerce .was-validated .input-group textarea:invalid:focus,
+.was-validated .input-group .woocommerce .wpfMainWrapper select:invalid:focus,
+.woocommerce .wpfMainWrapper .was-validated .input-group select:invalid:focus,
+.was-validated .input-group .woocommerce .wpfMainWrapper input:invalid:focus,
+.woocommerce .wpfMainWrapper .was-validated .input-group input:invalid:focus,
 .was-validated .input-group .woocommerce .variations select:invalid:focus,
 .woocommerce .variations .was-validated .input-group select:invalid:focus, .was-validated .input-group .wpcf7 .wpcf7-validation-errors:invalid:focus, .wpcf7 .was-validated .input-group .wpcf7-validation-errors:invalid:focus, .was-validated .input-group .wpcf7 input[type=text]:invalid:focus, .wpcf7 .was-validated .input-group input[type=text]:invalid:focus,
 .was-validated .input-group .wpcf7 input[type=search]:invalid:focus,
@@ -4375,6 +4477,10 @@ textarea.form-control-lg {
 .woocommerce .input-group input.is-invalid[type=search]:focus,
 .input-group .woocommerce textarea.is-invalid:focus,
 .woocommerce .input-group textarea.is-invalid:focus,
+.input-group .woocommerce .wpfMainWrapper select.is-invalid:focus,
+.woocommerce .wpfMainWrapper .input-group select.is-invalid:focus,
+.input-group .woocommerce .wpfMainWrapper input.is-invalid:focus,
+.woocommerce .wpfMainWrapper .input-group input.is-invalid:focus,
 .input-group .woocommerce .variations select.is-invalid:focus,
 .woocommerce .variations .input-group select.is-invalid:focus, .input-group .wpcf7 .is-invalid.wpcf7-validation-errors:focus, .wpcf7 .input-group .is-invalid.wpcf7-validation-errors:focus, .input-group .wpcf7 input.is-invalid[type=text]:focus, .wpcf7 .input-group input.is-invalid[type=text]:focus,
 .input-group .wpcf7 input.is-invalid[type=search]:focus,
@@ -10247,7 +10353,7 @@ fieldset:disabled .woocommerce .wc-proceed-to-checkout button,
   content: "";
 }
 
-.text-truncate {
+.text-truncate, .woocommerce .woocommerce-loop-product__title {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -11273,7 +11379,7 @@ fieldset:disabled .woocommerce .wc-proceed-to-checkout button,
   font-size: calc(1.275rem + 0.3vw) !important;
 }
 
-.fs-5 {
+.fs-5, .woocommerce .woocommerce-loop-product__title {
   font-size: 1.25rem !important;
 }
 
@@ -11615,6 +11721,8 @@ fieldset:disabled .woocommerce .wc-proceed-to-checkout button,
 .woocommerce input[type=password],
 .woocommerce input[type=search],
 .woocommerce textarea,
+.woocommerce .wpfMainWrapper select,
+.woocommerce .wpfMainWrapper input,
 .woocommerce .variations select {
   border-radius: 0 !important;
 }
