@@ -111,6 +111,7 @@ figure.woocommerce-product-gallery__wrapper {
 		@extend .badge;
 		@extend .bg-success;
 	}
+
 	.selection .select2-selection--single {
 		@extend .border-0;
 		.select2-selection__rendered {
@@ -125,19 +126,13 @@ figure.woocommerce-product-gallery__wrapper {
 			@extend .rounded-0;
 		}
 	}
+
 	button,
 	.single_add_to_cart_button,
 	.wc-proceed-to-checkout .btn {
 		@extend .btn;
 		@extend .btn-primary;
 		@extend .rounded-0;
-	}
-	.single_add_to_cart_button {
-		@extend .btn;
-		@extend .btn-sm;
-		@extend .btn-primary;
-		@extend .rounded-0;
-		@extend .text-light;
 	}
 	span.onsale {
 		@extend .p-0;

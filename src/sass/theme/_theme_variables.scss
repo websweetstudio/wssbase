@@ -5,7 +5,9 @@
 $link-decoration: none; // remove text decoration link
 $purple: #5533ff; // Thats a sample how you could change a BootStrap variable.
 $blue: #2b5497; // Thats a sample how you could change a BootStrap variable.
-$primary: $blue;  // Once we've changed the value, we'll also make it the primary brand color.
+$gray: #f5f5f5; // Thats a sample how you could change a BootStrap variable.
+$dark: #2b2b2b; // Thats a sample how you could change a BootStrap variable.
+$primary: $dark;  // Once we've changed the value, we'll also make it the primary brand color.
 $nav-link-font-weight: medium; // Replace bootstrap's default font weight.
 $navbar-nav-link-padding-x: 1rem !default; // padding-left and padding-right
 $navbar-toggler-border-radius: 0 !default;
