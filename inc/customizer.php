@@ -229,13 +229,14 @@ if ( ! function_exists( 'sweetweb_theme_customize_register' ) ) {
 				'title'       => __( 'Typography Setting', 'sweetweb' ),
 				'capability'  => 'edit_theme_options',
 				'description' => __( 'Container width and sidebar defaults', 'sweetweb' ),
-				'priority'    => apply_filters( 'sweetweb_google_fonts_section_priority', 160 ),
+				'priority'    => apply_filters( 'sweetweb_google_fonts_section_priority', 50 ),
 			)
 		);
 
 		//Sanitizes Fonts
 		function sweetweb_sanitize_fonts( $input ) {
 			$valid = array(
+				'Poppins :400italic,700italic,400,700' => 'Poppins',
 				'Source Sans Pro:400,700,400italic,700italic' => 'Source Sans Pro',
 				'Open Sans:400italic,700italic,400,700' => 'Open Sans',
 				'Oswald:400,700' => 'Oswald',
@@ -276,6 +277,7 @@ if ( ! function_exists( 'sweetweb_theme_customize_register' ) ) {
 		}
 
 		$font_choices = array(
+			'Poppins :400italic,700italic,400,700' => 'Poppins',
 			'Source Sans Pro:400,700,400italic,700italic' => 'Source Sans Pro',
 			'Open Sans:400italic,700italic,400,700' => 'Open Sans',
 			'Oswald:400,700' => 'Oswald',

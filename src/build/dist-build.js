@@ -42,7 +42,7 @@ async function copyDir(src, dest) {
 }
 del('./dist').then (() => {
 	console.log('./dist is deleted!');
-	copyDir('./', './dist/sweetweb').then (() => {
+	copyDir('./', './dist/sweetweb/sweetweb').then (() => {
 		zipdir('./dist/sweetweb', { saveTo: './dist/sweetweb.zip' });
 		console.log('Zip file created');
 	});
