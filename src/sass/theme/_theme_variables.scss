@@ -3,12 +3,17 @@
 // Just copy a variable from src/sass/bootstrap4/_variables.scss, paste it here and edit the value.
 
 $link-decoration: none; // remove text decoration link
-$purple: #5533ff; // Thats a sample how you could change a BootStrap variable.
-$blue: #2b5497; // Thats a sample how you could change a BootStrap variable.
-$gray: #f5f5f5; // Thats a sample how you could change a BootStrap variable.
-$dark: #2b2b2b; // Thats a sample how you could change a BootStrap variable.
-$primary: $dark;  // Once we've changed the value, we'll also make it the primary brand color.
+
+$primary: #5e72e4;
+$secondary: #8898aa;
+$success: #2dce89;
+$info: #11cdef;
+$warning: #fb6340;
+$danger: #f5365c;
+$light: #ced4da;
+$dark: #000;
+
 $nav-link-font-weight: medium; // Replace bootstrap's default font weight.
 $navbar-nav-link-padding-x: 1rem !default; // padding-left and padding-right
 $navbar-toggler-border-radius: 0 !default;
-$dropdown-item-padding-y: .5rem !default; // padding-top and padding-bottom
+$dropdown-item-padding-y: 0.5rem !default; // padding-top and padding-bottom
