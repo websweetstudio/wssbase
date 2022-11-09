@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*!
- * Bootstrap v5.2.0-beta1 (https://getbootstrap.com/)
+ * Bootstrap  v5.2.2 (https://getbootstrap.com/)
  * Copyright 2011-2022 The Bootstrap Authors
  * Copyright 2011-2022 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
@@ -29,7 +29,7 @@
   --bs-gray-700: #495057;
   --bs-gray-800: #343a40;
   --bs-gray-900: #212529;
-  --bs-primary: #5e72e4;
+  --bs-primary: #372948;
   --bs-secondary: #8898aa;
   --bs-success: #2dce89;
   --bs-info: #11cdef;
@@ -37,7 +37,7 @@
   --bs-danger: #f5365c;
   --bs-light: #ced4da;
   --bs-dark: #000;
-  --bs-primary-rgb: 94, 114, 228;
+  --bs-primary-rgb: 55, 41, 72;
   --bs-secondary-rgb: 136, 152, 170;
   --bs-success-rgb: 45, 206, 137;
   --bs-info-rgb: 17, 205, 239;
@@ -68,9 +68,8 @@
   --bs-border-radius-xl: 1rem;
   --bs-border-radius-2xl: 2rem;
   --bs-border-radius-pill: 50rem;
-  --bs-heading-color: ;
-  --bs-link-color: #5e72e4;
-  --bs-link-hover-color: #4b5bb6;
+  --bs-link-color: #372948;
+  --bs-link-hover-color: #2c213a;
   --bs-code-color: #d63384;
   --bs-highlight-bg: #fff3cd;
 }
@@ -113,7 +112,6 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
   margin-bottom: 0.5rem;
   font-weight: 500;
   line-height: 1.2;
-  color: var(--bs-heading-color);
 }
 
 h1, .h1 {
@@ -313,7 +311,7 @@ table {
 caption {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
-  color: rgba(var(--bs-body-color-rgb), 0.75);
+  color: #6c757d;
   text-align: left;
 }
 
@@ -1010,51 +1008,51 @@ progress {
     margin-left: 91.66666667%;
   }
   .g-sm-0,
-.gx-sm-0 {
+  .gx-sm-0 {
     --bs-gutter-x: 0;
   }
   .g-sm-0,
-.gy-sm-0 {
+  .gy-sm-0 {
     --bs-gutter-y: 0;
   }
   .g-sm-1,
-.gx-sm-1 {
+  .gx-sm-1 {
     --bs-gutter-x: 0.25rem;
   }
   .g-sm-1,
-.gy-sm-1 {
+  .gy-sm-1 {
     --bs-gutter-y: 0.25rem;
   }
   .g-sm-2,
-.gx-sm-2 {
+  .gx-sm-2 {
     --bs-gutter-x: 0.5rem;
   }
   .g-sm-2,
-.gy-sm-2 {
+  .gy-sm-2 {
     --bs-gutter-y: 0.5rem;
   }
   .g-sm-3,
-.gx-sm-3 {
+  .gx-sm-3 {
     --bs-gutter-x: 1rem;
   }
   .g-sm-3,
-.gy-sm-3 {
+  .gy-sm-3 {
     --bs-gutter-y: 1rem;
   }
   .g-sm-4,
-.gx-sm-4 {
+  .gx-sm-4 {
     --bs-gutter-x: 1.5rem;
   }
   .g-sm-4,
-.gy-sm-4 {
+  .gy-sm-4 {
     --bs-gutter-y: 1.5rem;
   }
   .g-sm-5,
-.gx-sm-5 {
+  .gx-sm-5 {
     --bs-gutter-x: 3rem;
   }
   .g-sm-5,
-.gy-sm-5 {
+  .gy-sm-5 {
     --bs-gutter-y: 3rem;
   }
 }
@@ -1179,51 +1177,51 @@ progress {
     margin-left: 91.66666667%;
   }
   .g-md-0,
-.gx-md-0 {
+  .gx-md-0 {
     --bs-gutter-x: 0;
   }
   .g-md-0,
-.gy-md-0 {
+  .gy-md-0 {
     --bs-gutter-y: 0;
   }
   .g-md-1,
-.gx-md-1 {
+  .gx-md-1 {
     --bs-gutter-x: 0.25rem;
   }
   .g-md-1,
-.gy-md-1 {
+  .gy-md-1 {
     --bs-gutter-y: 0.25rem;
   }
   .g-md-2,
-.gx-md-2 {
+  .gx-md-2 {
     --bs-gutter-x: 0.5rem;
   }
   .g-md-2,
-.gy-md-2 {
+  .gy-md-2 {
     --bs-gutter-y: 0.5rem;
   }
   .g-md-3,
-.gx-md-3 {
+  .gx-md-3 {
     --bs-gutter-x: 1rem;
   }
   .g-md-3,
-.gy-md-3 {
+  .gy-md-3 {
     --bs-gutter-y: 1rem;
   }
   .g-md-4,
-.gx-md-4 {
+  .gx-md-4 {
     --bs-gutter-x: 1.5rem;
   }
   .g-md-4,
-.gy-md-4 {
+  .gy-md-4 {
     --bs-gutter-y: 1.5rem;
   }
   .g-md-5,
-.gx-md-5 {
+  .gx-md-5 {
     --bs-gutter-x: 3rem;
   }
   .g-md-5,
-.gy-md-5 {
+  .gy-md-5 {
     --bs-gutter-y: 3rem;
   }
 }
@@ -1348,51 +1346,51 @@ progress {
     margin-left: 91.66666667%;
   }
   .g-lg-0,
-.gx-lg-0 {
+  .gx-lg-0 {
     --bs-gutter-x: 0;
   }
   .g-lg-0,
-.gy-lg-0 {
+  .gy-lg-0 {
     --bs-gutter-y: 0;
   }
   .g-lg-1,
-.gx-lg-1 {
+  .gx-lg-1 {
     --bs-gutter-x: 0.25rem;
   }
   .g-lg-1,
-.gy-lg-1 {
+  .gy-lg-1 {
     --bs-gutter-y: 0.25rem;
   }
   .g-lg-2,
-.gx-lg-2 {
+  .gx-lg-2 {
     --bs-gutter-x: 0.5rem;
   }
   .g-lg-2,
-.gy-lg-2 {
+  .gy-lg-2 {
     --bs-gutter-y: 0.5rem;
   }
   .g-lg-3,
-.gx-lg-3 {
+  .gx-lg-3 {
     --bs-gutter-x: 1rem;
   }
   .g-lg-3,
-.gy-lg-3 {
+  .gy-lg-3 {
     --bs-gutter-y: 1rem;
   }
   .g-lg-4,
-.gx-lg-4 {
+  .gx-lg-4 {
     --bs-gutter-x: 1.5rem;
   }
   .g-lg-4,
-.gy-lg-4 {
+  .gy-lg-4 {
     --bs-gutter-y: 1.5rem;
   }
   .g-lg-5,
-.gx-lg-5 {
+  .gx-lg-5 {
     --bs-gutter-x: 3rem;
   }
   .g-lg-5,
-.gy-lg-5 {
+  .gy-lg-5 {
     --bs-gutter-y: 3rem;
   }
 }
@@ -1517,51 +1515,51 @@ progress {
     margin-left: 91.66666667%;
   }
   .g-xl-0,
-.gx-xl-0 {
+  .gx-xl-0 {
     --bs-gutter-x: 0;
   }
   .g-xl-0,
-.gy-xl-0 {
+  .gy-xl-0 {
     --bs-gutter-y: 0;
   }
   .g-xl-1,
-.gx-xl-1 {
+  .gx-xl-1 {
     --bs-gutter-x: 0.25rem;
   }
   .g-xl-1,
-.gy-xl-1 {
+  .gy-xl-1 {
     --bs-gutter-y: 0.25rem;
   }
   .g-xl-2,
-.gx-xl-2 {
+  .gx-xl-2 {
     --bs-gutter-x: 0.5rem;
   }
   .g-xl-2,
-.gy-xl-2 {
+  .gy-xl-2 {
     --bs-gutter-y: 0.5rem;
   }
   .g-xl-3,
-.gx-xl-3 {
+  .gx-xl-3 {
     --bs-gutter-x: 1rem;
   }
   .g-xl-3,
-.gy-xl-3 {
+  .gy-xl-3 {
     --bs-gutter-y: 1rem;
   }
   .g-xl-4,
-.gx-xl-4 {
+  .gx-xl-4 {
     --bs-gutter-x: 1.5rem;
   }
   .g-xl-4,
-.gy-xl-4 {
+  .gy-xl-4 {
     --bs-gutter-y: 1.5rem;
   }
   .g-xl-5,
-.gx-xl-5 {
+  .gx-xl-5 {
     --bs-gutter-x: 3rem;
   }
   .g-xl-5,
-.gy-xl-5 {
+  .gy-xl-5 {
     --bs-gutter-y: 3rem;
   }
 }
@@ -1686,51 +1684,51 @@ progress {
     margin-left: 91.66666667%;
   }
   .g-xxl-0,
-.gx-xxl-0 {
+  .gx-xxl-0 {
     --bs-gutter-x: 0;
   }
   .g-xxl-0,
-.gy-xxl-0 {
+  .gy-xxl-0 {
     --bs-gutter-y: 0;
   }
   .g-xxl-1,
-.gx-xxl-1 {
+  .gx-xxl-1 {
     --bs-gutter-x: 0.25rem;
   }
   .g-xxl-1,
-.gy-xxl-1 {
+  .gy-xxl-1 {
     --bs-gutter-y: 0.25rem;
   }
   .g-xxl-2,
-.gx-xxl-2 {
+  .gx-xxl-2 {
     --bs-gutter-x: 0.5rem;
   }
   .g-xxl-2,
-.gy-xxl-2 {
+  .gy-xxl-2 {
     --bs-gutter-y: 0.5rem;
   }
   .g-xxl-3,
-.gx-xxl-3 {
+  .gx-xxl-3 {
     --bs-gutter-x: 1rem;
   }
   .g-xxl-3,
-.gy-xxl-3 {
+  .gy-xxl-3 {
     --bs-gutter-y: 1rem;
   }
   .g-xxl-4,
-.gx-xxl-4 {
+  .gx-xxl-4 {
     --bs-gutter-x: 1.5rem;
   }
   .g-xxl-4,
-.gy-xxl-4 {
+  .gy-xxl-4 {
     --bs-gutter-y: 1.5rem;
   }
   .g-xxl-5,
-.gx-xxl-5 {
+  .gx-xxl-5 {
     --bs-gutter-x: 3rem;
   }
   .g-xxl-5,
-.gy-xxl-5 {
+  .gy-xxl-5 {
     --bs-gutter-y: 3rem;
   }
 }
@@ -1812,13 +1810,13 @@ progress {
 
 .table-primary {
   --bs-table-color: #000;
-  --bs-table-bg: #dfe3fa;
-  --bs-table-border-color: #c9cce1;
-  --bs-table-striped-bg: #d4d8ee;
+  --bs-table-bg: #d7d4da;
+  --bs-table-border-color: #c2bfc4;
+  --bs-table-striped-bg: #ccc9cf;
   --bs-table-striped-color: #000;
-  --bs-table-active-bg: #c9cce1;
+  --bs-table-active-bg: #c2bfc4;
   --bs-table-active-color: #000;
-  --bs-table-hover-bg: #ced2e7;
+  --bs-table-hover-bg: #c7c4ca;
   --bs-table-hover-color: #000;
   color: var(--bs-table-color);
   border-color: var(--bs-table-border-color);
@@ -1984,7 +1982,7 @@ progress {
 .form-text {
   margin-top: 0.25rem;
   font-size: 0.875em;
-  color: rgba(var(--bs-body-color-rgb), 0.75);
+  color: #6c757d;
 }
 
 .form-control, .comments-area input[type=text],
@@ -2034,34 +2032,34 @@ progress {
 }
 @media (prefers-reduced-motion: reduce) {
   .form-control, .comments-area input[type=text],
-.comments-area input[type=email],
-.comments-area input[type=url],
-.comments-area textarea, .wp-block-search__input, .woocommerce .cart .input-text, .woocommerce .woocommerce-ordering .orderby, .woocommerce .selection .select2-selection--single .select2-selection__rendered, .woocommerce input[type=text],
-.woocommerce input[type=email],
-.woocommerce input[type=password],
-.woocommerce input[type=search],
-.woocommerce textarea,
-.woocommerce .wpfMainWrapper select,
-.woocommerce .wpfMainWrapper input,
-.woocommerce .variations select, .wpcf7 .wpcf7-validation-errors, .wpcf7 input[type=text],
-.wpcf7 input[type=search],
-.wpcf7 input[type=url],
-.wpcf7 input[type=tel],
-.wpcf7 input[type=number],
-.wpcf7 input[type=range],
-.wpcf7 input[type=date],
-.wpcf7 input[type=month],
-.wpcf7 input[type=week],
-.wpcf7 input[type=time],
-.wpcf7 input[type=datetime],
-.wpcf7 input[type=datetime-local],
-.wpcf7 input[type=color],
-.wpcf7 input[type=email],
-.wpcf7 input[type=file],
-.wpcf7 input[type=submit],
-.wpcf7 select,
-.wpcf7 textarea, .widget_categories select,
-.widget_archive select {
+  .comments-area input[type=email],
+  .comments-area input[type=url],
+  .comments-area textarea, .wp-block-search__input, .woocommerce .cart .input-text, .woocommerce .woocommerce-ordering .orderby, .woocommerce .selection .select2-selection--single .select2-selection__rendered, .woocommerce input[type=text],
+  .woocommerce input[type=email],
+  .woocommerce input[type=password],
+  .woocommerce input[type=search],
+  .woocommerce textarea,
+  .woocommerce .wpfMainWrapper select,
+  .woocommerce .wpfMainWrapper input,
+  .woocommerce .variations select, .wpcf7 .wpcf7-validation-errors, .wpcf7 input[type=text],
+  .wpcf7 input[type=search],
+  .wpcf7 input[type=url],
+  .wpcf7 input[type=tel],
+  .wpcf7 input[type=number],
+  .wpcf7 input[type=range],
+  .wpcf7 input[type=date],
+  .wpcf7 input[type=month],
+  .wpcf7 input[type=week],
+  .wpcf7 input[type=time],
+  .wpcf7 input[type=datetime],
+  .wpcf7 input[type=datetime-local],
+  .wpcf7 input[type=color],
+  .wpcf7 input[type=email],
+  .wpcf7 input[type=file],
+  .wpcf7 input[type=submit],
+  .wpcf7 select,
+  .wpcf7 textarea, .widget_categories select,
+  .widget_archive select {
     transition: none;
   }
 }
@@ -2130,9 +2128,9 @@ progress {
 .widget_archive select:focus {
   color: #212529;
   background-color: #fff;
-  border-color: #afb9f2;
+  border-color: #9b94a4;
   outline: 0;
-  box-shadow: 0 0 0 0.25rem rgba(94, 114, 228, 0.25);
+  box-shadow: 0 0 0 0.25rem rgba(55, 41, 72, 0.25);
 }
 .form-control::-webkit-date-and-time-value, .comments-area input[type=text]::-webkit-date-and-time-value,
 .comments-area input[type=email]::-webkit-date-and-time-value,
@@ -2229,35 +2227,7 @@ progress {
 .wpcf7 input[type=submit]:disabled,
 .wpcf7 select:disabled,
 .wpcf7 textarea:disabled, .widget_categories select:disabled,
-.widget_archive select:disabled, .form-control[readonly], .comments-area input[readonly][type=text],
-.comments-area input[readonly][type=email],
-.comments-area input[readonly][type=url],
-.comments-area textarea[readonly], [readonly].wp-block-search__input, .woocommerce .cart [readonly].input-text, .woocommerce .woocommerce-ordering [readonly].orderby, .woocommerce .selection .select2-selection--single [readonly].select2-selection__rendered, .woocommerce input[readonly][type=text],
-.woocommerce input[readonly][type=email],
-.woocommerce input[readonly][type=password],
-.woocommerce input[readonly][type=search],
-.woocommerce textarea[readonly],
-.woocommerce .wpfMainWrapper select[readonly],
-.woocommerce .wpfMainWrapper input[readonly],
-.woocommerce .variations select[readonly], .wpcf7 [readonly].wpcf7-validation-errors, .wpcf7 input[readonly][type=text],
-.wpcf7 input[readonly][type=search],
-.wpcf7 input[readonly][type=url],
-.wpcf7 input[readonly][type=tel],
-.wpcf7 input[readonly][type=number],
-.wpcf7 input[readonly][type=range],
-.wpcf7 input[readonly][type=date],
-.wpcf7 input[readonly][type=month],
-.wpcf7 input[readonly][type=week],
-.wpcf7 input[readonly][type=time],
-.wpcf7 input[readonly][type=datetime],
-.wpcf7 input[readonly][type=datetime-local],
-.wpcf7 input[readonly][type=color],
-.wpcf7 input[readonly][type=email],
-.wpcf7 input[readonly][type=file],
-.wpcf7 input[readonly][type=submit],
-.wpcf7 select[readonly],
-.wpcf7 textarea[readonly], .widget_categories select[readonly],
-.widget_archive select[readonly] {
+.widget_archive select:disabled {
   background-color: #e9ecef;
   opacity: 1;
 }
@@ -2306,34 +2276,34 @@ progress {
 }
 @media (prefers-reduced-motion: reduce) {
   .form-control::file-selector-button, .comments-area input[type=text]::file-selector-button,
-.comments-area input[type=email]::file-selector-button,
-.comments-area input[type=url]::file-selector-button,
-.comments-area textarea::file-selector-button, .wp-block-search__input::file-selector-button, .woocommerce .cart .input-text::file-selector-button, .woocommerce .woocommerce-ordering .orderby::file-selector-button, .woocommerce .selection .select2-selection--single .select2-selection__rendered::file-selector-button, .woocommerce input[type=text]::file-selector-button,
-.woocommerce input[type=email]::file-selector-button,
-.woocommerce input[type=password]::file-selector-button,
-.woocommerce input[type=search]::file-selector-button,
-.woocommerce textarea::file-selector-button,
-.woocommerce .wpfMainWrapper select::file-selector-button,
-.woocommerce .wpfMainWrapper input::file-selector-button,
-.woocommerce .variations select::file-selector-button, .wpcf7 .wpcf7-validation-errors::file-selector-button, .wpcf7 input[type=text]::file-selector-button,
-.wpcf7 input[type=search]::file-selector-button,
-.wpcf7 input[type=url]::file-selector-button,
-.wpcf7 input[type=tel]::file-selector-button,
-.wpcf7 input[type=number]::file-selector-button,
-.wpcf7 input[type=range]::file-selector-button,
-.wpcf7 input[type=date]::file-selector-button,
-.wpcf7 input[type=month]::file-selector-button,
-.wpcf7 input[type=week]::file-selector-button,
-.wpcf7 input[type=time]::file-selector-button,
-.wpcf7 input[type=datetime]::file-selector-button,
-.wpcf7 input[type=datetime-local]::file-selector-button,
-.wpcf7 input[type=color]::file-selector-button,
-.wpcf7 input[type=email]::file-selector-button,
-.wpcf7 input[type=file]::file-selector-button,
-.wpcf7 input[type=submit]::file-selector-button,
-.wpcf7 select::file-selector-button,
-.wpcf7 textarea::file-selector-button, .widget_categories select::file-selector-button,
-.widget_archive select::file-selector-button {
+  .comments-area input[type=email]::file-selector-button,
+  .comments-area input[type=url]::file-selector-button,
+  .comments-area textarea::file-selector-button, .wp-block-search__input::file-selector-button, .woocommerce .cart .input-text::file-selector-button, .woocommerce .woocommerce-ordering .orderby::file-selector-button, .woocommerce .selection .select2-selection--single .select2-selection__rendered::file-selector-button, .woocommerce input[type=text]::file-selector-button,
+  .woocommerce input[type=email]::file-selector-button,
+  .woocommerce input[type=password]::file-selector-button,
+  .woocommerce input[type=search]::file-selector-button,
+  .woocommerce textarea::file-selector-button,
+  .woocommerce .wpfMainWrapper select::file-selector-button,
+  .woocommerce .wpfMainWrapper input::file-selector-button,
+  .woocommerce .variations select::file-selector-button, .wpcf7 .wpcf7-validation-errors::file-selector-button, .wpcf7 input[type=text]::file-selector-button,
+  .wpcf7 input[type=search]::file-selector-button,
+  .wpcf7 input[type=url]::file-selector-button,
+  .wpcf7 input[type=tel]::file-selector-button,
+  .wpcf7 input[type=number]::file-selector-button,
+  .wpcf7 input[type=range]::file-selector-button,
+  .wpcf7 input[type=date]::file-selector-button,
+  .wpcf7 input[type=month]::file-selector-button,
+  .wpcf7 input[type=week]::file-selector-button,
+  .wpcf7 input[type=time]::file-selector-button,
+  .wpcf7 input[type=datetime]::file-selector-button,
+  .wpcf7 input[type=datetime-local]::file-selector-button,
+  .wpcf7 input[type=color]::file-selector-button,
+  .wpcf7 input[type=email]::file-selector-button,
+  .wpcf7 input[type=file]::file-selector-button,
+  .wpcf7 input[type=submit]::file-selector-button,
+  .wpcf7 select::file-selector-button,
+  .wpcf7 textarea::file-selector-button, .widget_categories select::file-selector-button,
+  .widget_archive select::file-selector-button {
     transition: none;
   }
 }
@@ -2379,6 +2349,9 @@ progress {
   background-color: transparent;
   border: solid transparent;
   border-width: 1px 0;
+}
+.form-control-plaintext:focus {
+  outline: 0;
 }
 .form-control-plaintext.form-control-sm, .form-control-plaintext.form-control-lg {
   padding-right: 0;
@@ -2426,19 +2399,24 @@ textarea.form-control-lg {
 
 .form-control-color {
   width: 3rem;
-  height: auto;
+  height: calc(1.5em + 0.75rem + 2px);
   padding: 0.375rem;
 }
 .form-control-color:not(:disabled):not([readonly]) {
   cursor: pointer;
 }
 .form-control-color::-moz-color-swatch {
-  height: 1.5em;
+  border: 0 !important;
   border-radius: 0.375rem;
 }
 .form-control-color::-webkit-color-swatch {
-  height: 1.5em;
   border-radius: 0.375rem;
+}
+.form-control-color.form-control-sm {
+  height: calc(1.5em + 0.5rem + 2px);
+}
+.form-control-color.form-control-lg {
+  height: calc(1.5em + 1rem + 2px);
 }
 
 .form-select {
@@ -2468,9 +2446,9 @@ textarea.form-control-lg {
   }
 }
 .form-select:focus {
-  border-color: #afb9f2;
+  border-color: #9b94a4;
   outline: 0;
-  box-shadow: 0 0 0 0.25rem rgba(94, 114, 228, 0.25);
+  box-shadow: 0 0 0 0.25rem rgba(55, 41, 72, 0.25);
 }
 .form-select[multiple], .form-select[size]:not([size="1"]) {
   padding-right: 0.75rem;
@@ -2548,13 +2526,13 @@ textarea.form-control-lg {
   filter: brightness(90%);
 }
 .form-check-input:focus {
-  border-color: #afb9f2;
+  border-color: #9b94a4;
   outline: 0;
-  box-shadow: 0 0 0 0.25rem rgba(94, 114, 228, 0.25);
+  box-shadow: 0 0 0 0.25rem rgba(55, 41, 72, 0.25);
 }
 .form-check-input:checked {
-  background-color: #5e72e4;
-  border-color: #5e72e4;
+  background-color: #372948;
+  border-color: #372948;
 }
 .form-check-input:checked[type=checkbox] {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='m6 10 3 3 6-6'/%3e%3c/svg%3e");
@@ -2563,8 +2541,8 @@ textarea.form-control-lg {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='2' fill='%23fff'/%3e%3c/svg%3e");
 }
 .form-check-input[type=checkbox]:indeterminate {
-  background-color: #5e72e4;
-  border-color: #5e72e4;
+  background-color: #372948;
+  border-color: #372948;
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10h8'/%3e%3c/svg%3e");
 }
 .form-check-input:disabled {
@@ -2594,7 +2572,7 @@ textarea.form-control-lg {
   }
 }
 .form-switch .form-check-input:focus {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23afb9f2'/%3e%3c/svg%3e");
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%239b94a4'/%3e%3c/svg%3e");
 }
 .form-switch .form-check-input:checked {
   background-position: right center;
@@ -2642,10 +2620,10 @@ textarea.form-control-lg {
   outline: 0;
 }
 .form-range:focus::-webkit-slider-thumb {
-  box-shadow: 0 0 0 1px #fff, 0 0 0 0.25rem rgba(94, 114, 228, 0.25);
+  box-shadow: 0 0 0 1px #fff, 0 0 0 0.25rem rgba(55, 41, 72, 0.25);
 }
 .form-range:focus::-moz-range-thumb {
-  box-shadow: 0 0 0 1px #fff, 0 0 0 0.25rem rgba(94, 114, 228, 0.25);
+  box-shadow: 0 0 0 1px #fff, 0 0 0 0.25rem rgba(55, 41, 72, 0.25);
 }
 .form-range::-moz-focus-outer {
   border: 0;
@@ -2654,7 +2632,7 @@ textarea.form-control-lg {
   width: 1rem;
   height: 1rem;
   margin-top: -0.25rem;
-  background-color: #5e72e4;
+  background-color: #372948;
   border: 0;
   border-radius: 1rem;
   -webkit-transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
@@ -2669,7 +2647,7 @@ textarea.form-control-lg {
   }
 }
 .form-range::-webkit-slider-thumb:active {
-  background-color: #cfd5f7;
+  background-color: #c3bfc8;
 }
 .form-range::-webkit-slider-runnable-track {
   width: 100%;
@@ -2683,7 +2661,7 @@ textarea.form-control-lg {
 .form-range::-moz-range-thumb {
   width: 1rem;
   height: 1rem;
-  background-color: #5e72e4;
+  background-color: #372948;
   border: 0;
   border-radius: 1rem;
   -moz-transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
@@ -2698,7 +2676,7 @@ textarea.form-control-lg {
   }
 }
 .form-range::-moz-range-thumb:active {
-  background-color: #cfd5f7;
+  background-color: #c3bfc8;
 }
 .form-range::-moz-range-track {
   width: 100%;
@@ -2760,8 +2738,13 @@ textarea.form-control-lg {
   position: absolute;
   top: 0;
   left: 0;
+  width: 100%;
   height: 100%;
   padding: 1rem 0.75rem;
+  overflow: hidden;
+  text-align: start;
+  text-overflow: ellipsis;
+  white-space: nowrap;
   pointer-events: none;
   border: 1px solid transparent;
   transform-origin: 0 0;
@@ -3090,7 +3073,8 @@ textarea.form-control-lg {
 .wpcf7 .input-group > select,
 .wpcf7 .input-group > textarea, .widget_categories .input-group > select,
 .widget_archive .input-group > select,
-.input-group > .form-select {
+.input-group > .form-select,
+.input-group > .form-floating {
   position: relative;
   flex: 1 1 auto;
   width: 1%;
@@ -3125,8 +3109,9 @@ textarea.form-control-lg {
 .wpcf7 .input-group > select:focus,
 .wpcf7 .input-group > textarea:focus, .widget_categories .input-group > select:focus,
 .widget_archive .input-group > select:focus,
-.input-group > .form-select:focus {
-  z-index: 3;
+.input-group > .form-select:focus,
+.input-group > .form-floating:focus-within {
+  z-index: 5;
 }
 .input-group .btn, .input-group .comments-area input[type=submit], .comments-area .input-group input[type=submit], .input-group .button,
 .input-group .wp-block-search__button,
@@ -3147,7 +3132,7 @@ textarea.form-control-lg {
 .input-group .wp-block-search__button:focus, .input-group .woocommerce button:focus, .woocommerce .input-group button:focus,
 .input-group .woocommerce .single_add_to_cart_button:focus,
 .woocommerce .input-group .single_add_to_cart_button:focus, .input-group .woocommerce-notices-wrapper .woocommerce-message a.button:focus, .woocommerce-notices-wrapper .woocommerce-message .input-group a.button:focus, .input-group .wpcf7 input[type=submit]:focus, .wpcf7 .input-group input[type=submit]:focus {
-  z-index: 3;
+  z-index: 5;
 }
 
 .input-group-text {
@@ -3266,18 +3251,129 @@ textarea.form-control-lg {
   padding-right: 3rem;
 }
 
-.input-group:not(.has-validation) > :not(:last-child):not(.dropdown-toggle):not(.dropdown-menu),
-.input-group:not(.has-validation) > .dropdown-toggle:nth-last-child(n+3) {
+.input-group:not(.has-validation) > :not(:last-child):not(.dropdown-toggle):not(.dropdown-menu):not(.form-floating),
+.input-group:not(.has-validation) > .dropdown-toggle:nth-last-child(n+3),
+.input-group:not(.has-validation) > .form-floating:not(:last-child) > .form-control,
+.comments-area .input-group:not(.has-validation) > .form-floating:not(:last-child) > input[type=text],
+.comments-area .input-group:not(.has-validation) > .form-floating:not(:last-child) > input[type=email],
+.comments-area .input-group:not(.has-validation) > .form-floating:not(:last-child) > input[type=url],
+.comments-area .input-group:not(.has-validation) > .form-floating:not(:last-child) > textarea,
+.input-group:not(.has-validation) > .form-floating:not(:last-child) > .wp-block-search__input,
+.woocommerce .cart .input-group:not(.has-validation) > .form-floating:not(:last-child) > .input-text,
+.woocommerce .woocommerce-ordering .input-group:not(.has-validation) > .form-floating:not(:last-child) > .orderby,
+.woocommerce .selection .select2-selection--single .input-group:not(.has-validation) > .form-floating:not(:last-child) > .select2-selection__rendered,
+.woocommerce .input-group:not(.has-validation) > .form-floating:not(:last-child) > input[type=text],
+.woocommerce .input-group:not(.has-validation) > .form-floating:not(:last-child) > input[type=email],
+.woocommerce .input-group:not(.has-validation) > .form-floating:not(:last-child) > input[type=password],
+.woocommerce .input-group:not(.has-validation) > .form-floating:not(:last-child) > input[type=search],
+.woocommerce .input-group:not(.has-validation) > .form-floating:not(:last-child) > textarea,
+.woocommerce .wpfMainWrapper .input-group:not(.has-validation) > .form-floating:not(:last-child) > select,
+.woocommerce .wpfMainWrapper .input-group:not(.has-validation) > .form-floating:not(:last-child) > input,
+.woocommerce .variations .input-group:not(.has-validation) > .form-floating:not(:last-child) > select,
+.wpcf7 .input-group:not(.has-validation) > .form-floating:not(:last-child) > .wpcf7-validation-errors,
+.wpcf7 .input-group:not(.has-validation) > .form-floating:not(:last-child) > input[type=text],
+.wpcf7 .input-group:not(.has-validation) > .form-floating:not(:last-child) > input[type=search],
+.wpcf7 .input-group:not(.has-validation) > .form-floating:not(:last-child) > input[type=url],
+.wpcf7 .input-group:not(.has-validation) > .form-floating:not(:last-child) > input[type=tel],
+.wpcf7 .input-group:not(.has-validation) > .form-floating:not(:last-child) > input[type=number],
+.wpcf7 .input-group:not(.has-validation) > .form-floating:not(:last-child) > input[type=range],
+.wpcf7 .input-group:not(.has-validation) > .form-floating:not(:last-child) > input[type=date],
+.wpcf7 .input-group:not(.has-validation) > .form-floating:not(:last-child) > input[type=month],
+.wpcf7 .input-group:not(.has-validation) > .form-floating:not(:last-child) > input[type=week],
+.wpcf7 .input-group:not(.has-validation) > .form-floating:not(:last-child) > input[type=time],
+.wpcf7 .input-group:not(.has-validation) > .form-floating:not(:last-child) > input[type=datetime],
+.wpcf7 .input-group:not(.has-validation) > .form-floating:not(:last-child) > input[type=datetime-local],
+.wpcf7 .input-group:not(.has-validation) > .form-floating:not(:last-child) > input[type=color],
+.wpcf7 .input-group:not(.has-validation) > .form-floating:not(:last-child) > input[type=email],
+.wpcf7 .input-group:not(.has-validation) > .form-floating:not(:last-child) > input[type=file],
+.wpcf7 .input-group:not(.has-validation) > .form-floating:not(:last-child) > input[type=submit],
+.wpcf7 .input-group:not(.has-validation) > .form-floating:not(:last-child) > select,
+.wpcf7 .input-group:not(.has-validation) > .form-floating:not(:last-child) > textarea,
+.widget_categories .input-group:not(.has-validation) > .form-floating:not(:last-child) > select,
+.widget_archive .input-group:not(.has-validation) > .form-floating:not(:last-child) > select,
+.input-group:not(.has-validation) > .form-floating:not(:last-child) > .form-select {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
 }
-.input-group.has-validation > :nth-last-child(n+3):not(.dropdown-toggle):not(.dropdown-menu),
-.input-group.has-validation > .dropdown-toggle:nth-last-child(n+4) {
+.input-group.has-validation > :nth-last-child(n+3):not(.dropdown-toggle):not(.dropdown-menu):not(.form-floating),
+.input-group.has-validation > .dropdown-toggle:nth-last-child(n+4),
+.input-group.has-validation > .form-floating:nth-last-child(n+3) > .form-control,
+.comments-area .input-group.has-validation > .form-floating:nth-last-child(n+3) > input[type=text],
+.comments-area .input-group.has-validation > .form-floating:nth-last-child(n+3) > input[type=email],
+.comments-area .input-group.has-validation > .form-floating:nth-last-child(n+3) > input[type=url],
+.comments-area .input-group.has-validation > .form-floating:nth-last-child(n+3) > textarea,
+.input-group.has-validation > .form-floating:nth-last-child(n+3) > .wp-block-search__input,
+.woocommerce .cart .input-group.has-validation > .form-floating:nth-last-child(n+3) > .input-text,
+.woocommerce .woocommerce-ordering .input-group.has-validation > .form-floating:nth-last-child(n+3) > .orderby,
+.woocommerce .selection .select2-selection--single .input-group.has-validation > .form-floating:nth-last-child(n+3) > .select2-selection__rendered,
+.woocommerce .input-group.has-validation > .form-floating:nth-last-child(n+3) > input[type=text],
+.woocommerce .input-group.has-validation > .form-floating:nth-last-child(n+3) > input[type=email],
+.woocommerce .input-group.has-validation > .form-floating:nth-last-child(n+3) > input[type=password],
+.woocommerce .input-group.has-validation > .form-floating:nth-last-child(n+3) > input[type=search],
+.woocommerce .input-group.has-validation > .form-floating:nth-last-child(n+3) > textarea,
+.woocommerce .wpfMainWrapper .input-group.has-validation > .form-floating:nth-last-child(n+3) > select,
+.woocommerce .wpfMainWrapper .input-group.has-validation > .form-floating:nth-last-child(n+3) > input,
+.woocommerce .variations .input-group.has-validation > .form-floating:nth-last-child(n+3) > select,
+.wpcf7 .input-group.has-validation > .form-floating:nth-last-child(n+3) > .wpcf7-validation-errors,
+.wpcf7 .input-group.has-validation > .form-floating:nth-last-child(n+3) > input[type=text],
+.wpcf7 .input-group.has-validation > .form-floating:nth-last-child(n+3) > input[type=search],
+.wpcf7 .input-group.has-validation > .form-floating:nth-last-child(n+3) > input[type=url],
+.wpcf7 .input-group.has-validation > .form-floating:nth-last-child(n+3) > input[type=tel],
+.wpcf7 .input-group.has-validation > .form-floating:nth-last-child(n+3) > input[type=number],
+.wpcf7 .input-group.has-validation > .form-floating:nth-last-child(n+3) > input[type=range],
+.wpcf7 .input-group.has-validation > .form-floating:nth-last-child(n+3) > input[type=date],
+.wpcf7 .input-group.has-validation > .form-floating:nth-last-child(n+3) > input[type=month],
+.wpcf7 .input-group.has-validation > .form-floating:nth-last-child(n+3) > input[type=week],
+.wpcf7 .input-group.has-validation > .form-floating:nth-last-child(n+3) > input[type=time],
+.wpcf7 .input-group.has-validation > .form-floating:nth-last-child(n+3) > input[type=datetime],
+.wpcf7 .input-group.has-validation > .form-floating:nth-last-child(n+3) > input[type=datetime-local],
+.wpcf7 .input-group.has-validation > .form-floating:nth-last-child(n+3) > input[type=color],
+.wpcf7 .input-group.has-validation > .form-floating:nth-last-child(n+3) > input[type=email],
+.wpcf7 .input-group.has-validation > .form-floating:nth-last-child(n+3) > input[type=file],
+.wpcf7 .input-group.has-validation > .form-floating:nth-last-child(n+3) > input[type=submit],
+.wpcf7 .input-group.has-validation > .form-floating:nth-last-child(n+3) > select,
+.wpcf7 .input-group.has-validation > .form-floating:nth-last-child(n+3) > textarea,
+.widget_categories .input-group.has-validation > .form-floating:nth-last-child(n+3) > select,
+.widget_archive .input-group.has-validation > .form-floating:nth-last-child(n+3) > select,
+.input-group.has-validation > .form-floating:nth-last-child(n+3) > .form-select {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
 }
 .input-group > :not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not(.invalid-feedback) {
   margin-left: -1px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.input-group > .form-floating:not(:first-child) > .form-control, .comments-area .input-group > .form-floating:not(:first-child) > input[type=text],
+.comments-area .input-group > .form-floating:not(:first-child) > input[type=email],
+.comments-area .input-group > .form-floating:not(:first-child) > input[type=url],
+.comments-area .input-group > .form-floating:not(:first-child) > textarea, .input-group > .form-floating:not(:first-child) > .wp-block-search__input, .woocommerce .cart .input-group > .form-floating:not(:first-child) > .input-text, .woocommerce .woocommerce-ordering .input-group > .form-floating:not(:first-child) > .orderby, .woocommerce .selection .select2-selection--single .input-group > .form-floating:not(:first-child) > .select2-selection__rendered, .woocommerce .input-group > .form-floating:not(:first-child) > input[type=text],
+.woocommerce .input-group > .form-floating:not(:first-child) > input[type=email],
+.woocommerce .input-group > .form-floating:not(:first-child) > input[type=password],
+.woocommerce .input-group > .form-floating:not(:first-child) > input[type=search],
+.woocommerce .input-group > .form-floating:not(:first-child) > textarea,
+.woocommerce .wpfMainWrapper .input-group > .form-floating:not(:first-child) > select,
+.woocommerce .wpfMainWrapper .input-group > .form-floating:not(:first-child) > input,
+.woocommerce .variations .input-group > .form-floating:not(:first-child) > select, .wpcf7 .input-group > .form-floating:not(:first-child) > .wpcf7-validation-errors, .wpcf7 .input-group > .form-floating:not(:first-child) > input[type=text],
+.wpcf7 .input-group > .form-floating:not(:first-child) > input[type=search],
+.wpcf7 .input-group > .form-floating:not(:first-child) > input[type=url],
+.wpcf7 .input-group > .form-floating:not(:first-child) > input[type=tel],
+.wpcf7 .input-group > .form-floating:not(:first-child) > input[type=number],
+.wpcf7 .input-group > .form-floating:not(:first-child) > input[type=range],
+.wpcf7 .input-group > .form-floating:not(:first-child) > input[type=date],
+.wpcf7 .input-group > .form-floating:not(:first-child) > input[type=month],
+.wpcf7 .input-group > .form-floating:not(:first-child) > input[type=week],
+.wpcf7 .input-group > .form-floating:not(:first-child) > input[type=time],
+.wpcf7 .input-group > .form-floating:not(:first-child) > input[type=datetime],
+.wpcf7 .input-group > .form-floating:not(:first-child) > input[type=datetime-local],
+.wpcf7 .input-group > .form-floating:not(:first-child) > input[type=color],
+.wpcf7 .input-group > .form-floating:not(:first-child) > input[type=email],
+.wpcf7 .input-group > .form-floating:not(:first-child) > input[type=file],
+.wpcf7 .input-group > .form-floating:not(:first-child) > input[type=submit],
+.wpcf7 .input-group > .form-floating:not(:first-child) > select,
+.wpcf7 .input-group > .form-floating:not(:first-child) > textarea, .widget_categories .input-group > .form-floating:not(:first-child) > select,
+.widget_archive .input-group > .form-floating:not(:first-child) > select,
+.input-group > .form-floating:not(:first-child) > .form-select {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
 }
@@ -3541,238 +3637,95 @@ textarea.form-control-lg {
   margin-left: 0.5em;
 }
 
-.was-validated .input-group .form-control:valid, .was-validated .input-group .comments-area input[type=text]:valid, .comments-area .was-validated .input-group input[type=text]:valid,
-.was-validated .input-group .comments-area input[type=email]:valid,
-.comments-area .was-validated .input-group input[type=email]:valid,
-.was-validated .input-group .comments-area input[type=url]:valid,
-.comments-area .was-validated .input-group input[type=url]:valid,
-.was-validated .input-group .comments-area textarea:valid,
-.comments-area .was-validated .input-group textarea:valid, .was-validated .input-group .wp-block-search__input:valid, .was-validated .input-group .woocommerce .cart .input-text:valid, .woocommerce .cart .was-validated .input-group .input-text:valid, .was-validated .input-group .woocommerce .woocommerce-ordering .orderby:valid, .woocommerce .woocommerce-ordering .was-validated .input-group .orderby:valid, .was-validated .input-group .woocommerce .selection .select2-selection--single .select2-selection__rendered:valid, .woocommerce .selection .select2-selection--single .was-validated .input-group .select2-selection__rendered:valid, .was-validated .input-group .woocommerce input[type=text]:valid, .woocommerce .was-validated .input-group input[type=text]:valid,
-.was-validated .input-group .woocommerce input[type=email]:valid,
-.woocommerce .was-validated .input-group input[type=email]:valid,
-.was-validated .input-group .woocommerce input[type=password]:valid,
-.woocommerce .was-validated .input-group input[type=password]:valid,
-.was-validated .input-group .woocommerce input[type=search]:valid,
-.woocommerce .was-validated .input-group input[type=search]:valid,
-.was-validated .input-group .woocommerce textarea:valid,
-.woocommerce .was-validated .input-group textarea:valid,
-.was-validated .input-group .woocommerce .wpfMainWrapper select:valid,
-.woocommerce .wpfMainWrapper .was-validated .input-group select:valid,
-.was-validated .input-group .woocommerce .wpfMainWrapper input:valid,
-.woocommerce .wpfMainWrapper .was-validated .input-group input:valid,
-.was-validated .input-group .woocommerce .variations select:valid,
-.woocommerce .variations .was-validated .input-group select:valid, .was-validated .input-group .wpcf7 .wpcf7-validation-errors:valid, .wpcf7 .was-validated .input-group .wpcf7-validation-errors:valid, .was-validated .input-group .wpcf7 input[type=text]:valid, .wpcf7 .was-validated .input-group input[type=text]:valid,
-.was-validated .input-group .wpcf7 input[type=search]:valid,
-.wpcf7 .was-validated .input-group input[type=search]:valid,
-.was-validated .input-group .wpcf7 input[type=url]:valid,
-.wpcf7 .was-validated .input-group input[type=url]:valid,
-.was-validated .input-group .wpcf7 input[type=tel]:valid,
-.wpcf7 .was-validated .input-group input[type=tel]:valid,
-.was-validated .input-group .wpcf7 input[type=number]:valid,
-.wpcf7 .was-validated .input-group input[type=number]:valid,
-.was-validated .input-group .wpcf7 input[type=range]:valid,
-.wpcf7 .was-validated .input-group input[type=range]:valid,
-.was-validated .input-group .wpcf7 input[type=date]:valid,
-.wpcf7 .was-validated .input-group input[type=date]:valid,
-.was-validated .input-group .wpcf7 input[type=month]:valid,
-.wpcf7 .was-validated .input-group input[type=month]:valid,
-.was-validated .input-group .wpcf7 input[type=week]:valid,
-.wpcf7 .was-validated .input-group input[type=week]:valid,
-.was-validated .input-group .wpcf7 input[type=time]:valid,
-.wpcf7 .was-validated .input-group input[type=time]:valid,
-.was-validated .input-group .wpcf7 input[type=datetime]:valid,
-.wpcf7 .was-validated .input-group input[type=datetime]:valid,
-.was-validated .input-group .wpcf7 input[type=datetime-local]:valid,
-.wpcf7 .was-validated .input-group input[type=datetime-local]:valid,
-.was-validated .input-group .wpcf7 input[type=color]:valid,
-.wpcf7 .was-validated .input-group input[type=color]:valid,
-.was-validated .input-group .wpcf7 input[type=email]:valid,
-.wpcf7 .was-validated .input-group input[type=email]:valid,
-.was-validated .input-group .wpcf7 input[type=file]:valid,
-.wpcf7 .was-validated .input-group input[type=file]:valid,
-.was-validated .input-group .wpcf7 input[type=submit]:valid,
-.wpcf7 .was-validated .input-group input[type=submit]:valid,
-.was-validated .input-group .wpcf7 select:valid,
-.wpcf7 .was-validated .input-group select:valid,
-.was-validated .input-group .wpcf7 textarea:valid,
-.wpcf7 .was-validated .input-group textarea:valid, .was-validated .input-group .widget_categories select:valid, .widget_categories .was-validated .input-group select:valid,
-.was-validated .input-group .widget_archive select:valid,
-.widget_archive .was-validated .input-group select:valid, .input-group .form-control.is-valid, .input-group .comments-area input.is-valid[type=text], .comments-area .input-group input.is-valid[type=text],
-.input-group .comments-area input.is-valid[type=email],
-.comments-area .input-group input.is-valid[type=email],
-.input-group .comments-area input.is-valid[type=url],
-.comments-area .input-group input.is-valid[type=url],
-.input-group .comments-area textarea.is-valid,
-.comments-area .input-group textarea.is-valid, .input-group .is-valid.wp-block-search__input, .input-group .woocommerce .cart .is-valid.input-text, .woocommerce .cart .input-group .is-valid.input-text, .input-group .woocommerce .woocommerce-ordering .is-valid.orderby, .woocommerce .woocommerce-ordering .input-group .is-valid.orderby, .input-group .woocommerce .selection .select2-selection--single .is-valid.select2-selection__rendered, .woocommerce .selection .select2-selection--single .input-group .is-valid.select2-selection__rendered, .input-group .woocommerce input.is-valid[type=text], .woocommerce .input-group input.is-valid[type=text],
-.input-group .woocommerce input.is-valid[type=email],
-.woocommerce .input-group input.is-valid[type=email],
-.input-group .woocommerce input.is-valid[type=password],
-.woocommerce .input-group input.is-valid[type=password],
-.input-group .woocommerce input.is-valid[type=search],
-.woocommerce .input-group input.is-valid[type=search],
-.input-group .woocommerce textarea.is-valid,
-.woocommerce .input-group textarea.is-valid,
-.input-group .woocommerce .wpfMainWrapper select.is-valid,
-.woocommerce .wpfMainWrapper .input-group select.is-valid,
-.input-group .woocommerce .wpfMainWrapper input.is-valid,
-.woocommerce .wpfMainWrapper .input-group input.is-valid,
-.input-group .woocommerce .variations select.is-valid,
-.woocommerce .variations .input-group select.is-valid, .input-group .wpcf7 .is-valid.wpcf7-validation-errors, .wpcf7 .input-group .is-valid.wpcf7-validation-errors, .input-group .wpcf7 input.is-valid[type=text], .wpcf7 .input-group input.is-valid[type=text],
-.input-group .wpcf7 input.is-valid[type=search],
-.wpcf7 .input-group input.is-valid[type=search],
-.input-group .wpcf7 input.is-valid[type=url],
-.wpcf7 .input-group input.is-valid[type=url],
-.input-group .wpcf7 input.is-valid[type=tel],
-.wpcf7 .input-group input.is-valid[type=tel],
-.input-group .wpcf7 input.is-valid[type=number],
-.wpcf7 .input-group input.is-valid[type=number],
-.input-group .wpcf7 input.is-valid[type=range],
-.wpcf7 .input-group input.is-valid[type=range],
-.input-group .wpcf7 input.is-valid[type=date],
-.wpcf7 .input-group input.is-valid[type=date],
-.input-group .wpcf7 input.is-valid[type=month],
-.wpcf7 .input-group input.is-valid[type=month],
-.input-group .wpcf7 input.is-valid[type=week],
-.wpcf7 .input-group input.is-valid[type=week],
-.input-group .wpcf7 input.is-valid[type=time],
-.wpcf7 .input-group input.is-valid[type=time],
-.input-group .wpcf7 input.is-valid[type=datetime],
-.wpcf7 .input-group input.is-valid[type=datetime],
-.input-group .wpcf7 input.is-valid[type=datetime-local],
-.wpcf7 .input-group input.is-valid[type=datetime-local],
-.input-group .wpcf7 input.is-valid[type=color],
-.wpcf7 .input-group input.is-valid[type=color],
-.input-group .wpcf7 input.is-valid[type=email],
-.wpcf7 .input-group input.is-valid[type=email],
-.input-group .wpcf7 input.is-valid[type=file],
-.wpcf7 .input-group input.is-valid[type=file],
-.input-group .wpcf7 input.is-valid[type=submit],
-.wpcf7 .input-group input.is-valid[type=submit],
-.input-group .wpcf7 select.is-valid,
-.wpcf7 .input-group select.is-valid,
-.input-group .wpcf7 textarea.is-valid,
-.wpcf7 .input-group textarea.is-valid, .input-group .widget_categories select.is-valid, .widget_categories .input-group select.is-valid,
-.input-group .widget_archive select.is-valid,
-.widget_archive .input-group select.is-valid,
-.was-validated .input-group .form-select:valid,
-.input-group .form-select.is-valid {
-  z-index: 1;
-}
-.was-validated .input-group .form-control:valid:focus, .was-validated .input-group .comments-area input[type=text]:valid:focus, .comments-area .was-validated .input-group input[type=text]:valid:focus,
-.was-validated .input-group .comments-area input[type=email]:valid:focus,
-.comments-area .was-validated .input-group input[type=email]:valid:focus,
-.was-validated .input-group .comments-area input[type=url]:valid:focus,
-.comments-area .was-validated .input-group input[type=url]:valid:focus,
-.was-validated .input-group .comments-area textarea:valid:focus,
-.comments-area .was-validated .input-group textarea:valid:focus, .was-validated .input-group .wp-block-search__input:valid:focus, .was-validated .input-group .woocommerce .cart .input-text:valid:focus, .woocommerce .cart .was-validated .input-group .input-text:valid:focus, .was-validated .input-group .woocommerce .woocommerce-ordering .orderby:valid:focus, .woocommerce .woocommerce-ordering .was-validated .input-group .orderby:valid:focus, .was-validated .input-group .woocommerce .selection .select2-selection--single .select2-selection__rendered:valid:focus, .woocommerce .selection .select2-selection--single .was-validated .input-group .select2-selection__rendered:valid:focus, .was-validated .input-group .woocommerce input[type=text]:valid:focus, .woocommerce .was-validated .input-group input[type=text]:valid:focus,
-.was-validated .input-group .woocommerce input[type=email]:valid:focus,
-.woocommerce .was-validated .input-group input[type=email]:valid:focus,
-.was-validated .input-group .woocommerce input[type=password]:valid:focus,
-.woocommerce .was-validated .input-group input[type=password]:valid:focus,
-.was-validated .input-group .woocommerce input[type=search]:valid:focus,
-.woocommerce .was-validated .input-group input[type=search]:valid:focus,
-.was-validated .input-group .woocommerce textarea:valid:focus,
-.woocommerce .was-validated .input-group textarea:valid:focus,
-.was-validated .input-group .woocommerce .wpfMainWrapper select:valid:focus,
-.woocommerce .wpfMainWrapper .was-validated .input-group select:valid:focus,
-.was-validated .input-group .woocommerce .wpfMainWrapper input:valid:focus,
-.woocommerce .wpfMainWrapper .was-validated .input-group input:valid:focus,
-.was-validated .input-group .woocommerce .variations select:valid:focus,
-.woocommerce .variations .was-validated .input-group select:valid:focus, .was-validated .input-group .wpcf7 .wpcf7-validation-errors:valid:focus, .wpcf7 .was-validated .input-group .wpcf7-validation-errors:valid:focus, .was-validated .input-group .wpcf7 input[type=text]:valid:focus, .wpcf7 .was-validated .input-group input[type=text]:valid:focus,
-.was-validated .input-group .wpcf7 input[type=search]:valid:focus,
-.wpcf7 .was-validated .input-group input[type=search]:valid:focus,
-.was-validated .input-group .wpcf7 input[type=url]:valid:focus,
-.wpcf7 .was-validated .input-group input[type=url]:valid:focus,
-.was-validated .input-group .wpcf7 input[type=tel]:valid:focus,
-.wpcf7 .was-validated .input-group input[type=tel]:valid:focus,
-.was-validated .input-group .wpcf7 input[type=number]:valid:focus,
-.wpcf7 .was-validated .input-group input[type=number]:valid:focus,
-.was-validated .input-group .wpcf7 input[type=range]:valid:focus,
-.wpcf7 .was-validated .input-group input[type=range]:valid:focus,
-.was-validated .input-group .wpcf7 input[type=date]:valid:focus,
-.wpcf7 .was-validated .input-group input[type=date]:valid:focus,
-.was-validated .input-group .wpcf7 input[type=month]:valid:focus,
-.wpcf7 .was-validated .input-group input[type=month]:valid:focus,
-.was-validated .input-group .wpcf7 input[type=week]:valid:focus,
-.wpcf7 .was-validated .input-group input[type=week]:valid:focus,
-.was-validated .input-group .wpcf7 input[type=time]:valid:focus,
-.wpcf7 .was-validated .input-group input[type=time]:valid:focus,
-.was-validated .input-group .wpcf7 input[type=datetime]:valid:focus,
-.wpcf7 .was-validated .input-group input[type=datetime]:valid:focus,
-.was-validated .input-group .wpcf7 input[type=datetime-local]:valid:focus,
-.wpcf7 .was-validated .input-group input[type=datetime-local]:valid:focus,
-.was-validated .input-group .wpcf7 input[type=color]:valid:focus,
-.wpcf7 .was-validated .input-group input[type=color]:valid:focus,
-.was-validated .input-group .wpcf7 input[type=email]:valid:focus,
-.wpcf7 .was-validated .input-group input[type=email]:valid:focus,
-.was-validated .input-group .wpcf7 input[type=file]:valid:focus,
-.wpcf7 .was-validated .input-group input[type=file]:valid:focus,
-.was-validated .input-group .wpcf7 input[type=submit]:valid:focus,
-.wpcf7 .was-validated .input-group input[type=submit]:valid:focus,
-.was-validated .input-group .wpcf7 select:valid:focus,
-.wpcf7 .was-validated .input-group select:valid:focus,
-.was-validated .input-group .wpcf7 textarea:valid:focus,
-.wpcf7 .was-validated .input-group textarea:valid:focus, .was-validated .input-group .widget_categories select:valid:focus, .widget_categories .was-validated .input-group select:valid:focus,
-.was-validated .input-group .widget_archive select:valid:focus,
-.widget_archive .was-validated .input-group select:valid:focus, .input-group .form-control.is-valid:focus, .input-group .comments-area input.is-valid[type=text]:focus, .comments-area .input-group input.is-valid[type=text]:focus,
-.input-group .comments-area input.is-valid[type=email]:focus,
-.comments-area .input-group input.is-valid[type=email]:focus,
-.input-group .comments-area input.is-valid[type=url]:focus,
-.comments-area .input-group input.is-valid[type=url]:focus,
-.input-group .comments-area textarea.is-valid:focus,
-.comments-area .input-group textarea.is-valid:focus, .input-group .is-valid.wp-block-search__input:focus, .input-group .woocommerce .cart .is-valid.input-text:focus, .woocommerce .cart .input-group .is-valid.input-text:focus, .input-group .woocommerce .woocommerce-ordering .is-valid.orderby:focus, .woocommerce .woocommerce-ordering .input-group .is-valid.orderby:focus, .input-group .woocommerce .selection .select2-selection--single .is-valid.select2-selection__rendered:focus, .woocommerce .selection .select2-selection--single .input-group .is-valid.select2-selection__rendered:focus, .input-group .woocommerce input.is-valid[type=text]:focus, .woocommerce .input-group input.is-valid[type=text]:focus,
-.input-group .woocommerce input.is-valid[type=email]:focus,
-.woocommerce .input-group input.is-valid[type=email]:focus,
-.input-group .woocommerce input.is-valid[type=password]:focus,
-.woocommerce .input-group input.is-valid[type=password]:focus,
-.input-group .woocommerce input.is-valid[type=search]:focus,
-.woocommerce .input-group input.is-valid[type=search]:focus,
-.input-group .woocommerce textarea.is-valid:focus,
-.woocommerce .input-group textarea.is-valid:focus,
-.input-group .woocommerce .wpfMainWrapper select.is-valid:focus,
-.woocommerce .wpfMainWrapper .input-group select.is-valid:focus,
-.input-group .woocommerce .wpfMainWrapper input.is-valid:focus,
-.woocommerce .wpfMainWrapper .input-group input.is-valid:focus,
-.input-group .woocommerce .variations select.is-valid:focus,
-.woocommerce .variations .input-group select.is-valid:focus, .input-group .wpcf7 .is-valid.wpcf7-validation-errors:focus, .wpcf7 .input-group .is-valid.wpcf7-validation-errors:focus, .input-group .wpcf7 input.is-valid[type=text]:focus, .wpcf7 .input-group input.is-valid[type=text]:focus,
-.input-group .wpcf7 input.is-valid[type=search]:focus,
-.wpcf7 .input-group input.is-valid[type=search]:focus,
-.input-group .wpcf7 input.is-valid[type=url]:focus,
-.wpcf7 .input-group input.is-valid[type=url]:focus,
-.input-group .wpcf7 input.is-valid[type=tel]:focus,
-.wpcf7 .input-group input.is-valid[type=tel]:focus,
-.input-group .wpcf7 input.is-valid[type=number]:focus,
-.wpcf7 .input-group input.is-valid[type=number]:focus,
-.input-group .wpcf7 input.is-valid[type=range]:focus,
-.wpcf7 .input-group input.is-valid[type=range]:focus,
-.input-group .wpcf7 input.is-valid[type=date]:focus,
-.wpcf7 .input-group input.is-valid[type=date]:focus,
-.input-group .wpcf7 input.is-valid[type=month]:focus,
-.wpcf7 .input-group input.is-valid[type=month]:focus,
-.input-group .wpcf7 input.is-valid[type=week]:focus,
-.wpcf7 .input-group input.is-valid[type=week]:focus,
-.input-group .wpcf7 input.is-valid[type=time]:focus,
-.wpcf7 .input-group input.is-valid[type=time]:focus,
-.input-group .wpcf7 input.is-valid[type=datetime]:focus,
-.wpcf7 .input-group input.is-valid[type=datetime]:focus,
-.input-group .wpcf7 input.is-valid[type=datetime-local]:focus,
-.wpcf7 .input-group input.is-valid[type=datetime-local]:focus,
-.input-group .wpcf7 input.is-valid[type=color]:focus,
-.wpcf7 .input-group input.is-valid[type=color]:focus,
-.input-group .wpcf7 input.is-valid[type=email]:focus,
-.wpcf7 .input-group input.is-valid[type=email]:focus,
-.input-group .wpcf7 input.is-valid[type=file]:focus,
-.wpcf7 .input-group input.is-valid[type=file]:focus,
-.input-group .wpcf7 input.is-valid[type=submit]:focus,
-.wpcf7 .input-group input.is-valid[type=submit]:focus,
-.input-group .wpcf7 select.is-valid:focus,
-.wpcf7 .input-group select.is-valid:focus,
-.input-group .wpcf7 textarea.is-valid:focus,
-.wpcf7 .input-group textarea.is-valid:focus, .input-group .widget_categories select.is-valid:focus, .widget_categories .input-group select.is-valid:focus,
-.input-group .widget_archive select.is-valid:focus,
-.widget_archive .input-group select.is-valid:focus,
-.was-validated .input-group .form-select:valid:focus,
-.input-group .form-select.is-valid:focus {
+.was-validated .input-group > .form-control:not(:focus):valid, .was-validated .comments-area .input-group > input[type=text]:not(:focus):valid, .comments-area .was-validated .input-group > input[type=text]:not(:focus):valid,
+.was-validated .comments-area .input-group > input[type=email]:not(:focus):valid,
+.comments-area .was-validated .input-group > input[type=email]:not(:focus):valid,
+.was-validated .comments-area .input-group > input[type=url]:not(:focus):valid,
+.comments-area .was-validated .input-group > input[type=url]:not(:focus):valid,
+.was-validated .comments-area .input-group > textarea:not(:focus):valid,
+.comments-area .was-validated .input-group > textarea:not(:focus):valid, .was-validated .input-group > .wp-block-search__input:not(:focus):valid, .was-validated .woocommerce .cart .input-group > .input-text:not(:focus):valid, .woocommerce .cart .was-validated .input-group > .input-text:not(:focus):valid, .was-validated .woocommerce .woocommerce-ordering .input-group > .orderby:not(:focus):valid, .woocommerce .woocommerce-ordering .was-validated .input-group > .orderby:not(:focus):valid, .was-validated .woocommerce .selection .select2-selection--single .input-group > .select2-selection__rendered:not(:focus):valid, .woocommerce .selection .select2-selection--single .was-validated .input-group > .select2-selection__rendered:not(:focus):valid, .was-validated .woocommerce .input-group > input[type=text]:not(:focus):valid, .woocommerce .was-validated .input-group > input[type=text]:not(:focus):valid,
+.was-validated .woocommerce .input-group > input[type=email]:not(:focus):valid,
+.woocommerce .was-validated .input-group > input[type=email]:not(:focus):valid,
+.was-validated .woocommerce .input-group > input[type=password]:not(:focus):valid,
+.woocommerce .was-validated .input-group > input[type=password]:not(:focus):valid,
+.was-validated .woocommerce .input-group > input[type=search]:not(:focus):valid,
+.woocommerce .was-validated .input-group > input[type=search]:not(:focus):valid,
+.was-validated .woocommerce .input-group > textarea:not(:focus):valid,
+.woocommerce .was-validated .input-group > textarea:not(:focus):valid,
+.was-validated .woocommerce .wpfMainWrapper .input-group > select:not(:focus):valid,
+.woocommerce .wpfMainWrapper .was-validated .input-group > select:not(:focus):valid,
+.was-validated .woocommerce .wpfMainWrapper .input-group > input:not(:focus):valid,
+.woocommerce .wpfMainWrapper .was-validated .input-group > input:not(:focus):valid,
+.was-validated .woocommerce .variations .input-group > select:not(:focus):valid,
+.woocommerce .variations .was-validated .input-group > select:not(:focus):valid, .was-validated .wpcf7 .input-group > .wpcf7-validation-errors:not(:focus):valid, .wpcf7 .was-validated .input-group > .wpcf7-validation-errors:not(:focus):valid, .was-validated .wpcf7 .input-group > input[type=text]:not(:focus):valid, .wpcf7 .was-validated .input-group > input[type=text]:not(:focus):valid,
+.was-validated .wpcf7 .input-group > input[type=search]:not(:focus):valid,
+.wpcf7 .was-validated .input-group > input[type=search]:not(:focus):valid,
+.was-validated .wpcf7 .input-group > input[type=url]:not(:focus):valid,
+.wpcf7 .was-validated .input-group > input[type=url]:not(:focus):valid,
+.was-validated .wpcf7 .input-group > input[type=tel]:not(:focus):valid,
+.wpcf7 .was-validated .input-group > input[type=tel]:not(:focus):valid,
+.was-validated .wpcf7 .input-group > input[type=number]:not(:focus):valid,
+.wpcf7 .was-validated .input-group > input[type=number]:not(:focus):valid,
+.was-validated .wpcf7 .input-group > input[type=range]:not(:focus):valid,
+.wpcf7 .was-validated .input-group > input[type=range]:not(:focus):valid,
+.was-validated .wpcf7 .input-group > input[type=date]:not(:focus):valid,
+.wpcf7 .was-validated .input-group > input[type=date]:not(:focus):valid,
+.was-validated .wpcf7 .input-group > input[type=month]:not(:focus):valid,
+.wpcf7 .was-validated .input-group > input[type=month]:not(:focus):valid,
+.was-validated .wpcf7 .input-group > input[type=week]:not(:focus):valid,
+.wpcf7 .was-validated .input-group > input[type=week]:not(:focus):valid,
+.was-validated .wpcf7 .input-group > input[type=time]:not(:focus):valid,
+.wpcf7 .was-validated .input-group > input[type=time]:not(:focus):valid,
+.was-validated .wpcf7 .input-group > input[type=datetime]:not(:focus):valid,
+.wpcf7 .was-validated .input-group > input[type=datetime]:not(:focus):valid,
+.was-validated .wpcf7 .input-group > input[type=datetime-local]:not(:focus):valid,
+.wpcf7 .was-validated .input-group > input[type=datetime-local]:not(:focus):valid,
+.was-validated .wpcf7 .input-group > input[type=color]:not(:focus):valid,
+.wpcf7 .was-validated .input-group > input[type=color]:not(:focus):valid,
+.was-validated .wpcf7 .input-group > input[type=email]:not(:focus):valid,
+.wpcf7 .was-validated .input-group > input[type=email]:not(:focus):valid,
+.was-validated .wpcf7 .input-group > input[type=file]:not(:focus):valid,
+.wpcf7 .was-validated .input-group > input[type=file]:not(:focus):valid,
+.was-validated .wpcf7 .input-group > input[type=submit]:not(:focus):valid,
+.wpcf7 .was-validated .input-group > input[type=submit]:not(:focus):valid,
+.was-validated .wpcf7 .input-group > select:not(:focus):valid,
+.wpcf7 .was-validated .input-group > select:not(:focus):valid,
+.was-validated .wpcf7 .input-group > textarea:not(:focus):valid,
+.wpcf7 .was-validated .input-group > textarea:not(:focus):valid, .was-validated .widget_categories .input-group > select:not(:focus):valid, .widget_categories .was-validated .input-group > select:not(:focus):valid,
+.was-validated .widget_archive .input-group > select:not(:focus):valid,
+.widget_archive .was-validated .input-group > select:not(:focus):valid, .input-group > .form-control:not(:focus).is-valid, .comments-area .input-group > input[type=text]:not(:focus).is-valid,
+.comments-area .input-group > input[type=email]:not(:focus).is-valid,
+.comments-area .input-group > input[type=url]:not(:focus).is-valid,
+.comments-area .input-group > textarea:not(:focus).is-valid, .input-group > .wp-block-search__input:not(:focus).is-valid, .woocommerce .cart .input-group > .input-text:not(:focus).is-valid, .woocommerce .woocommerce-ordering .input-group > .orderby:not(:focus).is-valid, .woocommerce .selection .select2-selection--single .input-group > .select2-selection__rendered:not(:focus).is-valid, .woocommerce .input-group > input[type=text]:not(:focus).is-valid,
+.woocommerce .input-group > input[type=email]:not(:focus).is-valid,
+.woocommerce .input-group > input[type=password]:not(:focus).is-valid,
+.woocommerce .input-group > input[type=search]:not(:focus).is-valid,
+.woocommerce .input-group > textarea:not(:focus).is-valid,
+.woocommerce .wpfMainWrapper .input-group > select:not(:focus).is-valid,
+.woocommerce .wpfMainWrapper .input-group > input:not(:focus).is-valid,
+.woocommerce .variations .input-group > select:not(:focus).is-valid, .wpcf7 .input-group > .wpcf7-validation-errors:not(:focus).is-valid, .wpcf7 .input-group > input[type=text]:not(:focus).is-valid,
+.wpcf7 .input-group > input[type=search]:not(:focus).is-valid,
+.wpcf7 .input-group > input[type=url]:not(:focus).is-valid,
+.wpcf7 .input-group > input[type=tel]:not(:focus).is-valid,
+.wpcf7 .input-group > input[type=number]:not(:focus).is-valid,
+.wpcf7 .input-group > input[type=range]:not(:focus).is-valid,
+.wpcf7 .input-group > input[type=date]:not(:focus).is-valid,
+.wpcf7 .input-group > input[type=month]:not(:focus).is-valid,
+.wpcf7 .input-group > input[type=week]:not(:focus).is-valid,
+.wpcf7 .input-group > input[type=time]:not(:focus).is-valid,
+.wpcf7 .input-group > input[type=datetime]:not(:focus).is-valid,
+.wpcf7 .input-group > input[type=datetime-local]:not(:focus).is-valid,
+.wpcf7 .input-group > input[type=color]:not(:focus).is-valid,
+.wpcf7 .input-group > input[type=email]:not(:focus).is-valid,
+.wpcf7 .input-group > input[type=file]:not(:focus).is-valid,
+.wpcf7 .input-group > input[type=submit]:not(:focus).is-valid,
+.wpcf7 .input-group > select:not(:focus).is-valid,
+.wpcf7 .input-group > textarea:not(:focus).is-valid, .widget_categories .input-group > select:not(:focus).is-valid,
+.widget_archive .input-group > select:not(:focus).is-valid,
+.was-validated .input-group > .form-select:not(:focus):valid,
+.input-group > .form-select:not(:focus).is-valid,
+.was-validated .input-group > .form-floating:not(:focus-within):valid,
+.input-group > .form-floating:not(:focus-within).is-valid {
   z-index: 3;
 }
 
@@ -4035,239 +3988,96 @@ textarea.form-control-lg {
   margin-left: 0.5em;
 }
 
-.was-validated .input-group .form-control:invalid, .was-validated .input-group .comments-area input[type=text]:invalid, .comments-area .was-validated .input-group input[type=text]:invalid,
-.was-validated .input-group .comments-area input[type=email]:invalid,
-.comments-area .was-validated .input-group input[type=email]:invalid,
-.was-validated .input-group .comments-area input[type=url]:invalid,
-.comments-area .was-validated .input-group input[type=url]:invalid,
-.was-validated .input-group .comments-area textarea:invalid,
-.comments-area .was-validated .input-group textarea:invalid, .was-validated .input-group .wp-block-search__input:invalid, .was-validated .input-group .woocommerce .cart .input-text:invalid, .woocommerce .cart .was-validated .input-group .input-text:invalid, .was-validated .input-group .woocommerce .woocommerce-ordering .orderby:invalid, .woocommerce .woocommerce-ordering .was-validated .input-group .orderby:invalid, .was-validated .input-group .woocommerce .selection .select2-selection--single .select2-selection__rendered:invalid, .woocommerce .selection .select2-selection--single .was-validated .input-group .select2-selection__rendered:invalid, .was-validated .input-group .woocommerce input[type=text]:invalid, .woocommerce .was-validated .input-group input[type=text]:invalid,
-.was-validated .input-group .woocommerce input[type=email]:invalid,
-.woocommerce .was-validated .input-group input[type=email]:invalid,
-.was-validated .input-group .woocommerce input[type=password]:invalid,
-.woocommerce .was-validated .input-group input[type=password]:invalid,
-.was-validated .input-group .woocommerce input[type=search]:invalid,
-.woocommerce .was-validated .input-group input[type=search]:invalid,
-.was-validated .input-group .woocommerce textarea:invalid,
-.woocommerce .was-validated .input-group textarea:invalid,
-.was-validated .input-group .woocommerce .wpfMainWrapper select:invalid,
-.woocommerce .wpfMainWrapper .was-validated .input-group select:invalid,
-.was-validated .input-group .woocommerce .wpfMainWrapper input:invalid,
-.woocommerce .wpfMainWrapper .was-validated .input-group input:invalid,
-.was-validated .input-group .woocommerce .variations select:invalid,
-.woocommerce .variations .was-validated .input-group select:invalid, .was-validated .input-group .wpcf7 .wpcf7-validation-errors:invalid, .wpcf7 .was-validated .input-group .wpcf7-validation-errors:invalid, .was-validated .input-group .wpcf7 input[type=text]:invalid, .wpcf7 .was-validated .input-group input[type=text]:invalid,
-.was-validated .input-group .wpcf7 input[type=search]:invalid,
-.wpcf7 .was-validated .input-group input[type=search]:invalid,
-.was-validated .input-group .wpcf7 input[type=url]:invalid,
-.wpcf7 .was-validated .input-group input[type=url]:invalid,
-.was-validated .input-group .wpcf7 input[type=tel]:invalid,
-.wpcf7 .was-validated .input-group input[type=tel]:invalid,
-.was-validated .input-group .wpcf7 input[type=number]:invalid,
-.wpcf7 .was-validated .input-group input[type=number]:invalid,
-.was-validated .input-group .wpcf7 input[type=range]:invalid,
-.wpcf7 .was-validated .input-group input[type=range]:invalid,
-.was-validated .input-group .wpcf7 input[type=date]:invalid,
-.wpcf7 .was-validated .input-group input[type=date]:invalid,
-.was-validated .input-group .wpcf7 input[type=month]:invalid,
-.wpcf7 .was-validated .input-group input[type=month]:invalid,
-.was-validated .input-group .wpcf7 input[type=week]:invalid,
-.wpcf7 .was-validated .input-group input[type=week]:invalid,
-.was-validated .input-group .wpcf7 input[type=time]:invalid,
-.wpcf7 .was-validated .input-group input[type=time]:invalid,
-.was-validated .input-group .wpcf7 input[type=datetime]:invalid,
-.wpcf7 .was-validated .input-group input[type=datetime]:invalid,
-.was-validated .input-group .wpcf7 input[type=datetime-local]:invalid,
-.wpcf7 .was-validated .input-group input[type=datetime-local]:invalid,
-.was-validated .input-group .wpcf7 input[type=color]:invalid,
-.wpcf7 .was-validated .input-group input[type=color]:invalid,
-.was-validated .input-group .wpcf7 input[type=email]:invalid,
-.wpcf7 .was-validated .input-group input[type=email]:invalid,
-.was-validated .input-group .wpcf7 input[type=file]:invalid,
-.wpcf7 .was-validated .input-group input[type=file]:invalid,
-.was-validated .input-group .wpcf7 input[type=submit]:invalid,
-.wpcf7 .was-validated .input-group input[type=submit]:invalid,
-.was-validated .input-group .wpcf7 select:invalid,
-.wpcf7 .was-validated .input-group select:invalid,
-.was-validated .input-group .wpcf7 textarea:invalid,
-.wpcf7 .was-validated .input-group textarea:invalid, .was-validated .input-group .widget_categories select:invalid, .widget_categories .was-validated .input-group select:invalid,
-.was-validated .input-group .widget_archive select:invalid,
-.widget_archive .was-validated .input-group select:invalid, .input-group .form-control.is-invalid, .input-group .comments-area input.is-invalid[type=text], .comments-area .input-group input.is-invalid[type=text],
-.input-group .comments-area input.is-invalid[type=email],
-.comments-area .input-group input.is-invalid[type=email],
-.input-group .comments-area input.is-invalid[type=url],
-.comments-area .input-group input.is-invalid[type=url],
-.input-group .comments-area textarea.is-invalid,
-.comments-area .input-group textarea.is-invalid, .input-group .is-invalid.wp-block-search__input, .input-group .woocommerce .cart .is-invalid.input-text, .woocommerce .cart .input-group .is-invalid.input-text, .input-group .woocommerce .woocommerce-ordering .is-invalid.orderby, .woocommerce .woocommerce-ordering .input-group .is-invalid.orderby, .input-group .woocommerce .selection .select2-selection--single .is-invalid.select2-selection__rendered, .woocommerce .selection .select2-selection--single .input-group .is-invalid.select2-selection__rendered, .input-group .woocommerce input.is-invalid[type=text], .woocommerce .input-group input.is-invalid[type=text],
-.input-group .woocommerce input.is-invalid[type=email],
-.woocommerce .input-group input.is-invalid[type=email],
-.input-group .woocommerce input.is-invalid[type=password],
-.woocommerce .input-group input.is-invalid[type=password],
-.input-group .woocommerce input.is-invalid[type=search],
-.woocommerce .input-group input.is-invalid[type=search],
-.input-group .woocommerce textarea.is-invalid,
-.woocommerce .input-group textarea.is-invalid,
-.input-group .woocommerce .wpfMainWrapper select.is-invalid,
-.woocommerce .wpfMainWrapper .input-group select.is-invalid,
-.input-group .woocommerce .wpfMainWrapper input.is-invalid,
-.woocommerce .wpfMainWrapper .input-group input.is-invalid,
-.input-group .woocommerce .variations select.is-invalid,
-.woocommerce .variations .input-group select.is-invalid, .input-group .wpcf7 .is-invalid.wpcf7-validation-errors, .wpcf7 .input-group .is-invalid.wpcf7-validation-errors, .input-group .wpcf7 input.is-invalid[type=text], .wpcf7 .input-group input.is-invalid[type=text],
-.input-group .wpcf7 input.is-invalid[type=search],
-.wpcf7 .input-group input.is-invalid[type=search],
-.input-group .wpcf7 input.is-invalid[type=url],
-.wpcf7 .input-group input.is-invalid[type=url],
-.input-group .wpcf7 input.is-invalid[type=tel],
-.wpcf7 .input-group input.is-invalid[type=tel],
-.input-group .wpcf7 input.is-invalid[type=number],
-.wpcf7 .input-group input.is-invalid[type=number],
-.input-group .wpcf7 input.is-invalid[type=range],
-.wpcf7 .input-group input.is-invalid[type=range],
-.input-group .wpcf7 input.is-invalid[type=date],
-.wpcf7 .input-group input.is-invalid[type=date],
-.input-group .wpcf7 input.is-invalid[type=month],
-.wpcf7 .input-group input.is-invalid[type=month],
-.input-group .wpcf7 input.is-invalid[type=week],
-.wpcf7 .input-group input.is-invalid[type=week],
-.input-group .wpcf7 input.is-invalid[type=time],
-.wpcf7 .input-group input.is-invalid[type=time],
-.input-group .wpcf7 input.is-invalid[type=datetime],
-.wpcf7 .input-group input.is-invalid[type=datetime],
-.input-group .wpcf7 input.is-invalid[type=datetime-local],
-.wpcf7 .input-group input.is-invalid[type=datetime-local],
-.input-group .wpcf7 input.is-invalid[type=color],
-.wpcf7 .input-group input.is-invalid[type=color],
-.input-group .wpcf7 input.is-invalid[type=email],
-.wpcf7 .input-group input.is-invalid[type=email],
-.input-group .wpcf7 input.is-invalid[type=file],
-.wpcf7 .input-group input.is-invalid[type=file],
-.input-group .wpcf7 input.is-invalid[type=submit],
-.wpcf7 .input-group input.is-invalid[type=submit],
-.input-group .wpcf7 select.is-invalid,
-.wpcf7 .input-group select.is-invalid,
-.input-group .wpcf7 textarea.is-invalid,
-.wpcf7 .input-group textarea.is-invalid, .input-group .widget_categories select.is-invalid, .widget_categories .input-group select.is-invalid,
-.input-group .widget_archive select.is-invalid,
-.widget_archive .input-group select.is-invalid,
-.was-validated .input-group .form-select:invalid,
-.input-group .form-select.is-invalid {
-  z-index: 2;
-}
-.was-validated .input-group .form-control:invalid:focus, .was-validated .input-group .comments-area input[type=text]:invalid:focus, .comments-area .was-validated .input-group input[type=text]:invalid:focus,
-.was-validated .input-group .comments-area input[type=email]:invalid:focus,
-.comments-area .was-validated .input-group input[type=email]:invalid:focus,
-.was-validated .input-group .comments-area input[type=url]:invalid:focus,
-.comments-area .was-validated .input-group input[type=url]:invalid:focus,
-.was-validated .input-group .comments-area textarea:invalid:focus,
-.comments-area .was-validated .input-group textarea:invalid:focus, .was-validated .input-group .wp-block-search__input:invalid:focus, .was-validated .input-group .woocommerce .cart .input-text:invalid:focus, .woocommerce .cart .was-validated .input-group .input-text:invalid:focus, .was-validated .input-group .woocommerce .woocommerce-ordering .orderby:invalid:focus, .woocommerce .woocommerce-ordering .was-validated .input-group .orderby:invalid:focus, .was-validated .input-group .woocommerce .selection .select2-selection--single .select2-selection__rendered:invalid:focus, .woocommerce .selection .select2-selection--single .was-validated .input-group .select2-selection__rendered:invalid:focus, .was-validated .input-group .woocommerce input[type=text]:invalid:focus, .woocommerce .was-validated .input-group input[type=text]:invalid:focus,
-.was-validated .input-group .woocommerce input[type=email]:invalid:focus,
-.woocommerce .was-validated .input-group input[type=email]:invalid:focus,
-.was-validated .input-group .woocommerce input[type=password]:invalid:focus,
-.woocommerce .was-validated .input-group input[type=password]:invalid:focus,
-.was-validated .input-group .woocommerce input[type=search]:invalid:focus,
-.woocommerce .was-validated .input-group input[type=search]:invalid:focus,
-.was-validated .input-group .woocommerce textarea:invalid:focus,
-.woocommerce .was-validated .input-group textarea:invalid:focus,
-.was-validated .input-group .woocommerce .wpfMainWrapper select:invalid:focus,
-.woocommerce .wpfMainWrapper .was-validated .input-group select:invalid:focus,
-.was-validated .input-group .woocommerce .wpfMainWrapper input:invalid:focus,
-.woocommerce .wpfMainWrapper .was-validated .input-group input:invalid:focus,
-.was-validated .input-group .woocommerce .variations select:invalid:focus,
-.woocommerce .variations .was-validated .input-group select:invalid:focus, .was-validated .input-group .wpcf7 .wpcf7-validation-errors:invalid:focus, .wpcf7 .was-validated .input-group .wpcf7-validation-errors:invalid:focus, .was-validated .input-group .wpcf7 input[type=text]:invalid:focus, .wpcf7 .was-validated .input-group input[type=text]:invalid:focus,
-.was-validated .input-group .wpcf7 input[type=search]:invalid:focus,
-.wpcf7 .was-validated .input-group input[type=search]:invalid:focus,
-.was-validated .input-group .wpcf7 input[type=url]:invalid:focus,
-.wpcf7 .was-validated .input-group input[type=url]:invalid:focus,
-.was-validated .input-group .wpcf7 input[type=tel]:invalid:focus,
-.wpcf7 .was-validated .input-group input[type=tel]:invalid:focus,
-.was-validated .input-group .wpcf7 input[type=number]:invalid:focus,
-.wpcf7 .was-validated .input-group input[type=number]:invalid:focus,
-.was-validated .input-group .wpcf7 input[type=range]:invalid:focus,
-.wpcf7 .was-validated .input-group input[type=range]:invalid:focus,
-.was-validated .input-group .wpcf7 input[type=date]:invalid:focus,
-.wpcf7 .was-validated .input-group input[type=date]:invalid:focus,
-.was-validated .input-group .wpcf7 input[type=month]:invalid:focus,
-.wpcf7 .was-validated .input-group input[type=month]:invalid:focus,
-.was-validated .input-group .wpcf7 input[type=week]:invalid:focus,
-.wpcf7 .was-validated .input-group input[type=week]:invalid:focus,
-.was-validated .input-group .wpcf7 input[type=time]:invalid:focus,
-.wpcf7 .was-validated .input-group input[type=time]:invalid:focus,
-.was-validated .input-group .wpcf7 input[type=datetime]:invalid:focus,
-.wpcf7 .was-validated .input-group input[type=datetime]:invalid:focus,
-.was-validated .input-group .wpcf7 input[type=datetime-local]:invalid:focus,
-.wpcf7 .was-validated .input-group input[type=datetime-local]:invalid:focus,
-.was-validated .input-group .wpcf7 input[type=color]:invalid:focus,
-.wpcf7 .was-validated .input-group input[type=color]:invalid:focus,
-.was-validated .input-group .wpcf7 input[type=email]:invalid:focus,
-.wpcf7 .was-validated .input-group input[type=email]:invalid:focus,
-.was-validated .input-group .wpcf7 input[type=file]:invalid:focus,
-.wpcf7 .was-validated .input-group input[type=file]:invalid:focus,
-.was-validated .input-group .wpcf7 input[type=submit]:invalid:focus,
-.wpcf7 .was-validated .input-group input[type=submit]:invalid:focus,
-.was-validated .input-group .wpcf7 select:invalid:focus,
-.wpcf7 .was-validated .input-group select:invalid:focus,
-.was-validated .input-group .wpcf7 textarea:invalid:focus,
-.wpcf7 .was-validated .input-group textarea:invalid:focus, .was-validated .input-group .widget_categories select:invalid:focus, .widget_categories .was-validated .input-group select:invalid:focus,
-.was-validated .input-group .widget_archive select:invalid:focus,
-.widget_archive .was-validated .input-group select:invalid:focus, .input-group .form-control.is-invalid:focus, .input-group .comments-area input.is-invalid[type=text]:focus, .comments-area .input-group input.is-invalid[type=text]:focus,
-.input-group .comments-area input.is-invalid[type=email]:focus,
-.comments-area .input-group input.is-invalid[type=email]:focus,
-.input-group .comments-area input.is-invalid[type=url]:focus,
-.comments-area .input-group input.is-invalid[type=url]:focus,
-.input-group .comments-area textarea.is-invalid:focus,
-.comments-area .input-group textarea.is-invalid:focus, .input-group .is-invalid.wp-block-search__input:focus, .input-group .woocommerce .cart .is-invalid.input-text:focus, .woocommerce .cart .input-group .is-invalid.input-text:focus, .input-group .woocommerce .woocommerce-ordering .is-invalid.orderby:focus, .woocommerce .woocommerce-ordering .input-group .is-invalid.orderby:focus, .input-group .woocommerce .selection .select2-selection--single .is-invalid.select2-selection__rendered:focus, .woocommerce .selection .select2-selection--single .input-group .is-invalid.select2-selection__rendered:focus, .input-group .woocommerce input.is-invalid[type=text]:focus, .woocommerce .input-group input.is-invalid[type=text]:focus,
-.input-group .woocommerce input.is-invalid[type=email]:focus,
-.woocommerce .input-group input.is-invalid[type=email]:focus,
-.input-group .woocommerce input.is-invalid[type=password]:focus,
-.woocommerce .input-group input.is-invalid[type=password]:focus,
-.input-group .woocommerce input.is-invalid[type=search]:focus,
-.woocommerce .input-group input.is-invalid[type=search]:focus,
-.input-group .woocommerce textarea.is-invalid:focus,
-.woocommerce .input-group textarea.is-invalid:focus,
-.input-group .woocommerce .wpfMainWrapper select.is-invalid:focus,
-.woocommerce .wpfMainWrapper .input-group select.is-invalid:focus,
-.input-group .woocommerce .wpfMainWrapper input.is-invalid:focus,
-.woocommerce .wpfMainWrapper .input-group input.is-invalid:focus,
-.input-group .woocommerce .variations select.is-invalid:focus,
-.woocommerce .variations .input-group select.is-invalid:focus, .input-group .wpcf7 .is-invalid.wpcf7-validation-errors:focus, .wpcf7 .input-group .is-invalid.wpcf7-validation-errors:focus, .input-group .wpcf7 input.is-invalid[type=text]:focus, .wpcf7 .input-group input.is-invalid[type=text]:focus,
-.input-group .wpcf7 input.is-invalid[type=search]:focus,
-.wpcf7 .input-group input.is-invalid[type=search]:focus,
-.input-group .wpcf7 input.is-invalid[type=url]:focus,
-.wpcf7 .input-group input.is-invalid[type=url]:focus,
-.input-group .wpcf7 input.is-invalid[type=tel]:focus,
-.wpcf7 .input-group input.is-invalid[type=tel]:focus,
-.input-group .wpcf7 input.is-invalid[type=number]:focus,
-.wpcf7 .input-group input.is-invalid[type=number]:focus,
-.input-group .wpcf7 input.is-invalid[type=range]:focus,
-.wpcf7 .input-group input.is-invalid[type=range]:focus,
-.input-group .wpcf7 input.is-invalid[type=date]:focus,
-.wpcf7 .input-group input.is-invalid[type=date]:focus,
-.input-group .wpcf7 input.is-invalid[type=month]:focus,
-.wpcf7 .input-group input.is-invalid[type=month]:focus,
-.input-group .wpcf7 input.is-invalid[type=week]:focus,
-.wpcf7 .input-group input.is-invalid[type=week]:focus,
-.input-group .wpcf7 input.is-invalid[type=time]:focus,
-.wpcf7 .input-group input.is-invalid[type=time]:focus,
-.input-group .wpcf7 input.is-invalid[type=datetime]:focus,
-.wpcf7 .input-group input.is-invalid[type=datetime]:focus,
-.input-group .wpcf7 input.is-invalid[type=datetime-local]:focus,
-.wpcf7 .input-group input.is-invalid[type=datetime-local]:focus,
-.input-group .wpcf7 input.is-invalid[type=color]:focus,
-.wpcf7 .input-group input.is-invalid[type=color]:focus,
-.input-group .wpcf7 input.is-invalid[type=email]:focus,
-.wpcf7 .input-group input.is-invalid[type=email]:focus,
-.input-group .wpcf7 input.is-invalid[type=file]:focus,
-.wpcf7 .input-group input.is-invalid[type=file]:focus,
-.input-group .wpcf7 input.is-invalid[type=submit]:focus,
-.wpcf7 .input-group input.is-invalid[type=submit]:focus,
-.input-group .wpcf7 select.is-invalid:focus,
-.wpcf7 .input-group select.is-invalid:focus,
-.input-group .wpcf7 textarea.is-invalid:focus,
-.wpcf7 .input-group textarea.is-invalid:focus, .input-group .widget_categories select.is-invalid:focus, .widget_categories .input-group select.is-invalid:focus,
-.input-group .widget_archive select.is-invalid:focus,
-.widget_archive .input-group select.is-invalid:focus,
-.was-validated .input-group .form-select:invalid:focus,
-.input-group .form-select.is-invalid:focus {
-  z-index: 3;
+.was-validated .input-group > .form-control:not(:focus):invalid, .was-validated .comments-area .input-group > input[type=text]:not(:focus):invalid, .comments-area .was-validated .input-group > input[type=text]:not(:focus):invalid,
+.was-validated .comments-area .input-group > input[type=email]:not(:focus):invalid,
+.comments-area .was-validated .input-group > input[type=email]:not(:focus):invalid,
+.was-validated .comments-area .input-group > input[type=url]:not(:focus):invalid,
+.comments-area .was-validated .input-group > input[type=url]:not(:focus):invalid,
+.was-validated .comments-area .input-group > textarea:not(:focus):invalid,
+.comments-area .was-validated .input-group > textarea:not(:focus):invalid, .was-validated .input-group > .wp-block-search__input:not(:focus):invalid, .was-validated .woocommerce .cart .input-group > .input-text:not(:focus):invalid, .woocommerce .cart .was-validated .input-group > .input-text:not(:focus):invalid, .was-validated .woocommerce .woocommerce-ordering .input-group > .orderby:not(:focus):invalid, .woocommerce .woocommerce-ordering .was-validated .input-group > .orderby:not(:focus):invalid, .was-validated .woocommerce .selection .select2-selection--single .input-group > .select2-selection__rendered:not(:focus):invalid, .woocommerce .selection .select2-selection--single .was-validated .input-group > .select2-selection__rendered:not(:focus):invalid, .was-validated .woocommerce .input-group > input[type=text]:not(:focus):invalid, .woocommerce .was-validated .input-group > input[type=text]:not(:focus):invalid,
+.was-validated .woocommerce .input-group > input[type=email]:not(:focus):invalid,
+.woocommerce .was-validated .input-group > input[type=email]:not(:focus):invalid,
+.was-validated .woocommerce .input-group > input[type=password]:not(:focus):invalid,
+.woocommerce .was-validated .input-group > input[type=password]:not(:focus):invalid,
+.was-validated .woocommerce .input-group > input[type=search]:not(:focus):invalid,
+.woocommerce .was-validated .input-group > input[type=search]:not(:focus):invalid,
+.was-validated .woocommerce .input-group > textarea:not(:focus):invalid,
+.woocommerce .was-validated .input-group > textarea:not(:focus):invalid,
+.was-validated .woocommerce .wpfMainWrapper .input-group > select:not(:focus):invalid,
+.woocommerce .wpfMainWrapper .was-validated .input-group > select:not(:focus):invalid,
+.was-validated .woocommerce .wpfMainWrapper .input-group > input:not(:focus):invalid,
+.woocommerce .wpfMainWrapper .was-validated .input-group > input:not(:focus):invalid,
+.was-validated .woocommerce .variations .input-group > select:not(:focus):invalid,
+.woocommerce .variations .was-validated .input-group > select:not(:focus):invalid, .was-validated .wpcf7 .input-group > .wpcf7-validation-errors:not(:focus):invalid, .wpcf7 .was-validated .input-group > .wpcf7-validation-errors:not(:focus):invalid, .was-validated .wpcf7 .input-group > input[type=text]:not(:focus):invalid, .wpcf7 .was-validated .input-group > input[type=text]:not(:focus):invalid,
+.was-validated .wpcf7 .input-group > input[type=search]:not(:focus):invalid,
+.wpcf7 .was-validated .input-group > input[type=search]:not(:focus):invalid,
+.was-validated .wpcf7 .input-group > input[type=url]:not(:focus):invalid,
+.wpcf7 .was-validated .input-group > input[type=url]:not(:focus):invalid,
+.was-validated .wpcf7 .input-group > input[type=tel]:not(:focus):invalid,
+.wpcf7 .was-validated .input-group > input[type=tel]:not(:focus):invalid,
+.was-validated .wpcf7 .input-group > input[type=number]:not(:focus):invalid,
+.wpcf7 .was-validated .input-group > input[type=number]:not(:focus):invalid,
+.was-validated .wpcf7 .input-group > input[type=range]:not(:focus):invalid,
+.wpcf7 .was-validated .input-group > input[type=range]:not(:focus):invalid,
+.was-validated .wpcf7 .input-group > input[type=date]:not(:focus):invalid,
+.wpcf7 .was-validated .input-group > input[type=date]:not(:focus):invalid,
+.was-validated .wpcf7 .input-group > input[type=month]:not(:focus):invalid,
+.wpcf7 .was-validated .input-group > input[type=month]:not(:focus):invalid,
+.was-validated .wpcf7 .input-group > input[type=week]:not(:focus):invalid,
+.wpcf7 .was-validated .input-group > input[type=week]:not(:focus):invalid,
+.was-validated .wpcf7 .input-group > input[type=time]:not(:focus):invalid,
+.wpcf7 .was-validated .input-group > input[type=time]:not(:focus):invalid,
+.was-validated .wpcf7 .input-group > input[type=datetime]:not(:focus):invalid,
+.wpcf7 .was-validated .input-group > input[type=datetime]:not(:focus):invalid,
+.was-validated .wpcf7 .input-group > input[type=datetime-local]:not(:focus):invalid,
+.wpcf7 .was-validated .input-group > input[type=datetime-local]:not(:focus):invalid,
+.was-validated .wpcf7 .input-group > input[type=color]:not(:focus):invalid,
+.wpcf7 .was-validated .input-group > input[type=color]:not(:focus):invalid,
+.was-validated .wpcf7 .input-group > input[type=email]:not(:focus):invalid,
+.wpcf7 .was-validated .input-group > input[type=email]:not(:focus):invalid,
+.was-validated .wpcf7 .input-group > input[type=file]:not(:focus):invalid,
+.wpcf7 .was-validated .input-group > input[type=file]:not(:focus):invalid,
+.was-validated .wpcf7 .input-group > input[type=submit]:not(:focus):invalid,
+.wpcf7 .was-validated .input-group > input[type=submit]:not(:focus):invalid,
+.was-validated .wpcf7 .input-group > select:not(:focus):invalid,
+.wpcf7 .was-validated .input-group > select:not(:focus):invalid,
+.was-validated .wpcf7 .input-group > textarea:not(:focus):invalid,
+.wpcf7 .was-validated .input-group > textarea:not(:focus):invalid, .was-validated .widget_categories .input-group > select:not(:focus):invalid, .widget_categories .was-validated .input-group > select:not(:focus):invalid,
+.was-validated .widget_archive .input-group > select:not(:focus):invalid,
+.widget_archive .was-validated .input-group > select:not(:focus):invalid, .input-group > .form-control:not(:focus).is-invalid, .comments-area .input-group > input[type=text]:not(:focus).is-invalid,
+.comments-area .input-group > input[type=email]:not(:focus).is-invalid,
+.comments-area .input-group > input[type=url]:not(:focus).is-invalid,
+.comments-area .input-group > textarea:not(:focus).is-invalid, .input-group > .wp-block-search__input:not(:focus).is-invalid, .woocommerce .cart .input-group > .input-text:not(:focus).is-invalid, .woocommerce .woocommerce-ordering .input-group > .orderby:not(:focus).is-invalid, .woocommerce .selection .select2-selection--single .input-group > .select2-selection__rendered:not(:focus).is-invalid, .woocommerce .input-group > input[type=text]:not(:focus).is-invalid,
+.woocommerce .input-group > input[type=email]:not(:focus).is-invalid,
+.woocommerce .input-group > input[type=password]:not(:focus).is-invalid,
+.woocommerce .input-group > input[type=search]:not(:focus).is-invalid,
+.woocommerce .input-group > textarea:not(:focus).is-invalid,
+.woocommerce .wpfMainWrapper .input-group > select:not(:focus).is-invalid,
+.woocommerce .wpfMainWrapper .input-group > input:not(:focus).is-invalid,
+.woocommerce .variations .input-group > select:not(:focus).is-invalid, .wpcf7 .input-group > .wpcf7-validation-errors:not(:focus).is-invalid, .wpcf7 .input-group > input[type=text]:not(:focus).is-invalid,
+.wpcf7 .input-group > input[type=search]:not(:focus).is-invalid,
+.wpcf7 .input-group > input[type=url]:not(:focus).is-invalid,
+.wpcf7 .input-group > input[type=tel]:not(:focus).is-invalid,
+.wpcf7 .input-group > input[type=number]:not(:focus).is-invalid,
+.wpcf7 .input-group > input[type=range]:not(:focus).is-invalid,
+.wpcf7 .input-group > input[type=date]:not(:focus).is-invalid,
+.wpcf7 .input-group > input[type=month]:not(:focus).is-invalid,
+.wpcf7 .input-group > input[type=week]:not(:focus).is-invalid,
+.wpcf7 .input-group > input[type=time]:not(:focus).is-invalid,
+.wpcf7 .input-group > input[type=datetime]:not(:focus).is-invalid,
+.wpcf7 .input-group > input[type=datetime-local]:not(:focus).is-invalid,
+.wpcf7 .input-group > input[type=color]:not(:focus).is-invalid,
+.wpcf7 .input-group > input[type=email]:not(:focus).is-invalid,
+.wpcf7 .input-group > input[type=file]:not(:focus).is-invalid,
+.wpcf7 .input-group > input[type=submit]:not(:focus).is-invalid,
+.wpcf7 .input-group > select:not(:focus).is-invalid,
+.wpcf7 .input-group > textarea:not(:focus).is-invalid, .widget_categories .input-group > select:not(:focus).is-invalid,
+.widget_archive .input-group > select:not(:focus).is-invalid,
+.was-validated .input-group > .form-select:not(:focus):invalid,
+.input-group > .form-select:not(:focus).is-invalid,
+.was-validated .input-group > .form-floating:not(:focus-within):invalid,
+.input-group > .form-floating:not(:focus-within).is-invalid {
+  z-index: 4;
 }
 
 .btn, .comments-area input[type=submit],
@@ -4293,6 +4103,7 @@ textarea.form-control-lg {
   --bs-btn-border-width: 1px;
   --bs-btn-border-color: transparent;
   --bs-btn-border-radius: 0.375rem;
+  --bs-btn-hover-border-color: transparent;
   --bs-btn-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075);
   --bs-btn-disabled-opacity: 0.65;
   --bs-btn-focus-box-shadow: 0 0 0 0.25rem rgba(var(--bs-btn-focus-shadow-rgb), .5);
@@ -4316,17 +4127,17 @@ textarea.form-control-lg {
 }
 @media (prefers-reduced-motion: reduce) {
   .btn, .comments-area input[type=submit],
-.woocommerce .wc-proceed-to-checkout .comments-area input[type=submit],
-.comments-area .woocommerce .wc-proceed-to-checkout input[type=submit], .button,
-.wp-block-search__button,
-.woocommerce .wc-proceed-to-checkout .button,
-.woocommerce .wc-proceed-to-checkout .wp-block-search__button, .woocommerce button,
-.woocommerce .single_add_to_cart_button,
-.woocommerce .wc-proceed-to-checkout .btn,
-.woocommerce .wc-proceed-to-checkout .wpcf7 input[type=submit],
-.wpcf7 .woocommerce .wc-proceed-to-checkout input[type=submit],
-.woocommerce .wc-proceed-to-checkout button,
-.woocommerce .wc-proceed-to-checkout .single_add_to_cart_button, .woocommerce-info a.button, .woocommerce-notices-wrapper .woocommerce-message a.button, .wpcf7 input[type=submit] {
+  .woocommerce .wc-proceed-to-checkout .comments-area input[type=submit],
+  .comments-area .woocommerce .wc-proceed-to-checkout input[type=submit], .button,
+  .wp-block-search__button,
+  .woocommerce .wc-proceed-to-checkout .button,
+  .woocommerce .wc-proceed-to-checkout .wp-block-search__button, .woocommerce button,
+  .woocommerce .single_add_to_cart_button,
+  .woocommerce .wc-proceed-to-checkout .btn,
+  .woocommerce .wc-proceed-to-checkout .wpcf7 input[type=submit],
+  .wpcf7 .woocommerce .wc-proceed-to-checkout input[type=submit],
+  .woocommerce .wc-proceed-to-checkout button,
+  .woocommerce .wc-proceed-to-checkout .single_add_to_cart_button, .woocommerce-info a.button, .woocommerce-notices-wrapper .woocommerce-message a.button, .wpcf7 input[type=submit] {
     transition: none;
   }
 }
@@ -4341,32 +4152,40 @@ textarea.form-control-lg {
   background-color: var(--bs-btn-hover-bg);
   border-color: var(--bs-btn-hover-border-color);
 }
-.btn-check:focus + .btn, .comments-area .btn-check:focus + input[type=submit], .btn-check:focus + .button,
-.btn-check:focus + .wp-block-search__button, .woocommerce .btn-check:focus + button,
-.woocommerce .btn-check:focus + .single_add_to_cart_button, .woocommerce-notices-wrapper .woocommerce-message .btn-check:focus + a.button, .wpcf7 .btn-check:focus + input[type=submit], .btn:focus, .comments-area input[type=submit]:focus, .button:focus,
-.wp-block-search__button:focus,
-.woocommerce .wc-proceed-to-checkout .button:focus,
-.woocommerce .wc-proceed-to-checkout .wp-block-search__button:focus, .woocommerce button:focus,
-.woocommerce .single_add_to_cart_button:focus,
-.woocommerce .wc-proceed-to-checkout .btn:focus,
-.woocommerce .wc-proceed-to-checkout button:focus, .woocommerce-info a.button:focus, .woocommerce-notices-wrapper .woocommerce-message a.button:focus, .wpcf7 input[type=submit]:focus {
+.btn-check + .btn:hover, .comments-area .btn-check + input[type=submit]:hover, .btn-check + .button:hover,
+.btn-check + .wp-block-search__button:hover, .woocommerce .btn-check + button:hover,
+.woocommerce .btn-check + .single_add_to_cart_button:hover, .woocommerce-notices-wrapper .woocommerce-message .btn-check + a.button:hover, .wpcf7 .btn-check + input[type=submit]:hover {
+  color: var(--bs-btn-color);
+  background-color: var(--bs-btn-bg);
+  border-color: var(--bs-btn-border-color);
+}
+.btn:focus-visible, .comments-area input[type=submit]:focus-visible, .button:focus-visible,
+.wp-block-search__button:focus-visible,
+.woocommerce .wc-proceed-to-checkout .button:focus-visible,
+.woocommerce .wc-proceed-to-checkout .wp-block-search__button:focus-visible, .woocommerce button:focus-visible,
+.woocommerce .single_add_to_cart_button:focus-visible,
+.woocommerce .wc-proceed-to-checkout .btn:focus-visible,
+.woocommerce .wc-proceed-to-checkout button:focus-visible, .woocommerce-info a.button:focus-visible, .woocommerce-notices-wrapper .woocommerce-message a.button:focus-visible, .wpcf7 input[type=submit]:focus-visible {
   color: var(--bs-btn-hover-color);
   background-color: var(--bs-btn-hover-bg);
   border-color: var(--bs-btn-hover-border-color);
   outline: 0;
   box-shadow: var(--bs-btn-focus-box-shadow);
 }
+.btn-check:focus-visible + .btn, .comments-area .btn-check:focus-visible + input[type=submit], .btn-check:focus-visible + .button,
+.btn-check:focus-visible + .wp-block-search__button, .woocommerce .btn-check:focus-visible + button,
+.woocommerce .btn-check:focus-visible + .single_add_to_cart_button, .woocommerce-notices-wrapper .woocommerce-message .btn-check:focus-visible + a.button, .wpcf7 .btn-check:focus-visible + input[type=submit] {
+  border-color: var(--bs-btn-hover-border-color);
+  outline: 0;
+  box-shadow: var(--bs-btn-focus-box-shadow);
+}
 .btn-check:checked + .btn, .comments-area .btn-check:checked + input[type=submit], .btn-check:checked + .button,
 .btn-check:checked + .wp-block-search__button, .woocommerce .btn-check:checked + button,
-.woocommerce .btn-check:checked + .single_add_to_cart_button, .woocommerce-notices-wrapper .woocommerce-message .btn-check:checked + a.button, .wpcf7 .btn-check:checked + input[type=submit], .btn-check:active + .btn, .comments-area .btn-check:active + input[type=submit], .btn-check:active + .button,
-.btn-check:active + .wp-block-search__button, .woocommerce .btn-check:active + button,
-.woocommerce .btn-check:active + .single_add_to_cart_button, .woocommerce-notices-wrapper .woocommerce-message .btn-check:active + a.button, .wpcf7 .btn-check:active + input[type=submit], .btn:active, .comments-area input[type=submit]:active, .button:active,
-.wp-block-search__button:active,
-.woocommerce .wc-proceed-to-checkout .button:active,
-.woocommerce .wc-proceed-to-checkout .wp-block-search__button:active, .woocommerce button:active,
-.woocommerce .single_add_to_cart_button:active,
-.woocommerce .wc-proceed-to-checkout .btn:active,
-.woocommerce .wc-proceed-to-checkout button:active, .woocommerce-info a.button:active, .woocommerce-notices-wrapper .woocommerce-message a.button:active, .wpcf7 input[type=submit]:active, .btn.active, .comments-area input.active[type=submit], .active.button,
+.woocommerce .btn-check:checked + .single_add_to_cart_button, .woocommerce-notices-wrapper .woocommerce-message .btn-check:checked + a.button, .wpcf7 .btn-check:checked + input[type=submit], :not(.btn-check) + .btn:active, .comments-area :not(.btn-check) + input[type=submit]:active, :not(.btn-check) + .button:active,
+:not(.btn-check) + .wp-block-search__button:active, .woocommerce :not(.btn-check) + button:active,
+.woocommerce :not(.btn-check) + .single_add_to_cart_button:active, .woocommerce-notices-wrapper .woocommerce-message :not(.btn-check) + a.button:active, .wpcf7 :not(.btn-check) + input[type=submit]:active, .btn:first-child:active, .comments-area input[type=submit]:first-child:active, .button:first-child:active,
+.wp-block-search__button:first-child:active, .woocommerce button:first-child:active,
+.woocommerce .single_add_to_cart_button:first-child:active, .woocommerce-notices-wrapper .woocommerce-message a.button:first-child:active, .wpcf7 input[type=submit]:first-child:active, .btn.active, .comments-area input.active[type=submit], .active.button,
 .active.wp-block-search__button,
 .woocommerce .wc-proceed-to-checkout .active.button,
 .woocommerce .wc-proceed-to-checkout .active.wp-block-search__button, .woocommerce button.active,
@@ -4383,17 +4202,17 @@ textarea.form-control-lg {
   background-color: var(--bs-btn-active-bg);
   border-color: var(--bs-btn-active-border-color);
 }
-.btn-check:checked + .btn:focus, .comments-area .btn-check:checked + input[type=submit]:focus, .btn-check:checked + .button:focus,
-.btn-check:checked + .wp-block-search__button:focus, .woocommerce .btn-check:checked + button:focus,
-.woocommerce .btn-check:checked + .single_add_to_cart_button:focus, .wpcf7 .btn-check:checked + input[type=submit]:focus, .btn-check:active + .btn:focus, .comments-area .btn-check:active + input[type=submit]:focus, .btn-check:active + .button:focus,
-.btn-check:active + .wp-block-search__button:focus, .woocommerce .btn-check:active + button:focus,
-.woocommerce .btn-check:active + .single_add_to_cart_button:focus, .wpcf7 .btn-check:active + input[type=submit]:focus, .btn:active:focus, .comments-area input[type=submit]:active:focus, .button:active:focus,
-.wp-block-search__button:active:focus, .woocommerce button:active:focus,
-.woocommerce .single_add_to_cart_button:active:focus, .woocommerce-notices-wrapper .woocommerce-message a.button:active:focus, .wpcf7 input[type=submit]:active:focus, .btn.active:focus, .comments-area input.active[type=submit]:focus, .active.button:focus,
-.active.wp-block-search__button:focus, .woocommerce button.active:focus,
-.woocommerce .active.single_add_to_cart_button:focus, .woocommerce-notices-wrapper .woocommerce-message a.active.button:focus, .wpcf7 input.active[type=submit]:focus, .btn.show:focus, .comments-area input.show[type=submit]:focus, .show.button:focus,
-.show.wp-block-search__button:focus, .woocommerce button.show:focus,
-.woocommerce .show.single_add_to_cart_button:focus, .woocommerce-notices-wrapper .woocommerce-message a.show.button:focus, .wpcf7 input.show[type=submit]:focus {
+.btn-check:checked + .btn:focus-visible, .comments-area .btn-check:checked + input[type=submit]:focus-visible, .btn-check:checked + .button:focus-visible,
+.btn-check:checked + .wp-block-search__button:focus-visible, .woocommerce .btn-check:checked + button:focus-visible,
+.woocommerce .btn-check:checked + .single_add_to_cart_button:focus-visible, .wpcf7 .btn-check:checked + input[type=submit]:focus-visible, :not(.btn-check) + .btn:active:focus-visible, .comments-area :not(.btn-check) + input[type=submit]:active:focus-visible, :not(.btn-check) + .button:active:focus-visible,
+:not(.btn-check) + .wp-block-search__button:active:focus-visible, .woocommerce :not(.btn-check) + button:active:focus-visible,
+.woocommerce :not(.btn-check) + .single_add_to_cart_button:active:focus-visible, .wpcf7 :not(.btn-check) + input[type=submit]:active:focus-visible, .btn:first-child:active:focus-visible, .comments-area input[type=submit]:first-child:active:focus-visible, .button:first-child:active:focus-visible,
+.wp-block-search__button:first-child:active:focus-visible, .woocommerce button:first-child:active:focus-visible,
+.woocommerce .single_add_to_cart_button:first-child:active:focus-visible, .wpcf7 input[type=submit]:first-child:active:focus-visible, .btn.active:focus-visible, .comments-area input.active[type=submit]:focus-visible, .active.button:focus-visible,
+.active.wp-block-search__button:focus-visible, .woocommerce button.active:focus-visible,
+.woocommerce .active.single_add_to_cart_button:focus-visible, .woocommerce-notices-wrapper .woocommerce-message a.active.button:focus-visible, .wpcf7 input.active[type=submit]:focus-visible, .btn.show:focus-visible, .comments-area input.show[type=submit]:focus-visible, .show.button:focus-visible,
+.show.wp-block-search__button:focus-visible, .woocommerce button.show:focus-visible,
+.woocommerce .show.single_add_to_cart_button:focus-visible, .woocommerce-notices-wrapper .woocommerce-message a.show.button:focus-visible, .wpcf7 input.show[type=submit]:focus-visible {
   box-shadow: var(--bs-btn-focus-box-shadow);
 }
 .btn:disabled, .comments-area input[type=submit]:disabled, .button:disabled,
@@ -4441,20 +4260,20 @@ fieldset:disabled .woocommerce .wc-proceed-to-checkout button,
 .wpcf7 .woocommerce .wc-proceed-to-checkout input[type=submit],
 .woocommerce .wc-proceed-to-checkout .woocommerce-notices-wrapper .woocommerce-message a.button,
 .woocommerce-notices-wrapper .woocommerce-message .woocommerce .wc-proceed-to-checkout a.button {
-  --bs-btn-color: #000;
-  --bs-btn-bg: #5e72e4;
-  --bs-btn-border-color: #5e72e4;
-  --bs-btn-hover-color: #000;
-  --bs-btn-hover-bg: #7687e8;
-  --bs-btn-hover-border-color: #6e80e7;
-  --bs-btn-focus-shadow-rgb: 80, 97, 194;
-  --bs-btn-active-color: #000;
-  --bs-btn-active-bg: #7e8ee9;
-  --bs-btn-active-border-color: #6e80e7;
+  --bs-btn-color: #fff;
+  --bs-btn-bg: #372948;
+  --bs-btn-border-color: #372948;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #2f233d;
+  --bs-btn-hover-border-color: #2c213a;
+  --bs-btn-focus-shadow-rgb: 85, 73, 99;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #2c213a;
+  --bs-btn-active-border-color: #291f36;
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  --bs-btn-disabled-color: #000;
-  --bs-btn-disabled-bg: #5e72e4;
-  --bs-btn-disabled-border-color: #5e72e4;
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: #372948;
+  --bs-btn-disabled-border-color: #372948;
 }
 
 .btn-secondary {
@@ -4547,12 +4366,12 @@ fieldset:disabled .woocommerce .wc-proceed-to-checkout button,
   --bs-btn-bg: #ced4da;
   --bs-btn-border-color: #ced4da;
   --bs-btn-hover-color: #000;
-  --bs-btn-hover-bg: #d5dae0;
-  --bs-btn-hover-border-color: #d3d8de;
+  --bs-btn-hover-bg: #afb4b9;
+  --bs-btn-hover-border-color: #a5aaae;
   --bs-btn-focus-shadow-rgb: 175, 180, 185;
   --bs-btn-active-color: #000;
-  --bs-btn-active-bg: #d8dde1;
-  --bs-btn-active-border-color: #d3d8de;
+  --bs-btn-active-bg: #a5aaae;
+  --bs-btn-active-border-color: #9b9fa4;
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
   --bs-btn-disabled-color: #000;
   --bs-btn-disabled-bg: #ced4da;
@@ -4564,12 +4383,12 @@ fieldset:disabled .woocommerce .wc-proceed-to-checkout button,
   --bs-btn-bg: #000;
   --bs-btn-border-color: #000;
   --bs-btn-hover-color: #fff;
-  --bs-btn-hover-bg: black;
-  --bs-btn-hover-border-color: black;
+  --bs-btn-hover-bg: #262626;
+  --bs-btn-hover-border-color: #1a1a1a;
   --bs-btn-focus-shadow-rgb: 38, 38, 38;
   --bs-btn-active-color: #fff;
-  --bs-btn-active-bg: black;
-  --bs-btn-active-border-color: black;
+  --bs-btn-active-bg: #333333;
+  --bs-btn-active-border-color: #1a1a1a;
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
   --bs-btn-disabled-color: #fff;
   --bs-btn-disabled-bg: #000;
@@ -4577,18 +4396,19 @@ fieldset:disabled .woocommerce .wc-proceed-to-checkout button,
 }
 
 .btn-outline-primary, .wpcf7 input[type=submit] {
-  --bs-btn-color: #5e72e4;
-  --bs-btn-border-color: #5e72e4;
-  --bs-btn-hover-color: #000;
-  --bs-btn-hover-bg: #5e72e4;
-  --bs-btn-hover-border-color: #5e72e4;
-  --bs-btn-focus-shadow-rgb: 94, 114, 228;
-  --bs-btn-active-color: #000;
-  --bs-btn-active-bg: #5e72e4;
-  --bs-btn-active-border-color: #5e72e4;
+  --bs-btn-color: #372948;
+  --bs-btn-border-color: #372948;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #372948;
+  --bs-btn-hover-border-color: #372948;
+  --bs-btn-focus-shadow-rgb: 55, 41, 72;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #372948;
+  --bs-btn-active-border-color: #372948;
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  --bs-btn-disabled-color: #5e72e4;
+  --bs-btn-disabled-color: #372948;
   --bs-btn-disabled-bg: transparent;
+  --bs-btn-disabled-border-color: #372948;
   --bs-gradient: none;
 }
 
@@ -4605,6 +4425,7 @@ fieldset:disabled .woocommerce .wc-proceed-to-checkout button,
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
   --bs-btn-disabled-color: #8898aa;
   --bs-btn-disabled-bg: transparent;
+  --bs-btn-disabled-border-color: #8898aa;
   --bs-gradient: none;
 }
 
@@ -4621,6 +4442,7 @@ fieldset:disabled .woocommerce .wc-proceed-to-checkout button,
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
   --bs-btn-disabled-color: #2dce89;
   --bs-btn-disabled-bg: transparent;
+  --bs-btn-disabled-border-color: #2dce89;
   --bs-gradient: none;
 }
 
@@ -4637,6 +4459,7 @@ fieldset:disabled .woocommerce .wc-proceed-to-checkout button,
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
   --bs-btn-disabled-color: #11cdef;
   --bs-btn-disabled-bg: transparent;
+  --bs-btn-disabled-border-color: #11cdef;
   --bs-gradient: none;
 }
 
@@ -4653,6 +4476,7 @@ fieldset:disabled .woocommerce .wc-proceed-to-checkout button,
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
   --bs-btn-disabled-color: #fb6340;
   --bs-btn-disabled-bg: transparent;
+  --bs-btn-disabled-border-color: #fb6340;
   --bs-gradient: none;
 }
 
@@ -4669,6 +4493,7 @@ fieldset:disabled .woocommerce .wc-proceed-to-checkout button,
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
   --bs-btn-disabled-color: #f5365c;
   --bs-btn-disabled-bg: transparent;
+  --bs-btn-disabled-border-color: #f5365c;
   --bs-gradient: none;
 }
 
@@ -4685,6 +4510,7 @@ fieldset:disabled .woocommerce .wc-proceed-to-checkout button,
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
   --bs-btn-disabled-color: #ced4da;
   --bs-btn-disabled-bg: transparent;
+  --bs-btn-disabled-border-color: #ced4da;
   --bs-gradient: none;
 }
 
@@ -4701,6 +4527,7 @@ fieldset:disabled .woocommerce .wc-proceed-to-checkout button,
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
   --bs-btn-disabled-color: #000;
   --bs-btn-disabled-bg: transparent;
+  --bs-btn-disabled-border-color: #000;
   --bs-gradient: none;
 }
 
@@ -4711,12 +4538,21 @@ fieldset:disabled .woocommerce .wc-proceed-to-checkout button,
   --bs-btn-border-color: transparent;
   --bs-btn-hover-color: var(--bs-link-hover-color);
   --bs-btn-hover-border-color: transparent;
+  --bs-btn-active-color: var(--bs-link-hover-color);
   --bs-btn-active-border-color: transparent;
   --bs-btn-disabled-color: #6c757d;
   --bs-btn-disabled-border-color: transparent;
   --bs-btn-box-shadow: none;
+  --bs-btn-focus-shadow-rgb: 85, 73, 99;
   text-decoration: none;
 }
+.btn-link:focus-visible {
+  color: var(--bs-btn-color);
+}
+.btn-link:hover {
+  color: var(--bs-btn-hover-color);
+}
+
 .btn-lg, .btn-group-lg > .btn, .comments-area .btn-group-lg > input[type=submit], .btn-group-lg > .button,
 .btn-group-lg > .wp-block-search__button,
 .woocommerce .wc-proceed-to-checkout .btn-group-lg > .button,
@@ -4807,6 +4643,7 @@ fieldset:disabled .woocommerce .wc-proceed-to-checkout button,
 }
 
 .dropdown-menu {
+  --bs-dropdown-zindex: 1000;
   --bs-dropdown-min-width: 10rem;
   --bs-dropdown-padding-x: 0;
   --bs-dropdown-padding-y: 0.5rem;
@@ -4825,7 +4662,7 @@ fieldset:disabled .woocommerce .wc-proceed-to-checkout button,
   --bs-dropdown-link-hover-color: #1e2125;
   --bs-dropdown-link-hover-bg: #e9ecef;
   --bs-dropdown-link-active-color: #fff;
-  --bs-dropdown-link-active-bg: #5e72e4;
+  --bs-dropdown-link-active-bg: #372948;
   --bs-dropdown-link-disabled-color: #adb5bd;
   --bs-dropdown-item-padding-x: 1rem;
   --bs-dropdown-item-padding-y: 0.8rem;
@@ -4833,7 +4670,7 @@ fieldset:disabled .woocommerce .wc-proceed-to-checkout button,
   --bs-dropdown-header-padding-x: 1rem;
   --bs-dropdown-header-padding-y: 0.5rem;
   position: absolute;
-  z-index: 1000;
+  z-index: var(--bs-dropdown-zindex);
   display: none;
   min-width: var(--bs-dropdown-min-width);
   padding: var(--bs-dropdown-padding-y) var(--bs-dropdown-padding-x);
@@ -5089,7 +4926,7 @@ fieldset:disabled .woocommerce .wc-proceed-to-checkout button,
   --bs-dropdown-divider-bg: var(--bs-border-color-translucent);
   --bs-dropdown-link-hover-bg: rgba(255, 255, 255, 0.15);
   --bs-dropdown-link-active-color: #fff;
-  --bs-dropdown-link-active-bg: #5e72e4;
+  --bs-dropdown-link-active-bg: #372948;
   --bs-dropdown-link-disabled-color: #adb5bd;
   --bs-dropdown-header-color: #adb5bd;
 }
@@ -5452,9 +5289,9 @@ fieldset:disabled .woocommerce .wc-proceed-to-checkout button,
 .btn-group {
   border-radius: 0.375rem;
 }
-.btn-group > .btn:not(:first-child), .comments-area .btn-group > input[type=submit]:not(:first-child), .btn-group > .button:not(:first-child),
-.btn-group > .wp-block-search__button:not(:first-child), .woocommerce .btn-group > button:not(:first-child),
-.woocommerce .btn-group > .single_add_to_cart_button:not(:first-child), .woocommerce-notices-wrapper .woocommerce-message .btn-group > a.button:not(:first-child), .wpcf7 .btn-group > input[type=submit]:not(:first-child),
+.btn-group > :not(.btn-check:first-child) + .btn, .comments-area .btn-group > :not(.btn-check:first-child) + input[type=submit], .btn-group > :not(.btn-check:first-child) + .button,
+.btn-group > :not(.btn-check:first-child) + .wp-block-search__button, .woocommerce .btn-group > :not(.btn-check:first-child) + button,
+.woocommerce .btn-group > :not(.btn-check:first-child) + .single_add_to_cart_button, .wpcf7 .btn-group > :not(.btn-check:first-child) + input[type=submit],
 .btn-group > .btn-group:not(:first-child) {
   margin-left: -1px;
 }
@@ -6643,7 +6480,7 @@ fieldset:disabled .woocommerce .wc-proceed-to-checkout button,
 
 .nav {
   --bs-nav-link-padding-x: 1rem;
-  --bs-nav-link-padding-y: 0.8rem;
+  --bs-nav-link-padding-y: 0.5rem;
   --bs-nav-link-font-weight: medium;
   --bs-nav-link-color: var(--bs-link-color);
   --bs-nav-link-hover-color: var(--bs-link-hover-color);
@@ -6688,7 +6525,7 @@ fieldset:disabled .woocommerce .wc-proceed-to-checkout button,
   border-bottom: var(--bs-nav-tabs-border-width) solid var(--bs-nav-tabs-border-color);
 }
 .nav-tabs .nav-link {
-  margin-bottom: calc(var(--bs-nav-tabs-border-width) * -1);
+  margin-bottom: calc(-1 * var(--bs-nav-tabs-border-width));
   background: none;
   border: var(--bs-nav-tabs-border-width) solid transparent;
   border-top-left-radius: var(--bs-nav-tabs-border-radius);
@@ -6710,7 +6547,7 @@ fieldset:disabled .woocommerce .wc-proceed-to-checkout button,
   border-color: var(--bs-nav-tabs-link-active-border-color);
 }
 .nav-tabs .dropdown-menu {
-  margin-top: calc(var(--bs-nav-tabs-border-width) * -1);
+  margin-top: calc(-1 * var(--bs-nav-tabs-border-width));
   border-top-left-radius: 0;
   border-top-right-radius: 0;
 }
@@ -6718,7 +6555,7 @@ fieldset:disabled .woocommerce .wc-proceed-to-checkout button,
 .nav-pills {
   --bs-nav-pills-border-radius: 0.375rem;
   --bs-nav-pills-link-active-color: #fff;
-  --bs-nav-pills-link-active-bg: #5e72e4;
+  --bs-nav-pills-link-active-bg: #372948;
 }
 .nav-pills .nav-link {
   background: none;
@@ -6764,11 +6601,11 @@ fieldset:disabled .woocommerce .wc-proceed-to-checkout button,
 .navbar {
   --bs-navbar-padding-x: 0;
   --bs-navbar-padding-y: 0.5rem;
-  --bs-navbar-color: rgba(0, 0, 0, 0.9);
+  --bs-navbar-color: rgba(0, 0, 0, 0.55);
   --bs-navbar-hover-color: rgba(0, 0, 0, 0.7);
   --bs-navbar-disabled-color: rgba(0, 0, 0, 0.3);
   --bs-navbar-active-color: rgba(0, 0, 0, 0.9);
-  --bs-navbar-brand-padding-y: 0.6125rem;
+  --bs-navbar-brand-padding-y: 0.3125rem;
   --bs-navbar-brand-margin-end: 1rem;
   --bs-navbar-brand-font-size: 1.25rem;
   --bs-navbar-brand-color: rgba(0, 0, 0, 0.9);
@@ -6777,7 +6614,7 @@ fieldset:disabled .woocommerce .wc-proceed-to-checkout button,
   --bs-navbar-toggler-padding-y: 0.25rem;
   --bs-navbar-toggler-padding-x: 0.75rem;
   --bs-navbar-toggler-font-size: 1.25rem;
-  --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.9%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
   --bs-navbar-toggler-border-color: rgba(0, 0, 0, 0.1);
   --bs-navbar-toggler-border-radius: 0;
   --bs-navbar-toggler-focus-width: 0.25rem;
@@ -6815,7 +6652,8 @@ fieldset:disabled .woocommerce .wc-proceed-to-checkout button,
 
 .navbar-nav {
   --bs-nav-link-padding-x: 0;
-  --bs-nav-link-padding-y: 0.8rem;
+  --bs-nav-link-padding-y: 0.5rem;
+  --bs-nav-link-font-weight: medium;
   --bs-nav-link-color: var(--bs-navbar-color);
   --bs-nav-link-hover-color: var(--bs-navbar-hover-color);
   --bs-nav-link-disabled-color: var(--bs-navbar-disabled-color);
@@ -6834,8 +6672,8 @@ fieldset:disabled .woocommerce .wc-proceed-to-checkout button,
 }
 
 .navbar-text {
-  padding-top: 0.8rem;
-  padding-bottom: 0.8rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
   color: var(--bs-navbar-color);
 }
 .navbar-text a,
@@ -7343,11 +7181,11 @@ fieldset:disabled .woocommerce .wc-proceed-to-checkout button,
     border-bottom-right-radius: 0;
   }
   .card-group > .card:not(:last-child) .card-img-top,
-.card-group > .card:not(:last-child) .card-header {
+  .card-group > .card:not(:last-child) .card-header {
     border-top-right-radius: 0;
   }
   .card-group > .card:not(:last-child) .card-img-bottom,
-.card-group > .card:not(:last-child) .card-footer {
+  .card-group > .card:not(:last-child) .card-footer {
     border-bottom-right-radius: 0;
   }
   .card-group > .card:not(:first-child) {
@@ -7355,17 +7193,17 @@ fieldset:disabled .woocommerce .wc-proceed-to-checkout button,
     border-bottom-left-radius: 0;
   }
   .card-group > .card:not(:first-child) .card-img-top,
-.card-group > .card:not(:first-child) .card-header {
+  .card-group > .card:not(:first-child) .card-header {
     border-top-left-radius: 0;
   }
   .card-group > .card:not(:first-child) .card-img-bottom,
-.card-group > .card:not(:first-child) .card-footer {
+  .card-group > .card:not(:first-child) .card-footer {
     border-bottom-left-radius: 0;
   }
 }
 
 .accordion {
-  --bs-accordion-color: #000;
+  --bs-accordion-color: #212529;
   --bs-accordion-bg: #fff;
   --bs-accordion-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, border-radius 0.15s ease;
   --bs-accordion-border-color: var(--bs-border-color);
@@ -7374,19 +7212,19 @@ fieldset:disabled .woocommerce .wc-proceed-to-checkout button,
   --bs-accordion-inner-border-radius: calc(0.375rem - 1px);
   --bs-accordion-btn-padding-x: 1.25rem;
   --bs-accordion-btn-padding-y: 1rem;
-  --bs-accordion-btn-color: var(--bs-body-color);
+  --bs-accordion-btn-color: #212529;
   --bs-accordion-btn-bg: var(--bs-accordion-bg);
-  --bs-accordion-btn-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='var%28--bs-body-color%29'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+  --bs-accordion-btn-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
   --bs-accordion-btn-icon-width: 1.25rem;
   --bs-accordion-btn-icon-transform: rotate(-180deg);
   --bs-accordion-btn-icon-transition: transform 0.2s ease-in-out;
-  --bs-accordion-btn-active-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%235567cd'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
-  --bs-accordion-btn-focus-border-color: #afb9f2;
-  --bs-accordion-btn-focus-box-shadow: 0 0 0 0.25rem rgba(94, 114, 228, 0.25);
+  --bs-accordion-btn-active-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23322541'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+  --bs-accordion-btn-focus-border-color: #9b94a4;
+  --bs-accordion-btn-focus-box-shadow: 0 0 0 0.25rem rgba(55, 41, 72, 0.25);
   --bs-accordion-body-padding-x: 1.25rem;
   --bs-accordion-body-padding-y: 1rem;
-  --bs-accordion-active-color: #5567cd;
-  --bs-accordion-active-bg: #eff1fc;
+  --bs-accordion-active-color: #322541;
+  --bs-accordion-active-bg: #ebeaed;
 }
 
 .accordion-button {
@@ -7412,7 +7250,7 @@ fieldset:disabled .woocommerce .wc-proceed-to-checkout button,
 .accordion-button:not(.collapsed) {
   color: var(--bs-accordion-active-color);
   background-color: var(--bs-accordion-active-bg);
-  box-shadow: inset 0 calc(var(--bs-accordion-border-width) * -1) 0 var(--bs-accordion-border-color);
+  box-shadow: inset 0 calc(-1 * var(--bs-accordion-border-width)) 0 var(--bs-accordion-border-color);
 }
 .accordion-button:not(.collapsed)::after {
   background-image: var(--bs-accordion-btn-active-icon);
@@ -7495,7 +7333,7 @@ fieldset:disabled .woocommerce .wc-proceed-to-checkout button,
 .accordion-flush .accordion-item:last-child {
   border-bottom: 0;
 }
-.accordion-flush .accordion-item .accordion-button {
+.accordion-flush .accordion-item .accordion-button, .accordion-flush .accordion-item .accordion-button.collapsed {
   border-radius: 0;
 }
 
@@ -7545,10 +7383,10 @@ fieldset:disabled .woocommerce .wc-proceed-to-checkout button,
   --bs-pagination-hover-border-color: #dee2e6;
   --bs-pagination-focus-color: var(--bs-link-hover-color);
   --bs-pagination-focus-bg: #e9ecef;
-  --bs-pagination-focus-box-shadow: 0 0 0 0.25rem rgba(94, 114, 228, 0.25);
+  --bs-pagination-focus-box-shadow: 0 0 0 0.25rem rgba(55, 41, 72, 0.25);
   --bs-pagination-active-color: #fff;
-  --bs-pagination-active-bg: #5e72e4;
-  --bs-pagination-active-border-color: #5e72e4;
+  --bs-pagination-active-bg: #372948;
+  --bs-pagination-active-border-color: #372948;
   --bs-pagination-disabled-color: #6c757d;
   --bs-pagination-disabled-bg: #fff;
   --bs-pagination-disabled-border-color: #dee2e6;
@@ -7640,7 +7478,7 @@ fieldset:disabled .woocommerce .wc-proceed-to-checkout button,
   text-align: center;
   white-space: nowrap;
   vertical-align: baseline;
-  border-radius: var(--bs-badge-border-radius, 0);
+  border-radius: var(--bs-badge-border-radius);
 }
 .badge:empty, .woocommerce .added_to_cart:empty {
   display: none;
@@ -7677,7 +7515,7 @@ fieldset:disabled .woocommerce .wc-proceed-to-checkout button,
   color: var(--bs-alert-color);
   background-color: var(--bs-alert-bg);
   border: var(--bs-alert-border);
-  border-radius: var(--bs-alert-border-radius, 0);
+  border-radius: var(--bs-alert-border-radius);
 }
 
 .alert-heading {
@@ -7700,12 +7538,12 @@ fieldset:disabled .woocommerce .wc-proceed-to-checkout button,
 }
 
 .alert-primary {
-  --bs-alert-color: #384489;
-  --bs-alert-bg: #dfe3fa;
-  --bs-alert-border-color: #cfd5f7;
+  --bs-alert-color: #21192b;
+  --bs-alert-bg: #d7d4da;
+  --bs-alert-border-color: #c3bfc8;
 }
 .alert-primary .alert-link {
-  color: #2d366e;
+  color: #1a1422;
 }
 
 .alert-secondary {
@@ -7783,7 +7621,7 @@ fieldset:disabled .woocommerce .wc-proceed-to-checkout button,
   --bs-progress-border-radius: 0.375rem;
   --bs-progress-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.075);
   --bs-progress-bar-color: #fff;
-  --bs-progress-bar-bg: #5e72e4;
+  --bs-progress-bar-bg: #372948;
   --bs-progress-bar-transition: width 0.6s ease;
   display: flex;
   height: var(--bs-progress-height);
@@ -7840,8 +7678,8 @@ fieldset:disabled .woocommerce .wc-proceed-to-checkout button,
   --bs-list-group-disabled-color: #6c757d;
   --bs-list-group-disabled-bg: #fff;
   --bs-list-group-active-color: #fff;
-  --bs-list-group-active-bg: #5e72e4;
-  --bs-list-group-active-border-color: #5e72e4;
+  --bs-list-group-active-bg: #372948;
+  --bs-list-group-active-border-color: #372948;
   display: flex;
   flex-direction: column;
   padding-left: 0;
@@ -7905,18 +7743,18 @@ fieldset:disabled .woocommerce .wc-proceed-to-checkout button,
   border-top-width: 0;
 }
 .list-group-item + .list-group-item.active {
-  margin-top: calc(var(--bs-list-group-border-width) * -1);
+  margin-top: calc(-1 * var(--bs-list-group-border-width));
   border-top-width: var(--bs-list-group-border-width);
 }
 
 .list-group-horizontal {
   flex-direction: row;
 }
-.list-group-horizontal > .list-group-item:first-child {
+.list-group-horizontal > .list-group-item:first-child:not(:last-child) {
   border-bottom-left-radius: var(--bs-list-group-border-radius);
   border-top-right-radius: 0;
 }
-.list-group-horizontal > .list-group-item:last-child {
+.list-group-horizontal > .list-group-item:last-child:not(:first-child) {
   border-top-right-radius: var(--bs-list-group-border-radius);
   border-bottom-left-radius: 0;
 }
@@ -7928,7 +7766,7 @@ fieldset:disabled .woocommerce .wc-proceed-to-checkout button,
   border-left-width: 0;
 }
 .list-group-horizontal > .list-group-item + .list-group-item.active {
-  margin-left: calc(var(--bs-list-group-border-width) * -1);
+  margin-left: calc(-1 * var(--bs-list-group-border-width));
   border-left-width: var(--bs-list-group-border-width);
 }
 
@@ -7936,11 +7774,11 @@ fieldset:disabled .woocommerce .wc-proceed-to-checkout button,
   .list-group-horizontal-sm {
     flex-direction: row;
   }
-  .list-group-horizontal-sm > .list-group-item:first-child {
+  .list-group-horizontal-sm > .list-group-item:first-child:not(:last-child) {
     border-bottom-left-radius: var(--bs-list-group-border-radius);
     border-top-right-radius: 0;
   }
-  .list-group-horizontal-sm > .list-group-item:last-child {
+  .list-group-horizontal-sm > .list-group-item:last-child:not(:first-child) {
     border-top-right-radius: var(--bs-list-group-border-radius);
     border-bottom-left-radius: 0;
   }
@@ -7952,7 +7790,7 @@ fieldset:disabled .woocommerce .wc-proceed-to-checkout button,
     border-left-width: 0;
   }
   .list-group-horizontal-sm > .list-group-item + .list-group-item.active {
-    margin-left: calc(var(--bs-list-group-border-width) * -1);
+    margin-left: calc(-1 * var(--bs-list-group-border-width));
     border-left-width: var(--bs-list-group-border-width);
   }
 }
@@ -7960,11 +7798,11 @@ fieldset:disabled .woocommerce .wc-proceed-to-checkout button,
   .list-group-horizontal-md {
     flex-direction: row;
   }
-  .list-group-horizontal-md > .list-group-item:first-child {
+  .list-group-horizontal-md > .list-group-item:first-child:not(:last-child) {
     border-bottom-left-radius: var(--bs-list-group-border-radius);
     border-top-right-radius: 0;
   }
-  .list-group-horizontal-md > .list-group-item:last-child {
+  .list-group-horizontal-md > .list-group-item:last-child:not(:first-child) {
     border-top-right-radius: var(--bs-list-group-border-radius);
     border-bottom-left-radius: 0;
   }
@@ -7976,7 +7814,7 @@ fieldset:disabled .woocommerce .wc-proceed-to-checkout button,
     border-left-width: 0;
   }
   .list-group-horizontal-md > .list-group-item + .list-group-item.active {
-    margin-left: calc(var(--bs-list-group-border-width) * -1);
+    margin-left: calc(-1 * var(--bs-list-group-border-width));
     border-left-width: var(--bs-list-group-border-width);
   }
 }
@@ -7984,11 +7822,11 @@ fieldset:disabled .woocommerce .wc-proceed-to-checkout button,
   .list-group-horizontal-lg {
     flex-direction: row;
   }
-  .list-group-horizontal-lg > .list-group-item:first-child {
+  .list-group-horizontal-lg > .list-group-item:first-child:not(:last-child) {
     border-bottom-left-radius: var(--bs-list-group-border-radius);
     border-top-right-radius: 0;
   }
-  .list-group-horizontal-lg > .list-group-item:last-child {
+  .list-group-horizontal-lg > .list-group-item:last-child:not(:first-child) {
     border-top-right-radius: var(--bs-list-group-border-radius);
     border-bottom-left-radius: 0;
   }
@@ -8000,7 +7838,7 @@ fieldset:disabled .woocommerce .wc-proceed-to-checkout button,
     border-left-width: 0;
   }
   .list-group-horizontal-lg > .list-group-item + .list-group-item.active {
-    margin-left: calc(var(--bs-list-group-border-width) * -1);
+    margin-left: calc(-1 * var(--bs-list-group-border-width));
     border-left-width: var(--bs-list-group-border-width);
   }
 }
@@ -8008,11 +7846,11 @@ fieldset:disabled .woocommerce .wc-proceed-to-checkout button,
   .list-group-horizontal-xl {
     flex-direction: row;
   }
-  .list-group-horizontal-xl > .list-group-item:first-child {
+  .list-group-horizontal-xl > .list-group-item:first-child:not(:last-child) {
     border-bottom-left-radius: var(--bs-list-group-border-radius);
     border-top-right-radius: 0;
   }
-  .list-group-horizontal-xl > .list-group-item:last-child {
+  .list-group-horizontal-xl > .list-group-item:last-child:not(:first-child) {
     border-top-right-radius: var(--bs-list-group-border-radius);
     border-bottom-left-radius: 0;
   }
@@ -8024,7 +7862,7 @@ fieldset:disabled .woocommerce .wc-proceed-to-checkout button,
     border-left-width: 0;
   }
   .list-group-horizontal-xl > .list-group-item + .list-group-item.active {
-    margin-left: calc(var(--bs-list-group-border-width) * -1);
+    margin-left: calc(-1 * var(--bs-list-group-border-width));
     border-left-width: var(--bs-list-group-border-width);
   }
 }
@@ -8032,11 +7870,11 @@ fieldset:disabled .woocommerce .wc-proceed-to-checkout button,
   .list-group-horizontal-xxl {
     flex-direction: row;
   }
-  .list-group-horizontal-xxl > .list-group-item:first-child {
+  .list-group-horizontal-xxl > .list-group-item:first-child:not(:last-child) {
     border-bottom-left-radius: var(--bs-list-group-border-radius);
     border-top-right-radius: 0;
   }
-  .list-group-horizontal-xxl > .list-group-item:last-child {
+  .list-group-horizontal-xxl > .list-group-item:last-child:not(:first-child) {
     border-top-right-radius: var(--bs-list-group-border-radius);
     border-bottom-left-radius: 0;
   }
@@ -8048,7 +7886,7 @@ fieldset:disabled .woocommerce .wc-proceed-to-checkout button,
     border-left-width: 0;
   }
   .list-group-horizontal-xxl > .list-group-item + .list-group-item.active {
-    margin-left: calc(var(--bs-list-group-border-width) * -1);
+    margin-left: calc(-1 * var(--bs-list-group-border-width));
     border-left-width: var(--bs-list-group-border-width);
   }
 }
@@ -8063,17 +7901,17 @@ fieldset:disabled .woocommerce .wc-proceed-to-checkout button,
 }
 
 .list-group-item-primary {
-  color: #384489;
-  background-color: #dfe3fa;
+  color: #21192b;
+  background-color: #d7d4da;
 }
 .list-group-item-primary.list-group-item-action:hover, .list-group-item-primary.list-group-item-action:focus {
-  color: #384489;
-  background-color: #c9cce1;
+  color: #21192b;
+  background-color: #c2bfc4;
 }
 .list-group-item-primary.list-group-item-action.active {
   color: #fff;
-  background-color: #384489;
-  border-color: #384489;
+  background-color: #21192b;
+  border-color: #21192b;
 }
 
 .list-group-item-secondary {
@@ -8192,7 +8030,7 @@ fieldset:disabled .woocommerce .wc-proceed-to-checkout button,
 }
 .btn-close:focus {
   outline: 0;
-  box-shadow: 0 0 0 0.25rem rgba(94, 114, 228, 0.25);
+  box-shadow: 0 0 0 0.25rem rgba(55, 41, 72, 0.25);
   opacity: 1;
 }
 .btn-close:disabled, .btn-close.disabled {
@@ -8208,6 +8046,7 @@ fieldset:disabled .woocommerce .wc-proceed-to-checkout button,
 }
 
 .toast {
+  --bs-toast-zindex: 1090;
   --bs-toast-padding-x: 0.75rem;
   --bs-toast-padding-y: 0.5rem;
   --bs-toast-spacing: 1.5rem;
@@ -8241,8 +8080,9 @@ fieldset:disabled .woocommerce .wc-proceed-to-checkout button,
 }
 
 .toast-container {
+  --bs-toast-zindex: 1090;
   position: absolute;
-  z-index: 1090;
+  z-index: var(--bs-toast-zindex);
   width: -moz-max-content;
   width: max-content;
   max-width: 100%;
@@ -8264,7 +8104,7 @@ fieldset:disabled .woocommerce .wc-proceed-to-checkout button,
   border-top-right-radius: calc(var(--bs-toast-border-radius) - var(--bs-toast-border-width));
 }
 .toast-header .btn-close {
-  margin-right: calc(var(--bs-toast-padding-x) * -0.5);
+  margin-right: calc(-0.5 * var(--bs-toast-padding-x));
   margin-left: var(--bs-toast-padding-x);
 }
 
@@ -8391,7 +8231,7 @@ fieldset:disabled .woocommerce .wc-proceed-to-checkout button,
 }
 .modal-header .btn-close {
   padding: calc(var(--bs-modal-header-padding-y) * 0.5) calc(var(--bs-modal-header-padding-x) * 0.5);
-  margin: calc(var(--bs-modal-header-padding-y) * -0.5) calc(var(--bs-modal-header-padding-x) * -0.5) calc(var(--bs-modal-header-padding-y) * -0.5) auto;
+  margin: calc(-0.5 * var(--bs-modal-header-padding-y)) calc(-0.5 * var(--bs-modal-header-padding-x)) calc(-0.5 * var(--bs-modal-header-padding-y)) auto;
 }
 
 .modal-title {
@@ -8437,7 +8277,7 @@ fieldset:disabled .woocommerce .wc-proceed-to-checkout button,
 }
 @media (min-width: 992px) {
   .modal-lg,
-.modal-xl {
+  .modal-xl {
     --bs-modal-width: 800px;
   }
 }
@@ -8478,7 +8318,7 @@ fieldset:disabled .woocommerce .wc-proceed-to-checkout button,
     border-radius: 0;
   }
   .modal-fullscreen-sm-down .modal-header,
-.modal-fullscreen-sm-down .modal-footer {
+  .modal-fullscreen-sm-down .modal-footer {
     border-radius: 0;
   }
   .modal-fullscreen-sm-down .modal-body {
@@ -8498,7 +8338,7 @@ fieldset:disabled .woocommerce .wc-proceed-to-checkout button,
     border-radius: 0;
   }
   .modal-fullscreen-md-down .modal-header,
-.modal-fullscreen-md-down .modal-footer {
+  .modal-fullscreen-md-down .modal-footer {
     border-radius: 0;
   }
   .modal-fullscreen-md-down .modal-body {
@@ -8518,7 +8358,7 @@ fieldset:disabled .woocommerce .wc-proceed-to-checkout button,
     border-radius: 0;
   }
   .modal-fullscreen-lg-down .modal-header,
-.modal-fullscreen-lg-down .modal-footer {
+  .modal-fullscreen-lg-down .modal-footer {
     border-radius: 0;
   }
   .modal-fullscreen-lg-down .modal-body {
@@ -8538,7 +8378,7 @@ fieldset:disabled .woocommerce .wc-proceed-to-checkout button,
     border-radius: 0;
   }
   .modal-fullscreen-xl-down .modal-header,
-.modal-fullscreen-xl-down .modal-footer {
+  .modal-fullscreen-xl-down .modal-footer {
     border-radius: 0;
   }
   .modal-fullscreen-xl-down .modal-body {
@@ -8558,7 +8398,7 @@ fieldset:disabled .woocommerce .wc-proceed-to-checkout button,
     border-radius: 0;
   }
   .modal-fullscreen-xxl-down .modal-header,
-.modal-fullscreen-xxl-down .modal-footer {
+  .modal-fullscreen-xxl-down .modal-footer {
     border-radius: 0;
   }
   .modal-fullscreen-xxl-down .modal-body {
@@ -8665,7 +8505,7 @@ fieldset:disabled .woocommerce .wc-proceed-to-checkout button,
   color: var(--bs-tooltip-color);
   text-align: center;
   background-color: var(--bs-tooltip-bg);
-  border-radius: var(--bs-tooltip-border-radius, 0);
+  border-radius: var(--bs-tooltip-border-radius);
 }
 
 .popover {
@@ -8681,7 +8521,7 @@ fieldset:disabled .woocommerce .wc-proceed-to-checkout button,
   --bs-popover-header-padding-x: 1rem;
   --bs-popover-header-padding-y: 0.5rem;
   --bs-popover-header-font-size: 1rem;
-  --bs-popover-header-color: var(--bs-heading-color);
+  --bs-popover-header-color: ;
   --bs-popover-header-bg: #f0f0f0;
   --bs-popover-body-padding-x: 1rem;
   --bs-popover-body-padding-y: 1rem;
@@ -8728,7 +8568,7 @@ fieldset:disabled .woocommerce .wc-proceed-to-checkout button,
 }
 
 .bs-popover-top > .popover-arrow, .bs-popover-auto[data-popper-placement^=top] > .popover-arrow {
-  bottom: calc(var(--bs-popover-arrow-height) * -1 - var(--bs-popover-border-width));
+  bottom: calc(-1 * (var(--bs-popover-arrow-height)) - var(--bs-popover-border-width));
 }
 .bs-popover-top > .popover-arrow::before, .bs-popover-auto[data-popper-placement^=top] > .popover-arrow::before, .bs-popover-top > .popover-arrow::after, .bs-popover-auto[data-popper-placement^=top] > .popover-arrow::after {
   border-width: var(--bs-popover-arrow-height) calc(var(--bs-popover-arrow-width) * 0.5) 0;
@@ -8744,7 +8584,7 @@ fieldset:disabled .woocommerce .wc-proceed-to-checkout button,
 
 /* rtl:begin:ignore */
 .bs-popover-end > .popover-arrow, .bs-popover-auto[data-popper-placement^=right] > .popover-arrow {
-  left: calc(var(--bs-popover-arrow-height) * -1 - var(--bs-popover-border-width));
+  left: calc(-1 * (var(--bs-popover-arrow-height)) - var(--bs-popover-border-width));
   width: var(--bs-popover-arrow-height);
   height: var(--bs-popover-arrow-width);
 }
@@ -8762,7 +8602,7 @@ fieldset:disabled .woocommerce .wc-proceed-to-checkout button,
 
 /* rtl:end:ignore */
 .bs-popover-bottom > .popover-arrow, .bs-popover-auto[data-popper-placement^=bottom] > .popover-arrow {
-  top: calc(var(--bs-popover-arrow-height) * -1 - var(--bs-popover-border-width));
+  top: calc(-1 * (var(--bs-popover-arrow-height)) - var(--bs-popover-border-width));
 }
 .bs-popover-bottom > .popover-arrow::before, .bs-popover-auto[data-popper-placement^=bottom] > .popover-arrow::before, .bs-popover-bottom > .popover-arrow::after, .bs-popover-auto[data-popper-placement^=bottom] > .popover-arrow::after {
   border-width: 0 calc(var(--bs-popover-arrow-width) * 0.5) var(--bs-popover-arrow-height);
@@ -8781,14 +8621,14 @@ fieldset:disabled .woocommerce .wc-proceed-to-checkout button,
   left: 50%;
   display: block;
   width: var(--bs-popover-arrow-width);
-  margin-left: calc(var(--bs-popover-arrow-width) * -0.5);
+  margin-left: calc(-0.5 * var(--bs-popover-arrow-width));
   content: "";
   border-bottom: var(--bs-popover-border-width) solid var(--bs-popover-header-bg);
 }
 
 /* rtl:begin:ignore */
 .bs-popover-start > .popover-arrow, .bs-popover-auto[data-popper-placement^=left] > .popover-arrow {
-  right: calc(var(--bs-popover-arrow-height) * -1 - var(--bs-popover-border-width));
+  right: calc(-1 * (var(--bs-popover-arrow-height)) - var(--bs-popover-border-width));
   width: var(--bs-popover-arrow-height);
   height: var(--bs-popover-arrow-width);
 }
@@ -8896,7 +8736,7 @@ fieldset:disabled .woocommerce .wc-proceed-to-checkout button,
 }
 @media (prefers-reduced-motion: reduce) {
   .carousel-fade .active.carousel-item-start,
-.carousel-fade .active.carousel-item-end {
+  .carousel-fade .active.carousel-item-end {
     transition: none;
   }
 }
@@ -8921,7 +8761,7 @@ fieldset:disabled .woocommerce .wc-proceed-to-checkout button,
 }
 @media (prefers-reduced-motion: reduce) {
   .carousel-control-prev,
-.carousel-control-next {
+  .carousel-control-next {
     transition: none;
   }
 }
@@ -9089,11 +8929,12 @@ fieldset:disabled .woocommerce .wc-proceed-to-checkout button,
 
 @media (prefers-reduced-motion: reduce) {
   .spinner-border,
-.spinner-grow {
+  .spinner-grow {
     --bs-spinner-animation-speed: 1.5s;
   }
 }
 .offcanvas, .offcanvas-xxl, .offcanvas-xl, .offcanvas-lg, .offcanvas-md, .offcanvas-sm {
+  --bs-offcanvas-zindex: 1045;
   --bs-offcanvas-width: 400px;
   --bs-offcanvas-height: 30vh;
   --bs-offcanvas-padding-x: 1rem;
@@ -9109,7 +8950,7 @@ fieldset:disabled .woocommerce .wc-proceed-to-checkout button,
   .offcanvas-sm {
     position: fixed;
     bottom: 0;
-    z-index: 1045;
+    z-index: var(--bs-offcanvas-zindex);
     display: flex;
     flex-direction: column;
     max-width: 100%;
@@ -9124,16 +8965,6 @@ fieldset:disabled .woocommerce .wc-proceed-to-checkout button,
 @media (max-width: 575.98px) and (prefers-reduced-motion: reduce) {
   .offcanvas-sm {
     transition: none;
-  }
-}
-@media (max-width: 575.98px) {
-  .offcanvas-sm.showing, .offcanvas-sm.show:not(.hiding) {
-    transform: none;
-  }
-}
-@media (max-width: 575.98px) {
-  .offcanvas-sm.showing, .offcanvas-sm.hiding, .offcanvas-sm.show {
-    visibility: visible;
   }
 }
 @media (max-width: 575.98px) {
@@ -9175,6 +9006,16 @@ fieldset:disabled .woocommerce .wc-proceed-to-checkout button,
     transform: translateY(100%);
   }
 }
+@media (max-width: 575.98px) {
+  .offcanvas-sm.showing, .offcanvas-sm.show:not(.hiding) {
+    transform: none;
+  }
+}
+@media (max-width: 575.98px) {
+  .offcanvas-sm.showing, .offcanvas-sm.hiding, .offcanvas-sm.show {
+    visibility: visible;
+  }
+}
 @media (min-width: 576px) {
   .offcanvas-sm {
     --bs-offcanvas-height: auto;
@@ -9197,7 +9038,7 @@ fieldset:disabled .woocommerce .wc-proceed-to-checkout button,
   .offcanvas-md {
     position: fixed;
     bottom: 0;
-    z-index: 1045;
+    z-index: var(--bs-offcanvas-zindex);
     display: flex;
     flex-direction: column;
     max-width: 100%;
@@ -9212,16 +9053,6 @@ fieldset:disabled .woocommerce .wc-proceed-to-checkout button,
 @media (max-width: 767.98px) and (prefers-reduced-motion: reduce) {
   .offcanvas-md {
     transition: none;
-  }
-}
-@media (max-width: 767.98px) {
-  .offcanvas-md.showing, .offcanvas-md.show:not(.hiding) {
-    transform: none;
-  }
-}
-@media (max-width: 767.98px) {
-  .offcanvas-md.showing, .offcanvas-md.hiding, .offcanvas-md.show {
-    visibility: visible;
   }
 }
 @media (max-width: 767.98px) {
@@ -9263,6 +9094,16 @@ fieldset:disabled .woocommerce .wc-proceed-to-checkout button,
     transform: translateY(100%);
   }
 }
+@media (max-width: 767.98px) {
+  .offcanvas-md.showing, .offcanvas-md.show:not(.hiding) {
+    transform: none;
+  }
+}
+@media (max-width: 767.98px) {
+  .offcanvas-md.showing, .offcanvas-md.hiding, .offcanvas-md.show {
+    visibility: visible;
+  }
+}
 @media (min-width: 768px) {
   .offcanvas-md {
     --bs-offcanvas-height: auto;
@@ -9285,7 +9126,7 @@ fieldset:disabled .woocommerce .wc-proceed-to-checkout button,
   .offcanvas-lg {
     position: fixed;
     bottom: 0;
-    z-index: 1045;
+    z-index: var(--bs-offcanvas-zindex);
     display: flex;
     flex-direction: column;
     max-width: 100%;
@@ -9300,16 +9141,6 @@ fieldset:disabled .woocommerce .wc-proceed-to-checkout button,
 @media (max-width: 991.98px) and (prefers-reduced-motion: reduce) {
   .offcanvas-lg {
     transition: none;
-  }
-}
-@media (max-width: 991.98px) {
-  .offcanvas-lg.showing, .offcanvas-lg.show:not(.hiding) {
-    transform: none;
-  }
-}
-@media (max-width: 991.98px) {
-  .offcanvas-lg.showing, .offcanvas-lg.hiding, .offcanvas-lg.show {
-    visibility: visible;
   }
 }
 @media (max-width: 991.98px) {
@@ -9351,6 +9182,16 @@ fieldset:disabled .woocommerce .wc-proceed-to-checkout button,
     transform: translateY(100%);
   }
 }
+@media (max-width: 991.98px) {
+  .offcanvas-lg.showing, .offcanvas-lg.show:not(.hiding) {
+    transform: none;
+  }
+}
+@media (max-width: 991.98px) {
+  .offcanvas-lg.showing, .offcanvas-lg.hiding, .offcanvas-lg.show {
+    visibility: visible;
+  }
+}
 @media (min-width: 992px) {
   .offcanvas-lg {
     --bs-offcanvas-height: auto;
@@ -9373,7 +9214,7 @@ fieldset:disabled .woocommerce .wc-proceed-to-checkout button,
   .offcanvas-xl {
     position: fixed;
     bottom: 0;
-    z-index: 1045;
+    z-index: var(--bs-offcanvas-zindex);
     display: flex;
     flex-direction: column;
     max-width: 100%;
@@ -9388,16 +9229,6 @@ fieldset:disabled .woocommerce .wc-proceed-to-checkout button,
 @media (max-width: 1199.98px) and (prefers-reduced-motion: reduce) {
   .offcanvas-xl {
     transition: none;
-  }
-}
-@media (max-width: 1199.98px) {
-  .offcanvas-xl.showing, .offcanvas-xl.show:not(.hiding) {
-    transform: none;
-  }
-}
-@media (max-width: 1199.98px) {
-  .offcanvas-xl.showing, .offcanvas-xl.hiding, .offcanvas-xl.show {
-    visibility: visible;
   }
 }
 @media (max-width: 1199.98px) {
@@ -9439,6 +9270,16 @@ fieldset:disabled .woocommerce .wc-proceed-to-checkout button,
     transform: translateY(100%);
   }
 }
+@media (max-width: 1199.98px) {
+  .offcanvas-xl.showing, .offcanvas-xl.show:not(.hiding) {
+    transform: none;
+  }
+}
+@media (max-width: 1199.98px) {
+  .offcanvas-xl.showing, .offcanvas-xl.hiding, .offcanvas-xl.show {
+    visibility: visible;
+  }
+}
 @media (min-width: 1200px) {
   .offcanvas-xl {
     --bs-offcanvas-height: auto;
@@ -9461,7 +9302,7 @@ fieldset:disabled .woocommerce .wc-proceed-to-checkout button,
   .offcanvas-xxl {
     position: fixed;
     bottom: 0;
-    z-index: 1045;
+    z-index: var(--bs-offcanvas-zindex);
     display: flex;
     flex-direction: column;
     max-width: 100%;
@@ -9476,16 +9317,6 @@ fieldset:disabled .woocommerce .wc-proceed-to-checkout button,
 @media (max-width: 1399.98px) and (prefers-reduced-motion: reduce) {
   .offcanvas-xxl {
     transition: none;
-  }
-}
-@media (max-width: 1399.98px) {
-  .offcanvas-xxl.showing, .offcanvas-xxl.show:not(.hiding) {
-    transform: none;
-  }
-}
-@media (max-width: 1399.98px) {
-  .offcanvas-xxl.showing, .offcanvas-xxl.hiding, .offcanvas-xxl.show {
-    visibility: visible;
   }
 }
 @media (max-width: 1399.98px) {
@@ -9527,6 +9358,16 @@ fieldset:disabled .woocommerce .wc-proceed-to-checkout button,
     transform: translateY(100%);
   }
 }
+@media (max-width: 1399.98px) {
+  .offcanvas-xxl.showing, .offcanvas-xxl.show:not(.hiding) {
+    transform: none;
+  }
+}
+@media (max-width: 1399.98px) {
+  .offcanvas-xxl.showing, .offcanvas-xxl.hiding, .offcanvas-xxl.show {
+    visibility: visible;
+  }
+}
 @media (min-width: 1400px) {
   .offcanvas-xxl {
     --bs-offcanvas-height: auto;
@@ -9548,7 +9389,7 @@ fieldset:disabled .woocommerce .wc-proceed-to-checkout button,
 .offcanvas {
   position: fixed;
   bottom: 0;
-  z-index: 1045;
+  z-index: var(--bs-offcanvas-zindex);
   display: flex;
   flex-direction: column;
   max-width: 100%;
@@ -9563,12 +9404,6 @@ fieldset:disabled .woocommerce .wc-proceed-to-checkout button,
   .offcanvas {
     transition: none;
   }
-}
-.offcanvas.showing, .offcanvas.show:not(.hiding) {
-  transform: none;
-}
-.offcanvas.showing, .offcanvas.hiding, .offcanvas.show {
-  visibility: visible;
 }
 .offcanvas.offcanvas-start {
   top: 0;
@@ -9601,6 +9436,12 @@ fieldset:disabled .woocommerce .wc-proceed-to-checkout button,
   border-top: var(--bs-offcanvas-border-width) solid var(--bs-offcanvas-border-color);
   transform: translateY(100%);
 }
+.offcanvas.showing, .offcanvas.show:not(.hiding) {
+  transform: none;
+}
+.offcanvas.showing, .offcanvas.hiding, .offcanvas.show {
+  visibility: visible;
+}
 
 .offcanvas-backdrop {
   position: fixed;
@@ -9626,9 +9467,9 @@ fieldset:disabled .woocommerce .wc-proceed-to-checkout button,
 }
 .offcanvas-header .btn-close {
   padding: calc(var(--bs-offcanvas-padding-y) * 0.5) calc(var(--bs-offcanvas-padding-x) * 0.5);
-  margin-top: calc(var(--bs-offcanvas-padding-y) * -0.5);
-  margin-right: calc(var(--bs-offcanvas-padding-x) * -0.5);
-  margin-bottom: calc(var(--bs-offcanvas-padding-y) * -0.5);
+  margin-top: calc(-0.5 * var(--bs-offcanvas-padding-y));
+  margin-right: calc(-0.5 * var(--bs-offcanvas-padding-x));
+  margin-bottom: calc(-0.5 * var(--bs-offcanvas-padding-y));
 }
 
 .offcanvas-title {
@@ -9703,8 +9544,8 @@ fieldset:disabled .woocommerce .wc-proceed-to-checkout button,
 }
 
 .text-bg-primary {
-  color: #000 !important;
-  background-color: RGBA(94, 114, 228, var(--bs-bg-opacity, 1)) !important;
+  color: #fff !important;
+  background-color: RGBA(55, 41, 72, var(--bs-bg-opacity, 1)) !important;
 }
 
 .text-bg-secondary {
@@ -9743,10 +9584,10 @@ fieldset:disabled .woocommerce .wc-proceed-to-checkout button,
 }
 
 .link-primary {
-  color: #5e72e4 !important;
+  color: #372948 !important;
 }
 .link-primary:hover, .link-primary:focus {
-  color: #7e8ee9 !important;
+  color: #2c213a !important;
 }
 
 .link-secondary {
@@ -10985,7 +10826,7 @@ fieldset:disabled .woocommerce .wc-proceed-to-checkout button,
   font-size: 1.25rem !important;
 }
 
-.fs-6, .entry-footer {
+.fs-6, .entry-footer, .entry-meta {
   font-size: 1rem !important;
 }
 
@@ -11151,9 +10992,9 @@ fieldset:disabled .woocommerce .wc-proceed-to-checkout button,
   color: rgba(var(--bs-body-color-rgb), var(--bs-text-opacity)) !important;
 }
 
-.text-muted, .entry-footer {
+.text-muted, .entry-footer, .entry-meta {
   --bs-text-opacity: 1;
-  color: rgba(var(--bs-body-color-rgb), 0.75) !important;
+  color: #6c757d !important;
 }
 
 .text-black-50 {
@@ -13875,13 +13716,13 @@ fieldset:disabled .woocommerce .wc-proceed-to-checkout button,
     font-size: 1.75rem !important;
   }
   .fs-4, .comments-area .comment-reply-title,
-.comments-area .comments-title, .page-header .page-title, .entry-header .entry-title, .widget h1, .widget .h1,
-.widget h2,
-.widget .h2,
-.widget h3,
-.widget .h3, .woocommerce h2, .woocommerce .h2,
-.woocommerce h3,
-.woocommerce .h3 {
+  .comments-area .comments-title, .page-header .page-title, .entry-header .entry-title, .widget h1, .widget .h1,
+  .widget h2,
+  .widget .h2,
+  .widget h3,
+  .widget .h3, .woocommerce h2, .woocommerce .h2,
+  .woocommerce h3,
+  .woocommerce .h3 {
     font-size: 1.5rem !important;
   }
 }
@@ -14014,7 +13855,7 @@ fieldset:disabled .woocommerce .wc-proceed-to-checkout button,
     order: 0;
   }
   .glightbox-container .ginner-container.desc-top .gslide-image,
-.glightbox-container .ginner-container.desc-top .gslide-image img {
+  .glightbox-container .ginner-container.desc-top .gslide-image img {
     order: 1;
   }
 }
@@ -14387,7 +14228,7 @@ iframe.wait-autoplay {
 }
 @media (--medium-small-viewport) {
   .glightbox-clean .description-left .gdesc-inner,
-.glightbox-clean .description-right .gdesc-inner {
+  .glightbox-clean .description-right .gdesc-inner {
     position: absolute;
     height: 100%;
     overflow-y: auto;
@@ -14418,13 +14259,13 @@ iframe.wait-autoplay {
 }
 @media (--medium-small-viewport) {
   .glightbox-clean .gprev,
-.glightbox-clean .gnext,
-.glightbox-clean .gclose {
+  .glightbox-clean .gnext,
+  .glightbox-clean .gclose {
     background-color: rgba(0, 0, 0, 0.32);
   }
   .glightbox-clean .gprev:hover,
-.glightbox-clean .gnext:hover,
-.glightbox-clean .gclose:hover {
+  .glightbox-clean .gnext:hover,
+  .glightbox-clean .gclose:hover {
     background-color: rgba(0, 0, 0, 0.7);
   }
 }
@@ -14704,7 +14545,7 @@ a.skip-link {
 .navbar-dark .navbar-nav .dropdown-menu .nav-link.active, .navbar-dark .navbar-nav .dropdown-menu .nav-link:active {
   color: #fff !important;
   text-decoration: none;
-  background-color: #5e72e4;
+  background-color: #372948;
 }
 .navbar-dark .navbar-nav .dropdown-menu .nav-link.disabled, .navbar-dark .navbar-nav .dropdown-menu .nav-link:disabled {
   color: #adb5bd !important;
@@ -14910,12 +14751,12 @@ a.skip-link {
 
 .has-primary-color,
 .has-primary-color:visited {
-  color: #5e72e4;
+  color: #372948;
 }
 
 .has-primary-background-color {
-  background-color: #5e72e4;
-  border-color: #5e72e4;
+  background-color: #372948;
+  border-color: #372948;
 }
 
 .has-secondary-color,
@@ -15016,41 +14857,41 @@ body.sweetweb-no-sidebar .wp-block-cover.alignfull .wp-block-cover__inner-contai
 }
 @media (min-width: 576px) {
   body.sweetweb-no-sidebar .alignwide .wp-block-cover__inner-container,
-body.sweetweb-no-sidebar .alignfull .wp-block-cover__inner-container,
-body.sweetweb-no-sidebar .wp-block-cover.alignwide .wp-block-cover__inner-container,
-body.sweetweb-no-sidebar .wp-block-cover.alignfull .wp-block-cover__inner-container {
+  body.sweetweb-no-sidebar .alignfull .wp-block-cover__inner-container,
+  body.sweetweb-no-sidebar .wp-block-cover.alignwide .wp-block-cover__inner-container,
+  body.sweetweb-no-sidebar .wp-block-cover.alignfull .wp-block-cover__inner-container {
     max-width: 540px;
   }
 }
 @media (min-width: 768px) {
   body.sweetweb-no-sidebar .alignwide .wp-block-cover__inner-container,
-body.sweetweb-no-sidebar .alignfull .wp-block-cover__inner-container,
-body.sweetweb-no-sidebar .wp-block-cover.alignwide .wp-block-cover__inner-container,
-body.sweetweb-no-sidebar .wp-block-cover.alignfull .wp-block-cover__inner-container {
+  body.sweetweb-no-sidebar .alignfull .wp-block-cover__inner-container,
+  body.sweetweb-no-sidebar .wp-block-cover.alignwide .wp-block-cover__inner-container,
+  body.sweetweb-no-sidebar .wp-block-cover.alignfull .wp-block-cover__inner-container {
     max-width: 720px;
   }
 }
 @media (min-width: 992px) {
   body.sweetweb-no-sidebar .alignwide .wp-block-cover__inner-container,
-body.sweetweb-no-sidebar .alignfull .wp-block-cover__inner-container,
-body.sweetweb-no-sidebar .wp-block-cover.alignwide .wp-block-cover__inner-container,
-body.sweetweb-no-sidebar .wp-block-cover.alignfull .wp-block-cover__inner-container {
+  body.sweetweb-no-sidebar .alignfull .wp-block-cover__inner-container,
+  body.sweetweb-no-sidebar .wp-block-cover.alignwide .wp-block-cover__inner-container,
+  body.sweetweb-no-sidebar .wp-block-cover.alignfull .wp-block-cover__inner-container {
     max-width: 960px;
   }
 }
 @media (min-width: 1200px) {
   body.sweetweb-no-sidebar .alignwide .wp-block-cover__inner-container,
-body.sweetweb-no-sidebar .alignfull .wp-block-cover__inner-container,
-body.sweetweb-no-sidebar .wp-block-cover.alignwide .wp-block-cover__inner-container,
-body.sweetweb-no-sidebar .wp-block-cover.alignfull .wp-block-cover__inner-container {
+  body.sweetweb-no-sidebar .alignfull .wp-block-cover__inner-container,
+  body.sweetweb-no-sidebar .wp-block-cover.alignwide .wp-block-cover__inner-container,
+  body.sweetweb-no-sidebar .wp-block-cover.alignfull .wp-block-cover__inner-container {
     max-width: 1140px;
   }
 }
 @media (min-width: 1400px) {
   body.sweetweb-no-sidebar .alignwide .wp-block-cover__inner-container,
-body.sweetweb-no-sidebar .alignfull .wp-block-cover__inner-container,
-body.sweetweb-no-sidebar .wp-block-cover.alignwide .wp-block-cover__inner-container,
-body.sweetweb-no-sidebar .wp-block-cover.alignfull .wp-block-cover__inner-container {
+  body.sweetweb-no-sidebar .alignfull .wp-block-cover__inner-container,
+  body.sweetweb-no-sidebar .wp-block-cover.alignwide .wp-block-cover__inner-container,
+  body.sweetweb-no-sidebar .wp-block-cover.alignfull .wp-block-cover__inner-container {
     max-width: 1320px;
   }
 }
@@ -15072,37 +14913,37 @@ body.sweetweb-no-sidebar .wp-block-cover.alignwide .wp-block-cover__inner-contai
 }
 @media (min-width: 576px) {
   body.sweetweb-no-sidebar .alignwide .wp-block-cover__inner-container,
-body.sweetweb-no-sidebar .wp-block-cover.alignwide .wp-block-cover__inner-container {
+  body.sweetweb-no-sidebar .wp-block-cover.alignwide .wp-block-cover__inner-container {
     max-width: 540px;
   }
 }
 @media (min-width: 768px) {
   body.sweetweb-no-sidebar .alignwide .wp-block-cover__inner-container,
-body.sweetweb-no-sidebar .wp-block-cover.alignwide .wp-block-cover__inner-container {
+  body.sweetweb-no-sidebar .wp-block-cover.alignwide .wp-block-cover__inner-container {
     max-width: 720px;
   }
 }
 @media (min-width: 992px) {
   body.sweetweb-no-sidebar .alignwide .wp-block-cover__inner-container,
-body.sweetweb-no-sidebar .wp-block-cover.alignwide .wp-block-cover__inner-container {
+  body.sweetweb-no-sidebar .wp-block-cover.alignwide .wp-block-cover__inner-container {
     max-width: 960px;
   }
 }
 @media (min-width: 1200px) {
   body.sweetweb-no-sidebar .alignwide .wp-block-cover__inner-container,
-body.sweetweb-no-sidebar .wp-block-cover.alignwide .wp-block-cover__inner-container {
+  body.sweetweb-no-sidebar .wp-block-cover.alignwide .wp-block-cover__inner-container {
     max-width: 1140px;
   }
 }
 @media (min-width: 1400px) {
   body.sweetweb-no-sidebar .alignwide .wp-block-cover__inner-container,
-body.sweetweb-no-sidebar .wp-block-cover.alignwide .wp-block-cover__inner-container {
+  body.sweetweb-no-sidebar .wp-block-cover.alignwide .wp-block-cover__inner-container {
     max-width: 1320px;
   }
 }
 @media (max-width: 920px) {
   body.sweetweb-no-sidebar .alignwide,
-body.sweetweb-no-sidebar .wp-block-cover.alignwide {
+  body.sweetweb-no-sidebar .wp-block-cover.alignwide {
     margin: 0px calc(50% - 48vw);
     max-width: 96vw;
     width: 100vw;
