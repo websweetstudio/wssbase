@@ -4828,7 +4828,7 @@ fieldset:disabled .woocommerce .wc-proceed-to-checkout button,
   --bs-dropdown-link-active-bg: #5e72e4;
   --bs-dropdown-link-disabled-color: #adb5bd;
   --bs-dropdown-item-padding-x: 1rem;
-  --bs-dropdown-item-padding-y: 0.5rem;
+  --bs-dropdown-item-padding-y: 0.8rem;
   --bs-dropdown-header-color: #6c757d;
   --bs-dropdown-header-padding-x: 1rem;
   --bs-dropdown-header-padding-y: 0.5rem;
@@ -6643,7 +6643,7 @@ fieldset:disabled .woocommerce .wc-proceed-to-checkout button,
 
 .nav {
   --bs-nav-link-padding-x: 1rem;
-  --bs-nav-link-padding-y: 0.5rem;
+  --bs-nav-link-padding-y: 0.8rem;
   --bs-nav-link-font-weight: medium;
   --bs-nav-link-color: var(--bs-link-color);
   --bs-nav-link-hover-color: var(--bs-link-hover-color);
@@ -6764,11 +6764,11 @@ fieldset:disabled .woocommerce .wc-proceed-to-checkout button,
 .navbar {
   --bs-navbar-padding-x: 0;
   --bs-navbar-padding-y: 0.5rem;
-  --bs-navbar-color: rgba(0, 0, 0, 0.55);
+  --bs-navbar-color: rgba(0, 0, 0, 0.9);
   --bs-navbar-hover-color: rgba(0, 0, 0, 0.7);
   --bs-navbar-disabled-color: rgba(0, 0, 0, 0.3);
   --bs-navbar-active-color: rgba(0, 0, 0, 0.9);
-  --bs-navbar-brand-padding-y: 0.3125rem;
+  --bs-navbar-brand-padding-y: 0.6125rem;
   --bs-navbar-brand-margin-end: 1rem;
   --bs-navbar-brand-font-size: 1.25rem;
   --bs-navbar-brand-color: rgba(0, 0, 0, 0.9);
@@ -6777,7 +6777,7 @@ fieldset:disabled .woocommerce .wc-proceed-to-checkout button,
   --bs-navbar-toggler-padding-y: 0.25rem;
   --bs-navbar-toggler-padding-x: 0.75rem;
   --bs-navbar-toggler-font-size: 1.25rem;
-  --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.9%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
   --bs-navbar-toggler-border-color: rgba(0, 0, 0, 0.1);
   --bs-navbar-toggler-border-radius: 0;
   --bs-navbar-toggler-focus-width: 0.25rem;
@@ -6815,7 +6815,7 @@ fieldset:disabled .woocommerce .wc-proceed-to-checkout button,
 
 .navbar-nav {
   --bs-nav-link-padding-x: 0;
-  --bs-nav-link-padding-y: 0.5rem;
+  --bs-nav-link-padding-y: 0.8rem;
   --bs-nav-link-color: var(--bs-navbar-color);
   --bs-nav-link-hover-color: var(--bs-navbar-hover-color);
   --bs-nav-link-disabled-color: var(--bs-navbar-disabled-color);
@@ -6834,8 +6834,8 @@ fieldset:disabled .woocommerce .wc-proceed-to-checkout button,
 }
 
 .navbar-text {
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
   color: var(--bs-navbar-color);
 }
 .navbar-text a,
@@ -10103,11 +10103,11 @@ fieldset:disabled .woocommerce .wc-proceed-to-checkout button,
   position: static !important;
 }
 
-.position-relative, .woocommerce .add-to-cart-container {
+.position-relative, .navbar .offcanvas-body .navbar-nav .dropdown .dropdown-toggle, .woocommerce .add-to-cart-container {
   position: relative !important;
 }
 
-.position-absolute, .woocommerce .added_to_cart {
+.position-absolute, .navbar .offcanvas-body .navbar-nav .dropdown .dropdown-toggle:after, .woocommerce .added_to_cart {
   position: absolute !important;
 }
 
@@ -14686,7 +14686,7 @@ a.skip-link {
 .navbar-dark .navbar-nav .dropdown-menu .nav-link {
   display: block;
   width: 100%;
-  padding: 0.5rem 1rem;
+  padding: 0.8rem 1rem;
   clear: both;
   font-weight: 400;
   color: #212529 !important;
@@ -15206,6 +15206,15 @@ figure.woocommerce-product-gallery__wrapper {
   .navbar .dropdown .dropdown-menu {
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
   }
+}
+
+.navbar .offcanvas-body .navbar-nav > li:not(:last-child) {
+  border-bottom: 1px solid #ddd;
+}
+.navbar .offcanvas-body .navbar-nav .dropdown .dropdown-toggle:after {
+  top: 50%;
+  right: 0px;
+  margin-top: -2.4px;
 }
 
 /*# sourceMappingURL=theme.css.map */
