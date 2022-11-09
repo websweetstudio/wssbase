@@ -10203,7 +10203,7 @@ fieldset:disabled .woocommerce .wc-proceed-to-checkout button,
   border-right: 0 !important;
 }
 
-.border-bottom {
+.border-bottom, .navbar .offcanvas-header {
   border-bottom: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color) !important;
 }
 

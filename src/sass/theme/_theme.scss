@@ -36,6 +36,9 @@
 }
 
 .navbar {
+	.offcanvas-header {
+		@extend .border-bottom;
+	}
 	.offcanvas-body {
 		.navbar-nav {
 			> li {
