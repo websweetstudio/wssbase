@@ -13,6 +13,8 @@ $danger: #f5365c;
 $light: #ced4da;
 $dark: #000;
 
+$navbar-light-color: rgba($dark, 0.8) !default;
+
 $nav-link-font-weight: medium; // Replace bootstrap's default font weight.
 $navbar-nav-link-padding-x: 1rem !default; // padding-left and padding-right
 $navbar-toggler-border-radius: 0 !default;

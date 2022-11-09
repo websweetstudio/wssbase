@@ -93,12 +93,17 @@ table:not(.table, .shop_table) {
 	@extend .table-sm;
 }
 .entry-meta {
-    @extend .text-muted;
-    @extend .fs-6;
+	@extend .text-muted;
+	@extend .fs-6;
 }
 .entry-footer {
 	@extend .text-muted;
 	@extend .fs-6;
+}
+figure {
+	&.alignleft {
+		@extend .pe-2;
+	}
 }
 .button,
 .wp-block-search__button {

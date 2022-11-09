@@ -6601,7 +6601,7 @@ fieldset:disabled .woocommerce .wc-proceed-to-checkout button,
 .navbar {
   --bs-navbar-padding-x: 0;
   --bs-navbar-padding-y: 0.5rem;
-  --bs-navbar-color: rgba(0, 0, 0, 0.55);
+  --bs-navbar-color: rgba(0, 0, 0, 0.8);
   --bs-navbar-hover-color: rgba(0, 0, 0, 0.7);
   --bs-navbar-disabled-color: rgba(0, 0, 0, 0.3);
   --bs-navbar-active-color: rgba(0, 0, 0, 0.9);
@@ -6614,7 +6614,7 @@ fieldset:disabled .woocommerce .wc-proceed-to-checkout button,
   --bs-navbar-toggler-padding-y: 0.25rem;
   --bs-navbar-toggler-padding-x: 0.75rem;
   --bs-navbar-toggler-font-size: 1.25rem;
-  --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.8%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
   --bs-navbar-toggler-border-color: rgba(0, 0, 0, 0.1);
   --bs-navbar-toggler-border-radius: 0;
   --bs-navbar-toggler-focus-width: 0.25rem;
@@ -10707,7 +10707,7 @@ fieldset:disabled .woocommerce .wc-proceed-to-checkout button,
   padding-right: 0.25rem !important;
 }
 
-.pe-2, .woocommerce .selection .select2-selection--single .select2-selection__rendered .select2-selection__clear {
+.pe-2, figure.alignleft, .woocommerce .selection .select2-selection--single .select2-selection__rendered .select2-selection__clear {
   padding-right: 0.5rem !important;
 }
 
