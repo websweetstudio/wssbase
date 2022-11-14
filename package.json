@@ -5,13 +5,13 @@
   "main": "index.js",
   "scripts": {
     "bs": "browser-sync start --config src/build/browser-sync.config.js",
-    "css": "npm-run-all css-compile css-postcss css-minify",
     "css-compile": "sass --style expanded --source-map --embed-sources --no-error-css --quiet src/sass/theme.scss:css/theme.css src/sass/custom-editor-style.scss:css/custom-editor-style.css",
     "css-minify": "cleancss -O1 --format breakWith=lf --with-rebase --source-map --source-map-inline-sources --output css/ --batch --batch-suffix \".min\" \"css/*.css\" \"!css/*.min.css\" \"!css/*rtl*.css\"",
     "css-postcss": "postcss --config src/build/postcss.config.js --replace \"css/*.css\" \"!css/*.rtl*.css\" \"!css/*.min.css\"",
-    "js": "npm-run-all js-compile js-minify",
+    "css": "npm-run-all css-compile css-postcss css-minify",
     "js-compile": "rollup --config src/build/rollup.config.js --sourcemap",
-    "js-minify": "terser  --config-file src/build/terser.config.json --output js/theme.min.js js/theme.js",
+    "js-minify": "terser --config-file src/build/terser.config.json --output js/theme.min.js js/theme.js",
+    "js": "npm-run-all js-compile js-minify",
     "watch": "npm-run-all --parallel watch-run-*",
     "watch-bs": "npm-run-all --parallel bs watch-run-*",
     "watch-run-css": "nodemon --watch src/sass/ --ext scss --exec \"npm-run-all css\"",
@@ -65,8 +65,5 @@
     "sass": "^1.44.0",
     "terser": "^5.10.0",
     "zip-dir": "^2.0.0"
-  },
-  "dependencies": {
-    "glightbox": "^3.2.0"
   }
 }

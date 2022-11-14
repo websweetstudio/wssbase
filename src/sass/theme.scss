@@ -1,12 +1,10 @@
-@import "theme/theme_variables";  // <-------- Add your variables into this file. Also add variables to overwrite Bootstrap or Sweetweb variables here
-@import "assets/bootstrap/bootstrap";      // <-------- Loads Bootstrap4
-@import "assets/glightbox/glightbox";      // <-------- Loads Glightbox
-@import "theme/sweetweb";  // <-------- Loads the Sweetweb defaults. Just a few classes to incorporate BS in WP
-@import "theme/colors";           // <-------- This creates the necessary bootstrap color classes.
-@import "theme/blocks";           // <-------- This adds Bootstrap styles to blocks.
-@import "theme/contact-form7";    // <-------- Contact Form 7 - Bootstrap 4 support
+@import "theme/theme_variables"; // <-------- Add your variables into this file. Also add variables to overwrite Bootstrap or Sweetweb variables here
+@import "assets/bootstrap/bootstrap"; // <-------- Loads Bootstrap4
+@import "theme/sweetweb"; // <-------- Loads the Sweetweb defaults. Just a few classes to incorporate BS in WP
+@import "theme/colors"; // <-------- This creates the necessary bootstrap color classes.
+@import "theme/blocks"; // <-------- This adds Bootstrap styles to blocks.
+@import "theme/contact-form7"; // <-------- Contact Form 7 - Bootstrap 4 support
 @import "theme/woocommerce"; // <-------- Loads WooCommerce style fixes. Comment out if you aren't using WooCommerce
 
 // Any additional imported files //
-@import "theme/theme";            // <-------- That's where you can add your own design. Thats your part!
-
+@import "theme/theme"; // <-------- That's where you can add your own design. Thats your part!
