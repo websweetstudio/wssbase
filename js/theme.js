@@ -1,13 +1,17 @@
 /*!
-  * Sweetweb v1.2.0 (https://websweet.xyz)
+  * Sweetweb v1.3.0 (https://websweet.xyz)
   * Copyright 2013-2022 websweet.xyz
   * Licensed under GPL (http://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html)
   */
 (function (global, factory) {
-	typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports) :
-	typeof define === 'function' && define.amd ? define(['exports'], factory) :
-	(global = typeof globalThis !== 'undefined' ? globalThis : global || self, factory(global.sweetweb = {}));
-})(this, (function (exports) { 'use strict';
+	typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('glightbox')) :
+	typeof define === 'function' && define.amd ? define(['exports', 'glightbox'], factory) :
+	(global = typeof globalThis !== 'undefined' ? globalThis : global || self, factory(global.sweetweb = {}, global.GLightbox));
+})(this, (function (exports, GLightbox) { 'use strict';
+
+	function _interopDefaultLegacy (e) { return e && typeof e === 'object' && 'default' in e ? e : { 'default': e }; }
+
+	var GLightbox__default = /*#__PURE__*/_interopDefaultLegacy(GLightbox);
 
 	var commonjsGlobal = typeof globalThis !== 'undefined' ? globalThis : typeof window !== 'undefined' ? window : typeof global !== 'undefined' ? global : typeof self !== 'undefined' ? self : {};
 
@@ -7782,6 +7786,11 @@
 	  }
 	})();
 
+	// import glightbox from 'glightbox';
+	new GLightbox__default["default"]({
+	  selector: '.wp-block-gallery img'
+	});
+
 	exports.Alert = alert;
 	exports.Button = button;
 	exports.Carousel = carousel_1;
@@ -7798,4 +7807,3 @@
 	Object.defineProperty(exports, '__esModule', { value: true });
 
 }));
-//# sourceMappingURL=theme.js.map
