@@ -1,6 +1,6 @@
 {
   "name": "sweetweb",
-  "version": "1.3.0",
+  "version": "1.3.1",
   "description": "WordPress Theme framework",
   "main": "index.js",
   "scripts": {
