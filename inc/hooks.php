@@ -26,7 +26,7 @@ if ( ! function_exists( 'sweetweb_add_site_info' ) ) {
 		$the_theme = wp_get_theme();
 		$year 	= date( 'Y' );
 		$site_title = get_bloginfo( 'name' );
-		$site_info =  "Copyright $year &copy; $site_title. All rights reserved | Powered by <a href='https://websweet.xyz/'>websweet.xyz</a>.";
+		$site_info =  "Copyright $year &copy; $site_title. All rights reserved | Powered by <a href='https://websweetstudio.com/'>websweetstudio.com</a>.";
 
 		// Check if customizer site info has value.
 		if ( get_theme_mod( 'sweetweb_site_info_override' ) ) {

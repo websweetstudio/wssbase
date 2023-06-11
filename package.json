@@ -1,6 +1,6 @@
 {
   "name": "sweetweb",
-  "version": "1.4.0",
+  "version": "1.4.5",
   "description": "WordPress Theme framework",
   "main": "index.js",
   "scripts": {
@@ -35,12 +35,12 @@
     "bootstrap",
     "underscores"
   ],
-  "author": "websweet.xyz",
+  "author": "websweetstudio.com",
   "license": "GPL-2.0",
   "bugs": {
     "url": "https://github.com/websweetxyz/sweetweb/issues"
   },
-  "homepage": "https://websweet.xyz",
+  "homepage": "https://websweetstudio.com",
   "devDependencies": {
     "@babel/core": "^7.16.0",
     "@babel/preset-env": "^7.16.4",
