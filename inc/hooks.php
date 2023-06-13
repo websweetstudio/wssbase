@@ -100,3 +100,16 @@ if( ! function_exists( 'sweetweb_add_footer' ) ) {
 		<?php
 	}
 }
+
+if (!function_exists('sweetweb_color_scheme')) {
+	/**
+	 * Membuat color scheme.
+	 *
+	 * @return array
+	 */
+	function sweetweb_color_scheme()
+	{
+		$color_scheme = isset($_COOKIE["color_scheme"]) ? $_COOKIE["color_scheme"] : 'light';
+		echo 'data-bs-theme="' . $color_scheme . '"';
+	}
+}
