@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Sweetweb functions and definitions
  *
@@ -6,7 +7,7 @@
  */
 
 // Exit if accessed directly.
-defined( 'ABSPATH' ) || exit;
+defined('ABSPATH') || exit;
 
 // Sweetweb's includes directory.
 $sweetweb_inc_dir = 'inc';
@@ -28,19 +29,20 @@ $sweetweb_includes = array(
 	'/block-editor.php',                    // Load Block Editor functions.
 	'/deprecated.php',                      // Load deprecated functions.
 	'/beaver-builder.php',                  // Load Beaver Builder functions.
+	'/updater.php',                  		// Load Updater functions.
 );
 
 // Load WooCommerce functions if WooCommerce is activated.
-if ( class_exists( 'WooCommerce' ) ) {
+if (class_exists('WooCommerce')) {
 	$sweetweb_includes[] = '/woocommerce.php';
 }
 
 // Load Jetpack compatibility file if Jetpack is activiated.
-if ( class_exists( 'Jetpack' ) ) {
+if (class_exists('Jetpack')) {
 	$sweetweb_includes[] = '/jetpack.php';
 }
 
 // Include files.
-foreach ( $sweetweb_includes as $file ) {
-	require_once get_theme_file_path( $sweetweb_inc_dir . $file );
+foreach ($sweetweb_includes as $file) {
+	require_once get_theme_file_path($sweetweb_inc_dir . $file);
 }
