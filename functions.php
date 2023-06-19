@@ -29,7 +29,6 @@ $sweetweb_includes = array(
 	'/block-editor.php',                    // Load Block Editor functions.
 	'/deprecated.php',                      // Load deprecated functions.
 	'/beaver-builder.php',                  // Load Beaver Builder functions.
-	'/updater.php',                  		// Load Updater functions.
 );
 
 // Load WooCommerce functions if WooCommerce is activated.
@@ -46,3 +45,14 @@ if (class_exists('Jetpack')) {
 foreach ($sweetweb_includes as $file) {
 	require_once get_theme_file_path($sweetweb_inc_dir . $file);
 }
+
+// Updater Function
+require get_theme_file_path('lib/plugin-update-checker/plugin-update-checker.php');
+use YahnisElsts\PluginUpdateChecker\v5\PucFactory;
+$myUpdateChecker = PucFactory::buildUpdateChecker(
+	'https://github.com/websweetxyz/sweetweb',
+	__FILE__,
+	'sweetweb'
+);
+//Set the branch that contains the stable release.
+$myUpdateChecker->setBranch('rilis');
