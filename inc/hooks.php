@@ -26,7 +26,7 @@ if ( ! function_exists( 'sweetweb_add_site_info' ) ) {
 		$the_theme = wp_get_theme();
 		$year 	= date( 'Y' );
 		$site_title = get_bloginfo( 'name' );
-		$site_info =  "Copyright $year &copy; $site_title. All rights reserved | Powered by <a href='https://websweetstudio.com/'>websweetstudio.com</a>.";
+		$site_info =  "Copyright $year &copy; $site_title. All rights reserved | Powered by <a href='https://websweetstudio.com/'>websweetstudio.com</a>";
 
 		// Check if customizer site info has value.
 		if ( get_theme_mod( 'sweetweb_site_info_override' ) ) {
@@ -50,9 +50,9 @@ if( ! function_exists( 'sweetweb_add_navbar' ) ) {
 		$header_position   = get_theme_mod( 'sweetweb_header_position', 'position-relative' );
 		?>
 
-		<header id="wrapper-navbar" class="<?php echo $header_position; ?> bg-white shadow-sm py-1">
+		<header id="wrapper-navbar" class="<?php echo $header_position; ?> bg-white border-bottom py-1">
 
-			<a class="skip-link sr-only sr-only-focusable" href="#content"><?php esc_html_e( 'Skip to content', 'sweetweb' ); ?></a>
+			<a class="visually-hidden-focusable" href="#content"><?php esc_html_e( 'Skip to content', 'sweetweb' ); ?></a>
 
 			<?php get_template_part( 'global-templates/navbar-'. $navbar_type); ?>
 
@@ -69,33 +69,15 @@ if( ! function_exists( 'sweetweb_add_footer' ) ) {
 	 */
 	function sweetweb_add_footer() {
 		$container = get_theme_mod( 'sweetweb_container_type' );
-
 		?>
-		
-		<div class="wrapper bg-light" id="wrapper-footer">
-
-		<div class="<?php echo esc_attr( $container ); ?>">
-
-			<div class="row">
-
-				<div class="col-md-12">
-
-					<footer class="site-footer" id="colophon">
-
-						<div class="site-info">
-
-							<?php sweetweb_site_info(); ?>
-
-						</div><!-- .site-info -->
-
-					</footer><!-- #colophon -->
-
-				</div><!--col end -->
-
-			</div><!-- row end -->
-
-		</div><!-- container end -->
-
+		<div class="wrapper" id="wrapper-footer">
+			<footer class="site-footer border-top pt-4" id="colophon">
+				<div class="<?php echo esc_attr( $container ); ?>">
+					<div class="site-info">
+						<?php sweetweb_site_info(); ?>
+					</div><!-- .site-info -->
+				</div><!-- container end -->
+			</footer><!-- #colophon -->
 		</div><!-- wrapper end -->
 		<?php
 	}

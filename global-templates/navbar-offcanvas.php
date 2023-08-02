@@ -56,9 +56,9 @@ $container = get_theme_mod('sweetweb_container_type');
 			wp_nav_menu(
 				array(
 					'theme_location'  => 'primary',
-					'container_class' => 'offcanvas-body',
+					'container_class' => 'offcanvas-body justify-content-end',
 					'container_id'    => '',
-					'menu_class'      => 'navbar-nav justify-content-end d-flex flex-wrap pe-3',
+					'menu_class'      => 'navbar-nav justify-content-end d-flex flex-wrap justify-content-end',
 					'fallback_cb'     => '',
 					'menu_id'         => 'main-menu',
 					'depth'           => 2,
