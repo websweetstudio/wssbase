@@ -50,7 +50,7 @@ if( ! function_exists( 'sweetweb_add_navbar' ) ) {
 		$header_position   = get_theme_mod( 'sweetweb_header_position', 'position-relative' );
 		?>
 
-		<header id="wrapper-navbar" class="<?php echo $header_position; ?> bg-white border-bottom py-1">
+		<header id="wrapper-navbar" class="<?php echo $header_position; ?> bg-white shadow-light">
 
 			<a class="visually-hidden-focusable" href="#content"><?php esc_html_e( 'Skip to content', 'sweetweb' ); ?></a>
 
@@ -70,9 +70,9 @@ if( ! function_exists( 'sweetweb_add_footer' ) ) {
 	function sweetweb_add_footer() {
 		$container = get_theme_mod( 'sweetweb_container_type' );
 		?>
-		<div class="wrapper" id="wrapper-footer">
-			<footer class="site-footer border-top pt-4" id="colophon">
-				<div class="<?php echo esc_attr( $container ); ?>">
+		<div class="wrapper-footer" id="wrapper-footer">
+			<footer class="site-footer" id="colophon">
+				<div class="<?php echo esc_attr( $container ); ?> py-3">
 					<div class="site-info">
 						<?php sweetweb_site_info(); ?>
 					</div><!-- .site-info -->

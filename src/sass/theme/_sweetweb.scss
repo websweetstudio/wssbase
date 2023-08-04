@@ -1,8 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;700&display=swap");
+
+body {
+	font-family: "Space Grotesk", sans-serif;
+}
 // Some basic padding for all wrappers
 .wrapper {
 	padding: $grid-gutter-width 0;
 }
-
+.shadow-light {
+	box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+}
 // Reset hero wrapper padding to 0
 #wrapper-hero {
 	padding: 0px !important;
@@ -20,6 +27,10 @@
 	border-bottom: 1px solid $gray-300;
 }
 
+.wrapper-footer {
+	@extend .bg-primary;
+	--bs-bg-opacity: 0.25;
+}
 // Adding some contrast background color to footer full widget
 #wrapper-footer-full,
 #wrapper-static-hero {
@@ -124,8 +135,9 @@ a.skip-link {
 	}
 }
 
-.navbar-light .navbar-brand a {
+.navbar-light a.navbar-brand {
 	color: $navbar-light-active-color;
+	font-size: 2rem;
 
 	&:hover,
 	&:focus {

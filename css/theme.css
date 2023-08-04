@@ -4,6 +4,7 @@
  * Copyright 2011-2023 The Bootstrap Authors
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;700&display=swap");
 :root,
 [data-bs-theme=light] {
   --bs-blue: #0d6efd;
@@ -11732,7 +11733,7 @@ fieldset:disabled .woocommerce .wc-proceed-to-checkout button,
   --bs-link-underline-opacity: 1;
 }
 
-.bg-primary {
+.bg-primary, .wrapper-footer {
   --bs-bg-opacity: 1;
   background-color: rgba(var(--bs-primary-rgb), var(--bs-bg-opacity)) !important;
 }
@@ -15012,8 +15013,16 @@ fieldset:disabled .woocommerce .wc-proceed-to-checkout button,
     display: none !important;
   }
 }
+body {
+  font-family: "Space Grotesk", sans-serif;
+}
+
 .wrapper {
   padding: 1.5rem 0;
+}
+
+.shadow-light {
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
 }
 
 #wrapper-hero {
@@ -15028,6 +15037,10 @@ fieldset:disabled .woocommerce .wc-proceed-to-checkout button,
 
 .wrapper#wrapper-sticky {
   border-bottom: 1px solid #dee2e6;
+}
+
+.wrapper-footer {
+  --bs-bg-opacity: 0.25;
 }
 
 #wrapper-footer-full,
@@ -15120,10 +15133,11 @@ a.skip-link {
   background-color: transparent;
 }
 
-.navbar-light .navbar-brand a {
+.navbar-light a.navbar-brand {
   color: rgba(var(--bs-emphasis-color-rgb), 1);
+  font-size: 2rem;
 }
-.navbar-light .navbar-brand a:hover, .navbar-light .navbar-brand a:focus {
+.navbar-light a.navbar-brand:hover, .navbar-light a.navbar-brand:focus {
   color: rgba(var(--bs-emphasis-color-rgb), 1);
 }
 
