@@ -1,7 +1,6 @@
 # Sweetweb
 
-Sweetweb is a simple starter theme for WordPress. It is a clean and minimalist theme that is easy to use and highly customizable.
-
+Sweetweb is a simple starter theme for WordPress that offers a clean and minimalist design, making it both user-friendly and highly customizable. This theme comes with the added support and enhancements provided by [WebSweetStudio.com](https://websweetstudio.com/).
 ## Installation
 
 Install manually to your theme directory.
@@ -39,6 +38,10 @@ npm run build
 - Bootstrap 5: [https://getbootstrap.com](https://getbootstrap.com)
 - WooCommerce: [https://woocommerce.com](https://woocommerce.com)
 - WP Bootstrap Navwalker by Edward McIntyre & William Patton: [https://github.com/wp-bootstrap/wp-bootstrap-navwalker](https://github.com/wp-bootstrap/wp-bootstrap-navwalker)
+
+## License
+
+Sweetweb is distributed under the GNU General Public License v3.0 (GPL-3.0). Feel free to modify and share the theme in accordance with the license terms.
 
 ## Demo
 
