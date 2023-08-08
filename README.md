@@ -1,6 +1,8 @@
 # Sweetweb
 
+![sweetweb theme](https://template.sweet.web.id/wp-content/themes/sweetweb/screenshot.png)
 Sweetweb is a simple starter theme for WordPress that offers a clean and minimalist design, making it both user-friendly and highly customizable. This theme comes with the added support and enhancements provided by [WebSweetStudio.com](https://websweetstudio.com/).
+
 ## Installation
 
 Install manually to your theme directory.
