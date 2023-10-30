@@ -91,18 +91,6 @@ if ( ! function_exists( 'sweetweb_setup' ) ) {
 			)
 		);
 
-		// Set up the WordPress core custom background feature.
-		add_theme_support(
-			'custom-background',
-			apply_filters(
-				'sweetweb_custom_background_args',
-				array(
-					'default-color' => 'ffffff',
-					'default-image' => '',
-				)
-			)
-		);
-
 		// Set up the WordPress Theme logo feature.
 		add_theme_support( 'custom-logo' );
 
@@ -119,12 +107,6 @@ if ( ! function_exists( 'sweetweb_setup' ) ) {
 
 		// Add theme support to html5
 		add_theme_support( "html5", array( "search-form", "comment-form", "comment-list", "gallery", "caption" ) );
-
-		// Add theme support to custom header
-		add_theme_support( "custom-header", array( 'header-text' => false ) );
-
-		// Add theme support to custom background
-		add_theme_support( "custom-background", array( 'default-color' => 'ffffff', 'default-image' => '' ) );
 
 		// Check and setup theme default settings.
 		sweetweb_setup_theme_default_settings();
