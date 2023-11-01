@@ -2,13 +2,13 @@
 /**
  * Pagination layout
  *
- * @package Sweetweb
+ * @package Wss
  */
 
 // Exit if accessed directly.
 defined( 'ABSPATH' ) || exit;
 
-if ( ! function_exists( 'sweetweb_pagination' ) ) {
+if ( ! function_exists( 'wss_pagination' ) ) {
 	/**
 	 * Displays the navigation to next/previous set of posts.
 	 *
@@ -39,7 +39,7 @@ if ( ! function_exists( 'sweetweb_pagination' ) ) {
 	 * }
 	 * @param string       $class           (Optional) Classes to be added to the <ul> element. Default 'pagination'.
 	 */
-	function sweetweb_pagination( $args = array(), $class = 'pagination' ) {
+	function wss_pagination( $args = array(), $class = 'pagination' ) {
 
 		if ( ! isset( $args['total'] ) && $GLOBALS['wp_query']->max_num_pages <= 1 ) {
 			return;
@@ -50,11 +50,11 @@ if ( ! function_exists( 'sweetweb_pagination' ) ) {
 			array(
 				'mid_size'           => 2,
 				'prev_next'          => true,
-				'prev_text'          => __( '&laquo;', 'sweetweb' ),
-				'next_text'          => __( '&raquo;', 'sweetweb' ),
+				'prev_text'          => __( '&laquo;', 'wss' ),
+				'next_text'          => __( '&raquo;', 'wss' ),
 				'type'               => 'array',
 				'current'            => max( 1, get_query_var( 'paged' ) ),
-				'screen_reader_text' => __( 'Posts navigation', 'sweetweb' ),
+				'screen_reader_text' => __( 'Posts navigation', 'wss' ),
 			)
 		);
 

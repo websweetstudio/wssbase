@@ -1,19 +1,19 @@
 <?php
 
 /**
- * Sweetweb functions and definitions
+ * Wss functions and definitions
  *
- * @package Sweetweb
+ * @package Wss
  */
 
 // Exit if accessed directly.
 defined('ABSPATH') || exit;
 
-// Sweetweb's includes directory.
-$sweetweb_inc_dir = 'inc';
+// Wsstheme's includes directory.
+$wss_inc_dir = 'inc';
 
 // Array of files to include.
-$sweetweb_includes = array(
+$wss_includes = array(
 	'/theme-settings.php',                  // Initialize theme default settings.
 	'/setup.php',                           // Theme setup and custom theme supports.
 	'/widgets.php',                         // Register widget area.
@@ -25,7 +25,7 @@ $sweetweb_includes = array(
 	'/extras.php',                          // Custom functions that act independently of the theme templates.
 	'/customizer.php',                      // Customizer additions.
 	'/custom-comments.php',                 // Custom Comments file.
-	'/class-wp-bootstrap-navwalker.php',    // Load custom WordPress nav walker. Trying to get deeper navigation? Check out: https://github.com/websweetxyz/sweetweb/issues/567.
+	'/class-wp-bootstrap-navwalker.php',    // Load custom WordPress nav walker. Trying to get deeper navigation? Check out: https://github.com/websweetstudio/wssthemeissues/567.
 	'/editor.php',                          // Load Editor functions.
 	'/block-editor.php',                    // Load Block Editor functions.
 	'/deprecated.php',                      // Load deprecated functions.
@@ -34,15 +34,15 @@ $sweetweb_includes = array(
 
 // Load WooCommerce functions if WooCommerce is activated.
 if (class_exists('WooCommerce')) {
-	$sweetweb_includes[] = '/woocommerce.php';
+	$wss_includes[] = '/woocommerce.php';
 }
 
 // Load Jetpack compatibility file if Jetpack is activiated.
 if (class_exists('Jetpack')) {
-	$sweetweb_includes[] = '/jetpack.php';
+	$wss_includes[] = '/jetpack.php';
 }
 
 // Include files.
-foreach ($sweetweb_includes as $file) {
-	require_once get_theme_file_path($sweetweb_inc_dir . $file);
+foreach ($wss_includes as $file) {
+	require_once get_theme_file_path($wss_inc_dir . $file);
 }

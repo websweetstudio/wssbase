@@ -2,7 +2,7 @@
 /**
  * Hero setup
  *
- * @package Sweetweb
+ * @package Wss
  */
 
 // Exit if accessed directly.

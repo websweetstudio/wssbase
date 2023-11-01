@@ -2,7 +2,7 @@
 /**
  * Content empty partial template
  *
- * @package Sweetweb
+ * @package Wss
  */
 
 // Exit if accessed directly.

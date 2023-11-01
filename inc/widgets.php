@@ -2,7 +2,7 @@
 /**
  * Declaring widgets
  *
- * @package Sweetweb
+ * @package Wss
  */
 
 // Exit if accessed directly.
@@ -14,9 +14,9 @@ defined( 'ABSPATH' ) || exit;
  *
  * @link https://developer.wordpress.org/reference/hooks/dynamic_sidebar_params/
  */
-add_filter( 'dynamic_sidebar_params', 'sweetweb_widget_classes' );
+add_filter( 'dynamic_sidebar_params', 'wss_widget_classes' );
 
-if ( ! function_exists( 'sweetweb_widget_classes' ) ) {
+if ( ! function_exists( 'wss_widget_classes' ) ) {
 
 	/**
 	 * Count number of visible widgets in a sidebar and add classes to widgets accordingly,
@@ -49,7 +49,7 @@ if ( ! function_exists( 'sweetweb_widget_classes' ) ) {
 	 * }
 	 * @return array $params
 	 */
-	function sweetweb_widget_classes( $params ) {
+	function wss_widget_classes( $params ) {
 
 		global $sidebars_widgets;
 
@@ -89,20 +89,20 @@ if ( ! function_exists( 'sweetweb_widget_classes' ) ) {
 		return $params;
 
 	}
-} // End of if function_exists( 'sweetweb_widget_classes' ).
+} // End of if function_exists( 'wss_widget_classes' ).
 
-add_action( 'widgets_init', 'sweetweb_widgets_init' );
+add_action( 'widgets_init', 'wss_widgets_init' );
 
-if ( ! function_exists( 'sweetweb_widgets_init' ) ) {
+if ( ! function_exists( 'wss_widgets_init' ) ) {
 	/**
 	 * Initializes themes widgets.
 	 */
-	function sweetweb_widgets_init() {
+	function wss_widgets_init() {
 		register_sidebar(
 			array(
-				'name'          => __( 'Right Sidebar', 'sweetweb' ),
+				'name'          => __( 'Right Sidebar', 'wss' ),
 				'id'            => 'right-sidebar',
-				'description'   => __( 'Right sidebar widget area', 'sweetweb' ),
+				'description'   => __( 'Right sidebar widget area', 'wss' ),
 				'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 				'after_widget'  => '</aside>',
 				'before_title'  => '<h3 class="widget-title">',
@@ -112,9 +112,9 @@ if ( ! function_exists( 'sweetweb_widgets_init' ) ) {
 
 		register_sidebar(
 			array(
-				'name'          => __( 'Left Sidebar', 'sweetweb' ),
+				'name'          => __( 'Left Sidebar', 'wss' ),
 				'id'            => 'left-sidebar',
-				'description'   => __( 'Left sidebar widget area', 'sweetweb' ),
+				'description'   => __( 'Left sidebar widget area', 'wss' ),
 				'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 				'after_widget'  => '</aside>',
 				'before_title'  => '<h3 class="widget-title">',
@@ -124,9 +124,9 @@ if ( ! function_exists( 'sweetweb_widgets_init' ) ) {
 
 		register_sidebar(
 			array(
-				'name'          => __( 'Hero Slider', 'sweetweb' ),
+				'name'          => __( 'Hero Slider', 'wss' ),
 				'id'            => 'hero',
-				'description'   => __( 'Hero slider area. Place two or more widgets here and they will slide!', 'sweetweb' ),
+				'description'   => __( 'Hero slider area. Place two or more widgets here and they will slide!', 'wss' ),
 				'before_widget' => '<div class="carousel-item">',
 				'after_widget'  => '</div>',
 				'before_title'  => '',
@@ -136,9 +136,9 @@ if ( ! function_exists( 'sweetweb_widgets_init' ) ) {
 
 		register_sidebar(
 			array(
-				'name'          => __( 'Hero Canvas', 'sweetweb' ),
+				'name'          => __( 'Hero Canvas', 'wss' ),
 				'id'            => 'herocanvas',
-				'description'   => __( 'Full size canvas hero area for Bootstrap and other custom HTML markup', 'sweetweb' ),
+				'description'   => __( 'Full size canvas hero area for Bootstrap and other custom HTML markup', 'wss' ),
 				'before_widget' => '',
 				'after_widget'  => '',
 				'before_title'  => '',
@@ -148,9 +148,9 @@ if ( ! function_exists( 'sweetweb_widgets_init' ) ) {
 
 		register_sidebar(
 			array(
-				'name'          => __( 'Top Full', 'sweetweb' ),
+				'name'          => __( 'Top Full', 'wss' ),
 				'id'            => 'statichero',
-				'description'   => __( 'Full top widget with dynamic grid', 'sweetweb' ),
+				'description'   => __( 'Full top widget with dynamic grid', 'wss' ),
 				'before_widget' => '<div id="%1$s" class="static-hero-widget %2$s dynamic-classes">',
 				'after_widget'  => '</div><!-- .static-hero-widget -->',
 				'before_title'  => '<h3 class="widget-title">',
@@ -160,9 +160,9 @@ if ( ! function_exists( 'sweetweb_widgets_init' ) ) {
 
 		register_sidebar(
 			array(
-				'name'          => __( 'Footer Full', 'sweetweb' ),
+				'name'          => __( 'Footer Full', 'wss' ),
 				'id'            => 'footerfull',
-				'description'   => __( 'Full sized footer widget with dynamic grid', 'sweetweb' ),
+				'description'   => __( 'Full sized footer widget with dynamic grid', 'wss' ),
 				'before_widget' => '<div id="%1$s" class="footer-widget %2$s dynamic-classes">',
 				'after_widget'  => '</div><!-- .footer-widget -->',
 				'before_title'  => '<h3 class="widget-title">',
@@ -171,4 +171,4 @@ if ( ! function_exists( 'sweetweb_widgets_init' ) ) {
 		);
 
 	}
-} // End of function_exists( 'sweetweb_widgets_init' ).
+} // End of function_exists( 'wss_widgets_init' ).

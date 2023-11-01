@@ -4,14 +4,14 @@
  *
  * Learn more: https://codex.wordpress.org/Author_Templates
  *
- * @package Sweetweb
+ * @package Wss
  */
 
 // Exit if accessed directly.
 defined( 'ABSPATH' ) || exit;
 
 get_header();
-$container = get_theme_mod( 'sweetweb_container_type' );
+$container = get_theme_mod( 'wss_container_type' );
 ?>
 
 <div class="wrapper" id="author-wrapper">
@@ -39,7 +39,7 @@ $container = get_theme_mod( 'sweetweb_container_type' );
 					if ( ! empty( $curauth->ID ) ) {
 						$alt = sprintf(
 							/* translators: %s: author name */
-							_x( 'Profile picture of %s', 'Avatar alt', 'sweetweb' ),
+							_x( 'Profile picture of %s', 'Avatar alt', 'wss' ),
 							$curauth->display_name
 						);
 						echo get_avatar( $curauth->ID, 96, '', $alt );
@@ -49,7 +49,7 @@ $container = get_theme_mod( 'sweetweb_container_type' );
 						?>
 						<dl>
 							<?php if ( ! empty( $curauth->user_url ) ) : ?>
-								<dt><?php esc_html_e( 'Website', 'sweetweb' ); ?></dt>
+								<dt><?php esc_html_e( 'Website', 'wss' ); ?></dt>
 								<dd>
 									<a href="<?php echo esc_url( $curauth->user_url ); ?>"><?php echo esc_html( $curauth->user_url ); ?></a>
 								</dd>
@@ -60,7 +60,7 @@ $container = get_theme_mod( 'sweetweb_container_type' );
 									<?php
 									printf(
 										/* translators: %s: author name */
-										esc_html__( 'About %s', 'sweetweb' ),
+										esc_html__( 'About %s', 'wss' ),
 										$curauth->display_name
 									);
 									?>
@@ -74,7 +74,7 @@ $container = get_theme_mod( 'sweetweb_container_type' );
 					if ( have_posts() ) {
 						printf(
 							/* translators: %s: author name */
-							'<h2>' . esc_html__( 'Posts by %s', 'sweetweb' ) . '</h2>',
+							'<h2>' . esc_html__( 'Posts by %s', 'wss' ) . '</h2>',
 							$curauth->display_name
 						);
 					}
@@ -98,7 +98,7 @@ $container = get_theme_mod( 'sweetweb_container_type' );
 			</main><!-- #main -->
 
 			<!-- The pagination component -->
-			<?php sweetweb_pagination(); ?>
+			<?php wss_pagination(); ?>
 
 			<!-- Do the right sidebar check -->
 			<?php get_template_part( 'global-templates/right-sidebar-check' ); ?>

@@ -1,13 +1,13 @@
-# Sweetweb
+# Wsstheme
 
-Sweetweb is a simple starter theme for WordPress that offers a clean and minimalist design, making it both user-friendly and highly customizable. This theme comes with the added support and enhancements provided by [WebSweetStudio.com](https://websweetstudio.com/).
+Wsstheme is a simple starter theme for WordPress that offers a clean and minimalist design, making it both user-friendly and highly customizable. This theme comes with the added support and enhancements provided by [WebSweetStudio.com](https://websweetstudio.com/).
 
 ## Installation
 
 Install manually to your theme directory.
 
-- Download or clone the repository from [GitHub](https://github.com/websweetxyz/sweetweb.git)
-- Copy the contents of the `sweetweb` folder to your `wp-content/themes` folder.
+- Download or clone the repository from [GitHub](https://github.com/websweetstudio/wsstheme.git)
+- Copy the contents of the `wsstheme` folder to your `wp-content/themes` folder.
 - Activate the theme.
 
 ## Development
@@ -42,9 +42,9 @@ npm run build
 
 ## License
 
-Sweetweb is distributed under the GNU General Public License v3.0 (GPL-3.0). Feel free to modify and share the theme in accordance with the license terms.
+Wsstheme is distributed under the GNU General Public License v3.0 (GPL-3.0). Feel free to modify and share the theme in accordance with the license terms.
 
 ## Demo
 
-To see Sweetweb in action, you can visit the demo site at [https://template.sweet.web.id/](https://template.sweet.web.id/).
+To see Wsstheme in action, you can visit the demo site at [https://template.sweet.web.id/](https://template.sweet.web.id/).
 Feel free to explore the theme and discover its clean design and customizable features. Happy website building!

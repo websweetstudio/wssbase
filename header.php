@@ -4,14 +4,14 @@
  *
  * Displays all of the <head> section and everything up till <div id="content">
  *
- * @package Sweetweb
+ * @package Wss
  */
 
 // Exit if accessed directly.
 defined( 'ABSPATH' ) || exit;
 ?>
 <!DOCTYPE html>
-<html <?php language_attributes(); ?> <?php sweetweb_color_scheme(); ?>>
+<html <?php language_attributes(); ?> <?php wss_color_scheme(); ?>>
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -19,10 +19,10 @@ defined( 'ABSPATH' ) || exit;
 	<?php wp_head(); ?>
 </head>
 
-<body <?php body_class(); ?> <?php sweetweb_body_attributes(); ?>>
+<body <?php body_class(); ?> <?php wss_body_attributes(); ?>>
 <?php do_action( 'wp_body_open' ); ?>
 <div class="site" id="page">
 
 	<!-- ******************* The Navbar Area ******************* -->
-	<?php do_action('sweetweb_header');	?>
+	<?php do_action('wss_header');	?>
 

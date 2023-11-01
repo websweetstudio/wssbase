@@ -1,4 +1,4 @@
-  // Tables
+// Tables
 .wp-block-table table {
 	@extend .table;
 	@extend .table-bordered;
@@ -25,7 +25,7 @@ figure.wp-block-image {
 }
 
 // Alternate/classic editor image captions.
-.wp-block-image > figure{
+.wp-block-image > figure {
 	@extend .figure;
 	display: block;
 	img {
@@ -36,9 +36,8 @@ figure.wp-block-image {
 	}
 }
 
-
 // Wide alignments and covers.
-body.sweetweb-no-sidebar{
+body.wss-no-sidebar {
 	.alignwide,
 	.alignfull,
 	.wp-block-cover.alignwide,
@@ -58,7 +57,7 @@ body.sweetweb-no-sidebar{
 	}
 
 	.alignwide,
-	.wp-block-cover.alignwide{
+	.wp-block-cover.alignwide {
 		margin: 0px calc(50% - 45vw);
 		max-width: 90vw;
 		width: 100vw;
@@ -72,7 +71,6 @@ body.sweetweb-no-sidebar{
 			}
 		}
 	}
-
 
 	@media (max-width: 920px) {
 		.alignwide,
@@ -88,7 +86,12 @@ body.sweetweb-no-sidebar{
 .wp-block-buttons {
 	.wp-block-button {
 		.wp-block-button__link {
-			@include button-size($btn-padding-y, $btn-padding-x, $btn-font-size, $btn-border-radius);
+			@include button-size(
+				$btn-padding-y,
+				$btn-padding-x,
+				$btn-font-size,
+				$btn-border-radius
+			);
 		}
 		&:not(.is-style-outline) .wp-block-button__link {
 			border: $btn-border-width solid transparent;

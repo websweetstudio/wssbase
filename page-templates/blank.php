@@ -4,14 +4,14 @@
  *
  * Template for displaying a blank page.
  *
- * @package Sweetweb
+ * @package Wss
  */
 
 // Exit if accessed directly.
 defined( 'ABSPATH' ) || exit;
 ?>
 <!DOCTYPE html>
-<html <?php language_attributes(); ?> <?php sweetweb_color_scheme(); ?>>
+<html <?php language_attributes(); ?> <?php wss_color_scheme(); ?>>
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">

@@ -2,7 +2,7 @@
 /**
  * Sidebar - The Hero Canvas Widget Area
  *
- * @package Sweetweb
+ * @package Wss
  */
 
 // Exit if accessed directly.

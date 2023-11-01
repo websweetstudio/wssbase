@@ -1,12 +1,12 @@
 /*!
-  * Sweetweb v1.4.6 (https://websweetstudio.com)
+  * Wss v1.4.6 (https://websweetstudio.com)
   * Copyright 2013-2023 websweetstudio.com
   * Licensed under GPL (http://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html)
   */
 (function (global, factory) {
 	typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports) :
 	typeof define === 'function' && define.amd ? define(['exports'], factory) :
-	(global = typeof globalThis !== 'undefined' ? globalThis : global || self, factory(global.sweetweb = {}));
+	(global = typeof globalThis !== 'undefined' ? globalThis : global || self, factory(global.wss = {}));
 })(this, (function (exports) { 'use strict';
 
 	var commonjsGlobal = typeof globalThis !== 'undefined' ? globalThis : typeof window !== 'undefined' ? window : typeof global !== 'undefined' ? global : typeof self !== 'undefined' ? self : {};

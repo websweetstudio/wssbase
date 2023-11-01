@@ -5,17 +5,17 @@
  *
  * Eventually, some of the functionality here could be replaced by core features.
  *
- * @package Sweetweb
+ * @package Wss
  */
 
 // Exit if accessed directly.
 defined('ABSPATH') || exit;
 
-if (!function_exists('sweetweb_posted_on')) {
+if (!function_exists('wss_posted_on')) {
 	/**
 	 * Prints HTML with meta information for the current post-date/time and author.
 	 */
-	function sweetweb_posted_on()
+	function wss_posted_on()
 	{
 		$time_string = '<time class="entry-date published updated" datetime="%1$s">%2$s</time>';
 		if (get_the_time('U') !== get_the_modified_time('U')) {
@@ -29,19 +29,19 @@ if (!function_exists('sweetweb_posted_on')) {
 			esc_html(get_the_modified_date())
 		);
 		$posted_on   = apply_filters(
-			'sweetweb_posted_on',
+			'wss_posted_on',
 			sprintf(
 				'<span class="posted-on">%1$s <a href="%2$s" rel="bookmark">%3$s</a></span>',
-				esc_html_x('Posted on', 'post date', 'sweetweb'),
+				esc_html_x('Posted on', 'post date', 'wss'),
 				esc_url(get_permalink()),
-				apply_filters('sweetweb_posted_on_time', $time_string)
+				apply_filters('wss_posted_on_time', $time_string)
 			)
 		);
 		$byline      = apply_filters(
-			'sweetweb_posted_by',
+			'wss_posted_by',
 			sprintf(
 				'<span class="byline"> %1$s<span class="author vcard"> <a class="url fn n" href="%2$s">%3$s</a></span></span>',
-				$posted_on ? esc_html_x('by', 'post author', 'sweetweb') : esc_html_x('Posted by', 'post author', 'sweetweb'),
+				$posted_on ? esc_html_x('by', 'post author', 'wss') : esc_html_x('Posted by', 'post author', 'wss'),
 				esc_url(get_author_posts_url(get_the_author_meta('ID'))),
 				esc_html(get_the_author())
 			)
@@ -50,45 +50,45 @@ if (!function_exists('sweetweb_posted_on')) {
 	}
 }
 
-if (!function_exists('sweetweb_entry_footer')) {
+if (!function_exists('wss_entry_footer')) {
 	/**
 	 * Prints HTML with meta information for the categories, tags and comments.
 	 */
-	function sweetweb_entry_footer()
+	function wss_entry_footer()
 	{
 		// Hide category and tag text for pages.
 		if ('post' === get_post_type()) {
 			/* translators: used between list items, there is a space after the comma */
-			$categories_list = get_the_category_list(esc_html__(', ', 'sweetweb'));
-			if ($categories_list && sweetweb_categorized_blog()) {
+			$categories_list = get_the_category_list(esc_html__(', ', 'wss'));
+			if ($categories_list && wss_categorized_blog()) {
 				/* translators: %s: Categories of current post */
-				printf('<span class="cat-links">' . esc_html__('Posted in %s', 'sweetweb') . '</span>', $categories_list); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+				printf('<span class="cat-links">' . esc_html__('Posted in %s', 'wss') . '</span>', $categories_list); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 			}
 			/* translators: used between list items, there is a space after the comma */
-			$tags_list = get_the_tag_list('', esc_html__(', ', 'sweetweb'));
+			$tags_list = get_the_tag_list('', esc_html__(', ', 'wss'));
 			if ($tags_list) {
 				/* translators: %s: Tags of current post */
-				printf('<span class="tags-links">' . esc_html__('Tagged %s', 'sweetweb') . '</span>', $tags_list); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+				printf('<span class="tags-links">' . esc_html__('Tagged %s', 'wss') . '</span>', $tags_list); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 			}
 		}
 		if (!is_single() && !post_password_required() && (comments_open() || get_comments_number())) {
 			echo '<span class="comments-link">';
-			comments_popup_link(esc_html__('Leave a comment', 'sweetweb'), esc_html__('1 Comment', 'sweetweb'), esc_html__('% Comments', 'sweetweb'));
+			comments_popup_link(esc_html__('Leave a comment', 'wss'), esc_html__('1 Comment', 'wss'), esc_html__('% Comments', 'wss'));
 			echo '</span>';
 		}
-		sweetweb_edit_post_link();
+		wss_edit_post_link();
 	}
 }
 
-if (!function_exists('sweetweb_categorized_blog')) {
+if (!function_exists('wss_categorized_blog')) {
 	/**
 	 * Returns true if a blog has more than 1 category.
 	 *
 	 * @return bool
 	 */
-	function sweetweb_categorized_blog()
+	function wss_categorized_blog()
 	{
-		$all_the_cool_cats = get_transient('sweetweb_categories');
+		$all_the_cool_cats = get_transient('wss_categories');
 		if (false === $all_the_cool_cats) {
 			// Create an array of all the categories that are attached to posts.
 			$all_the_cool_cats = get_categories(
@@ -101,46 +101,46 @@ if (!function_exists('sweetweb_categorized_blog')) {
 			);
 			// Count the number of categories that are attached to the posts.
 			$all_the_cool_cats = count($all_the_cool_cats);
-			set_transient('sweetweb_categories', $all_the_cool_cats);
+			set_transient('wss_categories', $all_the_cool_cats);
 		}
 		if ($all_the_cool_cats > 1) {
-			// This blog has more than 1 category so sweetweb_categorized_blog should return true.
+			// This blog has more than 1 category so wss_categorized_blog should return true.
 			return true;
 		}
-		// This blog has only 1 category so sweetweb_categorized_blog should return false.
+		// This blog has only 1 category so wss_categorized_blog should return false.
 		return false;
 	}
 }
 
-add_action('edit_category', 'sweetweb_category_transient_flusher');
-add_action('save_post', 'sweetweb_category_transient_flusher');
+add_action('edit_category', 'wss_category_transient_flusher');
+add_action('save_post', 'wss_category_transient_flusher');
 
-if (!function_exists('sweetweb_category_transient_flusher')) {
+if (!function_exists('wss_category_transient_flusher')) {
 	/**
-	 * Flush out the transients used in sweetweb_categorized_blog.
+	 * Flush out the transients used in wss_categorized_blog.
 	 */
-	function sweetweb_category_transient_flusher()
+	function wss_category_transient_flusher()
 	{
 		if (defined('DOING_AUTOSAVE') && DOING_AUTOSAVE) {
 			return;
 		}
 		// Like, beat it. Dig?
-		delete_transient('sweetweb_categories');
+		delete_transient('wss_categories');
 	}
 }
 
-if (!function_exists('sweetweb_body_attributes')) {
+if (!function_exists('wss_body_attributes')) {
 	/**
 	 * Displays the attributes for the body element.
 	 */
-	function sweetweb_body_attributes()
+	function wss_body_attributes()
 	{
 		/**
 		 * Filters the body attributes.
 		 *
 		 * @param array $atts An associative array of attributes.
 		 */
-		$atts = array_unique(apply_filters('sweetweb_body_attributes', $atts = array()));
+		$atts = array_unique(apply_filters('wss_body_attributes', $atts = array()));
 		if (!is_array($atts) || empty($atts)) {
 			return;
 		}
@@ -156,13 +156,13 @@ if (!function_exists('sweetweb_body_attributes')) {
 	}
 }
 
-if (!function_exists('sweetweb_comment_navigation')) {
+if (!function_exists('wss_comment_navigation')) {
 	/**
 	 * Displays the comment navigation.
 	 *
 	 * @param string $nav_id The ID of the comment navigation.
 	 */
-	function sweetweb_comment_navigation($nav_id)
+	function wss_comment_navigation($nav_id)
 	{
 		if (get_comment_pages_count() <= 1) {
 			// Return early if there are no comments to navigate through.
@@ -171,17 +171,17 @@ if (!function_exists('sweetweb_comment_navigation')) {
 ?>
 		<nav class="comment-navigation" id="<?php echo esc_attr($nav_id); ?>">
 
-			<h1 class="screen-reader-text"><?php esc_html_e('Comment navigation', 'sweetweb'); ?></h1>
+			<h1 class="screen-reader-text"><?php esc_html_e('Comment navigation', 'wss'); ?></h1>
 
 			<?php if (get_previous_comments_link()) { ?>
 				<div class="nav-previous">
-					<?php previous_comments_link(__('&larr; Older Comments', 'sweetweb')); ?>
+					<?php previous_comments_link(__('&larr; Older Comments', 'wss')); ?>
 				</div>
 			<?php } ?>
 
 			<?php if (get_next_comments_link()) { ?>
 				<div class="nav-next">
-					<?php next_comments_link(__('Newer Comments &rarr;', 'sweetweb')); ?>
+					<?php next_comments_link(__('Newer Comments &rarr;', 'wss')); ?>
 				</div>
 			<?php } ?>
 
@@ -190,16 +190,16 @@ if (!function_exists('sweetweb_comment_navigation')) {
 	}
 }
 
-if (!function_exists('sweetweb_edit_post_link')) {
+if (!function_exists('wss_edit_post_link')) {
 	/**
 	 * Displays the edit post link for post.
 	 */
-	function sweetweb_edit_post_link()
+	function wss_edit_post_link()
 	{
 		edit_post_link(
 			sprintf(
 				/* translators: %s: Name of current post */
-				esc_html__('Edit %s', 'sweetweb'),
+				esc_html__('Edit %s', 'wss'),
 				the_title('<span class="screen-reader-text">"', '"</span>', false)
 			),
 			'<span class="edit-link">',
@@ -208,11 +208,11 @@ if (!function_exists('sweetweb_edit_post_link')) {
 	}
 }
 
-if (!function_exists('sweetweb_post_nav')) {
+if (!function_exists('wss_post_nav')) {
 	/**
 	 * Display navigation to next/previous post when applicable.
 	 */
-	function sweetweb_post_nav()
+	function wss_post_nav()
 	{
 		// Don't print empty markup if there's nowhere to navigate.
 		$previous = (is_attachment()) ? get_post(get_post()->post_parent) : get_adjacent_post(false, '', true);
@@ -222,7 +222,7 @@ if (!function_exists('sweetweb_post_nav')) {
 		}
 	?>
 		<nav class="container navigation post-navigation py-2 px-0 my-3 border-top border-bottom">
-			<h2 class="screen-reader-text"><?php esc_html_e('Post navigation', 'sweetweb'); ?></h2>
+			<h2 class="screen-reader-text"><?php esc_html_e('Post navigation', 'wss'); ?></h2>
 			<div class="d-flex nav-links justify-content-between">
 				<?php
 				if (get_previous_post_link()) {
@@ -231,7 +231,7 @@ if (!function_exists('sweetweb_post_nav')) {
 					<path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
 					</svg>
 					&nbsp;%title
-					', 'Previous post link', 'sweetweb'));
+					', 'Previous post link', 'wss'));
 				}
 				if (get_next_post_link()) {
 					next_post_link('<span class="nav-next btn btn-link rounded-0">%link</span>', _x('
@@ -239,7 +239,7 @@ if (!function_exists('sweetweb_post_nav')) {
 					<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
 					<path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
 					</svg>
-					', 'Next post link', 'sweetweb'));
+					', 'Next post link', 'wss'));
 				}
 				?>
 			</div><!-- .nav-links -->
@@ -248,7 +248,7 @@ if (!function_exists('sweetweb_post_nav')) {
 	}
 }
 
-if (!function_exists('sweetweb_link_pages')) {
+if (!function_exists('wss_link_pages')) {
 	/**
 	 * Displays/retrieves page links for paginated posts (i.e. including the
 	 * `<!--nextpage-->` Quicktag one or more times). This tag must be
@@ -256,12 +256,12 @@ if (!function_exists('sweetweb_link_pages')) {
 	 *
 	 * @return void|string Formatted output in HTML.
 	 */
-	function sweetweb_link_pages()
+	function wss_link_pages()
 	{
 		$args = apply_filters(
-			'sweetweb_link_pages_args',
+			'wss_link_pages_args',
 			array(
-				'before' => '<div class="page-links">' . esc_html__('Pages:', 'sweetweb'),
+				'before' => '<div class="page-links">' . esc_html__('Pages:', 'wss'),
 				'after'  => '</div>',
 			)
 		);

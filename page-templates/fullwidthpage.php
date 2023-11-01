@@ -4,14 +4,14 @@
  *
  * Template for displaying a page without sidebar even if a sidebar widget is published.
  *
- * @package Sweetweb
+ * @package Wss
  */
 
 // Exit if accessed directly.
 defined( 'ABSPATH' ) || exit;
 
 get_header();
-$container = get_theme_mod( 'sweetweb_container_type' );
+$container = get_theme_mod( 'wss_container_type' );
 
 if ( is_front_page() ) {
 	get_template_part( 'global-templates/hero' );

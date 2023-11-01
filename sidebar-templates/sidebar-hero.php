@@ -2,7 +2,7 @@
 /**
  * Sidebar - hero setup
  *
- * @package Sweetweb
+ * @package Wss
  */
 
 // Exit if accessed directly.
@@ -25,7 +25,7 @@ defined( 'ABSPATH' ) || exit;
 
 			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
 
-			<span class="screen-reader-text"><?php echo esc_html_x( 'Previous', 'carousel control', 'sweetweb' ); ?></span>
+			<span class="screen-reader-text"><?php echo esc_html_x( 'Previous', 'carousel control', 'wss' ); ?></span>
 
 		</a>
 
@@ -33,7 +33,7 @@ defined( 'ABSPATH' ) || exit;
 
 			<span class="carousel-control-next-icon" aria-hidden="true"></span>
 
-			<span class="screen-reader-text"><?php echo esc_html_x( 'Next', 'carousel control', 'sweetweb' ); ?></span>
+			<span class="screen-reader-text"><?php echo esc_html_x( 'Next', 'carousel control', 'wss' ); ?></span>
 
 		</a>
 

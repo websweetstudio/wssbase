@@ -2,7 +2,7 @@
 /**
  * Template for displaying posts on the author archive
  *
- * @package Sweetweb
+ * @package Wss
  */
 
 // Exit if accessed directly.
@@ -24,7 +24,7 @@ defined( 'ABSPATH' ) || exit;
 
 			<div class="entry-meta">
 
-				<?php sweetweb_posted_on(); ?>
+				<?php wss_posted_on(); ?>
 
 			</div><!-- .entry-meta -->
 
@@ -40,7 +40,7 @@ defined( 'ABSPATH' ) || exit;
 
 	<footer class="entry-footer">
 
-		<?php sweetweb_entry_footer(); ?>
+		<?php wss_entry_footer(); ?>
 
 	</footer><!-- .entry-footer -->
 

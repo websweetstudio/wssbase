@@ -2,7 +2,7 @@
 /**
  * Single post partial template
  *
- * @package Sweetweb
+ * @package Wss
  */
 
 // Exit if accessed directly.
@@ -17,7 +17,7 @@ defined( 'ABSPATH' ) || exit;
 
 		<div class="entry-meta">
 
-			<?php sweetweb_posted_on(); ?>
+			<?php wss_posted_on(); ?>
 
 		</div><!-- .entry-meta -->
 
@@ -29,14 +29,14 @@ defined( 'ABSPATH' ) || exit;
 
 		<?php
 		the_content();
-		sweetweb_link_pages();
+		wss_link_pages();
 		?>
 
 	</div><!-- .entry-content -->
 
 	<footer class="entry-footer">
 
-		<?php sweetweb_entry_footer(); ?>
+		<?php wss_entry_footer(); ?>
 
 	</footer><!-- .entry-footer -->
 

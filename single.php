@@ -2,14 +2,14 @@
 /**
  * The template for displaying all single posts
  *
- * @package Sweetweb
+ * @package Wss
  */
 
 // Exit if accessed directly.
 defined( 'ABSPATH' ) || exit;
 
 get_header();
-$container = get_theme_mod( 'sweetweb_container_type' );
+$container = get_theme_mod( 'wss_container_type' );
 ?>
 
 <div class="wrapper" id="single-wrapper">
@@ -27,7 +27,7 @@ $container = get_theme_mod( 'sweetweb_container_type' );
 				while ( have_posts() ) {
 					the_post();
 					get_template_part( 'loop-templates/content', 'single' );
-					sweetweb_post_nav();
+					wss_post_nav();
 
 					// If comments are open or we have at least one comment, load up the comment template.
 					if ( comments_open() || get_comments_number() ) {

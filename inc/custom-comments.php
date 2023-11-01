@@ -2,16 +2,16 @@
 /**
  * Comment layout
  *
- * @package Sweetweb
+ * @package Wss
  */
 
 // Exit if accessed directly.
 defined( 'ABSPATH' ) || exit;
 
 // Add Bootstrap classes to comment form fields.
-add_filter( 'comment_form_default_fields', 'sweetweb_bootstrap_comment_form_fields' );
+add_filter( 'comment_form_default_fields', 'wss_bootstrap_comment_form_fields' );
 
-if ( ! function_exists( 'sweetweb_bootstrap_comment_form_fields' ) ) {
+if ( ! function_exists( 'wss_bootstrap_comment_form_fields' ) ) {
 	/**
 	 * Add Bootstrap classes to WP's comment form default fields.
 	 *
@@ -26,7 +26,7 @@ if ( ! function_exists( 'sweetweb_bootstrap_comment_form_fields' ) ) {
 	 *
 	 * @return array
 	 */
-	function sweetweb_bootstrap_comment_form_fields( $fields ) {
+	function wss_bootstrap_comment_form_fields( $fields ) {
 
 		$replace = array(
 			'<p class="' => '<div class="form-group mb-3 ',
@@ -56,12 +56,12 @@ if ( ! function_exists( 'sweetweb_bootstrap_comment_form_fields' ) ) {
 
 		return $fields;
 	}
-} // End of if function_exists( 'sweetweb_bootstrap_comment_form_fields' )
+} // End of if function_exists( 'wss_bootstrap_comment_form_fields' )
 
 // Add Bootstrap classes to comment form submit button and comment field.
-add_filter( 'comment_form_defaults', 'sweetweb_bootstrap_comment_form' );
+add_filter( 'comment_form_defaults', 'wss_bootstrap_comment_form' );
 
-if ( ! function_exists( 'sweetweb_bootstrap_comment_form' ) ) {
+if ( ! function_exists( 'wss_bootstrap_comment_form' ) ) {
 	/**
 	 * Adds Bootstrap classes to comment form submit button and comment field.
 	 *
@@ -69,7 +69,7 @@ if ( ! function_exists( 'sweetweb_bootstrap_comment_form' ) ) {
 	 *
 	 * @return string[]
 	 */
-	function sweetweb_bootstrap_comment_form( $args ) {
+	function wss_bootstrap_comment_form( $args ) {
 		$replace = array(
 			'<p class="' => '<div class="form-group mb-3 ',
 			'<textarea'  => '<textarea class="form-control" ',
@@ -86,21 +86,21 @@ if ( ! function_exists( 'sweetweb_bootstrap_comment_form' ) ) {
 
 		return $args;
 	}
-} // End of if function_exists( 'sweetweb_bootstrap_comment_form' ).
+} // End of if function_exists( 'wss_bootstrap_comment_form' ).
 
 
 // Add note if comments are closed.
-add_action( 'comment_form_comments_closed', 'sweetweb_comment_form_comments_closed' );
+add_action( 'comment_form_comments_closed', 'wss_comment_form_comments_closed' );
 
-if ( ! function_exists( 'sweetweb_comment_form_comments_closed' ) ) {
+if ( ! function_exists( 'wss_comment_form_comments_closed' ) ) {
 	/**
 	 * Displays a note that comments are closed if comments are closed and there are comments.
 	 */
-	function sweetweb_comment_form_comments_closed() {
+	function wss_comment_form_comments_closed() {
 		if ( get_comments_number() && post_type_supports( get_post_type(), 'comments' ) ) {
 			?>
-			<p class="no-comments"><?php esc_html_e( 'Comments are closed.', 'sweetweb' ); ?></p>
+			<p class="no-comments"><?php esc_html_e( 'Comments are closed.', 'wss' ); ?></p>
 			<?php
 		}
 	}
-} // End of if function_exists( 'sweetweb_comment_form_comments_closed' ).
+} // End of if function_exists( 'wss_comment_form_comments_closed' ).

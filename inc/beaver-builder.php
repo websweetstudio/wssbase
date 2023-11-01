@@ -1,15 +1,15 @@
 <?php
 /**
- * Sweetweb Beaver Builder functions.
+ * Wss Beaver Builder functions.
  * 
- * @package Sweetweb
+ * @package Wss
  */
 
  // Exit if accessed directly.
 defined( 'ABSPATH' ) || exit;
 
 
-function sweetweb_header_footer_render() {
+function wss_header_footer_render() {
 
 	if ( ! class_exists( 'FLThemeBuilderLayoutData' ) ) {
 		return;
@@ -20,8 +20,8 @@ function sweetweb_header_footer_render() {
 
 	// If we have a header, remove the theme header and hook in Theme Builder's.
 	if ( ! empty( $header_ids ) ) {		 
-		remove_all_actions( 'sweetweb_header');		
-		add_action( 'sweetweb_header', 'FLThemeBuilderLayoutRenderer::render_header' );
+		remove_all_actions( 'wss_header');		
+		add_action( 'wss_header', 'FLThemeBuilderLayoutRenderer::render_header' );
 	}
 
 	// Get the footer ID.
@@ -29,21 +29,21 @@ function sweetweb_header_footer_render() {
 
 	// If we have a footer, remove the theme footer and hook in Theme Builder's.
 	if ( ! empty( $footer_ids ) ) {
-		remove_all_actions( 'sweetweb_footer');		
-		add_action( 'sweetweb_footer', 'FLThemeBuilderLayoutRenderer::render_footer' );
+		remove_all_actions( 'wss_footer');		
+		add_action( 'wss_footer', 'FLThemeBuilderLayoutRenderer::render_footer' );
 	}
 }
-add_action( 'wp', 'sweetweb_header_footer_render' );
+add_action( 'wp', 'wss_header_footer_render' );
 
 
-add_filter( 'fl_theme_builder_part_hooks', 'sweetweb_register_part_hooks' );
-function sweetweb_register_part_hooks() {
+add_filter( 'fl_theme_builder_part_hooks', 'wss_register_part_hooks' );
+function wss_register_part_hooks() {
   return array(
     array(
       'label' => 'Header',
       'hooks' => array(
-        'sweetweb_left_sidebar' => 'Left Sidebar',
-        'sweetweb_right_sidebar'  => 'Right Sidebar',
+        'wss_left_sidebar' => 'Left Sidebar',
+        'wss_right_sidebar'  => 'Right Sidebar',
       )
     ),
   );

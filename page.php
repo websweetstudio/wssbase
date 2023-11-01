@@ -7,7 +7,7 @@
  * and that other 'pages' on your WordPress site will use a
  * different template.
  *
- * @package Sweetweb
+ * @package Wss
  */
 
 // Exit if accessed directly.
@@ -15,7 +15,7 @@ defined( 'ABSPATH' ) || exit;
 
 get_header();
 
-$container = get_theme_mod( 'sweetweb_container_type' );
+$container = get_theme_mod( 'wss_container_type' );
 
 ?>
 

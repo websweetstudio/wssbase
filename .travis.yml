@@ -1,9 +1,8 @@
 # Travis CI configuration file.
 # @link https://travis-ci.org/
 
-# For use with the Sweetweb WordPress theme
-# @link https://github.com/websweetxyz/sweetweb
-
+# For use with the Wsstheme WordPress theme
+# @link https://github.com/websweetstudio/wsstheme
 
 # Declare virtual environment and operating system.
 # @link https://docs.travis-ci.com/user/reference/overview/#virtualization-environments
@@ -14,12 +13,12 @@ dist: xenial
 # @link https://docs.travis-ci.com/user/languages/php/
 language: php
 php:
-  - '5.6'
-  - '7.0'
-  - '7.1'
-  - '7.2'
-  - '7.3'
-  - '7.4'
+  - "5.6"
+  - "7.0"
+  - "7.1"
+  - "7.2"
+  - "7.3"
+  - "7.4"
   - nightly
 
 matrix:
@@ -29,24 +28,24 @@ matrix:
       env: PHPCS=1
   allow_failures:
     - php: nightly
-  
+
 # Use this to prepare the build for testing.
 before_script:
-    # Speed up build time by disabling Xdebug.
-    - phpenv config-rm xdebug.ini || echo 'No xdebug config.'
-    # Install composer dependencies
-    - if [ "$TRAVIS_PHP_VERSION" != "nightly" ]; then 
-        composer install;
-      else
-        composer install --ignore-platform-reqs;
-      fi
-    # Install JSCS: JavaScript Code Style checker
-    # @link http://jscs.info/
-    - if [[ "$PHPCS" == 1 ]]; then npm install -g jscs; fi
-    # Install JSHint, a JavaScript Code Quality Tool
-    # @link https://jshint.com/docs/
-    - if [[ "$PHPCS" == 1 ]]; then npm install -g jshint; fi
-    - if [[ "$PHPCS" == 1 ]]; then wget https://develop.svn.wordpress.org/trunk/.jshintrc; fi
+  # Speed up build time by disabling Xdebug.
+  - phpenv config-rm xdebug.ini || echo 'No xdebug config.'
+  # Install composer dependencies
+  - if [ "$TRAVIS_PHP_VERSION" != "nightly" ]; then
+    composer install;
+    else
+    composer install --ignore-platform-reqs;
+    fi
+  # Install JSCS: JavaScript Code Style checker
+  # @link http://jscs.info/
+  - if [[ "$PHPCS" == 1 ]]; then npm install -g jscs; fi
+  # Install JSHint, a JavaScript Code Quality Tool
+  # @link https://jshint.com/docs/
+  - if [[ "$PHPCS" == 1 ]]; then npm install -g jshint; fi
+  - if [[ "$PHPCS" == 1 ]]; then wget https://develop.svn.wordpress.org/trunk/.jshintrc; fi
 
 # Run test script commands.
 # Default is specific to project language.

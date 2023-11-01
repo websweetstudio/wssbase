@@ -2,7 +2,7 @@
 /**
  * Partial template for content in page.php
  *
- * @package Sweetweb
+ * @package Wss
  */
 
 // Exit if accessed directly.
@@ -23,14 +23,14 @@ defined( 'ABSPATH' ) || exit;
 
 		<?php
 		the_content();
-		sweetweb_link_pages();
+		wss_link_pages();
 		?>
 
 	</div><!-- .entry-content -->
 
 	<footer class="entry-footer">
 
-		<?php sweetweb_edit_post_link(); ?>
+		<?php wss_edit_post_link(); ?>
 
 	</footer><!-- .entry-footer -->
 

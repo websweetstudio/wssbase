@@ -2,7 +2,7 @@
 /**
  * Post rendering content according to caller of get_template_part
  *
- * @package Sweetweb
+ * @package Wss
  */
 
 // Exit if accessed directly.
@@ -28,7 +28,7 @@ defined( 'ABSPATH' ) || exit;
 	
 	<?php if ( 'post' === get_post_type() ) : ?>
 	<div class="entry-meta text-muted">
-		<?php sweetweb_posted_on(); ?>
+		<?php wss_posted_on(); ?>
 	</div><!-- .entry-meta -->
 	<?php endif; ?>
 
@@ -36,14 +36,14 @@ defined( 'ABSPATH' ) || exit;
 
 		<?php
 		the_excerpt();
-		sweetweb_link_pages();
+		wss_link_pages();
 		?>
 
 	</div><!-- .entry-content -->
 
 	<footer class="entry-footer">
 
-		<?php sweetweb_entry_footer(); ?>
+		<?php wss_entry_footer(); ?>
 
 	</footer><!-- .entry-footer -->
 

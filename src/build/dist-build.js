@@ -42,8 +42,8 @@ async function copyDir(src, dest) {
 }
 del("./dist").then(() => {
 	console.log("./dist is deleted!");
-	copyDir("./", "./dist/sweetweb/sweetweb").then(() => {
-		zipdir("./dist/sweetweb", { saveTo: "./dist/sweetweb.zip" });
+	copyDir("./", "./dist/wsstheme/wsstheme").then(() => {
+		zipdir("./dist/wsstheme", { saveTo: "./dist/wsstheme.zip" });
 		console.log("Zip file created");
 	});
 });

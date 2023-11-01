@@ -4,21 +4,21 @@
  *
  * This file is centrally included from `wp-content/mu-plugins/wpcom-theme-compat.php`.
  *
- * @package Sweetweb
+ * @package Wss
  */
 
 // Exit if accessed directly.
 defined( 'ABSPATH' ) || exit;
 
-add_action( 'after_setup_theme', 'sweetweb_wpcom_setup' );
+add_action( 'after_setup_theme', 'wss_wpcom_setup' );
 
-if ( ! function_exists( 'sweetweb_wpcom_setup' ) ) {
+if ( ! function_exists( 'wss_wpcom_setup' ) ) {
 	/**
 	 * Adds support for wp.com-specific theme functions.
 	 *
 	 * @global array $themecolors
 	 */
-	function sweetweb_wpcom_setup() {
+	function wss_wpcom_setup() {
 		global $themecolors;
 
 		// Set theme colors for third party services.
@@ -37,13 +37,13 @@ if ( ! function_exists( 'sweetweb_wpcom_setup' ) ) {
 	}
 }
 
-add_action( 'wp_enqueue_scripts', 'sweetweb_wpcom_styles' );
+add_action( 'wp_enqueue_scripts', 'wss_wpcom_styles' );
 
-if ( ! function_exists( 'sweetweb_wpcom_styles' ) ) {
+if ( ! function_exists( 'wss_wpcom_styles' ) ) {
 	/**
 	 * WordPress.com-specific styles
 	 */
-	function sweetweb_wpcom_styles() {
-		wp_enqueue_style( 'sweetweb-wpcom', get_template_directory_uri() . '/inc/style-wpcom.css', array(), '20160411' );
+	function wss_wpcom_styles() {
+		wp_enqueue_style( 'wss-wpcom', get_template_directory_uri() . '/inc/style-wpcom.css', array(), '20160411' );
 	}
 }

@@ -2,13 +2,13 @@
 /**
  * Static hero sidebar setup
  *
- * @package Sweetweb
+ * @package Wss
  */
 
 // Exit if accessed directly.
 defined( 'ABSPATH' ) || exit;
 
-$container = get_theme_mod( 'sweetweb_container_type' );
+$container = get_theme_mod( 'wss_container_type' );
 ?>
 
 <?php if ( is_active_sidebar( 'statichero' ) ) : ?>
