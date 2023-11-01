@@ -77,14 +77,14 @@ if ( ! function_exists( 'wss_slbd_count_widgets' ) ) {
  */
 function deprecated_translations() {
 	array(
-		__( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?', 'wss' ),
-		__( 'Previous', 'wss' ),
-		__( 'Next', 'wss' ),
-		__( 'About:', 'wss' ),
-		__( 'Profile', 'wss' ),
-		__( 'Posts by', 'wss' ),
-		__( 'Permanent Link:', 'wss' ),
-		__( 'in', 'wss' ),
-		__( 'Edit', 'wss' ),
+		__( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?', 'wsstheme' ),
+		__( 'Previous', 'wsstheme' ),
+		__( 'Next', 'wsstheme' ),
+		__( 'About:', 'wsstheme' ),
+		__( 'Profile', 'wsstheme' ),
+		__( 'Posts by', 'wsstheme' ),
+		__( 'Permanent Link:', 'wsstheme' ),
+		__( 'in', 'wsstheme' ),
+		__( 'Edit', 'wsstheme' ),
 	);
 }

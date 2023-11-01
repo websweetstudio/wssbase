@@ -16,7 +16,7 @@ if ( ! function_exists( 'wss_scripts' ) ) {
 		// Get the theme data.
 		$the_theme         = wp_get_theme();
 		$theme_version     = $the_theme->get( 'Version' );
-		$suffix            = defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ? '' : '.min';
+		$suffix            = defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ? '.min' : '.min';
 
 		// Grab asset urls.
 		$theme_styles  = "/css/theme{$suffix}.css";

@@ -100,9 +100,9 @@ if ( ! function_exists( 'wss_widgets_init' ) ) {
 	function wss_widgets_init() {
 		register_sidebar(
 			array(
-				'name'          => __( 'Right Sidebar', 'wss' ),
+				'name'          => __( 'Right Sidebar', 'wsstheme' ),
 				'id'            => 'right-sidebar',
-				'description'   => __( 'Right sidebar widget area', 'wss' ),
+				'description'   => __( 'Right sidebar widget area', 'wsstheme' ),
 				'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 				'after_widget'  => '</aside>',
 				'before_title'  => '<h3 class="widget-title">',
@@ -112,9 +112,9 @@ if ( ! function_exists( 'wss_widgets_init' ) ) {
 
 		register_sidebar(
 			array(
-				'name'          => __( 'Left Sidebar', 'wss' ),
+				'name'          => __( 'Left Sidebar', 'wsstheme' ),
 				'id'            => 'left-sidebar',
-				'description'   => __( 'Left sidebar widget area', 'wss' ),
+				'description'   => __( 'Left sidebar widget area', 'wsstheme' ),
 				'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 				'after_widget'  => '</aside>',
 				'before_title'  => '<h3 class="widget-title">',
@@ -124,9 +124,9 @@ if ( ! function_exists( 'wss_widgets_init' ) ) {
 
 		register_sidebar(
 			array(
-				'name'          => __( 'Hero Slider', 'wss' ),
+				'name'          => __( 'Hero Slider', 'wsstheme' ),
 				'id'            => 'hero',
-				'description'   => __( 'Hero slider area. Place two or more widgets here and they will slide!', 'wss' ),
+				'description'   => __( 'Hero slider area. Place two or more widgets here and they will slide!', 'wsstheme' ),
 				'before_widget' => '<div class="carousel-item">',
 				'after_widget'  => '</div>',
 				'before_title'  => '',
@@ -136,9 +136,9 @@ if ( ! function_exists( 'wss_widgets_init' ) ) {
 
 		register_sidebar(
 			array(
-				'name'          => __( 'Hero Canvas', 'wss' ),
+				'name'          => __( 'Hero Canvas', 'wsstheme' ),
 				'id'            => 'herocanvas',
-				'description'   => __( 'Full size canvas hero area for Bootstrap and other custom HTML markup', 'wss' ),
+				'description'   => __( 'Full size canvas hero area for Bootstrap and other custom HTML markup', 'wsstheme' ),
 				'before_widget' => '',
 				'after_widget'  => '',
 				'before_title'  => '',
@@ -148,9 +148,9 @@ if ( ! function_exists( 'wss_widgets_init' ) ) {
 
 		register_sidebar(
 			array(
-				'name'          => __( 'Top Full', 'wss' ),
+				'name'          => __( 'Top Full', 'wsstheme' ),
 				'id'            => 'statichero',
-				'description'   => __( 'Full top widget with dynamic grid', 'wss' ),
+				'description'   => __( 'Full top widget with dynamic grid', 'wsstheme' ),
 				'before_widget' => '<div id="%1$s" class="static-hero-widget %2$s dynamic-classes">',
 				'after_widget'  => '</div><!-- .static-hero-widget -->',
 				'before_title'  => '<h3 class="widget-title">',
@@ -160,9 +160,9 @@ if ( ! function_exists( 'wss_widgets_init' ) ) {
 
 		register_sidebar(
 			array(
-				'name'          => __( 'Footer Full', 'wss' ),
+				'name'          => __( 'Footer Full', 'wsstheme' ),
 				'id'            => 'footerfull',
-				'description'   => __( 'Full sized footer widget with dynamic grid', 'wss' ),
+				'description'   => __( 'Full sized footer widget with dynamic grid', 'wsstheme' ),
 				'before_widget' => '<div id="%1$s" class="footer-widget %2$s dynamic-classes">',
 				'after_widget'  => '</div><!-- .footer-widget -->',
 				'before_title'  => '<h3 class="widget-title">',

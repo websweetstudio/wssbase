@@ -33,7 +33,7 @@ $container = get_theme_mod( 'wss_container_type' );
 								<?php
 								printf(
 									/* translators: %s: query term */
-									esc_html__( 'Search Results for: %s', 'wss' ),
+									esc_html__( 'Search Results for: %s', 'wsstheme' ),
 									'<span>' . get_search_query() . '</span>'
 								);
 								?>

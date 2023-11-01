@@ -49,7 +49,7 @@ if( ! function_exists( 'wss_add_navbar' ) ) {
 
 		<header id="wrapper-navbar" class="<?php echo $header_position; ?> bg-white shadow-light">
 
-			<a class="visually-hidden-focusable" href="#content"><?php esc_html_e( 'Skip to content', 'wss' ); ?></a>
+			<a class="visually-hidden-focusable" href="#content"><?php esc_html_e( 'Skip to content', 'wsstheme' ); ?></a>
 
 			<?php 
 				do_action( 'wss_navbar' );
@@ -108,7 +108,7 @@ if (!function_exists('wss_navbar_collapse')) {
 		<nav id="main-nav" class="navbar navbar-expand-md navbar-light py-3" aria-labelledby="main-nav-label">
 
 			<h2 id="main-nav-label" class="screen-reader-text">
-				<?php esc_html_e( 'Main Navigation', 'wss' ); ?>
+				<?php esc_html_e( 'Main Navigation', 'wsstheme' ); ?>
 			</h2>
 
 			<div class="<?php echo esc_attr( $container ); ?>">
@@ -133,7 +133,7 @@ if (!function_exists('wss_navbar_collapse')) {
 				?>
 				<!-- end custom logo -->
 
-				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="<?php esc_attr_e( 'Toggle navigation', 'wss' ); ?>">
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="<?php esc_attr_e( 'Toggle navigation', 'wsstheme' ); ?>">
 					<span class="navbar-toggler-icon"></span>
 				</button>
 
@@ -174,7 +174,7 @@ if (!function_exists('wss_navbar_offcanvas')) {
 		<nav id="main-nav" class="navbar navbar-expand-md navbar-light py-3" aria-labelledby="main-nav-label">
 		
 			<h2 id="main-nav-label" class="screen-reader-text">
-				<?php esc_html_e('Main Navigation', 'wss'); ?>
+				<?php esc_html_e('Main Navigation', 'wsstheme'); ?>
 			</h2>
 		
 		
@@ -200,7 +200,7 @@ if (!function_exists('wss_navbar_offcanvas')) {
 				?>
 				<!-- end custom logo -->
 		
-				<button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarNavOffcanvas" aria-controls="navbarNavOffcanvas" aria-expanded="false" aria-label="<?php esc_attr_e('Toggle navigation', 'wss'); ?>">
+				<button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarNavOffcanvas" aria-controls="navbarNavOffcanvas" aria-expanded="false" aria-label="<?php esc_attr_e('Toggle navigation', 'wsstheme'); ?>">
 					<span class="navbar-toggler-icon"></span>
 				</button>
 		

@@ -1,7 +1,7 @@
 {
   "name": "wsstheme",
-  "version": "1.4.6",
-  "description": "WordPress Theme framework",
+  "version": "1.5.0",
+  "description": "WordPress Theme Starter",
   "main": "index.js",
   "scripts": {
     "bs": "browser-sync start --config src/build/browser-sync.config.js",

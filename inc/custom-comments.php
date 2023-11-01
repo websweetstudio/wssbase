@@ -99,7 +99,7 @@ if ( ! function_exists( 'wss_comment_form_comments_closed' ) ) {
 	function wss_comment_form_comments_closed() {
 		if ( get_comments_number() && post_type_supports( get_post_type(), 'comments' ) ) {
 			?>
-			<p class="no-comments"><?php esc_html_e( 'Comments are closed.', 'wss' ); ?></p>
+			<p class="no-comments"><?php esc_html_e( 'Comments are closed.', 'wsstheme' ); ?></p>
 			<?php
 		}
 	}

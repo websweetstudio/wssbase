@@ -38,9 +38,9 @@ if ( ! function_exists( 'wss_theme_customize_register' ) ) {
 		$wp_customize->add_section(
 			'wss_theme_layout_options',
 			array(
-				'title'       => __( 'Theme Layout Settings', 'wss' ),
+				'title'       => __( 'Theme Layout Settings', 'wsstheme' ),
 				'capability'  => 'edit_theme_options',
-				'description' => __( 'Container width and sidebar defaults', 'wss' ),
+				'description' => __( 'Container width and sidebar defaults', 'wsstheme' ),
 				'priority'    => apply_filters( 'wss_theme_layout_options_priority', 160 ),
 			)
 		);
@@ -80,14 +80,14 @@ if ( ! function_exists( 'wss_theme_customize_register' ) ) {
 				$wp_customize,
 				'wss_container_type',
 				array(
-					'label'       => __( 'Container Width', 'wss' ),
-					'description' => __( 'Choose between Bootstrap\'s container and container-fluid', 'wss' ),
+					'label'       => __( 'Container Width', 'wsstheme' ),
+					'description' => __( 'Choose between Bootstrap\'s container and container-fluid', 'wsstheme' ),
 					'section'     => 'wss_theme_layout_options',
 					'settings'    => 'wss_container_type',
 					'type'        => 'select',
 					'choices'     => array(
-						'container'       => __( 'Fixed width container', 'wss' ),
-						'container-fluid' => __( 'Full width container', 'wss' ),
+						'container'       => __( 'Fixed width container', 'wsstheme' ),
+						'container-fluid' => __( 'Full width container', 'wsstheme' ),
 					),
 					'priority'    => apply_filters( 'wss_container_type_priority', 10 ),
 				)
@@ -109,19 +109,19 @@ if ( ! function_exists( 'wss_theme_customize_register' ) ) {
 				$wp_customize,
 				'wss_header_position',
 				array(
-					'label'             => __( 'Header Position', 'wss' ),
+					'label'             => __( 'Header Position', 'wsstheme' ),
 					'description'       => __(
 						'Set header\'s default position. Can either be: fixed, relative, or static.',
-						'wss'
+						'wsstheme'
 					),
 					'section'           => 'wss_theme_layout_options',
 					'settings'          => 'wss_header_position',
 					'type'              => 'select',
 					'sanitize_callback' => 'wss_theme_slug_sanitize_select',
 					'choices'           => array(
-						'position-relative' => __( 'Relative', 'wss' ),
-						'fixed-top'  => __( 'Fixed', 'wss' ),
-						'sticky-top'  => __( 'Static', 'wss' ),
+						'position-relative' => __( 'Relative', 'wsstheme' ),
+						'fixed-top'  => __( 'Fixed', 'wsstheme' ),
+						'sticky-top'  => __( 'Static', 'wsstheme' ),
 					),
 					'priority'          => apply_filters( 'wss_sidebar_position_priority', 20 ),
 				)
@@ -143,18 +143,18 @@ if ( ! function_exists( 'wss_theme_customize_register' ) ) {
 				$wp_customize,
 				'wss_navbar_type',
 				array(
-					'label'             => __( 'Responsive Navigation Type', 'wss' ),
+					'label'             => __( 'Responsive Navigation Type', 'wsstheme' ),
 					'description'       => __(
 						'Choose between an expanding and collapsing navbar or an offcanvas drawer.',
-						'wss'
+						'wsstheme'
 					),
 					'section'           => 'wss_theme_layout_options',
 					'settings'          => 'wss_navbar_type',
 					'type'              => 'select',
 					'sanitize_callback' => 'wss_theme_slug_sanitize_select',
 					'choices'           => array(
-						'collapse'  => __( 'Collapse', 'wss' ),
-						'offcanvas' => __( 'Offcanvas', 'wss' ),
+						'collapse'  => __( 'Collapse', 'wsstheme' ),
+						'offcanvas' => __( 'Offcanvas', 'wsstheme' ),
 					),
 					'priority'          => apply_filters( 'wss_navbar_type_priority', 20 ),
 				)
@@ -176,20 +176,20 @@ if ( ! function_exists( 'wss_theme_customize_register' ) ) {
 				$wp_customize,
 				'wss_sidebar_position',
 				array(
-					'label'             => __( 'Sidebar Positioning', 'wss' ),
+					'label'             => __( 'Sidebar Positioning', 'wsstheme' ),
 					'description'       => __(
 						'Set sidebar\'s default position. Can either be: right, left, both or none. Note: this can be overridden on individual pages.',
-						'wss'
+						'wsstheme'
 					),
 					'section'           => 'wss_theme_layout_options',
 					'settings'          => 'wss_sidebar_position',
 					'type'              => 'select',
 					'sanitize_callback' => 'wss_theme_slug_sanitize_select',
 					'choices'           => array(
-						'right' => __( 'Right sidebar', 'wss' ),
-						'left'  => __( 'Left sidebar', 'wss' ),
-						'both'  => __( 'Left & Right sidebars', 'wss' ),
-						'none'  => __( 'No sidebar', 'wss' ),
+						'right' => __( 'Right sidebar', 'wsstheme' ),
+						'left'  => __( 'Left sidebar', 'wsstheme' ),
+						'both'  => __( 'Left & Right sidebars', 'wsstheme' ),
+						'none'  => __( 'No sidebar', 'wsstheme' ),
 					),
 					'priority'          => apply_filters( 'wss_sidebar_position_priority', 20 ),
 				)
@@ -211,8 +211,8 @@ if ( ! function_exists( 'wss_theme_customize_register' ) ) {
 				$wp_customize,
 				'wss_site_info_override',
 				array(
-					'label'       => __( 'Footer Site Info', 'wss' ),
-					'description' => __( 'Override site info located at the footer of the page.', 'wss' ),
+					'label'       => __( 'Footer Site Info', 'wsstheme' ),
+					'description' => __( 'Override site info located at the footer of the page.', 'wsstheme' ),
 					'section'     => 'wss_theme_layout_options',
 					'settings'    => 'wss_site_info_override',
 					'type'        => 'textarea',
@@ -226,9 +226,9 @@ if ( ! function_exists( 'wss_theme_customize_register' ) ) {
 		$wp_customize->add_section(
 			'wss_google_fonts_section',
 			array(
-				'title'       => __( 'Typography Setting', 'wss' ),
+				'title'       => __( 'Typography Setting', 'wsstheme' ),
 				'capability'  => 'edit_theme_options',
-				'description' => __( 'Container width and sidebar defaults', 'wss' ),
+				'description' => __( 'Container width and sidebar defaults', 'wsstheme' ),
 				'priority'    => apply_filters( 'wss_google_fonts_section_priority', 50 ),
 			)
 		);
@@ -325,8 +325,8 @@ if ( ! function_exists( 'wss_theme_customize_register' ) ) {
 				$wp_customize,
 				'wss_headings_fonts',
 				array(
-					'label'       => __( 'Site Typograpy', 'wss' ),
-					'description' => __( 'Select your site typography.', 'wss' ),
+					'label'       => __( 'Site Typograpy', 'wsstheme' ),
+					'description' => __( 'Select your site typography.', 'wsstheme' ),
 					'section'     => 'wss_google_fonts_section',
 					'settings'    => 'wss_headings_fonts',
 					'type'        => 'select',
@@ -351,8 +351,8 @@ if ( ! function_exists( 'wss_theme_customize_register' ) ) {
 				$wp_customize,
 				'wss_body_fonts',
 				array(
-					'label'       => __( 'Body Typography', 'wss' ),
-					'description' => __( 'Select your body typography.', 'wss' ),
+					'label'       => __( 'Body Typography', 'wsstheme' ),
+					'description' => __( 'Select your body typography.', 'wsstheme' ),
 					'section'     => 'wss_google_fonts_section',
 					'settings'    => 'wss_body_fonts',
 					'type'        => 'select',

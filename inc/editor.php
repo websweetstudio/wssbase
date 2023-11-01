@@ -47,29 +47,29 @@ if ( ! function_exists( 'wss_tiny_mce_before_init' ) ) {
 
 		$style_formats = array(
 			array(
-				'title'    => __( 'Lead Paragraph', 'wss' ),
+				'title'    => __( 'Lead Paragraph', 'wsstheme' ),
 				'selector' => 'p',
 				'classes'  => 'lead',
 				'wrapper'  => true,
 			),
 			array(
-				'title'  => _x( 'Small', 'Font size name', 'wss' ),
+				'title'  => _x( 'Small', 'Font size name', 'wsstheme' ),
 				'inline' => 'small',
 			),
 			array(
-				'title'   => __( 'Blockquote', 'wss' ),
+				'title'   => __( 'Blockquote', 'wsstheme' ),
 				'block'   => 'blockquote',
 				'classes' => 'blockquote',
 				'wrapper' => true,
 			),
 			array(
-				'title'   => __( 'Blockquote Footer', 'wss' ),
+				'title'   => __( 'Blockquote Footer', 'wsstheme' ),
 				'block'   => 'footer',
 				'classes' => 'blockquote-footer',
 				'wrapper' => true,
 			),
 			array(
-				'title'  => __( 'Cite', 'wss' ),
+				'title'  => __( 'Cite', 'wsstheme' ),
 				'inline' => 'cite',
 			),
 		);

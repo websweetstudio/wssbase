@@ -40,10 +40,23 @@ async function copyDir(src, dest) {
 			: await fs.copyFile(srcPath, destPath);
 	}
 }
-del("./dist").then(() => {
-	console.log("./dist is deleted!");
-	copyDir("./", "./dist/wsstheme/wsstheme").then(() => {
-		zipdir("./dist/wsstheme", { saveTo: "./dist/wsstheme.zip" });
-		console.log("Zip file created");
+
+async function setLineEndings(filePath, newLineEnding) {
+	const fileContent = await fs.readFile(filePath, "utf8");
+	const contentWithNewLineEnding = fileContent.replace(/\r?\n/g, newLineEnding);
+	await fs.writeFile(filePath, contentWithNewLineEnding, "utf8");
+}
+
+async function buildAndZip() {
+	del("./dist").then(async () => {
+		console.log("./dist is deleted!");
+		copyDir("./", "./dist/wsstheme/wsstheme").then(async () => {
+			// Set the desired line ending, e.g., "\n" for LF
+			await setLineEndings("./dist/wsstheme/wsstheme/js/theme.js", "\n");
+			zipdir("./dist/wsstheme", { saveTo: "./dist/wsstheme.zip" });
+			console.log("Zip file created");
+		});
 	});
-});
+}
+
+buildAndZip();

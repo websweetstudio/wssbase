@@ -1,6 +1,5 @@
 {
-    "parse": {
-    },
+    "parse": {},
     "compress": {
         "booleans": true,
         "conditionals": true,
@@ -15,6 +14,12 @@
         "warnings": false,
         "ecma": 5
     },
-    "mangle": {
+    "mangle": {},
+    "output": {
+        "ecma": 5,
+        "comments": false,
+        "indent_level": 2,
+        "ascii_only": true,
+        "quote_style": 3
     }
 }

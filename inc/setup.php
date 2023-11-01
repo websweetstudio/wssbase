@@ -27,9 +27,9 @@ if ( ! function_exists( 'wss_setup' ) ) {
 		/*
 		 * Make theme available for translation.
 		 * Translations can be filed in the /languages/ directory.
-		 * to change 'wss' to the name of your theme in all the template files
+		 * to change 'wsstheme' to the name of your theme in all the template files
 		 */
-		// load_theme_textdomain( 'wss', get_template_directory() . '/languages' );
+		// load_theme_textdomain( 'wsstheme', get_template_directory() . '/languages' );
 
 		// Add default posts and comments RSS feed links to head.
 		add_theme_support( 'automatic-feed-links' );
@@ -45,7 +45,7 @@ if ( ! function_exists( 'wss_setup' ) ) {
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus(
 			array(
-				'primary' => __( 'Primary Menu', 'wss' ),
+				'primary' => __( 'Primary Menu', 'wsstheme' ),
 			)
 		);
 

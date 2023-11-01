@@ -43,7 +43,6 @@
 		<properties>
 			<property name="text_domain" type="array">
 				<element value="wss"/>
-				<element value="woocommerce"/>
 			</property>
 		</properties>
 	</rule>

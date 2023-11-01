@@ -50,11 +50,11 @@ if ( ! function_exists( 'wss_pagination' ) ) {
 			array(
 				'mid_size'           => 2,
 				'prev_next'          => true,
-				'prev_text'          => __( '&laquo;', 'wss' ),
-				'next_text'          => __( '&raquo;', 'wss' ),
+				'prev_text'          => __( '&laquo;', 'wsstheme' ),
+				'next_text'          => __( '&raquo;', 'wsstheme' ),
 				'type'               => 'array',
 				'current'            => max( 1, get_query_var( 'paged' ) ),
-				'screen_reader_text' => __( 'Posts navigation', 'wss' ),
+				'screen_reader_text' => __( 'Posts navigation', 'wsstheme' ),
 			)
 		);
 
