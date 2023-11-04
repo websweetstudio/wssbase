@@ -23,14 +23,14 @@ defined( 'ABSPATH' ) || exit;
 
 		<?php
 		the_content();
-		wss_link_pages();
+		wsstheme_link_pages();
 		?>
 
 	</div><!-- .entry-content -->
 
 	<footer class="entry-footer">
 
-		<?php wss_edit_post_link(); ?>
+		<?php wsstheme_edit_post_link(); ?>
 
 	</footer><!-- .entry-footer -->
 

@@ -16,7 +16,7 @@ defined( 'ABSPATH' ) || exit;
 
 get_header();
 
-$container = get_theme_mod( 'wss_container_type' );
+$container = get_theme_mod( 'wsstheme_container_type' );
 ?>
 
 <?php if ( is_front_page() && is_home() ) : ?>
@@ -55,7 +55,7 @@ $container = get_theme_mod( 'wss_container_type' );
 			</main><!-- #main -->
 
 			<!-- The pagination component -->
-			<?php wss_pagination(); ?>
+			<?php wsstheme_pagination(); ?>
 
 			<!-- Do the right sidebar check -->
 			<?php get_template_part( 'global-templates/right-sidebar-check' ); ?>

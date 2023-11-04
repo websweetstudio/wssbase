@@ -11,11 +11,11 @@
 // Exit if accessed directly.
 defined('ABSPATH') || exit;
 
-if (!function_exists('wss_posted_on')) {
+if (!function_exists('wsstheme_posted_on')) {
 	/**
 	 * Prints HTML with meta information for the current post-date/time and author.
 	 */
-	function wss_posted_on()
+	function wsstheme_posted_on()
 	{
 		$time_string = '<time class="entry-date published updated" datetime="%1$s">%2$s</time>';
 		if (get_the_time('U') !== get_the_modified_time('U')) {
@@ -29,16 +29,16 @@ if (!function_exists('wss_posted_on')) {
 			esc_html(get_the_modified_date())
 		);
 		$posted_on   = apply_filters(
-			'wss_posted_on',
+			'wsstheme_posted_on',
 			sprintf(
 				'<span class="posted-on">%1$s <a href="%2$s" rel="bookmark">%3$s</a></span>',
 				esc_html_x('Posted on', 'post date', 'wsstheme'),
 				esc_url(get_permalink()),
-				apply_filters('wss_posted_on_time', $time_string)
+				apply_filters('wsstheme_posted_on_time', $time_string)
 			)
 		);
 		$byline      = apply_filters(
-			'wss_posted_by',
+			'wsstheme_posted_by',
 			sprintf(
 				'<span class="byline"> %1$s<span class="author vcard"> <a class="url fn n" href="%2$s">%3$s</a></span></span>',
 				$posted_on ? esc_html_x('by', 'post author', 'wsstheme') : esc_html_x('Posted by', 'post author', 'wsstheme'),
@@ -50,17 +50,17 @@ if (!function_exists('wss_posted_on')) {
 	}
 }
 
-if (!function_exists('wss_entry_footer')) {
+if (!function_exists('wsstheme_entry_footer')) {
 	/**
 	 * Prints HTML with meta information for the categories, tags and comments.
 	 */
-	function wss_entry_footer()
+	function wsstheme_entry_footer()
 	{
 		// Hide category and tag text for pages.
 		if ('post' === get_post_type()) {
 			/* translators: used between list items, there is a space after the comma */
 			$categories_list = get_the_category_list(esc_html__(', ', 'wsstheme'));
-			if ($categories_list && wss_categorized_blog()) {
+			if ($categories_list && wsstheme_categorized_blog()) {
 				/* translators: %s: Categories of current post */
 				printf('<span class="cat-links">' . esc_html__('Posted in %s', 'wsstheme') . '</span>', $categories_list); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 			}
@@ -76,19 +76,19 @@ if (!function_exists('wss_entry_footer')) {
 			comments_popup_link(esc_html__('Leave a comment', 'wsstheme'), esc_html__('1 Comment', 'wsstheme'), esc_html__('% Comments', 'wsstheme'));
 			echo '</span>';
 		}
-		wss_edit_post_link();
+		wsstheme_edit_post_link();
 	}
 }
 
-if (!function_exists('wss_categorized_blog')) {
+if (!function_exists('wsstheme_categorized_blog')) {
 	/**
 	 * Returns true if a blog has more than 1 category.
 	 *
 	 * @return bool
 	 */
-	function wss_categorized_blog()
+	function wsstheme_categorized_blog()
 	{
-		$all_the_cool_cats = get_transient('wss_categories');
+		$all_the_cool_cats = get_transient('wsstheme_categories');
 		if (false === $all_the_cool_cats) {
 			// Create an array of all the categories that are attached to posts.
 			$all_the_cool_cats = get_categories(
@@ -101,46 +101,46 @@ if (!function_exists('wss_categorized_blog')) {
 			);
 			// Count the number of categories that are attached to the posts.
 			$all_the_cool_cats = count($all_the_cool_cats);
-			set_transient('wss_categories', $all_the_cool_cats);
+			set_transient('wsstheme_categories', $all_the_cool_cats);
 		}
 		if ($all_the_cool_cats > 1) {
-			// This blog has more than 1 category so wss_categorized_blog should return true.
+			// This blog has more than 1 category so wsstheme_categorized_blog should return true.
 			return true;
 		}
-		// This blog has only 1 category so wss_categorized_blog should return false.
+		// This blog has only 1 category so wsstheme_categorized_blog should return false.
 		return false;
 	}
 }
 
-add_action('edit_category', 'wss_category_transient_flusher');
-add_action('save_post', 'wss_category_transient_flusher');
+add_action('edit_category', 'wsstheme_category_transient_flusher');
+add_action('save_post', 'wsstheme_category_transient_flusher');
 
-if (!function_exists('wss_category_transient_flusher')) {
+if (!function_exists('wsstheme_category_transient_flusher')) {
 	/**
-	 * Flush out the transients used in wss_categorized_blog.
+	 * Flush out the transients used in wsstheme_categorized_blog.
 	 */
-	function wss_category_transient_flusher()
+	function wsstheme_category_transient_flusher()
 	{
 		if (defined('DOING_AUTOSAVE') && DOING_AUTOSAVE) {
 			return;
 		}
 		// Like, beat it. Dig?
-		delete_transient('wss_categories');
+		delete_transient('wsstheme_categories');
 	}
 }
 
-if (!function_exists('wss_body_attributes')) {
+if (!function_exists('wsstheme_body_attributes')) {
 	/**
 	 * Displays the attributes for the body element.
 	 */
-	function wss_body_attributes()
+	function wsstheme_body_attributes()
 	{
 		/**
 		 * Filters the body attributes.
 		 *
 		 * @param array $atts An associative array of attributes.
 		 */
-		$atts = array_unique(apply_filters('wss_body_attributes', $atts = array()));
+		$atts = array_unique(apply_filters('wsstheme_body_attributes', $atts = array()));
 		if (!is_array($atts) || empty($atts)) {
 			return;
 		}
@@ -156,13 +156,13 @@ if (!function_exists('wss_body_attributes')) {
 	}
 }
 
-if (!function_exists('wss_comment_navigation')) {
+if (!function_exists('wsstheme_comment_navigation')) {
 	/**
 	 * Displays the comment navigation.
 	 *
 	 * @param string $nav_id The ID of the comment navigation.
 	 */
-	function wss_comment_navigation($nav_id)
+	function wsstheme_comment_navigation($nav_id)
 	{
 		if (get_comment_pages_count() <= 1) {
 			// Return early if there are no comments to navigate through.
@@ -190,11 +190,11 @@ if (!function_exists('wss_comment_navigation')) {
 	}
 }
 
-if (!function_exists('wss_edit_post_link')) {
+if (!function_exists('wsstheme_edit_post_link')) {
 	/**
 	 * Displays the edit post link for post.
 	 */
-	function wss_edit_post_link()
+	function wsstheme_edit_post_link()
 	{
 		edit_post_link(
 			sprintf(
@@ -208,11 +208,11 @@ if (!function_exists('wss_edit_post_link')) {
 	}
 }
 
-if (!function_exists('wss_post_nav')) {
+if (!function_exists('wsstheme_post_nav')) {
 	/**
 	 * Display navigation to next/previous post when applicable.
 	 */
-	function wss_post_nav()
+	function wsstheme_post_nav()
 	{
 		// Don't print empty markup if there's nowhere to navigate.
 		$previous = (is_attachment()) ? get_post(get_post()->post_parent) : get_adjacent_post(false, '', true);
@@ -248,7 +248,7 @@ if (!function_exists('wss_post_nav')) {
 	}
 }
 
-if (!function_exists('wss_link_pages')) {
+if (!function_exists('wsstheme_link_pages')) {
 	/**
 	 * Displays/retrieves page links for paginated posts (i.e. including the
 	 * `<!--nextpage-->` Quicktag one or more times). This tag must be
@@ -256,10 +256,10 @@ if (!function_exists('wss_link_pages')) {
 	 *
 	 * @return void|string Formatted output in HTML.
 	 */
-	function wss_link_pages()
+	function wsstheme_link_pages()
 	{
 		$args = apply_filters(
-			'wss_link_pages_args',
+			'wsstheme_link_pages_args',
 			array(
 				'before' => '<div class="page-links">' . esc_html__('Pages:', 'wsstheme'),
 				'after'  => '</div>',

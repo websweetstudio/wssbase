@@ -8,11 +8,11 @@
 // Exit if accessed directly.
 defined( 'ABSPATH' ) || exit;
 
-if ( ! function_exists( 'wss_scripts' ) ) {
+if ( ! function_exists( 'wsstheme_scripts' ) ) {
 	/**
 	 * Load theme's JavaScript and CSS sources.
 	 */
-	function wss_scripts() {
+	function wsstheme_scripts() {
 		// Get the theme data.
 		$the_theme         = wp_get_theme();
 		$theme_version     = $the_theme->get( 'Version' );
@@ -33,6 +33,6 @@ if ( ! function_exists( 'wss_scripts' ) ) {
 			wp_enqueue_script( 'comment-reply' );
 		}
 	}
-} // End of if function_exists( 'wss_scripts' ).
+} // End of if function_exists( 'wsstheme_scripts' ).
 
-add_action( 'wp_enqueue_scripts', 'wss_scripts' );
+add_action( 'wp_enqueue_scripts', 'wsstheme_scripts' );

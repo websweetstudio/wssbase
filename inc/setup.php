@@ -13,9 +13,9 @@ if ( ! isset( $content_width ) ) {
 	$content_width = 640; /* pixels */
 }
 
-add_action( 'after_setup_theme', 'wss_setup' );
+add_action( 'after_setup_theme', 'wsstheme_setup' );
 
-if ( ! function_exists( 'wss_setup' ) ) {
+if ( ! function_exists( 'wsstheme_setup' ) ) {
 	/**
 	 * Sets up theme defaults and registers support for various WordPress features.
 	 *
@@ -23,7 +23,7 @@ if ( ! function_exists( 'wss_setup' ) ) {
 	 * runs before the init hook. The init hook is too late for some features, such
 	 * as indicating support for post thumbnails.
 	 */
-	function wss_setup() {
+	function wsstheme_setup() {
 		/*
 		 * Make theme available for translation.
 		 * Translations can be filed in the /languages/ directory.
@@ -109,7 +109,7 @@ if ( ! function_exists( 'wss_setup' ) ) {
 		add_theme_support( "html5", array( "search-form", "comment-form", "comment-list", "gallery", "caption" ) );
 
 		// Check and setup theme default settings.
-		wss_setup_theme_default_settings();
+		wsstheme_setup_theme_default_settings();
 
 	}
 }

@@ -17,7 +17,7 @@ defined( 'ABSPATH' ) || exit;
 
 		<div class="entry-meta">
 
-			<?php wss_posted_on(); ?>
+			<?php wsstheme_posted_on(); ?>
 
 		</div><!-- .entry-meta -->
 
@@ -29,14 +29,14 @@ defined( 'ABSPATH' ) || exit;
 
 		<?php
 		the_content();
-		wss_link_pages();
+		wsstheme_link_pages();
 		?>
 
 	</div><!-- .entry-content -->
 
 	<footer class="entry-footer">
 
-		<?php wss_entry_footer(); ?>
+		<?php wsstheme_entry_footer(); ?>
 
 	</footer><!-- .entry-footer -->
 

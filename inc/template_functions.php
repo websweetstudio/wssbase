@@ -8,43 +8,43 @@
 // Exit if accessed directly.
 defined( 'ABSPATH' ) || exit;
 
-if ( ! function_exists( 'wss_site_info' ) ) {
+if ( ! function_exists( 'wsstheme_site_info' ) ) {
 	/**
 	 * Add site info hook to WP hook library.
 	 */
-	function wss_site_info() {
-		do_action( 'wss_site_info' );
+	function wsstheme_site_info() {
+		do_action( 'wsstheme_site_info' );
 	}
 }
 
-if ( ! function_exists( 'wss_add_site_info' ) ) {
+if ( ! function_exists( 'wsstheme_add_site_info' ) ) {
 	/**
 	 * Add site info content.
 	 */
-	function wss_add_site_info() {
+	function wsstheme_add_site_info() {
 		$the_theme = wp_get_theme();
 		$year 	= date( 'Y' );
 		$site_title = get_bloginfo( 'name' );
 		$site_info =  "Copyright $year &copy; $site_title. All rights reserved | Powered by <a href='https://websweetstudio.com/'>websweetstudio.com</a>";
 
 		// Check if customizer site info has value.
-		if ( get_theme_mod( 'wss_site_info_override' ) ) {
-			$site_info = get_theme_mod( 'wss_site_info_override' );
+		if ( get_theme_mod( 'wsstheme_site_info_override' ) ) {
+			$site_info = get_theme_mod( 'wsstheme_site_info_override' );
 		}
 
 		$site_info = '<div class="text-center">'.$site_info.'</div>';
 
-		echo apply_filters( 'wss_site_info_content', $site_info ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+		echo apply_filters( 'wsstheme_site_info_content', $site_info ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 
 	}
 }
 
-if( ! function_exists( 'wss_add_navbar' ) ) {
+if( ! function_exists( 'wsstheme_add_navbar' ) ) {
 	/**
 	 * Add navbar.
 	 */
-	function wss_add_navbar() {
-		$header_position   = get_theme_mod( 'wss_header_position', 'position-relative' );
+	function wsstheme_add_navbar() {
+		$header_position   = get_theme_mod( 'wsstheme_header_position', 'position-relative' );
 		?>
 
 		<header id="wrapper-navbar" class="<?php echo $header_position; ?> bg-white shadow-light">
@@ -52,7 +52,7 @@ if( ! function_exists( 'wss_add_navbar' ) ) {
 			<a class="visually-hidden-focusable" href="#content"><?php esc_html_e( 'Skip to content', 'wsstheme' ); ?></a>
 
 			<?php 
-				do_action( 'wss_navbar' );
+				do_action( 'wsstheme_navbar' );
 			?>
 
 		</header><!-- #wrapper-navbar end -->
@@ -61,18 +61,18 @@ if( ! function_exists( 'wss_add_navbar' ) ) {
 	}
 }
 
-if( ! function_exists( 'wss_add_footer' ) ) {
+if( ! function_exists( 'wsstheme_add_footer' ) ) {
 	/**
 	 * Add footer.
 	 */
-	function wss_add_footer() {
-		$container = get_theme_mod( 'wss_container_type' );
+	function wsstheme_add_footer() {
+		$container = get_theme_mod( 'wsstheme_container_type' );
 		?>
 		<div class="wrapper-footer" id="wrapper-footer">
 			<footer class="site-footer" id="colophon">
 				<div class="<?php echo esc_attr( $container ); ?> py-3">
 					<div class="site-info">
-						<?php wss_site_info(); ?>
+						<?php wsstheme_site_info(); ?>
 					</div><!-- .site-info -->
 				</div><!-- container end -->
 			</footer><!-- #colophon -->
@@ -81,28 +81,28 @@ if( ! function_exists( 'wss_add_footer' ) ) {
 	}
 }
 
-if (!function_exists('wss_color_scheme')) {
+if (!function_exists('wsstheme_color_scheme')) {
 	/**
 	 * Membuat color scheme.
 	 *
 	 * @return array
 	 */
-	function wss_color_scheme()
+	function wsstheme_color_scheme()
 	{
 		$color_scheme = isset($_COOKIE["color_scheme"]) ? $_COOKIE["color_scheme"] : 'light';
 		echo 'data-bs-theme="' . $color_scheme . '"';
 	}
 }
 
-if (!function_exists('wss_navbar_collapse')) {
+if (!function_exists('wsstheme_navbar_collapse')) {
 	/**
 	 * Navbar Collapse
 	 *
 	 * @return array
 	 */
-	function wss_navbar_collapse()
+	function wsstheme_navbar_collapse()
 	{
-		$container = get_theme_mod( 'wss_container_type' );
+		$container = get_theme_mod( 'wsstheme_container_type' );
 		?>
 		
 		<nav id="main-nav" class="navbar navbar-expand-md navbar-light py-3" aria-labelledby="main-nav-label">
@@ -148,7 +148,7 @@ if (!function_exists('wss_navbar_collapse')) {
 						'fallback_cb'     => '',
 						'menu_id'         => 'main-menu',
 						'depth'           => 2,
-						'walker'          => new wss_WP_Bootstrap_Navwalker(),
+						'walker'          => new wsstheme_WP_Bootstrap_Navwalker(),
 					)
 				);
 				?>
@@ -160,15 +160,15 @@ if (!function_exists('wss_navbar_collapse')) {
 	}
 }
 
-if (!function_exists('wss_navbar_offcanvas')) {
+if (!function_exists('wsstheme_navbar_offcanvas')) {
 	/**
 	 * Navbar Off Canvas
 	 *
 	 * @return array
 	 */
-	function wss_navbar_offcanvas()
+	function wsstheme_navbar_offcanvas()
 	{
-		$container = get_theme_mod('wss_container_type');
+		$container = get_theme_mod('wsstheme_container_type');
 		?>
 		
 		<nav id="main-nav" class="navbar navbar-expand-md navbar-light py-3" aria-labelledby="main-nav-label">
@@ -221,7 +221,7 @@ if (!function_exists('wss_navbar_offcanvas')) {
 							'fallback_cb'     => '',
 							'menu_id'         => 'main-menu',
 							'depth'           => 2,
-							'walker'          => new wss_WP_Bootstrap_Navwalker(),
+							'walker'          => new wsstheme_WP_Bootstrap_Navwalker(),
 						)
 					);
 					?>

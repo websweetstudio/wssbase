@@ -14,9 +14,9 @@ defined( 'ABSPATH' ) || exit;
  *
  * @link https://developer.wordpress.org/reference/hooks/dynamic_sidebar_params/
  */
-add_filter( 'dynamic_sidebar_params', 'wss_widget_classes' );
+add_filter( 'dynamic_sidebar_params', 'wsstheme_widget_classes' );
 
-if ( ! function_exists( 'wss_widget_classes' ) ) {
+if ( ! function_exists( 'wsstheme_widget_classes' ) ) {
 
 	/**
 	 * Count number of visible widgets in a sidebar and add classes to widgets accordingly,
@@ -49,7 +49,7 @@ if ( ! function_exists( 'wss_widget_classes' ) ) {
 	 * }
 	 * @return array $params
 	 */
-	function wss_widget_classes( $params ) {
+	function wsstheme_widget_classes( $params ) {
 
 		global $sidebars_widgets;
 
@@ -89,15 +89,15 @@ if ( ! function_exists( 'wss_widget_classes' ) ) {
 		return $params;
 
 	}
-} // End of if function_exists( 'wss_widget_classes' ).
+} // End of if function_exists( 'wsstheme_widget_classes' ).
 
-add_action( 'widgets_init', 'wss_widgets_init' );
+add_action( 'widgets_init', 'wsstheme_widgets_init' );
 
-if ( ! function_exists( 'wss_widgets_init' ) ) {
+if ( ! function_exists( 'wsstheme_widgets_init' ) ) {
 	/**
 	 * Initializes themes widgets.
 	 */
-	function wss_widgets_init() {
+	function wsstheme_widgets_init() {
 		register_sidebar(
 			array(
 				'name'          => __( 'Right Sidebar', 'wsstheme' ),
@@ -171,4 +171,4 @@ if ( ! function_exists( 'wss_widgets_init' ) ) {
 		);
 
 	}
-} // End of function_exists( 'wss_widgets_init' ).
+} // End of function_exists( 'wsstheme_widgets_init' ).

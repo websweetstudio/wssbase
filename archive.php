@@ -12,7 +12,7 @@ defined( 'ABSPATH' ) || exit;
 
 get_header();
 
-$container = get_theme_mod( 'wss_container_type' );
+$container = get_theme_mod( 'wsstheme_container_type' );
 ?>
 
 <div class="wrapper" id="archive-wrapper">
@@ -56,7 +56,7 @@ $container = get_theme_mod( 'wss_container_type' );
 
 			<?php
 			// Display the pagination component.
-			wss_pagination();
+			wsstheme_pagination();
 			// Do the right sidebar check.
 			get_template_part( 'global-templates/right-sidebar-check' );
 			?>

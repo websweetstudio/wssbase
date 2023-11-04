@@ -56,7 +56,7 @@ if ( post_password_required() ) {
 
 		</h2><!-- .comments-title -->
 
-		<?php wss_comment_navigation( 'comment-nav-above' ); ?>
+		<?php wsstheme_comment_navigation( 'comment-nav-above' ); ?>
 
 		<ol class="comment-list">
 
@@ -71,7 +71,7 @@ if ( post_password_required() ) {
 
 		</ol><!-- .comment-list -->
 
-		<?php wss_comment_navigation( 'comment-nav-below' ); ?>
+		<?php wsstheme_comment_navigation( 'comment-nav-below' ); ?>
 
 	<?php endif; // End of if have_comments(). ?>
 

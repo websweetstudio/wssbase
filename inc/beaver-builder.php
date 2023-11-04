@@ -9,7 +9,7 @@
 defined( 'ABSPATH' ) || exit;
 
 
-function wss_header_footer_render() {
+function wsstheme_header_footer_render() {
 
 	if ( ! class_exists( 'FLThemeBuilderLayoutData' ) ) {
 		return;
@@ -20,8 +20,8 @@ function wss_header_footer_render() {
 
 	// If we have a header, remove the theme header and hook in Theme Builder's.
 	if ( ! empty( $header_ids ) ) {		 
-		remove_all_actions( 'wss_header');		
-		add_action( 'wss_header', 'FLThemeBuilderLayoutRenderer::render_header' );
+		remove_all_actions( 'wsstheme_header');		
+		add_action( 'wsstheme_header', 'FLThemeBuilderLayoutRenderer::render_header' );
 	}
 
 	// Get the footer ID.
@@ -29,21 +29,21 @@ function wss_header_footer_render() {
 
 	// If we have a footer, remove the theme footer and hook in Theme Builder's.
 	if ( ! empty( $footer_ids ) ) {
-		remove_all_actions( 'wss_footer');		
-		add_action( 'wss_footer', 'FLThemeBuilderLayoutRenderer::render_footer' );
+		remove_all_actions( 'wsstheme_footer');		
+		add_action( 'wsstheme_footer', 'FLThemeBuilderLayoutRenderer::render_footer' );
 	}
 }
-add_action( 'wp', 'wss_header_footer_render' );
+add_action( 'wp', 'wsstheme_header_footer_render' );
 
 
-add_filter( 'fl_theme_builder_part_hooks', 'wss_register_part_hooks' );
-function wss_register_part_hooks() {
+add_filter( 'fl_theme_builder_part_hooks', 'wsstheme_register_part_hooks' );
+function wsstheme_register_part_hooks() {
   return array(
     array(
       'label' => 'Header',
       'hooks' => array(
-        'wss_left_sidebar' => 'Left Sidebar',
-        'wss_right_sidebar'  => 'Right Sidebar',
+        'wsstheme_left_sidebar' => 'Left Sidebar',
+        'wsstheme_right_sidebar'  => 'Right Sidebar',
       )
     ),
   );

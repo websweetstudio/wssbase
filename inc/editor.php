@@ -8,42 +8,42 @@
 // Exit if accessed directly.
 defined( 'ABSPATH' ) || exit;
 
-add_action( 'admin_init', 'wss_wpdocs_theme_add_editor_styles' );
+add_action( 'admin_init', 'wsstheme_wpdocs_theme_add_editor_styles' );
 
-if ( ! function_exists( 'wss_wpdocs_theme_add_editor_styles' ) ) {
+if ( ! function_exists( 'wsstheme_wpdocs_theme_add_editor_styles' ) ) {
 	/**
 	 * Registers an editor stylesheet for the theme.
 	 */
-	function wss_wpdocs_theme_add_editor_styles() {
+	function wsstheme_wpdocs_theme_add_editor_styles() {
 		add_editor_style( 'css/custom-editor-style.min.css' );
 	}
 }
 
-add_filter( 'mce_buttons_2', 'wss_tiny_mce_style_formats' );
+add_filter( 'mce_buttons_2', 'wsstheme_tiny_mce_style_formats' );
 
-if ( ! function_exists( 'wss_tiny_mce_style_formats' ) ) {
+if ( ! function_exists( 'wsstheme_tiny_mce_style_formats' ) ) {
 	/**
 	 * Reveals TinyMCE's hidden Style dropdown.
 	 *
 	 * @param array $buttons Array of Tiny MCE's button ids.
 	 * @return array
 	 */
-	function wss_tiny_mce_style_formats( $buttons ) {
+	function wsstheme_tiny_mce_style_formats( $buttons ) {
 		array_unshift( $buttons, 'styleselect' );
 		return $buttons;
 	}
 }
 
-add_filter( 'tiny_mce_before_init', 'wss_tiny_mce_before_init' );
+add_filter( 'tiny_mce_before_init', 'wsstheme_tiny_mce_before_init' );
 
-if ( ! function_exists( 'wss_tiny_mce_before_init' ) ) {
+if ( ! function_exists( 'wsstheme_tiny_mce_before_init' ) ) {
 	/**
 	 * Adds style options to TinyMCE's Style dropdown.
 	 *
 	 * @param array $settings TinyMCE settings array.
 	 * @return array
 	 */
-	function wss_tiny_mce_before_init( $settings ) {
+	function wsstheme_tiny_mce_before_init( $settings ) {
 
 		$style_formats = array(
 			array(
@@ -84,21 +84,21 @@ if ( ! function_exists( 'wss_tiny_mce_before_init' ) ) {
 	}
 }
 
-add_filter( 'mce_buttons', 'wss_tiny_mce_blockquote_button' );
+add_filter( 'mce_buttons', 'wsstheme_tiny_mce_blockquote_button' );
 
-if ( ! function_exists( 'wss_tiny_mce_blockquote_button' ) ) {
+if ( ! function_exists( 'wsstheme_tiny_mce_blockquote_button' ) ) {
 	/**
 	 * Removes the blockquote button from the TinyMCE toolbar.
 	 *
 	 * We provide the blockquote via the style formats. Using the style formats
 	 * blockquote receives the proper Bootstrap classes.
 	 *
-	 * @see wss_tiny_mce_before_init()
+	 * @see wsstheme_tiny_mce_before_init()
 	 *
 	 * @param array $buttons TinyMCE buttons array.
 	 * @return array TinyMCE buttons array without the blockquote button.
 	 */
-	function wss_tiny_mce_blockquote_button( $buttons ) {
+	function wsstheme_tiny_mce_blockquote_button( $buttons ) {
 		foreach ( $buttons as $key => $button ) {
 			if ( 'blockquote' === $button ) {
 				unset( $buttons[ $key ] );

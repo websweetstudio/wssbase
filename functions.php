@@ -10,10 +10,10 @@
 defined('ABSPATH') || exit;
 
 // Wsstheme's includes directory.
-$wss_inc_dir = 'inc';
+$wsstheme_inc_dir = 'inc';
 
 // Array of files to include.
-$wss_includes = array(
+$wsstheme_includes = array(
 	'/theme-settings.php',                  // Initialize theme default settings.
 	'/setup.php',                           // Theme setup and custom theme supports.
 	'/widgets.php',                         // Register widget area.
@@ -34,15 +34,15 @@ $wss_includes = array(
 
 // Load WooCommerce functions if WooCommerce is activated.
 if (class_exists('WooCommerce')) {
-	$wss_includes[] = '/woocommerce.php';
+	$wsstheme_includes[] = '/woocommerce.php';
 }
 
 // Load Jetpack compatibility file if Jetpack is activiated.
 if (class_exists('Jetpack')) {
-	$wss_includes[] = '/jetpack.php';
+	$wsstheme_includes[] = '/jetpack.php';
 }
 
 // Include files.
-foreach ($wss_includes as $file) {
-	require_once get_theme_file_path($wss_inc_dir . $file);
+foreach ($wsstheme_includes as $file) {
+	require_once get_theme_file_path($wsstheme_inc_dir . $file);
 }

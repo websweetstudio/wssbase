@@ -14,7 +14,7 @@ defined( 'ABSPATH' ) || exit;
 
 <?php get_template_part( 'sidebar-templates/sidebar', 'footerfull' ); ?>
 
-<?php do_action( 'wss_footer' ); ?>
+<?php do_action( 'wsstheme_footer' ); ?>
 
 </div><!-- #page we need this extra closing tag here -->
 

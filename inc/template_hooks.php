@@ -9,17 +9,17 @@
 defined( 'ABSPATH' ) || exit;
 
 
-$navbar_type       = get_theme_mod( 'wss_navbar_type', 'offcanvas' );
+$navbar_type       = get_theme_mod( 'wsstheme_navbar_type', 'offcanvas' );
 if($navbar_type == 'offcanvas') {
-	add_action( 'wss_navbar', 'wss_navbar_offcanvas' );
+	add_action( 'wsstheme_navbar', 'wsstheme_navbar_offcanvas' );
 } else {
-	add_action( 'wss_navbar', 'wss_navbar_collapse' );
+	add_action( 'wsstheme_navbar', 'wsstheme_navbar_collapse' );
 }
 
-add_action( 'wss_header', 'wss_add_navbar' );	// Add navbar.
+add_action( 'wsstheme_header', 'wsstheme_add_navbar' );	// Add navbar.
 
-add_action( 'wss_footer', 'wss_add_footer' );	// Add footer.
+add_action( 'wsstheme_footer', 'wsstheme_add_footer' );	// Add footer.
 
-add_action( 'wss_site_info', 'wss_add_site_info' );
+add_action( 'wsstheme_site_info', 'wsstheme_add_site_info' );
 
 

@@ -28,7 +28,7 @@ defined( 'ABSPATH' ) || exit;
 	
 	<?php if ( 'post' === get_post_type() ) : ?>
 	<div class="entry-meta text-muted">
-		<?php wss_posted_on(); ?>
+		<?php wsstheme_posted_on(); ?>
 	</div><!-- .entry-meta -->
 	<?php endif; ?>
 
@@ -36,14 +36,14 @@ defined( 'ABSPATH' ) || exit;
 
 		<?php
 		the_excerpt();
-		wss_link_pages();
+		wsstheme_link_pages();
 		?>
 
 	</div><!-- .entry-content -->
 
 	<footer class="entry-footer">
 
-		<?php wss_entry_footer(); ?>
+		<?php wsstheme_entry_footer(); ?>
 
 	</footer><!-- .entry-footer -->
 

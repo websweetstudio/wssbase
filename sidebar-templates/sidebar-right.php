@@ -13,7 +13,7 @@ if ( ! is_active_sidebar( 'right-sidebar' ) ) {
 }
 
 // when both sidebars turned on reduce col size to 3 from 4.
-$sidebar_pos = get_theme_mod( 'wss_sidebar_position' );
+$sidebar_pos = get_theme_mod( 'wsstheme_sidebar_position' );
 ?>
 
 <?php if ( 'both' === $sidebar_pos ) : ?>
@@ -22,7 +22,7 @@ $sidebar_pos = get_theme_mod( 'wss_sidebar_position' );
 	<div class="col-md-4 widget-area" id="right-sidebar">
 <?php endif; ?>
 <?php 
-do_action( 'wss_right_sidebar' );
+do_action( 'wsstheme_right_sidebar' );
 dynamic_sidebar( 'right-sidebar' );
 ?>
 
