@@ -38,7 +38,7 @@
   "author": "websweetstudio.com",
   "license": "GPL-2.0",
   "bugs": {
-    "url": "https://github.com/websweetstudio/wssthemeissues"
+    "url": "https://github.com/websweetstudio/wsstheme/issues"
   },
   "homepage": "https://websweetstudio.com",
   "devDependencies": {

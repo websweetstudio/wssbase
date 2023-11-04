@@ -1,1 +1,63 @@
-Worpress theme starter
+=== Wss Theme ===
+Contributors: @aadiityaak
+Requires at least: 4.7
+Tested up to: 6.3
+Requires PHP: 7.4
+Stable tag: 1.5
+License: GPLv2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+
+
+== Description ==
+
+Wsstheme is a simple starter theme for WordPress that offers a clean 
+and minimalist design, making it both user-friendly and highly customizable.
+
+== Changelog ==
+
+= 2.5 =
+* Released: 04 November 2023
+
+= 1.0 =
+* Released: 12 December 2021
+
+Initial release
+
+== Copyright ==
+
+Wss Theme, Copyright 2021-2023 WebsweetStudio.com
+Wss Theme is distributed under the terms of the GNU GPL.
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 2 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+GNU General Public License for more details.
+
+Wss Theme bundles the following third-party resources:
+
+Illustrations by @aadiityaak
+License: Creative Commons Zero (CC0), https://creativecommons.org/publicdomain/zero/1.0/
+
+Photo by Mads Schmidt Rasmussen on Unsplash
+License: Free to use under the Unsplash License
+Source: https://unsplash.com/photos/a-foggy-landscape-with-trees-in-the-distance-6YmzwamGzCg
+
+Bootstrap
+License: Code released under the MIT License
+Source: https://getbootstrap.com/
+
+WP Bootstrap Navwalker by Edward McIntyre & William Patton
+Source: https://github.com/twittem/wp-bootstrap-navwalker (GNU GPLv3)
+
+Space Grotesk
+Copyright (c) 2013-2016 Florian Karsten
+License: These fonts are licensed under the Open Font License.
+Source: https://floriankarsten.github.io/space-grotesk/
+
+Underscores
+https://underscores.me/, (C) 2012-2023 Automattic, Inc., [GPLv2 or later](https://www.gnu.org/licenses/gpl-2.0.html)
