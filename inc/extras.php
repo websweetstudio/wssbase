@@ -33,7 +33,7 @@ if ( ! function_exists( 'wsstheme_body_classes' ) ) {
 		// Adds a body class based on the presence of a sidebar.
 		$sidebar_pos = get_theme_mod( 'wsstheme_sidebar_position' );
 		if ( is_page_template( 'page-templates/fullwidthpage.php' ) ) {
-			$classes[] = 'wss-no-sidebar';
+			$classes[] = 'wsstheme-no-sidebar';
 		} elseif (
 			is_page_template(
 				array(
@@ -43,11 +43,11 @@ if ( ! function_exists( 'wsstheme_body_classes' ) ) {
 				)
 			)
 		) {
-			$classes[] = 'wss-has-sidebar';
+			$classes[] = 'wsstheme-has-sidebar';
 		} elseif ( 'none' !== $sidebar_pos ) {
-			$classes[] = 'wss-has-sidebar';
+			$classes[] = 'wsstheme-has-sidebar';
 		} else {
-			$classes[] = 'wss-no-sidebar';
+			$classes[] = 'wsstheme-no-sidebar';
 		}
 
 		return $classes;

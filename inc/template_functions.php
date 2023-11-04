@@ -233,3 +233,18 @@ if (!function_exists('wsstheme_navbar_offcanvas')) {
 		<?php
 	}
 }
+
+if (!function_exists('wsstheme_skip_link')) {
+    /**
+     * Skip Link
+     */
+    function wsstheme_skip_link() {
+        echo '<a class="skip-link screen-reader-text" href="#content">Skip to content</a>';
+    }
+
+    function wsstheme_add_skip_link() {
+        add_action('wp_body_open', 'wsstheme_skip_link');
+    }
+
+    add_action('wp_enqueue_scripts', 'wsstheme_add_skip_link');
+}
