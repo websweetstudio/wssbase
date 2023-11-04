@@ -5,7 +5,7 @@ const year = new Date().getFullYear();
 
 function getBanner(pluginFilename) {
 	return `/*!
-  * Wss${pluginFilename ? ` ${pluginFilename}` : ""} v${pkg.version} (${
+  * Wss Theme ${pluginFilename ? ` ${pluginFilename}` : ""} v${pkg.version} (${
 		pkg.homepage
 	})
   * Copyright 2013-${year} ${pkg.author}
