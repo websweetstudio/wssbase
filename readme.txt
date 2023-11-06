@@ -15,6 +15,10 @@ and minimalist design, making it both user-friendly and highly customizable.
 
 == Changelog ==
 
+= 1.5.3 =
+* Released: 04 November 2023
+- remove reference to unsplash
+
 = 1.5.1 =
 * Released: 04 November 2023
 
@@ -42,10 +46,6 @@ Wss Theme bundles the following third-party resources:
 
 Illustrations by @aadiityaak
 License: Creative Commons Zero (CC0), https://creativecommons.org/publicdomain/zero/1.0/
-
-Photo by Mads Schmidt Rasmussen on Unsplash
-License: Free to use under the Unsplash License
-Source: https://unsplash.com/photos/a-foggy-landscape-with-trees-in-the-distance-6YmzwamGzCg
 
 Bootstrap
 License: Code released under the MIT License
