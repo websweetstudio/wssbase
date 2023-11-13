@@ -2,7 +2,7 @@
 /**
  * Wss Theme Customizer
  *
- * @package Wss
+ * @package Wssbase
  */
 
 // Exit if accessed directly.
@@ -13,35 +13,35 @@ defined( 'ABSPATH' ) || exit;
  *
  * @param WP_Customize_Manager $wp_customize Theme Customizer object.
  */
-if ( ! function_exists( 'wsstheme_customize_register' ) ) {
+if ( ! function_exists( 'wssbase_customize_register' ) ) {
 	/**
 	 * Register basic customizer support.
 	 *
 	 * @param object $wp_customize Customizer reference.
 	 */
-	function wsstheme_customize_register( $wp_customize ) {
+	function wssbase_customize_register( $wp_customize ) {
 		$wp_customize->get_setting( 'blogname' )->transport         = 'postMessage';
 		$wp_customize->get_setting( 'blogdescription' )->transport  = 'postMessage';
 	}
 }
-add_action( 'customize_register', 'wsstheme_customize_register' );
+add_action( 'customize_register', 'wssbase_customize_register' );
 
-if ( ! function_exists( 'wsstheme_theme_customize_register' ) ) {
+if ( ! function_exists( 'wssbase_theme_customize_register' ) ) {
 	/**
 	 * Register individual settings through customizer's API.
 	 *
 	 * @param WP_Customize_Manager $wp_customize Customizer reference.
 	 */
-	function wsstheme_theme_customize_register( $wp_customize ) {
+	function wssbase_theme_customize_register( $wp_customize ) {
 
 		// Theme layout settings.
 		$wp_customize->add_section(
-			'wsstheme_theme_layout_options',
+			'wssbase_theme_layout_options',
 			array(
-				'title'       => __( 'Theme Layout Settings', 'wsstheme' ),
+				'title'       => __( 'Theme Layout Settings', 'wssbase' ),
 				'capability'  => 'edit_theme_options',
-				'description' => __( 'Container width and sidebar defaults', 'wsstheme' ),
-				'priority'    => apply_filters( 'wsstheme_theme_layout_options_priority', 160 ),
+				'description' => __( 'Container width and sidebar defaults', 'wssbase' ),
+				'priority'    => apply_filters( 'wssbase_theme_layout_options_priority', 160 ),
 			)
 		);
 
@@ -52,7 +52,7 @@ if ( ! function_exists( 'wsstheme_theme_customize_register' ) ) {
 		 * @param WP_Customize_Setting $setting Setting instance.
 		 * @return string Sanitized slug if it is a valid choice; otherwise, the setting default.
 		 */
-		function wsstheme_theme_slug_sanitize_select( $input, $setting ) {
+		function wssbase_theme_slug_sanitize_select( $input, $setting ) {
 
 			// Ensure input is a slug (lowercase alphanumeric characters, dashes and underscores are allowed only).
 			$input = sanitize_key( $input );
@@ -66,11 +66,11 @@ if ( ! function_exists( 'wsstheme_theme_customize_register' ) ) {
 		}
 
 		$wp_customize->add_setting(
-			'wsstheme_container_type',
+			'wssbase_container_type',
 			array(
 				'default'           => 'container',
 				'type'              => 'theme_mod',
-				'sanitize_callback' => 'wsstheme_theme_slug_sanitize_select',
+				'sanitize_callback' => 'wssbase_theme_slug_sanitize_select',
 				'capability'        => 'edit_theme_options',
 			)
 		);
@@ -78,28 +78,28 @@ if ( ! function_exists( 'wsstheme_theme_customize_register' ) ) {
 		$wp_customize->add_control(
 			new WP_Customize_Control(
 				$wp_customize,
-				'wsstheme_container_type',
+				'wssbase_container_type',
 				array(
-					'label'       => __( 'Container Width', 'wsstheme' ),
-					'description' => __( 'Choose between Bootstrap\'s container and container-fluid', 'wsstheme' ),
-					'section'     => 'wsstheme_theme_layout_options',
-					'settings'    => 'wsstheme_container_type',
+					'label'       => __( 'Container Width', 'wssbase' ),
+					'description' => __( 'Choose between Bootstrap\'s container and container-fluid', 'wssbase' ),
+					'section'     => 'wssbase_theme_layout_options',
+					'settings'    => 'wssbase_container_type',
 					'type'        => 'select',
 					'choices'     => array(
-						'container'       => __( 'Fixed width container', 'wsstheme' ),
-						'container-fluid' => __( 'Full width container', 'wsstheme' ),
+						'container'       => __( 'Fixed width container', 'wssbase' ),
+						'container-fluid' => __( 'Full width container', 'wssbase' ),
 					),
-					'priority'    => apply_filters( 'wsstheme_container_type_priority', 10 ),
+					'priority'    => apply_filters( 'wssbase_container_type_priority', 10 ),
 				)
 			)
 		);
 
 		$wp_customize->add_setting(
-			'wsstheme_header_position',
+			'wssbase_header_position',
 			array(
 				'default'           => 'position-relative',
 				'type'              => 'theme_mod',
-				'sanitize_callback' => 'wsstheme_theme_slug_sanitize_select',
+				'sanitize_callback' => 'wssbase_theme_slug_sanitize_select',
 				'capability'        => 'edit_theme_options',
 			)
 		);
@@ -107,29 +107,29 @@ if ( ! function_exists( 'wsstheme_theme_customize_register' ) ) {
 		$wp_customize->add_control(
 			new WP_Customize_Control(
 				$wp_customize,
-				'wsstheme_header_position',
+				'wssbase_header_position',
 				array(
-					'label'             => __( 'Header Position', 'wsstheme' ),
+					'label'             => __( 'Header Position', 'wssbase' ),
 					'description'       => __(
 						'Set header\'s default position. Can either be: fixed, relative, or static.',
-						'wsstheme'
+						'wssbase'
 					),
-					'section'           => 'wsstheme_theme_layout_options',
-					'settings'          => 'wsstheme_header_position',
+					'section'           => 'wssbase_theme_layout_options',
+					'settings'          => 'wssbase_header_position',
 					'type'              => 'select',
-					'sanitize_callback' => 'wsstheme_theme_slug_sanitize_select',
+					'sanitize_callback' => 'wssbase_theme_slug_sanitize_select',
 					'choices'           => array(
-						'position-relative' => __( 'Relative', 'wsstheme' ),
-						'fixed-top'  => __( 'Fixed', 'wsstheme' ),
-						'sticky-top'  => __( 'Static', 'wsstheme' ),
+						'position-relative' => __( 'Relative', 'wssbase' ),
+						'fixed-top'  => __( 'Fixed', 'wssbase' ),
+						'sticky-top'  => __( 'Static', 'wssbase' ),
 					),
-					'priority'          => apply_filters( 'wsstheme_sidebar_position_priority', 20 ),
+					'priority'          => apply_filters( 'wssbase_sidebar_position_priority', 20 ),
 				)
 			)
 		);
 
 		$wp_customize->add_setting(
-			'wsstheme_navbar_type',
+			'wssbase_navbar_type',
 			array(
 				'default'           => 'offcanvas',
 				'type'              => 'theme_mod',
@@ -141,28 +141,28 @@ if ( ! function_exists( 'wsstheme_theme_customize_register' ) ) {
 		$wp_customize->add_control(
 			new WP_Customize_Control(
 				$wp_customize,
-				'wsstheme_navbar_type',
+				'wssbase_navbar_type',
 				array(
-					'label'             => __( 'Responsive Navigation Type', 'wsstheme' ),
+					'label'             => __( 'Responsive Navigation Type', 'wssbase' ),
 					'description'       => __(
 						'Choose between an expanding and collapsing navbar or an offcanvas drawer.',
-						'wsstheme'
+						'wssbase'
 					),
-					'section'           => 'wsstheme_theme_layout_options',
-					'settings'          => 'wsstheme_navbar_type',
+					'section'           => 'wssbase_theme_layout_options',
+					'settings'          => 'wssbase_navbar_type',
 					'type'              => 'select',
-					'sanitize_callback' => 'wsstheme_theme_slug_sanitize_select',
+					'sanitize_callback' => 'wssbase_theme_slug_sanitize_select',
 					'choices'           => array(
-						'collapse'  => __( 'Collapse', 'wsstheme' ),
-						'offcanvas' => __( 'Offcanvas', 'wsstheme' ),
+						'collapse'  => __( 'Collapse', 'wssbase' ),
+						'offcanvas' => __( 'Offcanvas', 'wssbase' ),
 					),
-					'priority'          => apply_filters( 'wsstheme_navbar_type_priority', 20 ),
+					'priority'          => apply_filters( 'wssbase_navbar_type_priority', 20 ),
 				)
 			)
 		);
 
 		$wp_customize->add_setting(
-			'wsstheme_sidebar_position',
+			'wssbase_sidebar_position',
 			array(
 				'default'           => 'right',
 				'type'              => 'theme_mod',
@@ -174,30 +174,30 @@ if ( ! function_exists( 'wsstheme_theme_customize_register' ) ) {
 		$wp_customize->add_control(
 			new WP_Customize_Control(
 				$wp_customize,
-				'wsstheme_sidebar_position',
+				'wssbase_sidebar_position',
 				array(
-					'label'             => __( 'Sidebar Positioning', 'wsstheme' ),
+					'label'             => __( 'Sidebar Positioning', 'wssbase' ),
 					'description'       => __(
 						'Set sidebar\'s default position. Can either be: right, left, both or none. Note: this can be overridden on individual pages.',
-						'wsstheme'
+						'wssbase'
 					),
-					'section'           => 'wsstheme_theme_layout_options',
-					'settings'          => 'wsstheme_sidebar_position',
+					'section'           => 'wssbase_theme_layout_options',
+					'settings'          => 'wssbase_sidebar_position',
 					'type'              => 'select',
-					'sanitize_callback' => 'wsstheme_theme_slug_sanitize_select',
+					'sanitize_callback' => 'wssbase_theme_slug_sanitize_select',
 					'choices'           => array(
-						'right' => __( 'Right sidebar', 'wsstheme' ),
-						'left'  => __( 'Left sidebar', 'wsstheme' ),
-						'both'  => __( 'Left & Right sidebars', 'wsstheme' ),
-						'none'  => __( 'No sidebar', 'wsstheme' ),
+						'right' => __( 'Right sidebar', 'wssbase' ),
+						'left'  => __( 'Left sidebar', 'wssbase' ),
+						'both'  => __( 'Left & Right sidebars', 'wssbase' ),
+						'none'  => __( 'No sidebar', 'wssbase' ),
 					),
-					'priority'          => apply_filters( 'wsstheme_sidebar_position_priority', 20 ),
+					'priority'          => apply_filters( 'wssbase_sidebar_position_priority', 20 ),
 				)
 			)
 		);
 
 		$wp_customize->add_setting(
-			'wsstheme_site_info_override',
+			'wssbase_site_info_override',
 			array(
 				'default'           => '',
 				'type'              => 'theme_mod',
@@ -209,12 +209,12 @@ if ( ! function_exists( 'wsstheme_theme_customize_register' ) ) {
 		$wp_customize->add_control(
 			new WP_Customize_Control(
 				$wp_customize,
-				'wsstheme_site_info_override',
+				'wssbase_site_info_override',
 				array(
-					'label'       => __( 'Footer Site Info', 'wsstheme' ),
-					'description' => __( 'Override site info located at the footer of the page.', 'wsstheme' ),
-					'section'     => 'wsstheme_theme_layout_options',
-					'settings'    => 'wsstheme_site_info_override',
+					'label'       => __( 'Footer Site Info', 'wssbase' ),
+					'description' => __( 'Override site info located at the footer of the page.', 'wssbase' ),
+					'section'     => 'wssbase_theme_layout_options',
+					'settings'    => 'wssbase_site_info_override',
 					'type'        => 'textarea',
 					'priority'    => 20,
 				)
@@ -224,17 +224,17 @@ if ( ! function_exists( 'wsstheme_theme_customize_register' ) ) {
 
 		// Add typography settings.
 		$wp_customize->add_section(
-			'wsstheme_google_fonts_section',
+			'wssbase_google_fonts_section',
 			array(
-				'title'       => __( 'Typography Setting', 'wsstheme' ),
+				'title'       => __( 'Typography Setting', 'wssbase' ),
 				'capability'  => 'edit_theme_options',
-				'description' => __( 'Container width and sidebar defaults', 'wsstheme' ),
-				'priority'    => apply_filters( 'wsstheme_google_fonts_section_priority', 50 ),
+				'description' => __( 'Container width and sidebar defaults', 'wssbase' ),
+				'priority'    => apply_filters( 'wssbase_google_fonts_section_priority', 50 ),
 			)
 		);
 
 		//Sanitizes Fonts
-		function wsstheme_sanitize_fonts( $input ) {
+		function wssbase_sanitize_fonts( $input ) {
 			$valid = array(
 				'Poppins :400italic,700italic,400,700' => 'Poppins',
 				'Source Sans Pro:400,700,400italic,700italic' => 'Source Sans Pro',
@@ -311,11 +311,11 @@ if ( ! function_exists( 'wsstheme_theme_customize_register' ) ) {
 		);
 
 		$wp_customize->add_setting(
-			'wsstheme_headings_fonts', 
+			'wssbase_headings_fonts', 
 			array(
 				'default'           => 'Open Sans:400italic,700italic,400,700',
 				'type'              => 'theme_mod',
-				'sanitize_callback' => 'wsstheme_sanitize_fonts',
+				'sanitize_callback' => 'wssbase_sanitize_fonts',
 				'capability'        => 'edit_theme_options',
 			)
 		);
@@ -323,12 +323,12 @@ if ( ! function_exists( 'wsstheme_theme_customize_register' ) ) {
 		$wp_customize->add_control(
 			new WP_Customize_Control(
 				$wp_customize,
-				'wsstheme_headings_fonts',
+				'wssbase_headings_fonts',
 				array(
-					'label'       => __( 'Site Typograpy', 'wsstheme' ),
-					'description' => __( 'Select your site typography.', 'wsstheme' ),
-					'section'     => 'wsstheme_google_fonts_section',
-					'settings'    => 'wsstheme_headings_fonts',
+					'label'       => __( 'Site Typograpy', 'wssbase' ),
+					'description' => __( 'Select your site typography.', 'wssbase' ),
+					'section'     => 'wssbase_google_fonts_section',
+					'settings'    => 'wssbase_headings_fonts',
 					'type'        => 'select',
 					'priority'    => 20,
 					'choices' => $font_choices
@@ -337,11 +337,11 @@ if ( ! function_exists( 'wsstheme_theme_customize_register' ) ) {
 		);
 
 		$wp_customize->add_setting(
-			'wsstheme_body_fonts', 
+			'wssbase_body_fonts', 
 			array(
 				'default'           => 'Open Sans:400italic,700italic,400,700',
 				'type'              => 'theme_mod',
-				'sanitize_callback' => 'wsstheme_sanitize_fonts',
+				'sanitize_callback' => 'wssbase_sanitize_fonts',
 				'capability'        => 'edit_theme_options',
 			)
 		);
@@ -349,12 +349,12 @@ if ( ! function_exists( 'wsstheme_theme_customize_register' ) ) {
 		$wp_customize->add_control(
 			new WP_Customize_Control(
 				$wp_customize,
-				'wsstheme_body_fonts',
+				'wssbase_body_fonts',
 				array(
-					'label'       => __( 'Body Typography', 'wsstheme' ),
-					'description' => __( 'Select your body typography.', 'wsstheme' ),
-					'section'     => 'wsstheme_google_fonts_section',
-					'settings'    => 'wsstheme_body_fonts',
+					'label'       => __( 'Body Typography', 'wssbase' ),
+					'description' => __( 'Select your body typography.', 'wssbase' ),
+					'section'     => 'wssbase_google_fonts_section',
+					'settings'    => 'wssbase_body_fonts',
 					'type'        => 'select',
 					'priority'    => 30,
 					'choices' => $font_choices
@@ -362,35 +362,35 @@ if ( ! function_exists( 'wsstheme_theme_customize_register' ) ) {
 			)
 		);
 	}
-} // End of if function_exists( 'wsstheme_theme_customize_register' ).
-add_action( 'customize_register', 'wsstheme_theme_customize_register' );
+} // End of if function_exists( 'wssbase_theme_customize_register' ).
+add_action( 'customize_register', 'wssbase_theme_customize_register' );
 
 
-function wsstheme_customizer_scripts() {
-	$headings_font = esc_html(get_theme_mod('wsstheme_headings_fonts'));
-	$body_font = esc_html(get_theme_mod('wsstheme_body_fonts'));
+function wssbase_customizer_scripts() {
+	$headings_font = esc_html(get_theme_mod('wssbase_headings_fonts'));
+	$body_font = esc_html(get_theme_mod('wssbase_body_fonts'));
 
 	if( $headings_font ) {
-		wp_enqueue_style( 'wsstheme-headings-fonts', '//fonts.googleapis.com/css?family='. $headings_font );
+		wp_enqueue_style( 'wssbase-headings-fonts', '//fonts.googleapis.com/css?family='. $headings_font );
 	} else {
-		wp_enqueue_style( 'wsstheme-source-sans', '//fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic');
+		wp_enqueue_style( 'wssbase-source-sans', '//fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic');
 	}
 	if( $body_font ) {
-		wp_enqueue_style( 'wsstheme-body-fonts', '//fonts.googleapis.com/css?family='. $body_font );
+		wp_enqueue_style( 'wssbase-body-fonts', '//fonts.googleapis.com/css?family='. $body_font );
 	} else {
-		wp_enqueue_style( 'wsstheme-source-body', '//fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,400italic,700,600');
+		wp_enqueue_style( 'wssbase-source-body', '//fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,400italic,700,600');
 	}
 }
-add_action( 'wp_enqueue_scripts', 'wsstheme_customizer_scripts' );
+add_action( 'wp_enqueue_scripts', 'wssbase_customizer_scripts' );
 
 /*
  * Props to the BLDR Theme: https://wordpress.org/themes/bldr/
  * */
-function wsstheme_custom_styles($custom) {
+function wssbase_custom_styles($custom) {
 
 	//Fonts
-	$headings_font = esc_html(get_theme_mod('wsstheme_headings_fonts'));
-	$body_font = esc_html(get_theme_mod('wsstheme_body_fonts'));
+	$headings_font = esc_html(get_theme_mod('wssbase_headings_fonts'));
+	$body_font = esc_html(get_theme_mod('wssbase_body_fonts'));
 
 	if ( $headings_font ) {
 		$font_pieces = explode(":", $headings_font);
@@ -403,23 +403,23 @@ function wsstheme_custom_styles($custom) {
 	}
 
 	//Output all the styles
-    wp_register_style( 'wsstheme-inline-style', false );
-    wp_enqueue_style( 'wsstheme-inline-style' );
-    wp_add_inline_style( 'wsstheme-inline-style', $custom );
+    wp_register_style( 'wssbase-inline-style', false );
+    wp_enqueue_style( 'wssbase-inline-style' );
+    wp_add_inline_style( 'wssbase-inline-style', $custom );
 }
-add_action( 'wp_enqueue_scripts', 'wsstheme_custom_styles' );
+add_action( 'wp_enqueue_scripts', 'wssbase_custom_styles' );
 
 
 /**
  * Binds JS handlers to make Theme Customizer preview reload changes asynchronously.
  */
-if ( ! function_exists( 'wsstheme_customize_preview_js' ) ) {
+if ( ! function_exists( 'wssbase_customize_preview_js' ) ) {
 	/**
 	 * Setup JS integration for live previewing.
 	 */
-	function wsstheme_customize_preview_js() {
+	function wssbase_customize_preview_js() {
 		wp_enqueue_script(
-			'wsstheme_customizer',
+			'wssbase_customizer',
 			get_template_directory_uri() . '/js/customizer.js',
 			array( 'customize-preview' ),
 			'20130508',
@@ -427,18 +427,18 @@ if ( ! function_exists( 'wsstheme_customize_preview_js' ) ) {
 		);
 	}
 }
-add_action( 'customize_preview_init', 'wsstheme_customize_preview_js' );
+add_action( 'customize_preview_init', 'wssbase_customize_preview_js' );
 
 /**
  * Loads javascript for conditionally showing customizer controls.
  */
-if ( ! function_exists( 'wsstheme_customize_controls_js' ) ) {
+if ( ! function_exists( 'wssbase_customize_controls_js' ) ) {
 	/**
 	 * Setup JS integration for live previewing.
 	 */
-	function wsstheme_customize_controls_js() {
+	function wssbase_customize_controls_js() {
 		wp_enqueue_script(
-			'wsstheme_customizer',
+			'wssbase_customizer',
 			get_template_directory_uri() . '/js/customizer-controls.js',
 			array( 'customize-preview' ),
 			'20130508',
@@ -446,19 +446,19 @@ if ( ! function_exists( 'wsstheme_customize_controls_js' ) ) {
 		);
 	}
 }
-add_action( 'customize_controls_enqueue_scripts', 'wsstheme_customize_controls_js' );
+add_action( 'customize_controls_enqueue_scripts', 'wssbase_customize_controls_js' );
 
 
 
-if ( ! function_exists( 'wsstheme_default_navbar_type' ) ) {
+if ( ! function_exists( 'wssbase_default_navbar_type' ) ) {
 	/**
 	 * Overrides the responsive navbar type for Bootstrap 4
 	 *
 	 * @param string $current_mod
 	 * @return string
 	 */
-	function wsstheme_default_navbar_type( $current_mod ) {
+	function wssbase_default_navbar_type( $current_mod ) {
 		return $current_mod;
 	}
 }
-add_filter( 'theme_mod_wsstheme_navbar_type', 'wsstheme_default_navbar_type', 20 );
+add_filter( 'theme_mod_wssbase_navbar_type', 'wssbase_default_navbar_type', 20 );

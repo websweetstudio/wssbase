@@ -2,7 +2,7 @@
 /**
  * Sidebar - hero setup
  *
- * @package Wss
+ * @package Wssbase
  */
 
 // Exit if accessed directly.
@@ -25,7 +25,7 @@ defined( 'ABSPATH' ) || exit;
 
 			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
 
-			<span class="screen-reader-text"><?php echo esc_html_x( 'Previous', 'carousel control', 'wsstheme' ); ?></span>
+			<span class="screen-reader-text"><?php echo esc_html_x( 'Previous', 'carousel control', 'wssbase' ); ?></span>
 
 		</a>
 
@@ -33,7 +33,7 @@ defined( 'ABSPATH' ) || exit;
 
 			<span class="carousel-control-next-icon" aria-hidden="true"></span>
 
-			<span class="screen-reader-text"><?php echo esc_html_x( 'Next', 'carousel control', 'wsstheme' ); ?></span>
+			<span class="screen-reader-text"><?php echo esc_html_x( 'Next', 'carousel control', 'wssbase' ); ?></span>
 
 		</a>
 

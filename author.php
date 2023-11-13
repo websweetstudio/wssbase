@@ -4,14 +4,14 @@
  *
  * Learn more: https://codex.wordpress.org/Author_Templates
  *
- * @package Wss
+ * @package Wssbase
  */
 
 // Exit if accessed directly.
 defined( 'ABSPATH' ) || exit;
 
 get_header();
-$container = get_theme_mod( 'wsstheme_container_type' );
+$container = get_theme_mod( 'wssbase_container_type' );
 ?>
 
 <div class="wrapper" id="author-wrapper">
@@ -39,7 +39,7 @@ $container = get_theme_mod( 'wsstheme_container_type' );
 					if ( ! empty( $curauth->ID ) ) {
 						$alt = sprintf(
 							/* translators: %s: author name */
-							_x( 'Profile picture of %s', 'Avatar alt', 'wsstheme' ),
+							_x( 'Profile picture of %s', 'Avatar alt', 'wssbase' ),
 							$curauth->display_name
 						);
 						echo get_avatar( $curauth->ID, 96, '', $alt );
@@ -49,7 +49,7 @@ $container = get_theme_mod( 'wsstheme_container_type' );
 						?>
 						<dl>
 							<?php if ( ! empty( $curauth->user_url ) ) : ?>
-								<dt><?php esc_html_e( 'Website', 'wsstheme' ); ?></dt>
+								<dt><?php esc_html_e( 'Website', 'wssbase' ); ?></dt>
 								<dd>
 									<a href="<?php echo esc_url( $curauth->user_url ); ?>"><?php echo esc_html( $curauth->user_url ); ?></a>
 								</dd>
@@ -60,7 +60,7 @@ $container = get_theme_mod( 'wsstheme_container_type' );
 									<?php
 									printf(
 										/* translators: %s: author name */
-										esc_html__( 'About %s', 'wsstheme' ),
+										esc_html__( 'About %s', 'wssbase' ),
 										$curauth->display_name
 									);
 									?>
@@ -74,7 +74,7 @@ $container = get_theme_mod( 'wsstheme_container_type' );
 					if ( have_posts() ) {
 						printf(
 							/* translators: %s: author name */
-							'<h2>' . esc_html__( 'Posts by %s', 'wsstheme' ) . '</h2>',
+							'<h2>' . esc_html__( 'Posts by %s', 'wssbase' ) . '</h2>',
 							$curauth->display_name
 						);
 					}
@@ -98,7 +98,7 @@ $container = get_theme_mod( 'wsstheme_container_type' );
 			</main><!-- #main -->
 
 			<!-- The pagination component -->
-			<?php wsstheme_pagination(); ?>
+			<?php wssbase_pagination(); ?>
 
 			<!-- Do the right sidebar check -->
 			<?php get_template_part( 'global-templates/right-sidebar-check' ); ?>

@@ -2,7 +2,7 @@
 /**
  * Hero setup
  *
- * @package Wss
+ * @package Wssbase
  */
 
 // Exit if accessed directly.
