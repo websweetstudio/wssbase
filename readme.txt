@@ -10,7 +10,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 == Description ==
 
-Wsstheme is a simple starter theme for WordPress that offers a clean 
+WssBase is a simple starter theme for WordPress that offers a clean 
 and minimalist design, making it both user-friendly and highly customizable.
 
 == Changelog ==

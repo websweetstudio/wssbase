@@ -4,14 +4,14 @@
  *
  * Template for displaying a blank page.
  *
- * @package Wss
+ * @package Wssbase
  */
 
 // Exit if accessed directly.
 defined( 'ABSPATH' ) || exit;
 ?>
 <!DOCTYPE html>
-<html <?php language_attributes(); ?> <?php wsstheme_color_scheme(); ?>>
+<html <?php language_attributes(); ?> <?php wssbase_color_scheme(); ?>>
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">

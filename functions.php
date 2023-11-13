@@ -3,17 +3,17 @@
 /**
  * Wss functions and definitions
  *
- * @package Wss
+ * @package Wssbase
  */
 
 // Exit if accessed directly.
 defined('ABSPATH') || exit;
 
-// Wsstheme's includes directory.
-$wsstheme_inc_dir = 'inc';
+// WssBase's includes directory.
+$wssbase_inc_dir = 'inc';
 
 // Array of files to include.
-$wsstheme_includes = array(
+$wssbase_includes = array(
 	'/theme-settings.php',                  // Initialize theme default settings.
 	'/setup.php',                           // Theme setup and custom theme supports.
 	'/widgets.php',                         // Register widget area.
@@ -25,7 +25,7 @@ $wsstheme_includes = array(
 	'/extras.php',                          // Custom functions that act independently of the theme templates.
 	'/customizer.php',                      // Customizer additions.
 	'/custom-comments.php',                 // Custom Comments file.
-	'/class-wp-bootstrap-navwalker.php',    // Load custom WordPress nav walker. Trying to get deeper navigation? Check out: https://github.com/websweetstudio/wssthemeissues/567.
+	'/class-wp-bootstrap-navwalker.php',    // Load custom WordPress nav walker. Trying to get deeper navigation? Check out: https://github.com/websweetstudio/wssbaseissues/567.
 	'/editor.php',                          // Load Editor functions.
 	'/block-editor.php',                    // Load Block Editor functions.
 	'/deprecated.php',                      // Load deprecated functions.
@@ -34,15 +34,15 @@ $wsstheme_includes = array(
 
 // Load WooCommerce functions if WooCommerce is activated.
 if (class_exists('WooCommerce')) {
-	$wsstheme_includes[] = '/woocommerce.php';
+	$wssbase_includes[] = '/woocommerce.php';
 }
 
 // Load Jetpack compatibility file if Jetpack is activiated.
 if (class_exists('Jetpack')) {
-	$wsstheme_includes[] = '/jetpack.php';
+	$wssbase_includes[] = '/jetpack.php';
 }
 
 // Include files.
-foreach ($wsstheme_includes as $file) {
-	require_once get_theme_file_path($wsstheme_inc_dir . $file);
+foreach ($wssbase_includes as $file) {
+	require_once get_theme_file_path($wssbase_inc_dir . $file);
 }

@@ -2,13 +2,13 @@
 /**
  * Sidebar setup for footer full
  *
- * @package Wss
+ * @package Wssbase
  */
 
 // Exit if accessed directly.
 defined( 'ABSPATH' ) || exit;
 
-$container = get_theme_mod( 'wsstheme_container_type' );
+$container = get_theme_mod( 'wssbase_container_type' );
 
 ?>
 

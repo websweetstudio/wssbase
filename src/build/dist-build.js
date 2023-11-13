@@ -50,10 +50,10 @@ async function setLineEndings(filePath, newLineEnding) {
 async function buildAndZip() {
 	del("./dist").then(async () => {
 		console.log("./dist is deleted!");
-		copyDir("./", "./dist/wsstheme/wsstheme").then(async () => {
+		copyDir("./", "./dist/wssbase/wssbase").then(async () => {
 			// Set the desired line ending, e.g., "\n" for LF
-			await setLineEndings("./dist/wsstheme/wsstheme/js/theme.js", "\n");
-			zipdir("./dist/wsstheme", { saveTo: "./dist/wsstheme.zip" });
+			await setLineEndings("./dist/wssbase/wssbase/js/theme.js", "\n");
+			zipdir("./dist/wssbase", { saveTo: "./dist/wssbase.zip" });
 			console.log("Zip file created");
 		});
 	});

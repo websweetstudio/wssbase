@@ -7,7 +7,7 @@
  * and that other 'pages' on your WordPress site will use a
  * different template.
  *
- * @package Wss
+ * @package Wssbase
  */
 
 // Exit if accessed directly.
@@ -15,7 +15,7 @@ defined( 'ABSPATH' ) || exit;
 
 get_header();
 
-$container = get_theme_mod( 'wsstheme_container_type' );
+$container = get_theme_mod( 'wssbase_container_type' );
 
 ?>
 

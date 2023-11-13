@@ -2,7 +2,7 @@
 /**
  * Partial template for content in page.php
  *
- * @package Wss
+ * @package Wssbase
  */
 
 // Exit if accessed directly.
@@ -23,14 +23,14 @@ defined( 'ABSPATH' ) || exit;
 
 		<?php
 		the_content();
-		wsstheme_link_pages();
+		wssbase_link_pages();
 		?>
 
 	</div><!-- .entry-content -->
 
 	<footer class="entry-footer">
 
-		<?php wsstheme_edit_post_link(); ?>
+		<?php wssbase_edit_post_link(); ?>
 
 	</footer><!-- .entry-footer -->
 

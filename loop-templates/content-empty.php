@@ -2,7 +2,7 @@
 /**
  * Content empty partial template
  *
- * @package Wss
+ * @package Wssbase
  */
 
 // Exit if accessed directly.

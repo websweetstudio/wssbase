@@ -2,7 +2,7 @@
 /**
  * The sidebar containing the main widget area
  *
- * @package Wss
+ * @package Wssbase
  */
 
 // Exit if accessed directly.

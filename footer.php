@@ -4,7 +4,7 @@
  *
  * Contains the closing of the #content div and all content after
  *
- * @package Wss
+ * @package Wssbase
  */
 
 // Exit if accessed directly.
@@ -14,7 +14,7 @@ defined( 'ABSPATH' ) || exit;
 
 <?php get_template_part( 'sidebar-templates/sidebar', 'footerfull' ); ?>
 
-<?php do_action( 'wsstheme_footer' ); ?>
+<?php do_action( 'wssbase_footer' ); ?>
 
 </div><!-- #page we need this extra closing tag here -->
 

@@ -2,7 +2,7 @@
 /**
  * Post rendering content according to caller of get_template_part
  *
- * @package Wss
+ * @package Wssbase
  */
 
 // Exit if accessed directly.
@@ -28,7 +28,7 @@ defined( 'ABSPATH' ) || exit;
 	
 	<?php if ( 'post' === get_post_type() ) : ?>
 	<div class="entry-meta text-muted">
-		<?php wsstheme_posted_on(); ?>
+		<?php wssbase_posted_on(); ?>
 	</div><!-- .entry-meta -->
 	<?php endif; ?>
 
@@ -36,14 +36,14 @@ defined( 'ABSPATH' ) || exit;
 
 		<?php
 		the_excerpt();
-		wsstheme_link_pages();
+		wssbase_link_pages();
 		?>
 
 	</div><!-- .entry-content -->
 
 	<footer class="entry-footer">
 
-		<?php wsstheme_entry_footer(); ?>
+		<?php wssbase_entry_footer(); ?>
 
 	</footer><!-- .entry-footer -->
 
