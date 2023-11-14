@@ -1,5 +1,5 @@
 /*!
-  * Wss Theme  v1.5.3 (https://websweetstudio.com)
+  * Wss Base  v1.5.4 (https://websweetstudio.com)
   * Copyright 2013-2023 websweetstudio.com
   * Licensed under GPL (http://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html)
   */
