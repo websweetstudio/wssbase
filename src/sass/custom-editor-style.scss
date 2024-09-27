@@ -6,6 +6,7 @@
 // Grab a few bootstrap assets so we can use mixins, variables, etc
 @import "assets/bootstrap/functions";
 @import "assets/bootstrap/variables";
+@import "assets/bootstrap/maps";
 @import "assets/bootstrap/mixins";
 @import "assets/bootstrap/reboot";
 @import "assets/bootstrap/root";
@@ -19,15 +20,13 @@
 @import "theme/colors";
 @import "theme/blocks";
 
-
-
 // Fixes Gutenberg's cover block color picker.
 .components-circular-option-picker__option {
 	border-radius: 50%;
 }
 
 // Matches the page title font weight.
-.editor-post-title .editor-post-title__input{
+.editor-post-title .editor-post-title__input {
 	font-size: $h1-font-size;
 	font-weight: $headings-font-weight;
 }
