@@ -1,6 +1,31 @@
 body {
-	font-family: "Space Grotesk", sans-serif;
+	font-family: "Inter", sans-serif;
+	font-weight: 400;
 }
+
+// Headings and navigation use Space Grotesk
+h1, h2, h3, h4, h5, h6,
+.entry-title,
+.page-title,
+.comments-title {
+	font-family: "Space Grotesk", sans-serif;
+	font-weight: 600;
+}
+
+// Ensure navbar uses Space Grotesk font
+.navbar-nav .nav-link,
+.navbar-brand,
+.navbar-brand a {
+	font-family: "Space Grotesk", sans-serif;
+	font-weight: 500; // Medium weight for better readability in navigation
+}
+
+// Specific styling for dropdown menu items
+.navbar-nav .dropdown-menu .nav-link {
+	font-family: "Space Grotesk", sans-serif;
+	font-weight: 400; // Regular weight for dropdown items
+}
+
 .navbar-brand {
 	img {
 		height: 50px;

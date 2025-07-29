@@ -13739,7 +13739,28 @@ fieldset:disabled .woocommerce .wc-proceed-to-checkout button,
   }
 }
 body {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+}
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6,
+.entry-title,
+.page-title,
+.comments-title {
   font-family: "Space Grotesk", sans-serif;
+  font-weight: 600;
+}
+
+.navbar-nav .nav-link,
+.navbar-brand,
+.navbar-brand a {
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 500;
+}
+
+.navbar-nav .dropdown-menu .nav-link {
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 400;
 }
 
 .navbar-brand img {
