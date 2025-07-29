@@ -39,25 +39,26 @@ if (! function_exists('wssbase_scripts')) {
 
 add_action('wp_enqueue_scripts', 'wssbase_scripts');
 
-if ( ! function_exists( 'wssbase_google_fonts' ) ) {
+if (! function_exists('wssbase_google_fonts')) {
 	/**
 	 * Load Google Fonts for Space Grotesk and Inter.
 	 */
-	function wssbase_google_fonts() {
+	function wssbase_google_fonts()
+	{
 		// Enqueue Space Grotesk font from Google Fonts (for headings & navigation)
-		wp_enqueue_style( 
-			'wssbase-space-grotesk-font', 
-			'https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap', 
-			array(), 
-			null 
+		wp_enqueue_style(
+			'wssbase-space-grotesk-font',
+			'https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap',
+			array(),
+			null
 		);
-		
+
 		// Enqueue Inter font from Google Fonts (for body text)
-		wp_enqueue_style( 
-			'wssbase-inter-font', 
-			'https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap', 
-			array(), 
-			null 
+		wp_enqueue_style(
+			'wssbase-inter-font',
+			'https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap',
+			array(),
+			null
 		);
 	}
 }

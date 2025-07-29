@@ -1,4 +1,5 @@
 <?php
+
 /**
  * The main template file
  *
@@ -12,43 +13,55 @@
  */
 
 // Exit if accessed directly.
-defined( 'ABSPATH' ) || exit;
+defined('ABSPATH') || exit;
 
 get_header();
 
-$container = get_theme_mod( 'wssbase_container_type' );
+$container = get_theme_mod('wssbase_container_type');
 ?>
 
-<?php if ( is_front_page() && is_home() ) : ?>
-	<?php get_template_part( 'global-templates/hero' ); ?>
+<?php if (is_front_page() && is_home()) : ?>
+	<?php get_template_part('global-templates/hero'); ?>
 <?php endif; ?>
 
 <div class="wrapper" id="index-wrapper">
 
-	<div class="<?php echo esc_attr( $container ); ?>" id="content" tabindex="-1">
+	<div class="<?php echo esc_attr($container); ?>" id="content" tabindex="-1">
 
 		<div class="row">
 
 			<!-- Do the left sidebar check and opens the primary div -->
-			<?php get_template_part( 'global-templates/left-sidebar-check' ); ?>
+			<?php get_template_part('global-templates/left-sidebar-check'); ?>
 
 			<main class="site-main" id="main">
 
 				<?php
-				if ( have_posts() ) {
-					// Start the Loop.
-					while ( have_posts() ) {
-						the_post();
+				if (have_posts()) {
+				?>
+					<?php if (is_home() && ! is_front_page()) : ?>
+						<header class="page-header mb-4">
+							<h1 class="page-title display-4 mb-3"><?php single_post_title(); ?></h1>
+						</header>
+					<?php endif; ?>
 
-						/*
-						 * Include the Post-Format-specific template for the content.
-						 * If you want to override this in a child theme, then include a file
-						 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
-						 */
-						get_template_part( 'loop-templates/content', get_post_format() );
-					}
+					<div class="blog-posts">
+						<div class="row">
+							<?php
+							// Start the Loop.
+							while (have_posts()) {
+								the_post();
+
+								/*
+								 * Use grid template for blog layout similar to archive
+								 */
+								get_template_part('loop-templates/content-blog');
+							}
+							?>
+						</div><!-- .row -->
+					</div><!-- .blog-posts -->
+				<?php
 				} else {
-					get_template_part( 'loop-templates/content', 'none' );
+					get_template_part('loop-templates/content', 'none');
 				}
 				?>
 
@@ -58,7 +71,7 @@ $container = get_theme_mod( 'wssbase_container_type' );
 			<?php wssbase_pagination(); ?>
 
 			<!-- Do the right sidebar check -->
-			<?php get_template_part( 'global-templates/right-sidebar-check' ); ?>
+			<?php get_template_part('global-templates/right-sidebar-check'); ?>
 
 		</div><!-- .row -->
 

@@ -3,12 +3,14 @@
 ## Konsep Font System
 
 ### ✅ Space Grotesk untuk:
+
 - **Headings** (h1-h6) dengan font-weight 600
 - **Entry titles** (.entry-title, .page-title, .comments-title)
 - **Navigation** (.navbar-nav .nav-link, .navbar-brand) dengan font-weight 500
 - **Dropdown menu** dengan font-weight 400
 
 ### ✅ Inter untuk:
+
 - **Body text** dengan font-weight 400 (mudah dibaca dan modern)
 - **Konten artikel** (.entry-content)
 - **Form elements** (button, input, select, textarea)
@@ -17,11 +19,13 @@
 ## Pengaturan yang Sudah Diterapkan
 
 ### 1. Customizer WordPress
+
 - **Site Typography**: Default = Space Grotesk (untuk headings & nav)
 - **Body Typography**: Default = Inter (untuk konten)
 - Dapat diubah di: `Appearance > Customize > Typography Setting`
 
 ### 2. Google Fonts Loading
+
 ```php
 // Space Grotesk untuk headings & navigation
 'https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap'
@@ -31,28 +35,34 @@
 ```
 
 ### 3. CSS Styling
+
 ```css
 /* Body menggunakan Inter */
 body {
-  font-family: "Inter", sans-serif;
-  font-weight: 400;
+	font-family: "Inter", sans-serif;
+	font-weight: 400;
 }
 
 /* Headings menggunakan Space Grotesk */
-h1, h2, h3, h4, h5, h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
 .entry-title,
 .page-title,
 .comments-title {
-  font-family: "Space Grotesk", sans-serif;
-  font-weight: 600;
+	font-family: "Space Grotesk", sans-serif;
+	font-weight: 600;
 }
 
 /* Navigation menggunakan Space Grotesk */
 .navbar-nav .nav-link,
 .navbar-brand,
 .navbar-brand a {
-  font-family: "Space Grotesk", sans-serif;
-  font-weight: 500;
+	font-family: "Space Grotesk", sans-serif;
+	font-weight: 500;
 }
 ```
 
@@ -63,6 +73,7 @@ h1, h2, h3, h4, h5, h6,
 3. **`inc/enqueue.php`** - Loading kedua Google Fonts
 
 ## Hasil Akhir
+
 - ✅ **Entry titles** = Space Grotesk (Modern, Bold)
 - ✅ **Navigation/Menu** = Space Grotesk (Konsisten dengan headings)
 - ✅ **Body content** = Inter (Mudah dibaca, clean)
@@ -70,11 +81,13 @@ h1, h2, h3, h4, h5, h6,
 - ✅ **Performance optimized** dengan display=swap
 
 ## Build Process
+
 ```bash
 npm run css
 ```
 
 ## Penggunaan di WordPress Admin
+
 1. Login ke WordPress Admin
 2. `Appearance > Customize > Typography Setting`
 3. **Site Typography**: Space Grotesk

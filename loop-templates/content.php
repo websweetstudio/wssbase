@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Post rendering content according to caller of get_template_part
  *
@@ -6,45 +7,44 @@
  */
 
 // Exit if accessed directly.
-defined( 'ABSPATH' ) || exit;
+defined('ABSPATH') || exit;
 ?>
 
-<article <?php post_class('mb-3'); ?> id="post-<?php the_ID(); ?>">
+<article <?php post_class('card mb-4 shadow-sm'); ?> id="post-<?php the_ID(); ?>">
 
-	<header class="entry-header">
-
-		<?php
-		the_title(
-			sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ),
-			'</a></h2>'
-		);
-		?>
-
-	</header><!-- .entry-header -->
-
-	<a href="<?php the_permalink(); ?>">
-		<?php the_post_thumbnail('large', ['class' => 'img-fluid mb-3 w-100', 'alt' => the_title_attribute(['echo' => false])]); ?>
-	</a>
-	
-	<?php if ( 'post' === get_post_type() ) : ?>
-	<div class="entry-meta text-muted">
-		<?php wssbase_posted_on(); ?>
-	</div><!-- .entry-meta -->
+	<?php if (has_post_thumbnail()) : ?>
+		<div class="card-img-wrapper">
+			<a href="<?php the_permalink(); ?>" class="d-block">
+				<?php the_post_thumbnail('large', ['class' => 'card-img-top img-fluid', 'alt' => the_title_attribute(['echo' => false])]); ?>
+			</a>
+		</div>
 	<?php endif; ?>
 
-	<div class="entry-content">
+	<div class="card-body">
+		<header class="entry-header mb-3">
+			<?php
+			the_title(
+				sprintf('<h2 class="entry-title card-title h4"><a href="%s" rel="bookmark" class="text-decoration-none">', esc_url(get_permalink())),
+				'</a></h2>'
+			);
+			?>
 
-		<?php
-		the_excerpt();
-		wssbase_link_pages();
-		?>
+			<?php if ('post' === get_post_type()) : ?>
+				<div class="entry-meta small text-muted mb-2">
+					<?php wssbase_posted_on(); ?>
+				</div><!-- .entry-meta -->
+			<?php endif; ?>
+		</header><!-- .entry-header -->
 
-	</div><!-- .entry-content -->
+		<div class="entry-content">
+			<?php
+			the_excerpt();
+			?>
+		</div><!-- .entry-content -->
 
-	<footer class="entry-footer">
-
-		<?php wssbase_entry_footer(); ?>
-
-	</footer><!-- .entry-footer -->
+		<footer class="entry-footer mt-3">
+			<?php wssbase_entry_footer(); ?>
+		</footer><!-- .entry-footer -->
+	</div><!-- .card-body -->
 
 </article><!-- #post-## -->
